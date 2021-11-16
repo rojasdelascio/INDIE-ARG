@@ -6,6 +6,21 @@
     <meta http-equiv=”X-UA-Compatible” content=”IE=edge”>
     <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
     <title>INDIE.ARG</title>
+
+    <style>
+        img {
+            width: 500px;
+            height: 300px;
+            border-radius: 90%;
+        }
+
+
+        h3 {
+            text-align: center;
+            text-decoration: underline;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -15,63 +30,106 @@
             <hr>
         </div>
 
-        <div>
-            <p>
-            <nav>
-                <h4> <span>Cine</span> <span> Libros</span> <span>Musica</span> <span>Artes Plasticas</span> </h4>
-            </nav>
+
+        <p>
+        <nav>
+            <ul>
+                <li><a href="./indiepuntoarg.html">Home</a></li>
+                <li><a href="./sobrenosotros.html">Sobre nosotros</a></li>
+                <li>Donaciones</li>
+                <li><a href="./queresserparte.html">¿Querés ser parte?</a></li>
+            </ul>
             <hr>
-        </div>
+        </nav>
+
+
     </header>
     <br> </br>
+
     <main>
         <section>
-            <div>
-                <span>
-                    <h3> Nuevos Lanzamientos</h3>
-                </span>
-                <ul>
-                    <li> <img src="Pravus.png" alt="Pravus"> </li>
-                    <li> <img src="Solipsis.png"> </li>
-                    <li> <img src="Uterum.png"> </li>
-
-                </ul>
-                <br> </br>
-            </div>
+            <h3>El Indie Filtro</h3>
+            <form action="/search">
+                <label for="busqueda">¿Qué buscás?</label>
+                <input type="text" id="busqueda" name="bqda" required placeholder="palabras clave">
+                <br></br>
+                <label for="genero">Escoge un género</label>
+                <select name="gen" id="genero" required>
+                    <option value="terror">Terror</option>
+                    <option value="Suspenso">Suspenso</option>
+                    <option value="Comedia">Comedia</option>
+                    <option value="Ciencia ficcion">Ciencia Ficción</option>
+                    <option value="Fantasia">Fantasia</option>
+                </select>
+                <br></br>
+                <label for="podcast">Podcast</label>
+                <input type="checkbox" id="podcast" name="pdc">
+                <label for="cine">Cine</label>
+                <input type="checkbox" id="cine" name="cine">
+                <label for="literatura">Literatura</label>
+                <input type="checkbox" id="literatura" name="ltra">
+                <label for="artevisual">Arte Visual</label>
+                <input type="checkbox" id="artevisual" name="avsal">
+                <br></br>
+                <button type="submit">¡Buscar!</button>
+            </form>
         </section>
-        <aside>
-            <div>
-                <h1> Tu perfil </h1>
 
-            </div>
-        </aside>
+        <br></br><br></br>
+
+        <hr>
         <section>
             <span>
-                <h3> Mejores Puntuados</h3>
+                <h3>Recomendados</h3>
+                <br>
             </span>
 
-            <ol>
-                <li> Pravus</li>
-                <li> Juntos, Para siempre</li>
-                <li> Day II </li>
+            <table>
+                <tr>
+                    <th>Pravus</th>
+                    <th>Solo Yo</th>
+                    <th>Comandante</th>
+                </tr>
 
-            </ol>
-
-            <br> </br>
+                <td>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Q6tHJKyHbK4"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p>Pravus de Christian Gracz en Youtube</p>
+                </td>
+                <td>
+                    <iframe src="https://player.vimeo.com/video/325578406?h=253a0c66e8" width="560" height="315"
+                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    <p>Solipsis de Francisco Rotella en Vimeo</p>
+                </td>
+                <td>
+                    <a href="./comandante.html"><img src="./imagenes/totalitarianism.jpg"></a>
+                    <p>Comandante de Gustavo Rojas en INDIE.ARG</p>
+                </td>
+                </tr>
+            </table>
         </section>
-        <section>
-            <span>
-                <h3> Para Tí </h3>
-            </span>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div>
 
+
+        <br> </br>
         </div>
 
+    </main>
+
+    <footer>
+        <hr>
+        <table>
+            <td><a href="./Cine.html">Cine</a></td>
+            <td><a href="./literatura.html">Literatura</a></td>
+            <td><a href="./musica2.html">Música</a></td>
+            <td><a href="./podcasts.html">Podcasts</a></td>
+            <td><a href="./artesplasticas.html">Artes Plásticas</a></td>
+        </table>
+
+
     </footer>
+
 </body>
 
 </html>

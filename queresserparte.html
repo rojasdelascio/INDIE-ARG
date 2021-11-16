@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Querés ser parte?</title>
+
+    <style>
+        h3 {
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        p {
+
+            font-size: medium;
+        }
+
+        label {
+            font-size: small;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h2> INDIE.ARG </h2>
+            <hr>
+        </div>
+
+
+        <p>
+        <nav>
+            <ul>
+                <li><a href="./indiepuntoarg.html">Home</a></li>
+                <li><a href="./sobrenosotros.html">Sobre nosotros</a></li>
+                <li>Donaciones</li>
+                <li><a href="./queresserparte.html">¿Querés ser parte?</a></li>
+            </ul>
+            <hr>
+        </nav>
+
+
+    </header>
+    <br>
+
+    <main>
+        <h3>¿Querés ser parte de nuestra comunidad?</h3>
+
+        <p> Si te gustaría que tus proyectos formasen parte de INDIE.ARG, podés enviarlos a nuestro equipo para que sean
+            evaluados.
+            Recuerda que el proyecto debe ser autogestionado, y estar registrado a tu nombre.
+            Nuestro equipo evaluará tu proyecto y te dará una devolución en 5 días hábiles.
+            Recuerda que si decidimos no incluir tu proyecto en nuestra plataforma, esto no significa que este no sea lo
+            suficientemente bueno, sino
+            que simplemente no cumple los lineamientos de nuestra comunidad.
+        </p>
+
+        <p> ¿Preparado? ¡Para comenzar completa el formulario de abajo!</p>
+        <form action="/solicitudes">
+
+            <label for="name">Ingresa tu nombre</label>
+            <input type="text" id="name" name="nme" placeholder="Ingresa tu nombre" required>
+            <br>
+            <label for="apellido">Ingresa tu apellido</label>
+            <input type="text" id="apellido" name="aplldo" placeholder="Ingresa tu apellido" required>
+            <br>
+            <input type="radio" name="gn" id="hm" value="hombre">
+            <label for="masc">Hombre</label>
+            <input type="radio" name="gn" id="mj" value="mujer">
+            <label for="masc">Mujer</label>
+            <input type="radio" name="gn" id="otr" value="otro">
+            <label for="masc">Otro</label>
+            <br>
+            <label for="edad">Ingresa tu edad</label>
+            <input type="number" min="16" max="105" step="1" name="edad" id="edad" required>
+            <br>
+            <label>Contanos sobre tu proyecto</label>
+            <br>
+            <textarea id="historia" name="stry" placeholder="Contanos..." rows="5" cols="100" required>
+            </textarea>
+            <br></br>
+            <label for="link"> Ingresa el link de tu proyecto</label> <input type="URL" name="lnk" id="link"
+                placeholder="https://example.com" pattern="https://.*" size="30" required>
+            <p>(Tu proyecto debe estar subido de forma privada a alguna plataforma como Vimeo o Youtube. También puedes
+                enviar el link público de alguna nube como Google Drive)</p>
+            <br></br>
+            <a href="">Leer Términos y Condiciones</a>
+            <input id="tyc" name="tyc" type="checkbox" required>
+            <label for="tyc">Acepto los términos y condiciones</label>
+
+            <br></br>
+            <button type="submit">Enviar tu solicitud</button>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <hr>
+        <table>
+            <td><a href="./Cine.html">Cine</a></td>
+            <td><a href="./literatura.html">Literatura</a></td>
+            <td><a href="./musica2.html">Música</a></td>
+            <td><a href="./podcasts.html">Podcasts</a></td>
+            <td><a href="./artesplasticas.html">Artes Plásticas</a></td>
+        </table>
+
+
+    </footer>
+
+</body>
+
+</html>
