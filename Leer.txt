@@ -1,0 +1,8 @@
+La página Home es: indiepuntoarg.html
+
+Solo hay 4 HTML con contenido: comantante.html, indiepuntoarg.html,
+queresserparte.html y sobrenosotros.html
+
+En los html restantes coloque de acuerdo a las indicaciones de mi
+tutora: "en esta sección se encontrará...."
+
