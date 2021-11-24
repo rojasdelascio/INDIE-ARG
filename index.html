@@ -6,114 +6,116 @@
     <meta http-equiv=”X-UA-Compatible” content=”IE=edge”>
     <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
     <title>INDIE.ARG</title>
-
-    <style>
-        img {
-            width: 500px;
-            height: 300px;
-            border-radius: 90%;
-        }
-
-
-        h3 {
-            text-align: center;
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kenia&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index-style.css">
 
 </head>
 
 <body>
+    <!-- header -->
     <header>
-        <h2> INDIE.ARG </h2>
-        <hr>
+        <h2 class="indie__arg"> INDIE.ARG </h2>
+        <!-- barra de navegacion -->
+        <!-- <img class="icono__perfil" src="iconos/profile.png"> -->
         <nav>
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./pages/sobre-nosotros.html">Sobre nosotros</a></li>
-                <li><a href="./pages/queres-ser-parte.html">¿Querés ser parte?</a></li>
+                <li><a href="./secciones/cine.html">Cine</a></li>
+                <li><a href="./secciones/literatura.html">Literatura</a></li>
+                <li><a href="./secciones/musica.html">Música</a></li>
             </ul>
-            <hr>
+
+            </table>
+
+
+
         </nav>
     </header>
 
-    <br> </br>
-
     <main>
-        <section>
-            <h3>El Indie Filtro</h3>
-            <form action="/search">
-                <label for="busqueda">¿Qué buscás?</label>
-                <input type="text" id="busqueda" name="bqda" required placeholder="palabras clave">
-                <br></br>
-                <label for="genero">Escoge un género</label>
-                <select name="gen" id="genero" required>
-                    <option value="terror">Terror</option>
-                    <option value="Suspenso">Suspenso</option>
-                    <option value="Comedia">Comedia</option>
-                    <option value="Ciencia ficcion">Ciencia Ficción</option>
-                    <option value="Fantasia">Fantasia</option>
-                </select>
-                <br></br>
-                <label for="podcast">Podcast</label>
-                <input type="checkbox" id="podcast" name="pdc">
-                <label for="cine">Cine</label>
-                <input type="checkbox" id="cine" name="cine">
-                <label for="literatura">Literatura</label>
-                <input type="checkbox" id="literatura" name="ltra">
-                <label for="artevisual">Arte Visual</label>
-                <input type="checkbox" id="artevisual" name="avsal">
-                <br></br>
-                <button type="submit">¡Buscar!</button>
-            </form>
+        <!-- filtro principal -->
+        <section class="filtro__principal">
+            <h3 class="titulo1">El Indie Filtro</h3>
+            <!-- div para colocar los inputs, selects y boton del filtro (esto se hizo para el display flex) -->
+            <div class="filtro__principal__div">
+                <form class="filtro__principal__form" action="/search">
+                    <label class="que__buscas" for="busqueda">¿Qué buscás?</label>
+                    <input class="filtro__principal__palabras__clave" type="text" id="busqueda" name="bqda" required
+                        placeholder="palabras clave">
+                    <div class="genero">
+                        <label for="genero">Escoge un género</label>
+                        <select name="gen" id="genero" required>
+                            <option value="terror">Terror</option>
+                            <option value="Suspenso">Suspenso</option>
+                            <option value="Comedia">Comedia</option>
+                            <option value="Ciencia ficcion">Ciencia Ficción</option>
+                            <option value="Fantasia">Fantasia</option>
+
+                        </select>
+
+                    </div>
+
+                    <ul class="filtro__principal__form__checkbox">
+                        <li> <label for="podcast">Música</label>
+                            <input type="checkbox" id="podcast" name="pdc">
+                        </li>
+                        <li><label for="cine">Cine</label>
+                            <input type="checkbox" id="cine" name="cine">
+                        </li>
+                        <li><label for="literatura">Literatura</label>
+                            <input type="checkbox" id="literatura" name="ltra">
+                        </li>
+
+                    </ul>
+                    <button class="filtro__principal__form__button" type="submit">¡Buscar!</button>
+                </form>
+            </div>
         </section>
+        <!-- recomendados -->
+        <section class="recomendados__background">
 
-        <br></br><br></br>
+            <h3 class="titulo2">Recomendados</h3>
 
-        <hr>
-        <section>
-            <span>
-                <h3>Recomendados</h3>
-                <br>
-            </span>
-
-            <table>
-                <tr>
-                    <th>Pravus</th>
-                    <th>Solo Yo</th>
-                    <th>Comandante</th>
-                </tr>
-
-                <td>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Q6tHJKyHbK4"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <p>Pravus de Christian Gracz en Youtube</p>
-                </td>
-                <td>
-                    <iframe src="https://player.vimeo.com/video/325578406?h=253a0c66e8" width="560" height="315"
-                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                    <p>Solipsis de Francisco Rotella en Vimeo</p>
-                </td>
-                <td>
+            <ul class="recomendados__elementos">
+                <li>
+                    <h4 class="titulo__elemento">Pravus</h4>
+                    <a href="https://www.youtube.com/embed/Q6tHJKyHbK4"><img src="./imagenes/Pravus.png"></a>
+                    <h6 class="pie__elemento">Pravus de Christian Gracz en Youtube</h6>
+                </li>
+                <li>
+                    <h4 class="titulo__elemento">Solo Yo</h4>
+                    <a href="https://player.vimeo.com/video/325578406?h=253a0c66e8"><img
+                            src="./imagenes/Solipsis.png"></a>
+                    <h6 class="pie__elemento">Solipsis de Francisco Rotella en Vimeo</h6>
+                </li>
+                <li>
+                    <h4 class="titulo__elemento">Comandante</h4>
                     <a href="./pages/cuento-comandante.html"><img src="./imagenes/totalitarianism.jpg"></a>
-                    <p>Comandante de Gustavo Rojas en INDIE.ARG</p>
-                </td>
-                </tr>
-            </table>
+                    <h6 class="pie__elemento">Comandante de Gustavo Rojas en INDIE.ARG</h6>
+                </li>
+                <li>
+                    <h4 class="titulo__elemento">Dia Dos</h4>
+                    <a href="https://www.youtube.com/watch?v=QYLdeb2RAXY&t=2s"><img src="./imagenes/day2.png"></a>
+                    <h6 class="pie__elemento">Dia Dos de Christian Graz</h6>
+                </li>
+            </ul>
         </section>
-        <br> </br>
+
         </div>
     </main>
-
+    <!-- footer -->
     <footer>
-        <hr>
-        <table>
-            <td><a href="./secciones/cine.html">Cine</a></td>
-            <td><a href="./secciones/literatura.html">Literatura</a></td>
-            <td><a href="./secciones/musica.html">Música</a></td>
-        </table>
+
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./pages/sobre-nosotros.html">Sobre nosotros</a></li>
+            <li><a href="./pages/queres-ser-parte.html">¿Querés ser parte?</a></li>
+        </ul>
     </footer>
 </body>
 

@@ -1,0 +1,270 @@
+/* body */
+
+
+body{
+    display:flex;
+    flex-direction:column;
+    
+    }
+
+    body a{
+        text-decoration:none;
+        }
+        
+        body a:visited{
+        color:black;
+        }
+        
+
+
+/* header */
+.indie__arg{
+
+    font-family: 'Permanent Marker', cursive;
+    font-size:30px;
+    position:relative;
+    top:-10px;
+    right:0px;
+    padding:10px;
+        
+}
+
+header {
+    width:auto;
+    height:90px;
+    background-color:#a6605a;
+    }
+/* barra de navegacion */
+header nav{
+    background-color: rgba(189, 174, 174, 0.47); 
+    width:auto;
+    height:40px;
+    position:relative;
+    top:-25px;
+    right:0px;
+    }
+/* elementos de la barra de navegacion (opciones) */
+    header nav ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    flex-wrap:nowrap;
+    border-width:5px;
+    border-color:green;
+    position:relative;
+    right:377px;
+    bottom:18px;
+    }
+    
+    header nav ul li{
+        list-style-type:none;
+    padding:22px 8px 50px 9px;
+    font-family:"Josefin Sans";
+    font-size:15px;
+    
+    }
+    
+    header nav ul li a{
+        display:inline-block;
+        color:floralwhite;
+        border-color:black;
+        border-style:solid;
+        border-width:1px;
+        padding:7px;
+    }
+    
+    header nav ul li a:hover{
+        color:floralwhite;
+    }
+
+/* main */
+
+/* filtro principal de la seccion 1 del main */
+.filtro__principal {
+    
+position:relative;
+top:36px;
+left:0px;
+background-color:#F2F0F0D1;
+height:450px;
+width:auto;
+border-color:black;
+border-width:10px;
+
+}
+
+/* div creado para separar los inputs con display flex k */
+    .filtro__principal__div{
+        
+display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+     width:550px;
+    height:300px; 
+    font-family:"Josefin Sans";
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    background-color:rgba(212, 177, 163, 0.178);
+    position:relative;
+    left:350px;
+    top:101px;
+    border-radius: 10px;
+    }
+    
+    .que__buscas{
+    display:block;
+    font-size:30px;
+    padding:24px;
+    }
+
+    .filtro__principal__palabras__clave{
+padding:11px;
+border-color:darkgray;
+border-radius:30px;
+width:350px;
+
+    }
+
+    .filtro__principal__palabras__clave:hover{
+background-color:#ffd90085;
+
+    }
+    
+    .filtro__principal__form__checkbox{
+    list-style-type:none;
+    display:flex;
+    }
+    
+    .filtro__principal__form__button{
+width:90px;
+height:40px;
+        background-color: rgba(212, 110, 51, 0.58);
+            border-radius:90px;
+    position:relative;
+    top:0px;
+    right:-128px;
+    }
+
+    .filtro__principal__form__button:hover{
+background-color: gold;
+color:floralwhite;
+            }
+
+    
+    .filtro__principal__form__button input[type=checkbox]:hover {
+    background-color: gold;
+    
+            }
+
+.genero {
+    padding:24px;
+
+}
+
+.genero select:hover{
+background-color:#fcdc27b7;
+}
+
+/* titulos de las secciones 1 y 2 del main */
+.titulo1{
+    font-family:"Josefin Sans";
+display:inline-block;
+position:absolute;
+font-size:30px;
+right:50%;
+top:14px;
+}
+
+.titulo2{
+    font-family:"Josefin Sans";
+display:inline-block;
+font-size:30px;
+position:absolute;
+right:50%;
+top:558px;
+}
+
+/* seccion 2 del main. Recomendados */
+.recomendados__background{
+display:block;
+background-image: url("../imagenes/mountain.png");
+background-size:1500px;
+background-position:center;
+background-repeat:repeat;
+height:800px;
+width:auto;
+}
+
+/* elementos que apareceran recomendados */
+.recomendados__elementos{
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+align-content:center;
+justify-content:space-evenly;
+font-family:"Josefin Sans";
+position:relative;
+top:84px;
+right:0px;
+}
+
+.recomendados__elementos h4,h6{
+
+font-size:13px;
+padding:1px;
+position:relative;
+top:0px;
+right:-32px;
+
+}
+
+
+.recomendados__elementos img{
+width:350px;
+height:200px;
+padding:10px;
+}
+
+.recomendados__elementos img:hover{
+
+border: 2px inset #ffd700;
+width:370px;
+height:220px;
+
+}
+
+.recomendados__elementos li{
+
+    display:inline-block;
+}
+
+
+/* footer  */
+footer {
+background-color:#d4b1a3;
+position:relative;
+width:auto;
+top:0px;
+right:1px;
+font-family:"Josefin Sans";
+
+}
+
+footer ul{
+list-style-type:none;
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+justify-content:start;
+}
+
+footer ul li{
+    padding:15px;
+    }
+
+footer ul li a:hover{
+
+color:floralwhite;
+
+    }
