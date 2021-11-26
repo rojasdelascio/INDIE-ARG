@@ -6,86 +6,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nosotros</title>
+    <link rel="stylesheet" href="../styles/sobre-nosotros.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Estonia&family=Josefin+Sans&family=Quantico:wght@700&family=Rock+Salt&display=swap"
+        rel="stylesheet">
 </head>
 
-<style>
-    img {
-        width: 300px;
-        height: 200px;
-        border-radius: 95px;
-    }
-
-    h5 {
-        text-decoration: underline;
-        text-align: center;
-    }
-
-    p {
-        text-align: justify;
-    }
-</style>
 
 <body>
     <header>
-        <h2> INDIE.ARG </h2>
-        <hr>
+        <h2 class="indie__arg"> INDIE.ARG </h2>
+        <!-- barra de navegacion -->
+        <!-- <img class="icono__perfil" src="iconos/profile.png"> -->
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./sobre-nosotros.html">Sobre nosotros</a></li>
-                <li><a href="./queres-ser-parte.html">¿Querés ser parte?</a></li>
+                <li><a href="../secciones/cine.html">Cine</a></li>
+                <li><a href="../secciones/literatura.html">Literatura</a></li>
+                <li><a href="../secciones/musica.html">Música</a></li>
             </ul>
-            <hr>
         </nav>
     </header>
 
+
     <main>
-        <h5>Sobre Nosotros</h5>
-        <P>
-            Fundada en el 2021 por Gustavo Rojas (Guionista y Actor), Indie.arg es una web dedicada a promover el arte
-            independiente. En nuestro sitio podrás encontrar<br>
-            películas, libros, cortometrajes, cuentos, podcasts, música y arte visual; todo creado por artistas
-            independientes; ya que sabemos que no es fácil autogestionar<br>
-            proyectos con bajo presupuesto, en estos tiempos en los cuales las grandes productoras acaparan todos los
-            medios. Por eso nuestra página inicial tiene un filtro <br>
-            dedicado a facilitar las búsquedas, y a hacer el arte independiente más accesible para aquellos que deseen
-            apoyarla.
-        </P>
-        <hr>
-        <section>
+        <div class="sobre__nosotros">
+            <h5>Sobre Nosotros</h5>
+            <P class="sobre__nosotros__texto">
+                Fundada en el 2021 por Gustavo Rojas (Guionista y Actor), Indie.arg es una web dedicada a promover el
+                arte
+                independiente. En nuestro sitio podrás encontrar
+                películas, libros, cortometrajes, cuentos, podcasts, música y arte visual; todo creado por artistas
+                independientes; ya que sabemos que no es fácil autogestionar
+                proyectos con bajo presupuesto, en estos tiempos en los cuales las grandes productoras acaparan todos
+                los
+                medios. Por eso nuestra página inicial tiene un filtro
+                dedicado a facilitar las búsquedas, y a hacer el arte independiente más accesible para aquellos que
+                deseen
+                apoyarla.
+            </P>
+        </div>
+        <section class="nuestro__equipo">
             <h5>Nuestro Equipo</h5>
             <ul>
                 <li>
-                    <h4>Christian G</h4>
+                    <h4 class="nombre">Christian G</h4>
+                    <img src="../imagenes/christiang.jpg">
+                    <h6 class="descripcion">Cineasta y Profesor de Actuación con más de 5 años de experiencia</h6>
                 </li>
-                <img src="../imagenes/christiang.jpg">
-                <h6>Cineasta y Profesor de Actuación con más de 5 años de experiencia</h6>
+
                 <li>
-                    <h4>Mariana M</h4>
+                    <h4 class="nombre">Mariana M</h4>
+                    <img src="../imagenes/marianam.jpg">
+                    <h6 class="descripcion">Periodista y Fotógrafo con más de 6 años de experiencia</h6>
                 </li>
-                <img src="../imagenes/marianam.jpg">
-                <h6>Periodista y Fotógrafo con más de 6 años de experiencia</h6>
+
                 <li>
-                    <h4>Octavio S</h4>
+                    <h4 class="nombre">Octavio S</h4>
+                    <img src="../imagenes/octavios.jpg">
+                    <h6 class="descripcion">Estudiante de Cine y escritor</h6>
                 </li>
-                <img src="../imagenes/octavios.jpg">
-                <h6>Estudiante de Cine y escritor</h6>
+
                 <li>
-                    <h4>Gustavo R</h4>
+                    <h4 class="nombre">Gustavo R</h4>
+                    <img src="../imagenes/gustavor.JPG">
+                    <h6 class="descripcion">Actor y Guionista</h6>
                 </li>
-                <img src="../imagenes/gustavor.JPG">
-                <h6>Actor y Guionista</h6>
+
             </ul>
         </section>
     </main>
 
+    <!-- footer -->
     <footer>
-        <hr>
-        <table>
-            <td><a href="../secciones/cine.html">Cine</a></td>
-            <td><a href="../secciones/literatura.html">Literatura</a></td>
-            <td><a href="../secciones/musica.html">Música</a></td>
-        </table>
+
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/sobre-nosotros.html">Sobre nosotros</a></li>
+            <li><a href="../pages/queres-ser-parte.html">¿Querés ser parte?</a></li>
+        </ul>
     </footer>
 </body>
 

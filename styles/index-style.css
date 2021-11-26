@@ -1,6 +1,9 @@
 /* body */
 
-
+body{
+    margin:0;
+    padding:0;
+}
 body{
     display:flex;
     flex-direction:column;
@@ -12,9 +15,8 @@ body{
         }
         
         body a:visited{
-        color:black;
-        }
-        
+            color:slategrey;
+            }
 
 
 /* header */
@@ -33,6 +35,9 @@ header {
     width:auto;
     height:90px;
     background-color:#a6605a;
+    position:relative;
+    top:-26px;
+    right:8px;
     }
 /* barra de navegacion */
 header nav{
@@ -66,7 +71,7 @@ header nav{
     
     header nav ul li a{
         display:inline-block;
-        color:floralwhite;
+        color:black;
         border-color:black;
         border-style:solid;
         border-width:1px;
@@ -83,8 +88,8 @@ header nav{
 .filtro__principal {
     
 position:relative;
-top:36px;
-left:0px;
+top:13px;
+left:-9px;
 background-color:#F2F0F0D1;
 height:450px;
 width:auto;
@@ -99,7 +104,7 @@ border-width:10px;
 display:flex;
     flex-direction: column;
     flex-wrap:wrap;
-     width:550px;
+    width:500px;
     height:300px; 
     font-family:"Josefin Sans";
     justify-content:center;
@@ -116,6 +121,8 @@ display:flex;
     display:block;
     font-size:30px;
     padding:24px;
+    position:relative;
+    right:-60px;
     }
 
     .filtro__principal__palabras__clave{
@@ -182,7 +189,7 @@ display:inline-block;
 font-size:30px;
 position:absolute;
 right:50%;
-top:558px;
+top:7px;
 }
 
 /* seccion 2 del main. Recomendados */
@@ -194,6 +201,9 @@ background-position:center;
 background-repeat:repeat;
 height:800px;
 width:auto;
+position:relative;
+top:-3px;
+right:8px;
 }
 
 /* elementos que apareceran recomendados */
@@ -245,8 +255,8 @@ footer {
 background-color:#d4b1a3;
 position:relative;
 width:auto;
-top:0px;
-right:1px;
+top:-3px;
+right:8px;
 font-family:"Josefin Sans";
 
 }
@@ -261,6 +271,7 @@ justify-content:start;
 
 footer ul li{
     padding:15px;
+    color:black;
     }
 
 footer ul li a:hover{

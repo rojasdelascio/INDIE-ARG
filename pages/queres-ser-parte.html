@@ -6,101 +6,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Querés ser parte?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kenia&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/queres-ser-parte-style.css">
 
-    <style>
-        h3 {
-            text-decoration: underline;
-            text-align: center;
-        }
-
-        p {
-
-            font-size: medium;
-        }
-
-        label {
-            font-size: small;
-
-        }
-    </style>
 </head>
 
 <body>
+
     <header>
-        <h2> INDIE.ARG </h2>
-        <hr>
+        <div>
+            <h2 class="indie__arg"> INDIE.ARG </h2>
+        </div>
         <nav>
+
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./sobre-nosotros.html">Sobre nosotros</a></li>
-                <li><a href="./queres-ser-parte.html">¿Querés ser parte?</a></li>
+                <li><a href="../secciones/cine.html">Cine</a></li>
+                <li><a href="../secciones/literatura.html">Literatura</a></li>
+                <li><a href="../secciones/musica.html">Música</a></li>
             </ul>
-            <hr>
         </nav>
     </header>
 
-    <br>
+    <main id="grilla">
+        <section class="texto">
+            <div>
+                <h3>¿Querés ser parte de nuestra comunidad?</h3>
 
-    <main>
-        <h3>¿Querés ser parte de nuestra comunidad?</h3>
+                <p> Si te gustaría que tus proyectos formasen parte de INDIE.ARG, podés enviarlos a nuestro equipo
+                    para
+                    que
+                    sean
+                    evaluados.
+                    Recuerda que el proyecto debe ser autogestionado, y estar registrado a tu nombre.
+                    Nuestro equipo evaluará tu proyecto y te dará una devolución en 5 días hábiles.
+                    Recuerda que si decidimos no incluir tu proyecto en nuestra plataforma, esto no significa que
+                    este
+                    no
+                    sea lo
+                    suficientemente bueno, sino
+                    que simplemente no cumple los lineamientos de nuestra comunidad.
+                </p>
+            </div>
+        </section>
+        <section class="form">
+            <div class="form__div">
+                <p class="preparado"> ¿Preparado? ¡Para comenzar completa el formulario de abajo!</p>
+                <form action="/solicitudes">
+                    <div class="nombre">
+                        <label for="name">Ingresa tu nombre</label>
+                        <input type="text" id="name" name="nme" placeholder="Ingresa tu nombre" required>
+                    </div>
+                    <div class="apellido">
+                        <label for="apellido">Ingresa tu apellido</label>
+                        <input type="text" id="apellido" name="aplldo" placeholder="Ingresa tu apellido" required>
+                    </div>
+                    <div class="genero">
+                        <label> Ingresa tu Genero:</label>
+                        <input type="radio" name="gn" id="hm" value="hombre">
+                        <label for="masc">Hombre</label>
+                        <input type="radio" name="gn" id="mj" value="mujer">
+                        <label for="masc">Mujer</label>
+                        <input type="radio" name="gn" id="otr" value="otro">
+                        <label for="masc">Otro</label>
+                    </div>
+                    <div class="edad">
+                        <label for="edad">Ingresa tu edad</label>
+                        <input type="number" min="16" max="105" step="1" name="edad" id="edad" required>
+                    </div>
+                    <div class="comentarios">
+                        <label>Contanos sobre tu proyecto</label>
 
-        <p> Si te gustaría que tus proyectos formasen parte de INDIE.ARG, podés enviarlos a nuestro equipo para que sean
-            evaluados.
-            Recuerda que el proyecto debe ser autogestionado, y estar registrado a tu nombre.
-            Nuestro equipo evaluará tu proyecto y te dará una devolución en 5 días hábiles.
-            Recuerda que si decidimos no incluir tu proyecto en nuestra plataforma, esto no significa que este no sea lo
-            suficientemente bueno, sino
-            que simplemente no cumple los lineamientos de nuestra comunidad.
-        </p>
-
-        <p> ¿Preparado? ¡Para comenzar completa el formulario de abajo!</p>
-        <form action="/solicitudes">
-
-            <label for="name">Ingresa tu nombre</label>
-            <input type="text" id="name" name="nme" placeholder="Ingresa tu nombre" required>
-            <br>
-            <label for="apellido">Ingresa tu apellido</label>
-            <input type="text" id="apellido" name="aplldo" placeholder="Ingresa tu apellido" required>
-            <br>
-            <input type="radio" name="gn" id="hm" value="hombre">
-            <label for="masc">Hombre</label>
-            <input type="radio" name="gn" id="mj" value="mujer">
-            <label for="masc">Mujer</label>
-            <input type="radio" name="gn" id="otr" value="otro">
-            <label for="masc">Otro</label>
-            <br>
-            <label for="edad">Ingresa tu edad</label>
-            <input type="number" min="16" max="105" step="1" name="edad" id="edad" required>
-            <br>
-            <label>Contanos sobre tu proyecto</label>
-            <br>
-            <textarea id="historia" name="stry" placeholder="Contanos..." rows="5" cols="100" required>
+                        <textarea id="historia" name="stry" placeholder="Contanos..." rows="5" cols="100" required>
             </textarea>
-            <br></br>
-            <label for="link"> Ingresa el link de tu proyecto</label> <input type="URL" name="lnk" id="link"
-                placeholder="https://example.com" pattern="https://.*" size="30" required>
-            <p>(Tu proyecto debe estar subido de forma privada a alguna plataforma como Vimeo o Youtube. También puedes
-                enviar el link público de alguna nube como Google Drive)</p>
-            <br></br>
-            <a href="">Leer Términos y Condiciones</a>
-            <input id="tyc" name="tyc" type="checkbox" required>
-            <label for="tyc">Acepto los términos y condiciones</label>
+                    </div>
+                    <div class="link">
+                        <label for="link"> Ingresa el link de tu proyecto</label> <input type="URL" name="lnk" id="link"
+                            placeholder="https://example.com" pattern="https://.*" size="30" required>
+                        <p class="tu__proyecto">(Tu proyecto debe estar subido de forma privada a alguna plataforma como
+                            Vimeo o Youtube.
+                            También
+                            puedes
+                            enviar el link público de alguna nube como Google Drive)</p>
+                    </div>
+                    <div class="leertyc">
+                        <a href="">Leer Términos y Condiciones</a>
+                    </div>
+                    <div class="aceptartyc">
+                        <input id="tyc" name="tyc" type="checkbox" required>
+                        <label for="tyc">Acepto los términos y condiciones</label>
+                    </div>
 
-            <br></br>
-            <button type="submit">Enviar tu solicitud</button>
+                    <button type="submit">Enviar tu solicitud</button>
 
-        </form>
-
+                </form>
+            </div>
+        </section>
+        <div class="img">
+            <img src="../imagenes/indie-artist.jpg">
+        </div>
     </main>
 
     <footer>
-        <hr>
-        <table>
-            <td><a href="../secciones/cine.html">Cine</a></td>
-            <td><a href="../secciones/literatura.html">Literatura</a></td>
-            <td><a href="../secciones/musica.html">Música</a></td>
-        </table>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/sobre-nosotros.html">Sobre nosotros</a></li>
+            <li><a href="../pages/queres-ser-parte.html">¿Querés ser parte?</a></li>
+        </ul>
     </footer>
+
 </body>
 
 </html>

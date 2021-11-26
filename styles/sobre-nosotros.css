@@ -1,0 +1,207 @@
+/* body */
+
+body{
+    margin:0;
+    padding:0;
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+    }
+
+    body img {
+        width: 150px;
+        height: 100px;
+        border-radius: 95px;
+    }
+
+    body a{
+        text-decoration:none;
+        }
+        
+        body a:visited{
+            color:slategrey;
+        }
+        
+/* header */
+.indie__arg{
+
+    font-family: 'Permanent Marker', cursive;
+    font-size:30px;
+    position:relative;
+    top:-10px;
+    right:0px;
+    padding:10px;
+        
+}
+
+header {
+    width:1271px;
+    height:90px;
+    background-color:#a6605a;
+    position:relative;
+    top:-26px;
+    right:8px;
+    }
+/* barra de navegacion */
+header nav{
+    background-color: rgba(189, 174, 174, 0.47); 
+    width:auto;
+    height:40px;
+    position:relative;
+    top:-25px;
+    right:0px;
+    }
+/* elementos de la barra de navegacion (opciones) */
+    header nav ul{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    flex-wrap:nowrap;
+    border-width:5px;
+    border-color:green;
+    position:relative;
+    right:377px;
+    bottom:18px;
+    }
+    
+    header nav ul li{
+        list-style-type:none;
+    padding:22px 8px 50px 9px;
+    font-family:"Josefin Sans";
+    font-size:15px;
+    
+    }
+    
+    header nav ul li a{
+        display:inline-block;
+        color:black;
+        border-color:black;
+        border-style:solid;
+        border-width:1px;
+        padding:7px;
+    }
+    
+    header nav ul li a:hover{
+        color:floralwhite;
+    }
+
+
+    /* main */
+
+    /* seccion 1 div */
+.sobre__nosotros{
+    font-family:"Josefin Sans";
+    text-align:left;
+    font-size: 13px;
+    background-color:#c45d5448;
+    height: 130px;
+    width:auto;
+    position:relative;
+    top:-12px;
+    right:0px;
+ 
+}
+/* seccion 1 texto */
+.sobre__nosotros__texto{
+
+width:1250px;
+
+}
+/* seccion 1 titulo */
+.sobre__nosotros h5{
+
+    font-size: 15px;
+text-align:center;
+padding:10px;
+}
+
+/* seccion 2  */
+.nuestro__equipo{
+font-family:"Josefin Sans";
+width:auto;
+height:350px;
+background-color:lavenderblush;
+background-image: url("../imagenes/mountain.png");
+background-size:1400px;
+background-position:center;
+background-repeat:repeat;
+position:relative;
+top:-37px;
+}
+
+/* seccion 2 lista  */
+.nuestro__equipo ul{
+    list-style-type:none;
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+justify-content:space-evenly;
+align-items: center;
+}
+
+/* seccion 2 contenedor lista */
+.nuestro__equipo ul li{
+width:150px;
+height:200px;
+}
+
+/* seccion 2 titulo elementos de lista  */
+.nuestro__equipo .nombre{
+    display:inherit;
+    flex-wrap: wrap;
+    font-size:13px;
+   
+}
+
+/* seccion 2 pie elementos de lista */
+.nuestro__equipo .descripcion{
+    display:inherit;
+    flex-wrap: wrap;
+    text-align:left;
+}
+
+.nuestro__equipo img{
+
+display:inherit;
+flex-wrap:wrap;
+}
+
+/* seccion 2  titulo general*/
+.nuestro__equipo h5{
+
+    font-size: 15px;
+    text-align: center;
+    padding:19px;
+}
+
+        /* footer  */
+footer {
+background-color:#d4b1a3;
+position:relative;
+top:-37px;
+right:0px;
+font-family:"Josefin Sans";
+width:auto;
+
+}
+
+footer ul{
+list-style-type:none;
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+justify-content:start;
+}
+
+footer ul li{
+    padding:15px;
+    color:black;
+    }
+
+footer ul li a:hover{
+
+color:floralwhite;
+
+    }
