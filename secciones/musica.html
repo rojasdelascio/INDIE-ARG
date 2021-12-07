@@ -6,34 +6,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musica</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kenia&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/music-style.css">
 </head>
 
 
 
-<body>
+<body id="grilla">
+    <!-- header -->
     <header>
-        <h2> INDIE.ARG </h2>
-        <hr>
+        <h2 class="indie__arg"> INDIE.ARG </h2>
+        <!-- barra de navegacion -->
+        <!-- <img class="icono__perfil" src="iconos/profile.png"> -->
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/sobre-nosotros.html">Sobre nosotros</a></li>
-                <li><a href="../pages/queres-ser-parte.html">¿Querés ser parte?</a></li>
+                <li><a href="../secciones/cine.html">Cine</a></li>
+                <li><a href="../secciones/literatura.html">Literatura</a></li>
+                <li><a href="../secciones/musica.html">Música</a></li>
             </ul>
-            <hr>
         </nav>
     </header>
 
-    <H6>EN CONSTRUCCIÓN</H6>
-    <h5>Esta será la sección de Música. Aquí encontrarán música</h5>
+    <!-- seccion musica recomendada -->
+    <section class="musica__recomendada">
+        <div class="IWLG">
+            <h4>I Wont Let Go - Arimaya</h4>
+            <img src="../imagenes/arimaya.png">
+            <audio controls>
+                <source src="../music/y2mate.com - ARIMAYA  I Wont Let Go Official Audio.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
 
+        <div class="MN">
+            <h4>My Name - Arimaya</h4>
+            <img src="../imagenes/arimaya.png">
+            <audio controls>
+                <source src="../music/y2mate.com - My Name.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="OL">
+            <h4>Oh Lord - Arimaya</h4>
+            <img src="../imagenes/ohlord.png">
+            <audio controls>
+                <source src="../music/y2mate.com - ARIANE  Oh Lord Spanish Lyric Video.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
+
+    <!-- seccion formulario de busqueda -->
+    <section class="form__musica">
+        <div class="div__form">
+            <form action="/search">
+                <label class="que__buscas" for="musbus">¿Qué buscás?</label>
+                <input class="palabras__clave" type="text" id="palabras__clave" name="musbus" required
+                    placeholder="Ingrese palabras clave. P/ej: Canción + Artista">
+                <div class="genero">
+                    <label for="genero__musica">Escoge un género</label>
+                    <select name="genero__musica" id="genmus">
+                        <option value="Pop">Pop</option>
+                        <option value="Rock">Rock</option>
+                        <option value="Jazz">Jazz</option>
+                        <option value="Soul">Soul</option>
+                        <option value="balada">Balada</option>
+                        <option value="urbana">Urbana</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- footer -->
     <footer>
-        <hr>
-        <table>
-            <td><a href="./cine.html">Cine</a></td>
-            <td><a href="./literatura.html">Literatura</a></td>
-            <td><a href="./musica.html">Música</a></td>
-        </table>
+
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/sobre-nosotros.html">Sobre nosotros</a></li>
+            <li><a href="../pages/queres-ser-parte.html">¿Querés ser parte?</a></li>
+        </ul>
     </footer>
 </body>
 

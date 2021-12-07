@@ -3,12 +3,13 @@
 body{
     margin:0;
     padding:0;
+    height:100vh;
 }
 
-body{
+/* body{
     display:flex;
     flex-direction:column;
-    }
+    } */
 
     body img {
         width: 150px;
@@ -37,7 +38,8 @@ body{
 }
 
 header {
-    width:1271px;
+    grid-area:header;
+    width:1350px;
     height:90px;
     background-color:#a6605a;
     position:relative;
@@ -90,24 +92,43 @@ header nav{
 
     /* main */
 
+    /* grilla */
+    #grilla{
+display:grid;
+grid-template-areas: 
+"header header"
+"intro equipo"
+"footer footer";
+grid-template-rows: 100px 350px 200px;
+grid-template-columns: 500px 845px;
+    }
+
     /* seccion 1 div */
 .sobre__nosotros{
+    grid-area:intro;
     font-family:"Josefin Sans";
     text-align:left;
     font-size: 13px;
-    background-color:#c45d5448;
-    height: 130px;
-    width:auto;
+    background-color:#9c716d7c;
+    height: 350px;
+    width:500px;
     position:relative;
-    top:-12px;
+    top:3px;
     right:0px;
+    background-image: url("../imagenes/mountain.png");
+background-size:cover;
+background-position:center;
+background-repeat:repeat;
  
 }
 /* seccion 1 texto */
 .sobre__nosotros__texto{
 
-width:1250px;
-
+text-align:justify;
+width: 450px;
+font-size:17px;
+position:relative;
+right:-5%;
 }
 /* seccion 1 titulo */
 .sobre__nosotros h5{
@@ -119,16 +140,17 @@ padding:10px;
 
 /* seccion 2  */
 .nuestro__equipo{
+    grid-area:equipo;
 font-family:"Josefin Sans";
-width:auto;
+width:842px;
 height:350px;
 background-color:lavenderblush;
 background-image: url("../imagenes/mountain.png");
-background-size:1400px;
+background-size:cover;
 background-position:center;
 background-repeat:repeat;
 position:relative;
-top:-37px;
+top:3px;
 }
 
 /* seccion 2 lista  */
@@ -178,13 +200,13 @@ flex-wrap:wrap;
 
         /* footer  */
 footer {
+    grid-area:footer;
 background-color:#d4b1a3;
+height:50px;
 position:relative;
-top:-37px;
-right:0px;
+top:2px;
 font-family:"Josefin Sans";
-width:auto;
-
+width:1342px;
 }
 
 footer ul{
@@ -196,8 +218,8 @@ justify-content:start;
 }
 
 footer ul li{
-    padding:15px;
     color:black;
+    padding:5px 8px 50px 9px;
     }
 
 footer ul li a:hover{

@@ -1,97 +1,127 @@
-/* body */
+
+/* reglas generales  */
 
 body{
     margin:0;
     padding:0;
+    height:100vh;
 }
+
 body a{
     text-decoration:none;
     }
-    
+
     body a:visited{
-    color:cornflowerblue;
-    }
-    
+        color:slategrey;
+        }
 
-.indie__arg{
+        /* body */
 
-    font-family: 'Permanent Marker', cursive;
-    font-size:30px;
-    position:relative;
-    top:0px;
-    right:0px;
-    padding:10px;
+        .indie__arg{
+            font-family: 'Permanent Marker', cursive;
+            font-size:30px;
+            position:relative;
+            top:-10px;
+            right:0px;
+            padding:10px;
+                
+        }
         
-}
+        header {
+            grid-area:header;
+            width:1360px;
+            height:90px;
+            background-color:#a6605a;
+            position:relative; 
+            top:-26px;
+            right:8px;
+            }
+        /* barra de navegacion */
+        header nav{
+            background-color: rgba(189, 174, 174, 0.47); 
+            width:auto;
+            height:40px;
+            position:relative;
+            top:-25px;
+            right:0px;
+            }
+        /* elementos de la barra de navegacion (opciones) */
+            header nav ul{
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+            flex-wrap:nowrap;
+            border-width:5px;
+            border-color:green;
+            position:relative; 
+            right:377px;
+            bottom:18px;
+            }
+            
+            header nav ul li{
+                list-style-type:none;
+            padding:22px 8px 50px 9px;
+            font-family:"Josefin Sans";
+            font-size:15px;
+            
+            }
+            
+            header nav ul li a{
+                display:inline-block;
+                color:black;
+                border-color:black;
+                border-style:solid;
+                border-width:1px;
+                padding:7px;
+            }
+            
+            header nav ul li a:hover{
+                color:floralwhite;
+            }
 
+                header{
+grid-area:header;
+                }
 
-header {
-    width:auto;
-    height:75px;
-    background-color:#a6605a;
-    position:relative;
-    top:-26px;
-    right:8px;
-    }
-/* barra de navegacion */
-header nav{
-    background-color: rgba(189, 174, 174, 0.47); 
-    width:auto;
-    height:40px;
-    position:relative;
-    top:-15px;
-    right:0px;
-    }
-/* elementos de la barra de navegacion (opciones) */
-    header nav ul{
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    flex-wrap:nowrap;
-    border-width:5px;
-    border-color:green;
-    position:relative;
-    right:377px;
-    bottom:18px;
-    }
+                /* body */
     
-    header nav ul li{
-        list-style-type:none;
-    padding:22px 8px 50px 9px;
-    font-family:"Josefin Sans";
-    font-size:15px;
-    
+    .grilla{
+display:grid;
+grid-template-areas: 
+"header header header"
+"form cuento cuento"
+"footer footer footer";
+grid-template-rows: 103px 700px 100px;
+grid-template-columns: 390px 500px 462px;    
     }
-    
-    header nav ul li a{
-        display:inline-block;
-        color:floralwhite;
-        border-color:black;
-        border-style:solid;
-        border-width:1px;
-        padding:7px;
-    }
-    
-    header nav ul li a:hover{
-        color:floralwhite;
-    }
-    
 
+    .cuento__comandante{
+
+        grid-area:cuento;
+   
+ background-size:cover;
+    }
+
+    .form__comandante{
+
+        grid-area:form;
+    }
     .titulo{
         font-family: 'Quantico', sans-serif;
         text-align: center;
+        color:white;
     }
 
     .cuento {
         position:relative;
-    right:-170px;
-width:900px;
-height:1050px;
+    right:-100px;
+width:800px;
+height:500px;
 overflow:scroll;
 font-family: 'Rock Salt', cursive;
 font-size: 13px;
-color:rgb(255, 255, 255);
-    }
+color:whitesmoke;
+  }
 
     .titulo__y__cuento{
 background-image:url(../imagenes/totalitarianism.jpg);
@@ -101,21 +131,23 @@ background-color:rgb(14, 13, 13);
 display:flex;
 flex-direction:column;
 position:relative;
-top:13px;
-right:8px;
-width:auto;
+top:0px;
+right:-2px;
+width:960px;
+height:700px;
     }
 
 
     .form{
 display:flex;
+flex-direction:column;
 align-items:center;
 flex-wrap:wrap;
 padding:10px;
 font-family:"Josefin Sans";
 font-size:12px;
 position:relative;
-top:20px;
+top:50px;
     }
 
     .form__titulo{
@@ -127,11 +159,11 @@ top:20px;
     }
 
     .form__div{
-height:200px;
-width:auto;
+height:700px;
+width:400px;
     background-color:rgba(218, 131, 131, 0.281);
     position:relative;
-    top:13px;
+    top:0px;
     right:8px;
     }
 
@@ -168,16 +200,18 @@ font-size:10px;
 
 /* footer  */
 footer {
+    
     background-color:#d4b1a3;
     position:relative;
-    width:auto;
     height:80px;
     font-family:"Josefin Sans";
     color:black;
     position:relative;
     right:8px;
-    top:-23px;
+    top:0px;
     align-content:center;
+    grid-area:footer;
+    width:1360px;
     }
     
     footer ul{

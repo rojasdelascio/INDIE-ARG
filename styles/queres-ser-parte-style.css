@@ -3,6 +3,7 @@
 body{
     margin:0;
     padding:0;
+    height:100vh;
 }
 body{
     display:flex;
@@ -31,7 +32,7 @@ body{
 }
 
 header {
-    width:auto;
+    width:1355px;
     height:90px;
     background-color:#a6605a;
     position:relative;
@@ -89,7 +90,7 @@ grid-template-areas:
 "form form img"
 "form form img";
 grid-template-rows: 200px 900px auto;
-grid-template-columns: 4fr auto auto; 
+grid-template-columns: 250px 400px 695px; 
 }
 
 /* texto inicial "¿queres ser parte de la comunidad?" y el parrafo de abajo */
@@ -122,15 +123,24 @@ right:-2px;
 .form{  
     font-family:"Josefin Sans";
     grid-area:form;
-    border-radius:10px;
-    overflow:scroll;
     background-color:rgba(212, 177, 163, 0.178);
-border: rgba(212, 158, 137, 0.541) solid 2px;
+background-image: url("../imagenes/mountain.png");
+background-size:cover;
+
 }
 
-.preparado{
+.form__div{
+    background-color:rgba(212, 177, 163, 0.459);
+height:700px;
+width:550px;
+overflow:hidden;
 position:relative;
-right:0px;
+top:90px;
+right:-45px;
+}
+.preparado{
+/* position:relative;
+right:0px; */
 
 }
 
@@ -227,13 +237,17 @@ padding:10px;
 .img{
     grid-area:img;
     background-color:white;
+    background-image: url("../imagenes/mountain.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:repeat;
     
 }
 
 .img img{
     border-radius:10px;
-height:660px;
-
+height:500px;
+width:600px;
 position:relative;
 top:100px;
 right:0px;
@@ -259,29 +273,32 @@ background-color:khaki;
 }
 /* footer  */
 footer {
-    background-color:#d4b1a3;
-    position:relative;
-    width:auto;
-    top:-3px;
-    right:8px;
-    font-family:"Josefin Sans";
+    grid-area:footer;
+background-color:#d4b1a3;
+height:50px;
+/* position:relative; */
+width:1345px;
+/* top:-3px;
+right:8px; */
+font-family:"Josefin Sans";
+
+}
+
+footer ul{
+list-style-type:none;
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+justify-content:start;
+}
+
+footer ul li{
+    color:black;
+    padding:5px 8px 50px 9px;
     }
-    
-    footer ul{
-    list-style-type:none;
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:start;
+
+footer ul li a:hover{
+
+color:floralwhite;
+
     }
-    
-    footer ul li{
-        padding:15px;
-        color:black;
-        }
-    
-    footer ul li a:hover{
-    
-    color:floralwhite;
-    
-        }

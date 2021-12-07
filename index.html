@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body id="grilla">
     <!-- header -->
     <header>
         <h2 class="indie__arg"> INDIE.ARG </h2>
@@ -30,77 +30,76 @@
         </nav>
     </header>
 
-    <main>
-        <!-- filtro principal -->
-        <section class="filtro__principal">
-            <h3 class="titulo1">El Indie Filtro</h3>
-            <!-- div para colocar los inputs, selects y boton del filtro (esto se hizo para el display flex) -->
-            <div class="filtro__principal__div">
-                <form class="filtro__principal__form" action="/search">
-                    <label class="que__buscas" for="busqueda">¿Qué buscás?</label>
-                    <input class="filtro__principal__palabras__clave" type="text" id="busqueda" name="bqda" required
-                        placeholder="palabras clave">
-                    <div class="genero">
-                        <label for="genero">Escoge un género</label>
-                        <select name="gen" id="genero" required>
-                            <option value="terror">Terror</option>
-                            <option value="Suspenso">Suspenso</option>
-                            <option value="Comedia">Comedia</option>
-                            <option value="Ciencia ficcion">Ciencia Ficción</option>
-                            <option value="Fantasia">Fantasia</option>
+    <!-- El main. Se removio la etiqueta main, para que el grids funcionara correctamente -->
+    <!-- filtro principal -->
+    <section class="form__section">
+        <!-- div para colocar los inputs, selects y boton del filtro (esto se hizo para el display flex) -->
+        <!-- <div id="grilla__filtro"> -->
+        <h3 class="titulo1">El Indie Filtro</h3>
+        <form class="filtro__principal__form" action="/search">
+            <label class="que__buscas" for="busqueda">¿Qué buscás?</label>
+            <input class="filtro__principal__palabras__clave" type="text" id="bqda" name="busqueda" required
+                placeholder="palabras clave">
+            <div class="genero">
+                <label for="genero">Escoge un género</label>
+                <select name="genero" id="gen>
+                        <option value=" terror">Terror</option>
+                    <option value="Suspenso">Suspenso</option>
+                    <option value="Comedia">Comedia</option>
+                    <option value="Ciencia ficcion">Ciencia Ficción</option>
+                    <option value="Fantasia">Fantasia</option>
 
-                        </select>
+                </select>
 
-                    </div>
-
-                    <ul class="filtro__principal__form__checkbox">
-                        <li> <label for="podcast">Música</label>
-                            <input type="checkbox" id="podcast" name="pdc">
-                        </li>
-                        <li><label for="cine">Cine</label>
-                            <input type="checkbox" id="cine" name="cine">
-                        </li>
-                        <li><label for="literatura">Literatura</label>
-                            <input type="checkbox" id="literatura" name="ltra">
-                        </li>
-
-                    </ul>
-                    <button class="filtro__principal__form__button" type="submit">¡Buscar!</button>
-                </form>
             </div>
-        </section>
-        <!-- recomendados -->
-        <section class="recomendados__background">
 
-            <h3 class="titulo2">Recomendados</h3>
+            <ul class="filtro__principal__form__checkbox">
+                <li> <label for="podcast">Música</label>
+                    <input type="checkbox" id="pdc" name="podcast">
+                </li>
+                <li><label for="cine">Cine</label>
+                    <input type="checkbox" id="cine" name="cine">
+                </li>
+                <li><label for="literatura">Literatura</label>
+                    <input type="checkbox" id="ltra" name="literatura">
+                </li>
 
-            <ul class="recomendados__elementos">
-                <li>
-                    <h4 class="titulo__elemento">Pravus</h4>
-                    <a href="https://www.youtube.com/embed/Q6tHJKyHbK4"><img src="./imagenes/Pravus.png"></a>
-                    <h6 class="pie__elemento">Pravus de Christian Gracz en Youtube</h6>
-                </li>
-                <li>
-                    <h4 class="titulo__elemento">Solo Yo</h4>
-                    <a href="https://player.vimeo.com/video/325578406?h=253a0c66e8"><img
-                            src="./imagenes/Solipsis.png"></a>
-                    <h6 class="pie__elemento">Solipsis de Francisco Rotella en Vimeo</h6>
-                </li>
-                <li>
-                    <h4 class="titulo__elemento">Comandante</h4>
-                    <a href="./pages/cuento-comandante.html"><img src="./imagenes/totalitarianism.jpg"></a>
-                    <h6 class="pie__elemento">Comandante de Gustavo Rojas en INDIE.ARG</h6>
-                </li>
-                <li>
-                    <h4 class="titulo__elemento">Dia Dos</h4>
-                    <a href="https://www.youtube.com/watch?v=QYLdeb2RAXY&t=2s"><img src="./imagenes/day2.png"></a>
-                    <h6 class="pie__elemento">Dia Dos de Christian Graz</h6>
-                </li>
             </ul>
-        </section>
+            <button class="filtro__principal__form__button" type="submit">¡Buscar!</button>
+        </form>
+        <!-- </div> -->
+    </section>
+    <!-- recomendados -->
+    <section class="recomendados__background">
 
-        </div>
-    </main>
+        <h3 class="titulo2">Recomendados</h3>
+
+        <ul class="recomendados__elementos">
+            <li>
+                <h4 class="titulo__elemento">Pravus</h4>
+                <a href="https://www.youtube.com/embed/Q6tHJKyHbK4"><img src="./imagenes/Pravus.png"></a>
+                <h6 class="pie__elemento">Pravus de Christian Gracz en Youtube</h6>
+            </li>
+            <li>
+                <h4 class="titulo__elemento">Solo Yo</h4>
+                <a href="https://player.vimeo.com/video/325578406?h=253a0c66e8"><img src="./imagenes/Solipsis.png"></a>
+                <h6 class="pie__elemento">Solipsis de Francisco Rotella en Vimeo</h6>
+            </li>
+            <li>
+                <h4 class="titulo__elemento">Comandante</h4>
+                <a href="./pages/cuento-comandante.html"><img src="./imagenes/totalitarianism.jpg"></a>
+                <h6 class="pie__elemento">Comandante de Gustavo Rojas en INDIE.ARG</h6>
+            </li>
+            <li>
+                <h4 class="titulo__elemento">Dia Dos</h4>
+                <a href="https://www.youtube.com/watch?v=QYLdeb2RAXY&t=2s"><img src="./imagenes/day2.png"></a>
+                <h6 class="pie__elemento">Dia Dos de Christian Graz</h6>
+            </li>
+        </ul>
+    </section>
+
+    </div>
+
     <!-- footer -->
     <footer>
 

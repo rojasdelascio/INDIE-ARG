@@ -1,0 +1,210 @@
+/* reglas generales  */
+
+body{
+    margin:0;
+    padding:0;
+    height:100vh;
+}
+
+body a{
+    text-decoration:none;
+    }
+
+    body a:visited{
+        color:slategrey;
+        }
+
+        /* body */
+
+        .indie__arg{
+            font-family: 'Permanent Marker', cursive;
+            font-size:30px;
+            position:relative;
+            top:-10px;
+            right:0px;
+            padding:10px;
+                
+        }
+        
+        header {
+            grid-area:header;
+            width:1360px;
+            height:90px;
+            background-color:#a6605a;
+            position:relative; 
+            top:-26px;
+            right:8px;
+            }
+        /* barra de navegacion */
+        header nav{
+            background-color: rgba(189, 174, 174, 0.47); 
+            width:auto;
+            height:40px;
+            position:relative;
+            top:-25px;
+            right:0px;
+            }
+        /* elementos de la barra de navegacion (opciones) */
+            header nav ul{
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+            flex-wrap:nowrap;
+            border-width:5px;
+            border-color:green;
+            position:relative; 
+            right:377px;
+            bottom:18px;
+            }
+            
+            header nav ul li{
+                list-style-type:none;
+            padding:22px 8px 50px 9px;
+            font-family:"Josefin Sans";
+            font-size:15px;
+            
+            }
+            
+            header nav ul li a{
+                display:inline-block;
+                color:black;
+                border-color:black;
+                border-style:solid;
+                border-width:1px;
+                padding:7px;
+            }
+            
+            header nav ul li a:hover{
+                color:floralwhite;
+            }
+
+                header{
+grid-area:header;
+                }
+
+
+            /* grilla */
+            #grilla {
+                display:grid;
+                grid-template-areas:
+                "header header header"
+                "form musica musica"
+                "footer footer footer";
+                grid-template-rows: 110px 500px 50px;
+                grid-template-columns: 300px 551px 500px;
+                }
+
+                body .musica__recomendada{
+                    display:flex;
+                    flex-direction: column;
+                    flex-wrap:wrap;
+                    grid-area: musica;
+                    background-image: url("../imagenes/mountain.png");
+                    background-size:1100px;
+                    background-position:center;
+                    background-repeat:repeat;
+                    padding:50px;
+                    position:relative;
+                    top:-7px;
+                    font-family:"Josefin Sans";
+                }
+
+                .musica__recomendada img{
+                    width:60px;
+                    height:60px;
+                }
+.musica__recomendada audio{
+height:40px;
+width:200px;
+
+}
+                body .form__musica{
+                grid-area:form;
+                background-image: url("../imagenes/mountain.png");
+                    background-size:900px;
+                    background-position:center;
+                    background-repeat:repeat;
+                    position:relative;
+                    top:-7px;
+                }
+
+.form__musica form{
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color:rgba(212, 177, 163, 0.459);
+    height:200px;
+    width:120px;
+    padding:30px;
+    font-family:"Josefin Sans";
+    font-size:14px;
+    align-content:center;
+    border-radius:10%;   
+}
+
+.form__musica form input,button, select{
+
+    border-radius:20%;
+margin:10px;
+}
+
+.form__musica form button{
+    background-color:rgba(240, 186, 154, 0.58);
+    width: 80px;
+    padding:3px;
+    position:relative;
+    right:-30px;
+}
+
+.form__musica form button:hover ,select:hover,input:hover{
+
+    background-color: gold;
+
+}
+
+.div__form{
+
+position:relative;
+top:30px;
+right:-50px;
+}
+
+.form__musica form input, select, button{
+    font-size:12px;
+
+}
+
+body footer{
+grid-area:footer;
+}
+
+                /* footer  */
+footer {
+    grid-area:footer;
+background-color:#d4b1a3;
+height:50px;
+position:relative;
+top:-7px;
+font-family:"Josefin Sans";
+width:1350px;
+}
+
+footer ul{
+list-style-type:none;
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+justify-content:start;
+}
+
+footer ul li{
+    color:black;
+    padding:5px 8px 50px 9px;
+    }
+
+footer ul li a:hover{
+
+color:floralwhite;
+
+    }

@@ -5,35 +5,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Literatura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Estonia&family=Josefin+Sans&family=Quantico:wght@700&family=Rock+Salt&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/literatura.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kenia&family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="grilla__lit">
+
     <header>
-        <h2> INDIE.ARG </h2>
-        <hr>
+        <h2 class="indie__arg"> INDIE.ARG </h2>
+        <!-- barra de navegacion -->
+        <!-- <img class="icono__perfil" src="iconos/profile.png"> -->
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/sobre-nosotros.html">Sobre nosotros</a></li>
-                <li><a href="../pages/queres-ser-parte.html">¿Querés ser parte?</a></li>
+                <li><a href="../secciones/cine.html">Cine</a></li>
+                <li><a href="../secciones/literatura.html">Literatura</a></li>
+                <li><a href="../secciones/musica.html">Música</a></li>
             </ul>
-            <hr>
         </nav>
     </header>
 
-    <H6>EN CONSTRUCCIÓN</H6>
+    <section class="filtro__lit">
 
-    <h5>Esta será la sección de Literatura. Aquí se encontrarán clasificados distintos libros,
-        cuentos cortos y entradas de blogs.</h5>
+        <form class="form" action="/search">
+            <div class="form__div">
+                <h2> ¿Qué buscás?</h1>
+                    <input type="text" id="busqueda" name="bqda" required placeholder="inserta palabras clave">
+                    <div>
+                        <label for="genero">Género</label>
+                        <select name="genero">
+                            <option value="terror">Terror</option>
+                            <option value="drama">Drama</option>
+                            <option value="comedia">Comedia</option>
+                            <option value="hreales">Hechos reales</option>
+                        </select>
+                    </div>
+                    <ul class="checkbox">
+                        <li> <label for="libro">Libro</label>
+                            <input type="checkbox" id="cortos" name="cts">
+                        </li>
+                        <li><label for="cuento">Cuento Corto</label>
+                            <input type="checkbox" id="series" name="srs">
+                        </li>
+
+                    </ul>
+                    <button type="submit">Enviar</button>
+            </div>
+        </form>
+
+    </section>
+
+    <section class="recomendados__lit">
+        <h2 class="titulo">Contenido</h2>
+        <div class="contenido">
+            <div class="comandante">
+                <h3>Comandante</h3>
+                <a href="../pages/cuento-comandante.html"><img src="../imagenes/totalitarianism.jpg"></a>
+                <h4>Autor: Gustavo Rojas</h4>
+            </div>
+
+            <div class="normal">
+                <h3>Normal</h3>
+                <a href="../pages/cuento-normal.html"><img src="../imagenes/normal.png"></a>
+                <h4>Autor: Gustavo Rojas</h4>
+            </div>
+
+            <div class="carlos">
+                <h3>Carlos</h3>
+                <a href="../pages/cuento-carlos.html"><img src="../imagenes/carlos.jpg"></a>
+                <h4>Autor: Gustavo Rojas</h4>
+
+            </div>
+        </div>
+    </section>
+
 
     <footer>
-        <hr>
-        <table>
-            <td><a href="./cine.html">Cine</a></td>
-            <td><a href="./literatura.html">Literatura</a></td>
-            <td><a href="./musica.html">Música</a></td>
-        </table>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/sobre-nosotros.html">Sobre nosotros</a></li>
+            <li><a href="../pages/queres-ser-parte.html">¿Querés ser parte?</a></li>
+        </ul>
     </footer>
 
 </body>

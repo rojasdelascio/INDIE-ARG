@@ -6,35 +6,94 @@
     <meta http-equiv=”X-UA-Compatible” content=”IE=edge”>
     <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
     <title>INDIE.ARG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kenia&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/cine-style.css">
 
 </head>
 
-<body>
-    <header>
-        <h2> INDIE.ARG </h2>
-        <hr>
+<body id="grilla">
+
+    <header class="header">
+        <h2 class="indie__arg"> INDIE.ARG </h2>
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/sobre-nosotros.html">Sobre nosotros</a></li>
-                <li><a href="../pages/queres-ser-parte.html">¿Querés ser parte?</a></li>
+                <li><a href="./cine.html">Cine</a></li>
+                <li><a href="./literatura.html">Literatura</a></li>
+                <li><a href="./musica.html">Música</a></li>
             </ul>
-            <hr>
         </nav>
     </header>
 
-    <h6>EN CONSTRUCCIÓN</h6>
-    <h5>Esta será la sección de Cine. Aquí se encontrarán clasificados distintos cortometrajes,
-        películas y series</h5>
+    <form class="form" action="/search">
+        <div class="form__div">
+            <h2> ¿Qué buscás?</h1>
+                <input type="text" id="busqueda" name="bqda" required placeholder="inserta palabras clave">
+                <div>
+                    <label for="genero">Género</label>
+                    <select name="genero">
+                        <option value="terror">Terror</option>
+                        <option value="drama">Drama</option>
+                        <option value="comedia">Comedia</option>
+                        <option value="documental">Documental</option>
+                    </select>
+                </div>
+                <ul class="checkbox">
+                    <li> <label for="cortos">Cortos</label>
+                        <input type="checkbox" id="cortos" name="cts">
+                    </li>
+                    <li><label for="series">Series</label>
+                        <input type="checkbox" id="series" name="srs">
+                    </li>
+                    <li><label for="skits">Skits</label>
+                        <input type="checkbox" id="skits" name="skts">
+                    </li>
+
+                </ul>
+                <button type="submit">Enviar</button>
+        </div>
+    </form>
+
+
+    <section id="grilla__2" class="contenido">
+        <h2 class="titulo__contenido">Contenido</h2>
+
+        <div class="cortos">
+            <h3> Cortos</h3>
+            <a href="https://www.youtube.com/watch?v=Q6tHJKyHbK4&t=4s"><img src="../imagenes/Pravus.png"></a>
+            <img src="../imagenes/Uroboros.png">
+            <a href="https://player.vimeo.com/video/325578406?h=253a0c66e8"><img src="../imagenes/Solipsis.png"></a>
+        </div>
+
+        <div class="skits">
+            <h3>Skits</h3>
+            <a href="https://www.instagram.com/tv/B-qa4amAQG4/?utm_source=ig_web_copy_link"><img
+                    src="../imagenes/lobizon1.png"></a>
+            <a href="https://www.instagram.com/tv/B_gkmbdAd-4/?utm_source=ig_web_copy_link"><img
+                    src="../imagenes/lobizon2.png"></a>
+            <a href="https://www.facebook.com/106208557678933/videos/538764700102530"><img
+                    src="../imagenes/lobizon3.png"></a>
+        </div>
+
+        <div class="series">
+            <h3>Series</h3>
+            <a href="https://www.youtube.com/watch?v=QYLdeb2RAXY"><img src="../imagenes/day22.jpg"></a>
+            <a href="https://www.youtube.com/watch?v=UZp90RnG8PU"><img src="../imagenes/FOCUS.png"></a>
+
+        </div>
+
+    </section>
+
 
 
     <footer>
-        <hr>
-        <table>
-            <td><a href="./cine.html">Cine</a></td>
-            <td><a href="./literatura.html">Literatura</a></td>
-            <td><a href="./musica.html">Música</a></td>
-        </table>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/sobre-nosotros.html">Sobre nosotros</a></li>
+            <li><a href="../pages/queres-ser-parte.html">¿Querés ser parte?</a></li>
+        </ul>
     </footer>
 </body>
 
