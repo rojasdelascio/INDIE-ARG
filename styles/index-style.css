@@ -43,7 +43,7 @@ grid-template-columns: 3fr 3fr 3fr;
 }
 
 header {
-    width:1350px;
+    width:100%;
     height:90px;
     background-color:#a6605a;
     position:relative;
