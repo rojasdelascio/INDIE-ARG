@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kenia&family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/queres-ser-parte-style.css">
+    <link rel="stylesheet" href="../styles/index-style.css">
 
 </head>
 
@@ -30,8 +30,8 @@
         </nav>
     </header>
 
-    <main id="grilla">
-        <section class="texto">
+    <main id="grilla__qsp">
+        <section class="texto__qsp">
             <div>
                 <h3>¿Querés ser parte de nuestra comunidad?</h3>
 
@@ -51,19 +51,19 @@
                 </p>
             </div>
         </section>
-        <section class="form">
-            <div class="form__div">
+        <section class="form__qsp">
+            <div class="form__div__qsp">
                 <h3 class="preparado"> ¿Preparado? ¡Para comenzar completa el formulario de abajo!</h3>
                 <form action="/solicitudes">
-                    <div class="nombre">
+                    <div class="nombre__qsp">
                         <label for="name">Ingresa tu nombre</label>
                         <input type="text" id="name" name="nme" placeholder="Ingresa tu nombre" required>
                     </div>
-                    <div class="apellido">
+                    <div class="apellido__qsp">
                         <label for="apellido">Ingresa tu apellido</label>
                         <input type="text" id="apellido" name="aplldo" placeholder="Ingresa tu apellido" required>
                     </div>
-                    <div class="genero">
+                    <div class="genero__qsp">
                         <label> Ingresa tu Genero:</label>
                         <input type="radio" name="gn" id="hm" value="hombre">
                         <label for="masc">Hombre</label>
@@ -72,17 +72,17 @@
                         <input type="radio" name="gn" id="otr" value="otro">
                         <label for="masc">Otro</label>
                     </div>
-                    <div class="edad">
+                    <div class="edad__qsp">
                         <label for="edad">Ingresa tu edad</label>
                         <input type="number" min="16" max="105" step="1" name="edad" id="edad" required>
                     </div>
-                    <div class="comentarios">
+                    <div class="comentarios__qsp">
                         <label>Contanos sobre tu proyecto</label>
 
                         <textarea id="historia" name="stry" placeholder="Contanos..." rows="5" cols="100" required>
             </textarea>
                     </div>
-                    <div class="link">
+                    <div class="link__qsp">
                         <label for="link"> Ingresa el link de tu proyecto</label> <input type="URL" name="lnk" id="link"
                             placeholder="https://example.com" pattern="https://.*" size="30" required>
                         <p class="tu__proyecto">(Tu proyecto debe estar subido de forma privada a alguna
@@ -93,10 +93,10 @@
                             puedes
                             enviar el link público de alguna nube como Google Drive)</p>
                     </div>
-                    <div class="leertyc">
+                    <div class="leertyc__qsp">
                         <a href="">Leer Términos y Condiciones</a>
                     </div>
-                    <div class="aceptartyc">
+                    <div class="aceptartyc__qsp">
                         <input id="tyc" name="tyc" type="checkbox" required>
                         <label for="tyc">Acepto los términos y condiciones</label>
                     </div>
@@ -106,7 +106,7 @@
             </form>
 
         </section>
-        <div class="img">
+        <div class="img__qsp">
             <img src="../imagenes/formaparte.jpg">
         </div>
     </main>

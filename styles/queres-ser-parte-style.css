@@ -83,7 +83,7 @@ header nav{
     }
 
 /* utilizando grids en la seccion central */
-#grilla {
+#grilla__qsp {
 display:grid;
 grid-template-areas:
 "texto texto texto"
@@ -94,7 +94,7 @@ grid-template-columns: 250px 400px 695px;
 }
 
 /* texto inicial "¿queres ser parte de la comunidad?" y el parrafo de abajo */
-.texto{
+.texto__qsp{
     font-family:"Josefin Sans";
 grid-area:texto;
 background-color:lavenderblush;
@@ -105,22 +105,22 @@ top:13px;
 right:-2px;
 }
 
-.texto h3,p{
+.texto__qsp h3,p{
     text-align:center;
     position:relative;
     right:-100px;
 }
 
-.texto h3{
+.texto__qsp h3{
     font-size:17px; 
 }
 
-.texto p{
+.texto__qsp p{
     width:1000px;
     font-size:15px;
 }
 
-.form{  
+.form__qsp{  
     font-family:"Josefin Sans";
     grid-area:form;
     background-color:rgba(212, 177, 163, 0.178);
@@ -129,7 +129,7 @@ background-size:cover;
 
 }
 
-.form__div{
+.form__div__qsp{
     background-color:rgba(212, 177, 163, 0.459);
 height:700px;
 width:550px;
@@ -138,13 +138,13 @@ position:relative;
 top:90px;
 right:-45px;
 }
-.preparado{
+.preparado__qsp{
 /* position:relative;
 right:0px; */
 
 }
 
-.form__div form{
+.form__div__qsp form{
     display:flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -153,11 +153,11 @@ justify-content: space-evenly;
 height:600px;
 }
 
-.form__div form p,label,input {
+.form__div__qsp form p,label,input {
 padding:8px;
 }
 
-.nombre input, .apellido input{
+.nombre__qsp input, .apellido__qsp input{
 width:100px;
 height:1px;
 }
@@ -170,71 +170,71 @@ height:1px;
     right:10px;
 }
 
-.form input, textarea, button{
+.form__qsp input, textarea, button{
 
     background-color: rgb(233, 238, 196);
     border-radius:90px;
 }
-.nombre input:hover, .apellido input:hover, .edad input:hover, .comentarios textarea:hover, .link input:hover{
+.nombre__qsp input:hover, .apellido__qsp input:hover, .edad__qsp input:hover, .comentarios__qsp textarea:hover, .link__qsp input:hover{
     background-color:khaki;
     
 }
 
-.nombre{
+.nombre__qsp{
     padding:10px;
 }
 
-.apellido{
+.apellido__qsp{
 
 padding:10px;
 }
 
-.edad input{
+.edad__qsp input{
     width:40px;
     height:4px;
     align-items:inherit;
 }
 
-.edad{
+.edad__qsp{
 
 position:relative;
 right:-10px;
 }
 
-.link{
+.link__qsp{
     position:relative;
     right:-10px; 
 }
 
-.genero{
+.genero__qsp{
     padding:10px;
 }
 
-.comentarios{
+.comentarios__qsp{
 padding:10px;
 }
 
-.comentarios label{
+.comentarios__qsp label{
 
 padding:10px;
 }
 
-.comentarios textarea{
+.comentarios__qsp textarea{
 height:80px;
 width:500px;
 padding:10px;
 
 }
-.leertyc{
+.leertyc__qsp{
 
 padding:10px;
 }
 
-.aceptartyc{
+.aceptartyc__qsp{
     padding:10px;
 }
 
-.img{
+.img__qsp{
     grid-area:img;
     background-color:white;
     background-image: url("../imagenes/mountain.png");
@@ -244,7 +244,7 @@ padding:10px;
     
 }
 
-.img img{
+.img__qsp img{
     border-radius:10px;
 height:500px;
 width:600px;
@@ -253,7 +253,7 @@ top:100px;
 right:0px;
 }
 
-.form button{
+.form__qsp button{
 padding:10px;
 position:relative;
 right:-10px;
@@ -262,12 +262,12 @@ width:200px;
 background-color: rgba(212, 110, 51, 0.58);
 }
 
-.form button:hover{
+.form__qsp button:hover{
 
 background-color:khaki;
 }
 
-.form p{
+.form__qsp p{
     padding:10px;
     text-align: center;
 }

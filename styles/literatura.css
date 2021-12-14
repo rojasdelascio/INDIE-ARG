@@ -120,11 +120,11 @@ top:-2px;
 width:1002px;
 }
 
-.titulo{
+.titulo__lit{
     grid-area:titulo;
     font-family:"Josefin Sans";
 }
-.contenido{
+.contenido__lit{
 
     display:flex;
     flex-direction:row;
@@ -151,14 +151,14 @@ right:-50px;
     }
 
 
-.comandante h3{
+.comandante__lit h3{
     position:Relative;
     top:0px;
     right:-50px;
     
     }
 
-    .comandante h4{
+    .comandante__lit h4{
         position:Relative;
         top:0px;
         right:-30px;
@@ -189,7 +189,7 @@ right:-50px;
 
 }
 
-.form__div{
+.form__div__lit{
     background-color:rgba(212, 177, 163, 0.459);
     height:350px;
     width:270px;
@@ -203,18 +203,18 @@ right:-40px;
 top:25px;
 }
 
-.form button,select,input{
+.form__lit button,select,input{
     border-radius:30%;
     margin:10px;
     }
     
-    .form button:hover ,select:hover,input:hover{
+    .form__lit button:hover ,select:hover,input:hover{
     
         background-color: gold;
     
     }
     
-    .form button{
+    .form__lit button{
         background-color:rgba(240, 186, 154, 0.58);
         width: 100px;
         padding:5px;

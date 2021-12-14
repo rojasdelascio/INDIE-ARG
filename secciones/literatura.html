@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Estonia&family=Josefin+Sans&family=Quantico:wght@700&family=Rock+Salt&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../styles/literatura.css">
+    <link rel="stylesheet" href="../styles/index-style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kenia&family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 
@@ -30,60 +30,63 @@
         </nav>
     </header>
 
-    <section class="filtro__lit">
+    <main>
 
-        <form class="form" action="/search">
-            <div class="form__div">
-                <h2> ¿Qué buscás?</h1>
-                    <input type="text" id="busqueda" name="bqda" required placeholder="inserta palabras clave">
-                    <div>
-                        <label for="genero">Género</label>
-                        <select name="genero">
-                            <option value="terror">Terror</option>
-                            <option value="drama">Drama</option>
-                            <option value="comedia">Comedia</option>
-                            <option value="hreales">Hechos reales</option>
-                        </select>
-                    </div>
-                    <ul class="checkbox">
-                        <li> <label for="libro">Libro</label>
-                            <input type="checkbox" id="cortos" name="cts">
-                        </li>
-                        <li><label for="cuento">Cuento Corto</label>
-                            <input type="checkbox" id="series" name="srs">
-                        </li>
+        <section class="filtro__lit">
 
-                    </ul>
-                    <button type="submit">Enviar</button>
+            <form class="form__lit" action="/search">
+                <div class="form__div__lit">
+                    <h2> ¿Qué buscás?</h1>
+                        <input type="text" id="busqueda" name="bqda" required placeholder="inserta palabras clave">
+                        <div>
+                            <label for="genero">Género</label>
+                            <select name="genero">
+                                <option value="terror">Terror</option>
+                                <option value="drama">Drama</option>
+                                <option value="comedia">Comedia</option>
+                                <option value="hreales">Hechos reales</option>
+                            </select>
+                        </div>
+                        <ul class="checkbox">
+                            <li> <label for="libro">Libro</label>
+                                <input type="checkbox" id="cortos" name="cts">
+                            </li>
+                            <li><label for="cuento">Cuento Corto</label>
+                                <input type="checkbox" id="series" name="srs">
+                            </li>
+
+                        </ul>
+                        <button type="submit">Enviar</button>
+                </div>
+            </form>
+
+        </section>
+
+        <section class="recomendados__lit">
+            <h2 class="titulo">Contenido</h2>
+            <div class="contenido__lit">
+                <div class="comandante__lit">
+                    <h3>Comandante</h3>
+                    <a href="../pages/cuento-comandante.html"><img src="../imagenes/totalitarianism.jpg"></a>
+                    <h4>Autor: Gustavo Rojas</h4>
+                </div>
+
+                <div class="normal">
+                    <h3>Normal</h3>
+                    <a href="../pages/cuento-normal.html"><img src="../imagenes/normal.png"></a>
+                    <h4>Autor: Gustavo Rojas</h4>
+                </div>
+
+                <div class="carlos">
+                    <h3>Carlos</h3>
+                    <a href="../pages/cuento-carlos.html"><img src="../imagenes/carlos.jpg"></a>
+                    <h4>Autor: Gustavo Rojas</h4>
+
+                </div>
             </div>
-        </form>
+        </section>
 
-    </section>
-
-    <section class="recomendados__lit">
-        <h2 class="titulo">Contenido</h2>
-        <div class="contenido">
-            <div class="comandante">
-                <h3>Comandante</h3>
-                <a href="../pages/cuento-comandante.html"><img src="../imagenes/totalitarianism.jpg"></a>
-                <h4>Autor: Gustavo Rojas</h4>
-            </div>
-
-            <div class="normal">
-                <h3>Normal</h3>
-                <a href="../pages/cuento-normal.html"><img src="../imagenes/normal.png"></a>
-                <h4>Autor: Gustavo Rojas</h4>
-            </div>
-
-            <div class="carlos">
-                <h3>Carlos</h3>
-                <a href="../pages/cuento-carlos.html"><img src="../imagenes/carlos.jpg"></a>
-                <h4>Autor: Gustavo Rojas</h4>
-
-            </div>
-        </div>
-    </section>
-
+    </main>
 
     <footer>
         <ul>

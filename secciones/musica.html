@@ -11,12 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kenia&family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/music-style.css">
+    <link rel="stylesheet" href="../styles/index-style.css">
 </head>
 
 
 
-<body id="grilla">
+<body id="grilla__musica">
     <!-- header -->
     <header>
         <h2 class="indie__arg"> INDIE.ARG </h2>
@@ -31,61 +31,63 @@
         </nav>
     </header>
 
-    <!-- seccion musica recomendada -->
-    <section class="musica__recomendada">
-        <div class="IWLG">
-            <h4>I Wont Let Go - Arimaya</h4>
-            <img src="../imagenes/arimaya.png">
-            <audio controls>
-                <source src="../music/y2mate.com - ARIMAYA  I Wont Let Go Official Audio.mp3" type="audio/mp3">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
+    <main>
 
-        <div class="MN">
-            <h4>My Name - Arimaya</h4>
-            <img src="../imagenes/arimaya.png">
-            <audio controls>
-                <source src="../music/y2mate.com - My Name.mp3" type="audio/mp3">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
+        <!-- seccion musica recomendada -->
+        <section class="musica__recomendada">
+            <div class="IWLG">
+                <h4>I Wont Let Go - Arimaya</h4>
+                <img src="../imagenes/arimaya.png">
+                <audio controls>
+                    <source src="../music/y2mate.com - ARIMAYA  I Wont Let Go Official Audio.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
 
-        <div class="OL">
-            <h4>Oh Lord - Arimaya</h4>
-            <img src="../imagenes/ohlord.png">
-            <audio controls>
-                <source src="../music/y2mate.com - ARIANE  Oh Lord Spanish Lyric Video.mp3" type="audio/mp3">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-    </section>
+            <div class="MN">
+                <h4>My Name - Arimaya</h4>
+                <img src="../imagenes/arimaya.png">
+                <audio controls>
+                    <source src="../music/y2mate.com - My Name.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
 
-    <!-- seccion formulario de busqueda -->
-    <section class="form__musica">
-        <div class="div__form">
-            <form action="/search">
-                <label class="que__buscas" for="musbus">¿Qué buscás?</label>
-                <input class="palabras__clave" type="text" id="palabras__clave" name="musbus" required
-                    placeholder="Ingrese palabras clave. P/ej: Canción + Artista">
-                <div class="genero">
-                    <label for="genero__musica">Escoge un género</label>
-                    <select name="genero__musica" id="genmus">
-                        <option value="Pop">Pop</option>
-                        <option value="Rock">Rock</option>
-                        <option value="Jazz">Jazz</option>
-                        <option value="Soul">Soul</option>
-                        <option value="balada">Balada</option>
-                        <option value="urbana">Urbana</option>
-                        <option value="Otro">Otro</option>
-                    </select>
-                </div>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
+            <div class="OL">
+                <h4>Oh Lord - Arimaya</h4>
+                <img src="../imagenes/ohlord.png">
+                <audio controls>
+                    <source src="../music/y2mate.com - ARIANE  Oh Lord Spanish Lyric Video.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </section>
 
-    </section>
+        <!-- seccion formulario de busqueda -->
+        <section class="form__musica">
+            <div class="div__form__musica">
+                <form action="/search">
+                    <label class="que__buscas__musica" for="musbus">¿Qué buscás?</label>
+                    <input class="palabras__clave__musica" type="text" id="palabras__clave" name="musbus" required
+                        placeholder="Ingrese palabras clave. P/ej: Canción + Artista">
+                    <div class="genero__musica">
+                        <label for="genero__musica">Escoge un género</label>
+                        <select name="genero__musica" id="genmus">
+                            <option value="Pop">Pop</option>
+                            <option value="Rock">Rock</option>
+                            <option value="Jazz">Jazz</option>
+                            <option value="Soul">Soul</option>
+                            <option value="balada">Balada</option>
+                            <option value="urbana">Urbana</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
 
+        </section>
+    </main>
     <!-- footer -->
     <footer>
 

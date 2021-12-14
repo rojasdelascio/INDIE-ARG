@@ -10,11 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kenia&family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/cine-style.css">
+    <link rel="stylesheet" href="../styles/index-style.css">
 
 </head>
 
-<body id="grilla">
+<body id="grilla__cine">
 
     <header class="header">
         <h2 class="indie__arg"> INDIE.ARG </h2>
@@ -27,66 +27,68 @@
         </nav>
     </header>
 
-    <form class="form" action="/search">
-        <div class="form__div">
-            <h2> ¿Qué buscás?</h1>
-                <input type="text" id="busqueda" name="bqda" required placeholder="inserta palabras clave">
-                <div>
-                    <label for="genero">Género</label>
-                    <select name="genero">
-                        <option value="terror">Terror</option>
-                        <option value="drama">Drama</option>
-                        <option value="comedia">Comedia</option>
-                        <option value="documental">Documental</option>
-                    </select>
-                </div>
-                <ul class="checkbox">
-                    <li> <label for="cortos">Cortos</label>
-                        <input type="checkbox" id="cortos" name="cts">
-                    </li>
-                    <li><label for="series">Series</label>
-                        <input type="checkbox" id="series" name="srs">
-                    </li>
-                    <li><label for="skits">Skits</label>
-                        <input type="checkbox" id="skits" name="skts">
-                    </li>
+    <main>
 
-                </ul>
-                <button type="submit">Enviar</button>
-        </div>
-    </form>
+        <form class="form__cine" action="/search">
+            <div class="form__div__cine">
+                <h2> ¿Qué buscás?</h1>
+                    <input type="text" id="busqueda" name="bqda" required placeholder="inserta palabras clave">
+                    <div>
+                        <label for="genero">Género</label>
+                        <select name="genero">
+                            <option value="terror">Terror</option>
+                            <option value="drama">Drama</option>
+                            <option value="comedia">Comedia</option>
+                            <option value="documental">Documental</option>
+                        </select>
+                    </div>
+                    <ul class="checkbox">
+                        <li> <label for="cortos">Cortos</label>
+                            <input type="checkbox" id="cortos" name="cts">
+                        </li>
+                        <li><label for="series">Series</label>
+                            <input type="checkbox" id="series" name="srs">
+                        </li>
+                        <li><label for="skits">Skits</label>
+                            <input type="checkbox" id="skits" name="skts">
+                        </li>
 
-
-    <section id="grilla__2" class="contenido">
-        <h2 class="titulo__contenido">Contenido</h2>
-
-        <div class="cortos">
-            <h3> Cortos</h3>
-            <a href="https://www.youtube.com/watch?v=Q6tHJKyHbK4&t=4s"><img src="../imagenes/Pravus.png"></a>
-            <img src="../imagenes/Uroboros.png">
-            <a href="https://player.vimeo.com/video/325578406?h=253a0c66e8"><img src="../imagenes/Solipsis.png"></a>
-        </div>
-
-        <div class="skits">
-            <h3>Skits</h3>
-            <a href="https://www.instagram.com/tv/B-qa4amAQG4/?utm_source=ig_web_copy_link"><img
-                    src="../imagenes/lobizon1.png"></a>
-            <a href="https://www.instagram.com/tv/B_gkmbdAd-4/?utm_source=ig_web_copy_link"><img
-                    src="../imagenes/lobizon2.png"></a>
-            <a href="https://www.facebook.com/106208557678933/videos/538764700102530"><img
-                    src="../imagenes/lobizon3.png"></a>
-        </div>
-
-        <div class="series">
-            <h3>Series</h3>
-            <a href="https://www.youtube.com/watch?v=QYLdeb2RAXY"><img src="../imagenes/day22.jpg"></a>
-            <a href="https://www.youtube.com/watch?v=UZp90RnG8PU"><img src="../imagenes/FOCUS.png"></a>
-
-        </div>
-
-    </section>
+                    </ul>
+                    <button type="submit">Enviar</button>
+            </div>
+        </form>
 
 
+        <section id="grilla__cine__2" class="contenido">
+            <h2 class="titulo__contenido">Contenido</h2>
+
+            <div class="cortos">
+                <h3> Cortos</h3>
+                <a href="https://www.youtube.com/watch?v=Q6tHJKyHbK4&t=4s"><img src="../imagenes/Pravus.png"></a>
+                <img src="../imagenes/Uroboros.png">
+                <a href="https://player.vimeo.com/video/325578406?h=253a0c66e8"><img src="../imagenes/Solipsis.png"></a>
+            </div>
+
+            <div class="skits">
+                <h3>Skits</h3>
+                <a href="https://www.instagram.com/tv/B-qa4amAQG4/?utm_source=ig_web_copy_link"><img
+                        src="../imagenes/lobizon1.png"></a>
+                <a href="https://www.instagram.com/tv/B_gkmbdAd-4/?utm_source=ig_web_copy_link"><img
+                        src="../imagenes/lobizon2.png"></a>
+                <a href="https://www.facebook.com/106208557678933/videos/538764700102530"><img
+                        src="../imagenes/lobizon3.png"></a>
+            </div>
+
+            <div class="series">
+                <h3>Series</h3>
+                <a href="https://www.youtube.com/watch?v=QYLdeb2RAXY"><img src="../imagenes/day22.jpg"></a>
+                <a href="https://www.youtube.com/watch?v=UZp90RnG8PU"><img src="../imagenes/FOCUS.png"></a>
+
+            </div>
+
+        </section>
+
+    </main>
 
     <footer>
         <ul>

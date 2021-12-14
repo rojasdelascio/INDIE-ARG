@@ -79,7 +79,7 @@ header nav{
 
     /* grillas */
 
-#grilla {
+#grilla__cine {
 
 display:grid;
 grid-template-areas:
@@ -90,7 +90,7 @@ grid-template-rows: 1fr 4fr 1fr;
 grid-template-columns: 400px 1010px;
 }
 
-#grilla__2{
+#grilla__cine__2{
     padding:20px;
     display:grid;
     grid-template-areas:
@@ -104,7 +104,7 @@ grid-template-columns: 400px 1010px;
 
 /* main  */
 /* filtro izquierda */
-.form{
+.form__cine{
     grid-area:form;
     background-image: url("../imagenes/mountain.png");
     background-position:Center;
@@ -114,7 +114,7 @@ grid-template-columns: 400px 1010px;
     top:13px;
     
 }
-.form__div{
+.form__div__cine{
     background-color:rgba(212, 177, 163, 0.459);
     height:350px;
     width:270px;
