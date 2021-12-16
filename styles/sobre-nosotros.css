@@ -93,7 +93,7 @@ header nav{
     /* main */
 
     /* grilla */
-    #grilla{
+    #grilla__sn{
 display:grid;
 grid-template-areas: 
 "header header"

@@ -84,7 +84,7 @@ grid-area:header;
 
 
             /* grilla */
-            #grilla {
+            #grilla__musica {
                 display:grid;
                 grid-template-areas:
                 "header header header"
@@ -163,7 +163,7 @@ margin:10px;
 
 }
 
-.div__form{
+.div__form__musica{
 
 position:relative;
 top:30px;

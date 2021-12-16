@@ -127,18 +127,18 @@ position:relative;
 right:20px;
 }
 
-.form button,select,input{
+.form__cine button,select,input{
 border-radius:30%;
 margin:10px;
 }
 
-.form button:hover ,select:hover,input:hover{
+.form__cine button:hover ,select:hover,input:hover{
 
     background-color: gold;
 
 }
 
-.form button{
+.form__cine button{
     background-color:rgba(240, 186, 154, 0.58);
     width: 100px;
     padding:5px;

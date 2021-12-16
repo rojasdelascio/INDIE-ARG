@@ -4,6 +4,7 @@ body{
     margin:0;
     padding:0;
     height: 100vh;
+    overflow-x:hidden;
 }
 body{
     display:flex;
@@ -18,17 +19,7 @@ body{
         body a:visited{
             color:slategrey;
             }
-/* grid index */
-#grilla {
-display:grid;
-grid-template-areas:
-"header header header"
-"filtro__principal filtro__principal filtro__principal"
-"recomendados__background recomendados__background recomendados__background"
-"footer footer footer";
-grid-template-rows: 105px 450px 800px 100px;
-grid-template-columns: 3fr 3fr 3fr;
-}
+
 
 /***** header todos ****/
 .indie__arg{
@@ -36,7 +27,6 @@ grid-template-columns: 3fr 3fr 3fr;
     font-family: 'Permanent Marker', cursive;
     font-size:30px;
     position:relative;
-    top:-10px;
     right:0px;
     padding:10px;
         
@@ -45,23 +35,20 @@ grid-template-columns: 3fr 3fr 3fr;
 header {
     width:100%;
     height:90px;
-    background-color:#a6605a;
-    position:relative;
-    top:-26px;
-    right:8px;
+    background-color:#ffffff85;
     grid-area:header;
     }
 /* barra de navegacion */
 header nav{
-    background-color: rgba(189, 174, 174, 0.47); 
+    background-color: rgba(201, 0, 0, 0.39); 
     width:auto;
     height:40px;
     position:relative;
-    top:-25px;
+    top:-15px;
     right:0px;
     }
 
-/* elementos de la barra de navegacion (opciones) */
+/* elementos de la barra de navegacion (opciones)
     header nav ul{
     display:flex;
     flex-direction:row;
@@ -93,53 +80,73 @@ header nav{
     
     header nav ul li a:hover{
         color:floralwhite;
-    }
+    } */
 
-/********************index pagina principal***********************/
+/********************INDEX pagina principal***********************/
 
 /* filtro principal -- seccion 1 */
-.form__section{
-    grid-area: filtro__principal;
-    background-color:#F2F0F0D1;
-    position:relative;
-    top:-3px;
-    height:450px;
-    width:1340px;
-    border-color:black;
-    border-width:10px;
+
+/* grid index */
+#grilla__index {
     display:grid;
+    grid-template-areas:
+    "header header header"
+    "main__index main__index main__index"
+    "footer footer footer";
+    grid-template-rows: 90px auto 100px;
+    grid-template-columns: 3fr auto auto;
+    } 
+
+    #main__index{
+grid-area:main__index;
+
+    }
+
+.form__section{
+    
+    background-image:url("../imagenes/index__bg__form.png");
+    background-size:cover;
+    background-position: center;
+    /* position:relative;
+    top:-3px;
+   */
+    width:auto; 
+    height:600px;
+    margin:0px;
+    /* display:grid;
     grid-template-areas:
 ". titulo ."
 ". filtro .";
 grid-template-columns: 400px 400px 400px;
-grid-template-rows: 100px 310px;
+grid-template-rows: 100px 310px; */
 }
 
-.titulo2{ 
-    font-family:"Josefin Sans";
-display:inline-block;
-font-size:30px;
-position:absolute;
-right:50%;
-top:7px;
+.titulo2__index{ 
+    font-family:'Indie Flower', cursive;
+    font-size:55px;
+    position:relative;
+right:-35%;
+top:20%;
 }
 
-.titulo1{
-    grid-area: titulo;
-    font-family:"Josefin Sans";
-font-size:30px;
+.titulo1__index{
+
+    font-family:'Indie Flower', cursive;
+    font-size:55px;
+    position:relative;
+    right:-35%;
+    top:20%;
 }
 
 
 
 /* div creado para separar los inputs con display flex k */
     .filtro__principal__form{
-        grid-area: filtro;
 display:flex;
     flex-direction: column;
     flex-wrap:wrap;
-    width:500px;
-    height:300px; 
+    /* width:500px;
+    height:450px;  */
     font-family:"Josefin Sans";
     justify-content:center;
     align-items:center;
@@ -149,6 +156,8 @@ display:flex;
     left:350px;
     top:101px; */
     border-radius: 10px;
+    position:relative;
+    top:20%;
     }
     
     .que__buscas{
@@ -214,28 +223,28 @@ background-color:#fcdc27b7;
 /* seccion 2 del main. Recomendados */
 .recomendados__background{
     grid-area: recomendados__background;
-background-image: url("../imagenes/mountain.png");
-background-size:1500px;
+background-image: url("../imagenes/index__bg__rec.png");
+background-size:contain;
 background-position:center;
-background-repeat:repeat;
-height:800px;
+height:590px;
 width:auto;
-position:relative;
+/* width:auto; */
+/* position:relative;
 top:-3px;
-right:8px;
+right:8px; */
 }
 
 /* elementos que apareceran recomendados */
 .recomendados__elementos{
+    
 display:flex;
 flex-direction:row;
 flex-wrap:wrap;
-align-content:center;
+background-color:rgba(212, 177, 163, 0.5);
 justify-content:space-evenly;
 font-family:"Josefin Sans";
 position:relative;
-top:84px;
-right:0px;
+top:30%;
 }
 
 .recomendados__elementos h4,h6{
@@ -243,23 +252,24 @@ right:0px;
 font-size:13px;
 padding:1px;
 position:relative;
-top:0px;
+top:4%;
 right:-32px;
 
 }
 
 
 .recomendados__elementos img{
-width:350px;
-height:200px;
+  
+width:280px;
+height:180px;
 padding:10px;
 }
 
 .recomendados__elementos img:hover{
 
 border: 2px inset #ffd700;
-width:370px;
-height:220px;
+width:350px;
+height:200px;
 
 }
 
@@ -269,36 +279,6 @@ height:220px;
 }
 
 
-/* footer  */
-footer {
-    grid-area:footer;
-background-color:#d4b1a3;
-height:50px;
-position:relative; 
-width:1342px;
-top:-5px;
-font-family:"Josefin Sans";
-
-}
-
-footer ul{
-list-style-type:none;
-display:flex;
-flex-direction:row;
-flex-wrap:wrap;
-justify-content:start;
-}
-
-footer ul li{
-    color:black;
-    padding:5px 8px 50px 9px;
-    }
-
-footer ul li a:hover{
-
-color:floralwhite;
-
-    }
 
     /* ***************seccion CINE*************************** */
 
@@ -306,20 +286,18 @@ color:floralwhite;
 
         display:grid;
         grid-template-areas:
-        "header header"
-        "main main"
-        "footer footer";
-        grid-template-rows: 1fr 4fr 1fr;
-        grid-template-columns: 400px 1010px;
+        "header"
+        "main"
+        "footer";
+        grid-template-rows: 90px auto 100px;
+        
         }
         
-        
-        
-        main {
+    
+        #main__cine {
 grid-area:main;
-
         }
-
+/* 
         #grilla__cine__3{
         
             display:grid;
@@ -328,44 +306,46 @@ grid-area:main;
             "form__cine grilla2";
             grid-template-rows: 2fr 2fr;
             grid-template-columns: 300px 500px; 
-        }
+        } */
 
         .form__cine{
-            grid-area:form__cine;
-            background-image: url("../imagenes/mountain.png");
+           
+            background-image: url("../imagenes/cine__bg__form2.png");
             background-position:Center;
-            background-size:1500px;
-            padding:50px;
-            position:relative;
-            top:13px;
-            
+            background-size:cover;
+            padding:20px;
+            width:100%;
+                height:100%;  
         }
 
-        #grilla__cine__2{
+        /* /* #grilla__cine__2{
+            width:100%;
             grid-area:grilla2;
             padding:20px;
-            display:grid;
-            grid-template-areas:
+            display:flex;
+            flex-direction:row;
+            flex-wrap:wrap;
+            /* grid-template-areas:
             ". contenido ."
             "cortos cortos cortos"
             "skits skits skits"
-            "series series series";
-            grid-template-rows: 1fr 2fr 2fr 2fr;
-            grid-template-columns: 3fr 3fr 3fr;    
-        }
+            "series series series"; */
+            /* grid-template-rows: 1fr 2fr 2fr 2fr;
+            grid-template-columns: 3fr 3fr 3fr;  }    */
+    
 
         .form__div__cine{
-            background-color:rgba(212, 177, 163, 0.459);
-            height:350px;
-            width:270px;
+            background-color:rgba(211, 78, 223, 0.329);
+            height:auto;
             display:flex;
+            
             flex-direction:column;
             flex-wrap:wrap;
         align-items:center;
         font-family:"Josefin Sans";
-        position:relative;
-        right:20px;
+        padding:20px;
         }
+
         
         .form__cine button,select,input{
         border-radius:30%;
@@ -379,82 +359,92 @@ grid-area:main;
         }
         
         .form__cine button{
-            background-color:rgba(240, 186, 154, 0.58);
+            background-color:rgba(245, 23, 197, 0.58);
             width: 100px;
             padding:5px;
-            
         }
         
+        .que__buscas__cine {
+
+            padding:10px;
+        }
         .checkbox {
         list-style-type:none;
         }
         
         /* seccion recomendados */
         .contenido{
-            background-image: url("../imagenes/mountain.png");
-        background-size:1500px;
+            background-image: url("../imagenes/cine__bg__cont2.png");
+        background-size:cover;
         background-position:center;
-        background-repeat:repeat;
-            grid-area:contenido;
-            background-color:maroon;
-            position:relative;
-            top:13px;
-            width:963px;
+        background-repeat:repeat; 
+            width:auto;
+            height:auto;
         }
-        
-        .titulo__contenido{
+
+
+
+
+         .contenido__cine__div{
+background-color:rgba(211, 78, 223, 0.329);
+
+
+         }
+
+        .titulo__contenido, .titulo__cine__filtro{
         grid-area:contenido;
-        font-family:"Josefin Sans";
-        font-size:40px;
+        font-family:'Indie Flower', cursive;
+        font-size:60px;
         position:relative;
-        right:-50px;
+        right:-500px;
+        
         }
         
         .cortos img, .skits img, .series img{
-            width:210px;
-            height:120px;
+            width:150px;
+            height:80px;
             border:rgba(248, 62, 5, 0.158) solid 3px;
         }
         
         .cortos{
-            font-family:"Josefin Sans";
-            font-size:25px;
+            font-family:'Indie Flower', cursive;
+            font-size:40px;
                     display:flex;
                     flex-direction:row;
                 flex-wrap:wrap;
                 justify-content:space-around;
         grid-area:cortos;
-        padding:20px;
+        padding:10px;
         
                 }
         
         .series{
-            font-family:"Josefin Sans";
-            font-size:25px;
+            font-family:'Indie Flower', cursive;
+            font-size:40px;
             display:flex;
                     flex-direction:row;
                     flex-wrap:wrap;
         justify-content:space-around;
             grid-area:series;
-            padding:20px;
+            padding:10px;
         }
         
         .skits{
-            font-family:"Josefin Sans";
-            font-size:25px;
+            font-family:'Indie Flower', cursive;
+            font-size:40px;
             display:flex;
             flex-direction:row;
         flex-wrap:wrap;
         justify-content:space-around;
         grid-area:skits;   
-        padding:20px;   
+        padding:10px;   
         }
         
         .skits img:hover, .cortos img:hover, .series img:hover{
         
             border: 2px inset #ffd700;
-            width:250px;
-            height:150px;
+            width:200px;
+            height:100px;
             
             }
 
@@ -604,69 +594,103 @@ grid-area:main;
             display:grid;
             grid-template-areas:
             "header header header"
-            "form musica musica"
+            "main__musica main__musica main__musica"
             "footer footer footer";
-            grid-template-rows: 110px 500px 50px;
-            grid-template-columns: 300px 551px 500px;
+            grid-template-rows: 90px auto 100px;
+            grid-template-columns: 1fr 3fr auto;
+            }
+
+            #main__musica{
+
+              grid-area: main__musica;  
             }
 
             body .musica__recomendada{
                 display:flex;
                 flex-direction: column;
                 flex-wrap:wrap;
-                grid-area: musica;
-                background-image: url("../imagenes/mountain.png");
-                background-size:1100px;
+                background-image: url("../imagenes/music__bg__rec.png");
+                background-size:cover;
                 background-position:center;
                 background-repeat:repeat;
                 padding:50px;
-                position:relative;
-                top:-7px;
                 font-family:"Josefin Sans";
+                height:auto;
+            }
+
+            .musica__recomendada__div{
+                background-color:rgba(41, 206, 69, 0.288); 
+                padding:40px;  
+                border-radius:8%;
             }
 
             .musica__recomendada img{
+                
                 width:60px;
                 height:60px;
+                position:relative;
+                right:-30%;
+            }
+
+            .form__musica h4, .musica__recomendada h4{
+
+                font-family:'Indie Flower', cursive;
+        font-size:40px;
+        position:Relative;
+        right:-35%;
+        padding:20px;
             }
 .musica__recomendada audio{
+    
 height:40px;
 width:200px;
+position:relative;
+                right:-30%;
+}
 
+.musica__recomendada h5{
+
+    position:relative;
+                right:-30%;
 }
             body .form__musica{
-            grid-area:form;
-            background-image: url("../imagenes/mountain.png");
-                background-size:900px;
+     
+            background-image: url("../imagenes/music__bg__form.png");
+                background-size:cover;
                 background-position:center;
                 background-repeat:repeat;
-                position:relative;
-                top:-7px;
+                height:auto;
+                
             }
 
 .form__musica form{
 display:flex;
-flex-direction:column;
+flex-direction:row;
 flex-wrap: wrap;
-justify-content: space-evenly;
-background-color:rgba(212, 177, 163, 0.459);
-height:200px;
-width:120px;
-padding:30px;
+justify-content: space-evenly; 
+background-color:rgba(41, 206, 69, 0.288); 
+padding:40px;
 font-family:"Josefin Sans";
-font-size:14px;
-align-content:center;
+font-size:20px;
+/* align-content:center; */
 border-radius:10%;   
+width:auto;
+}
+
+
+.que__buscas__musica{
+
+    font-size:35px;
 }
 
 .form__musica form input,button, select{
 
-border-radius:20%;
+border-radius:40%;
 margin:10px;
 }
 
 .form__musica form button{
-background-color:rgba(240, 186, 154, 0.58);
+background-color:rgba(48, 165, 19, 0.637);
 width: 80px;
 padding:3px;
 position:relative;
@@ -681,21 +705,27 @@ background-color: gold;
 
 .div__form__musica{
 
-position:relative;
-top:30px;
-right:-50px;
+padding:50px;
 }
 
 .form__musica form input, select, button{
-font-size:12px;
+font-size:15px;
 
 }
+
+.form__musica input{
+    width:300px;
+}
             
+.genero__musica{
+    position:relative;
+    top:10px;
+}
 
 
 /* *******************seccion QUERES SER PARTE************************************ */
 /* utilizando grids en la seccion central */
-#grilla__qsp {
+/* #grilla__qsp {
     display:grid;
     grid-template-areas:
     "texto texto texto"
@@ -703,28 +733,24 @@ font-size:12px;
     "form form img";
     grid-template-rows: 200px 900px auto;
     grid-template-columns: 250px 400px 695px; 
-    }
+    } */
     
 /* texto inicial "¿queres ser parte de la comunidad?" y el parrafo de abajo */
-.texto__qsp{
+#texto__qsp{
     font-family:"Josefin Sans";
-grid-area:texto;
-background-color:lavenderblush;
+/* grid-area:texto; */
+background-image:url("../imagenes/qsp__bg__form2png.png")
 position:relative;
 height:auto;
 width:auto;
-top:13px;
-right:-2px;
+padding:40px;
 }
 
-.texto__qsp h3,p{
-    text-align:center;
-    position:relative;
-    right:-100px;
-}
 
 .texto__qsp h3{
-    font-size:17px; 
+    font-family:'Indie Flower', cursive;
+        font-size:40px;
+    
 }
 
 .texto__qsp p{
@@ -732,23 +758,40 @@ right:-2px;
     font-size:15px;
 }
 
+.titulo__qsp{
+
+    font-family:'Indie Flower', cursive;
+    font-size:40px;
+    position:relative;
+    right:-0%;
+}
+
+.texto__qsp h3,p{
+    text-align:center;
+   width:80%;
+   position:relative;
+   right:-20%;
+   padding:20px;
+}
+
+
 .form__qsp{  
     font-family:"Josefin Sans";
-    grid-area:form;
+    /* grid-area:form; */
     background-color:rgba(212, 177, 163, 0.178);
-background-image: url("../imagenes/mountain.png");
+background-image: url("../imagenes/qsp__bg__form.png");
 background-size:cover;
+padding:40px;
 
 }
 
 .form__div__qsp{
     background-color:rgba(212, 177, 163, 0.459);
-height:700px;
-width:550px;
-overflow:hidden;
+padding:100px;
 position:relative;
-top:90px;
-right:-45px;
+right:-10%;
+
+width:80%;
 }
 .preparado__qsp{
 /* position:relative;
@@ -760,9 +803,9 @@ right:0px; */
     display:flex;
     flex-direction: column;
     flex-wrap: nowrap;
-align-items:space-evenly;
+align-items:space-between;
 justify-content: space-evenly;
-height:600px;
+height:auto;
 }
 
 .form__div__qsp form p,label,input {
@@ -784,11 +827,11 @@ height:1px;
 
 .form__qsp input, textarea, button{
 
-    background-color: rgb(233, 238, 196);
+    background-color: #ffffff;
     border-radius:90px;
 }
 .nombre__qsp input:hover, .apellido__qsp input:hover, .edad__qsp input:hover, .comentarios__qsp textarea:hover, .link__qsp input:hover{
-    background-color:khaki;
+    background-color:rgba(248, 247, 233, 0.575);
     
 }
 
@@ -847,7 +890,7 @@ padding:10px;
 }
 
 .img__qsp{
-    grid-area:img;
+    /* grid-area:img; */
     background-color:white;
     background-image: url("../imagenes/mountain.png");
     background-size:cover;
@@ -858,11 +901,10 @@ padding:10px;
 
 .img__qsp img{
     border-radius:10px;
-height:500px;
-width:600px;
+height:1100px;
+width:1100px;
 position:relative;
-top:100px;
-right:0px;
+
 }
 
 .form__qsp button{
@@ -887,29 +929,26 @@ background-color:khaki;
 /* *******************seccion SOBRE NOSOTROS***************** */
 
     /* grilla */
-    #grilla__sn{
+     /* #grilla__sn{
         display:grid;
         grid-template-areas: 
-        "header header"
-        "intro equipo"
-        "footer footer";
-        grid-template-rows: 100px 350px 200px;
-        grid-template-columns: 500px 845px;
-            }
-        
+        "header header header"
+        "main__sn main__sn main__sn"
+        "footer footer footer";
+        grid-template-rows: 90px auto 100px;
+    grid-template-columns: 3fr auto auto;
+            }  */
+
             /* seccion 1 div */
         .sobre__nosotros{
-            grid-area:intro;
-            font-family:"Josefin Sans";
-            text-align:left;
+            /* grid-area:intro; */
+            font-family:"Josefin Sans",  sans-serif;
             font-size: 13px;
             background-color:#9c716d7c;
-            height: 350px;
-            width:500px;
-            position:relative;
-            top:3px;
-            right:0px;
-            background-image: url("../imagenes/mountain.png");
+            height: auto;
+            width:auto;
+            
+            background-image: url("../imagenes/sn__bg__1.png");
         background-size:cover;
         background-position:center;
         background-repeat:repeat;
@@ -917,77 +956,103 @@ background-color:khaki;
         }
         /* seccion 1 texto */
         .sobre__nosotros__texto{
-        
+            font-family: 'Josefin Sans', sans-serif;
         text-align:justify;
-        width: 450px;
-        font-size:17px;
-        position:relative;
-        right:-5%;
+        width:80%;
+        padding:20px; 
+        font-size:23px;
+        
+      
         }
         /* seccion 1 titulo */
-        .sobre__nosotros h5{
         
-            font-size: 15px;
-        text-align:center;
-        padding:10px;
+
+        .titulo__sn{
+            font-family:'Indie Flower', cursive;
+            font-size:50px;
+            padding:20px;
+            position:relative;
+            right:-22%;
+
         }
         
         /* seccion 2  */
         .nuestro__equipo{
-            grid-area:equipo;
+            /* grid-area:equipo; */
         font-family:"Josefin Sans";
-        width:842px;
-        height:350px;
+        height:auto;
+        width:auto;
         background-color:lavenderblush;
-        background-image: url("../imagenes/mountain.png");
+        background-image: url("../imagenes/sn__bg__2.png");
         background-size:cover;
         background-position:center;
         background-repeat:repeat;
-        position:relative;
-        top:3px;
+      
         }
         
         /* seccion 2 lista  */
-        .nuestro__equipo ul{
-            list-style-type:none;
-        display:flex;
-        flex-direction:row;
-        flex-wrap:wrap;
-        justify-content:space-evenly;
-        align-items: center;
+        .nuestro__equipo__miembro{
+           position:relative;
+           right:-30%;
         }
         
         /* seccion 2 contenedor lista */
-        .nuestro__equipo ul li{
-        width:150px;
-        height:200px;
-        }
+      
         
         /* seccion 2 titulo elementos de lista  */
         .nuestro__equipo .nombre{
-            display:inherit;
-            flex-wrap: wrap;
-            font-size:13px;
+           
+            font-size:20px;
+            position:relative;
+            right:-10%;
            
         }
         
         /* seccion 2 pie elementos de lista */
         .nuestro__equipo .descripcion{
-            display:inherit;
-            flex-wrap: wrap;
-            text-align:left;
+            
+            font-size:17px;
+            position:relative;
+            right:10%;
+            padding:15px;
+            width:80%;
         }
         
         .nuestro__equipo img{
-        
-        display:inherit;
-        flex-wrap:wrap;
+        width:250px;
+        height:250px;
+        border-radius: 10%;
+        border:rgba(255, 255, 255, 0.288) solid ;
         }
         
         /* seccion 2  titulo general*/
-        .nuestro__equipo h5{
         
-            font-size: 15px;
-            text-align: center;
-            padding:19px;
-        }
+        /* footer  */
+footer {
+    grid-area:footer;
+background-color:#d4b1a3;
+height:50px;
+
+width:100%;
+font-family:"Josefin Sans";
+
+}
+
+footer ul{
+list-style-type:none;
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+justify-content:start;
+}
+
+footer ul li{
+    color:black;
+    padding:5px 8px 50px 9px;
+    }
+
+footer ul li a:hover{
+
+color:floralwhite;
+
+    }
