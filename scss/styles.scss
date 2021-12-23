@@ -4,6 +4,7 @@
 @import "../scss/footer.scss";
 @import "../scss/index/form__index.scss";
 @import "../scss/cine/cine__todo.scss";
+@import "../scss/lit/lit__todo.scss";
 $main-font: "Josefin Sans";
 $titles-font:'Indie Flower';
 $logo-font:'Permanent Marker';
@@ -127,138 +128,6 @@ body {
     border: 2px inset #ffd700;
     width: 350px;
     height: 200px;
-}
-
-
-/* *************Seccion LITERATURA*********************** */
-
-#grilla__lit {
-    display: grid;
-    grid-template-areas: "header" "main__lit" "footer";
-    grid-template-rows: 1fr auto 1fr;
-}
-
-#main__lit {
-    grid-area: main__lit;
-    display: grid;
-    grid-template-areas: "filtro__lit" "contenido__lit";
-    grid-template-rows: 2fr 2fr;
-    ;
-}
-
-body .recomendados__lit {
-    grid-area: contenido__lit;
-    background-image: url("../imagenes/mountain.png");
-    background-size: cover;
-    display: Grid;
-    grid-template-areas: ". titulo ." "contenido contenido contenido";
-    grid-template-rows: 100px 400px;
-    grid-template-columns: 300px 300px 300px;
-    position: relative;
-    top: -2px;
-    width: 1002px;
-    img {
-        width: 200px;
-        height: 200px;
-        border-radius: 30%;
-    }
-    &__titulo2 {
-        grid-area: contenido;
-        font-family: $titles-font, cursive;
-        font-size: 60px;
-        position: relative;
-        right: 50%;
-    }
-    &__contenido {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        grid-area: contenido;
-        position: relative;
-        top: -30px;
-        font-family: $main-font;
-        &__normal {
-            h3 {
-                position: Relative;
-                top: 0px;
-                right: -50px;
-            }
-            h4 {
-                position: Relative;
-                top: 0px;
-                right: -30px;
-            }
-        }
-        &__comandante {
-            h3 {
-                position: Relative;
-                top: 0px;
-                right: -50px;
-            }
-            h4 {
-                position: Relative;
-                top: 0px;
-                right: -30px;
-            }
-        }
-        &__carlos {
-            h3 {
-                position: Relative;
-                top: 0px;
-                right: -50px;
-            }
-            h4 {
-                position: Relative;
-                top: 0px;
-                right: -30px;
-            }
-        }
-    }
-}
-
-.filtro__lit {
-    grid-area: filtro__lit;
-    background-image: url("../imagenes/mountain.png");
-    background-size: cover;
-    position: Relative;
-    top: -2px;
-    &__titulo1 {
-        grid-area: contenido;
-        font-family: $titles-font, cursive;
-        font-size: 60px;
-        position: relative;
-        right: 50%;
-    }
-    button,
-    select,
-    input {
-        border-radius: 30%;
-        margin: 10px;
-    }
-    button:hover,
-    select:hover,
-    input:hover {
-        background-color: gold;
-    }
-    button {
-        background-color: rgba(240, 186, 154, 0.58);
-        width: 100px;
-        padding: 5px;
-    }
-    &__form {
-        background-color: rgba(212, 177, 163, 0.459);
-        height: 350px;
-        width: 270px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        font-family: $main-font;
-        position: relative;
-        right: -40px;
-        top: 25px;
-    }
 }
 
 
