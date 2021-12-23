@@ -1,0 +1,84 @@
+                                        /***** header todos ****/
+                                        
+                                        $main-font: "Josefin Sans";
+                                        $titles-font:'Indie Flower';
+                                        $logo-font:'Permanent Marker';
+                                        .indie__arg {
+                                            font-family: $logo-font, cursive;
+                                            font-size: 30px;
+                                            position: relative;
+                                            right: 0px;
+                                            padding: 10px;
+                                            -webkit-animation: 3s linear 0s 2 alternate move_indiearg;
+                                            animation: 3s linear 0s 2 alternate move_indiearg;
+                                        }
+                                        
+                                        @-webkit-keyframes move_indiearg {
+                                            from {
+                                                margin-left: 0%;
+                                            }
+                                            to {
+                                                margin-left: 20%;
+                                            }
+                                        }
+                                        
+                                        @keyframes move_eye {
+                                            from {
+                                                margin-left: -20%;
+                                            }
+                                            to {
+                                                margin-left: 100%;
+                                            }
+                                        }
+                                        
+                                        header {
+                                            width: 100%;
+                                            height: 120px;
+                                            background-color: #ffffff85;
+                                            grid-area: header;
+                                            nav {
+                                                width: 100%;
+                                                height: auto;
+                                            }
+                                        }
+                                        /* barra de navegacion */
+                                        
+                                        .home__mp {
+                                            font-family: $main-font;
+                                            font-size: 1.2rem;
+                                            &:hover,
+                                            header nav ul li a:hover {
+                                                color: floralwhite;
+                                            }
+                                        }
+                                        
+                                        .elementos__header {
+                                            display: flex;
+                                            flex-direction: row;
+                                            justify-content: space-between;
+                                            flex-wrap: nowrap;
+                                            padding: 10px;
+                                            font-family: $main-font;
+                                            font-size: 1.2rem;
+                                            width: 80%;
+                                            position: relative;
+                                            right: -10%;
+                                            ul {
+                                                display: flex;
+                                                flex-direction: row;
+                                                li {
+                                                    list-style-type: none;
+                                                    padding: 10px;
+                                                    a {
+                                                        color: black;
+                                                        border-color: black;
+                                                        border-style: solid;
+                                                        border-width: 1px;
+                                                        padding: 7px;
+                                                        a:hover {
+                                                            color: floralwhite;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }

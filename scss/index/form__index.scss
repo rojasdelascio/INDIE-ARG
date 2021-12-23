@@ -1,0 +1,75 @@
+$main-font: "Josefin Sans";
+$titles-font:'Indie Flower';
+$logo-font:'Permanent Marker';
+.index__form {
+    grid-area: form;
+    background-image: url("../imagenes/index__bg__form1.png");
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    &__titulo1 {
+        font-family: $titles-font, cursive;
+        font-size: 3rem;
+        position: relative;
+        right: -35%;
+        top: 20%;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-family: $main-font;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        background-color: rgba(212, 177, 163, 0.178);
+        border-radius: 10px;
+        height: 40em;
+        &____qb {
+            display: block;
+            font-size: 2rem;
+            padding: 24px;
+            position: relative;
+            right: -5%;
+        }
+        &__pc {
+            padding: 11px;
+            border-color: darkgray;
+            border-radius: 30px;
+            width: 30rem;
+        }
+        &__checkbox {
+            list-style-type: none;
+            display: flex;
+        }
+        &___button {
+            width: 10rem;
+            height: 3rem;
+            background-color: rgba(212, 110, 51, 0.58);
+            border-radius: 90px;
+            position: relative;
+            right: -3%;
+        }
+        &__genero {
+            &__dropdown {
+                padding: 24px;
+                select:hover {
+                    background-color: #fcdc27b7;
+                }
+            }
+        }
+        &__button:hover {
+            background-color: gold;
+            color: floralwhite;
+        }
+        &__pc:hover {
+            background-color: #ffd90085;
+        }
+    }
+}
+
+.index__form__form .index__form__form .index__form__form__button input[type=checkbox]:hover {
+    background-color: gold;
+}

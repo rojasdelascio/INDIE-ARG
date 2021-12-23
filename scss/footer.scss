@@ -1,0 +1,25 @@
+$main-font: "Josefin Sans";
+$titles-font:'Indie Flower';
+$logo-font:'Permanent Marker';
+footer {
+    grid-area: footer;
+    background-color: #d4b1a3;
+    height: auto;
+    width: 100%;
+    font-family: $main-font;
+    font-size: 1rem;
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        position: relative;
+        top: 15%;
+        padding: 0px;
+        li {
+            color: black;
+            padding: 6px;
+        }
+    }
+}
