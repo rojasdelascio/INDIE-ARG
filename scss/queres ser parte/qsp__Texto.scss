@@ -1,0 +1,33 @@
+#texto__qsp {
+    font-family: $main-font;
+    grid-area: texto;
+    background-image: url("../imagenes/qsp__bg__form2png.png");
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 40px;
+    h3 {
+        font-family: $titles-font, cursive;
+        font-size: 40px;
+        text-align: center;
+        width: 80%;
+        position: relative;
+        right: -20%;
+        padding: 20px;
+    }
+    p {
+        width: 1000px;
+        font-size: 15px;
+        text-align: center;
+        width: 80%;
+        position: relative;
+        right: -20%;
+        padding: 20px;
+    }
+    &__titulo {
+        font-family: $titles-font, cursive;
+        font-size: 40px;
+        position: relative;
+        right: -0%;
+    }
+}

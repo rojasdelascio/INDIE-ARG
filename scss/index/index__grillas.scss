@@ -1,0 +1,23 @@
+@import "../index/index__rec.scss";
+@import "../index/index__fotos.scss";
+@import "../index/form__index.scss";
+$main-font: "Josefin Sans";
+$titles-font:'Indie Flower';
+$logo-font:'Permanent Marker';
+
+/* grid index */
+
+#grilla__index {
+    display: grid;
+    grid-template-areas: "header header header" "main__index main__index main__index" "footer footer footer";
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 3fr 5fr auto;
+}
+
+#main__index {
+    grid-area: main__index;
+    display: grid;
+    grid-template-areas: "form foto" "recomendados recomendados";
+    grid-template-rows: 2fr 2fr;
+    grid-template-columns: 3fr 3fr;
+}

@@ -1,0 +1,40 @@
+body .musica__recomendada {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url("../imagenes/music__bg__rec.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    padding: 50px;
+    font-family: $main-font;
+    height: auto;
+    img {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        right: -30%;
+    }
+    h4 {
+        font-family: $titles-font, cursive;
+        font-size: 40px;
+        position: Relative;
+        right: -35%;
+        padding: 20px;
+    }
+    audio {
+        height: 40px;
+        width: 200px;
+        position: relative;
+        right: -30%;
+    }
+    h5 {
+        position: relative;
+        right: -30%;
+    }
+    &__div {
+        background-color: rgba(41, 206, 69, 0.288);
+        padding: 40px;
+        border-radius: 8%;
+    }
+}

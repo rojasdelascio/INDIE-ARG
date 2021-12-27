@@ -1,0 +1,48 @@
+.recomendados__background {
+    grid-area: recomendados;
+    background-image: url("../imagenes/index__bg__rec.png");
+    background-size: contain;
+    background-position: center;
+    width: auto;
+}
+
+.recomendados__elementos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(212, 177, 163, 0.5);
+    justify-content: space-evenly;
+    font-family: $main-font;
+    position: relative;
+    top: 30%;
+    h4,
+    h6 {
+        font-size: 13px;
+        padding: 1px;
+        position: relative;
+        top: 4%;
+        right: -20%;
+    }
+    img {
+        width: 280px;
+        height: 180px;
+        padding: 10px;
+    }
+    li {
+        display: inline-block;
+    }
+}
+
+.recomendados__elementos img:hover {
+    border: 2px inset #ffd700;
+    width: 350px;
+    height: 200px;
+}
+
+.titulo2__index {
+    font-family: $titles-font, cursive;
+    font-size: 3rem;
+    position: relative;
+    right: -35%;
+    top: 20%;
+}

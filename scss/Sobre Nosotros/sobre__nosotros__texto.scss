@@ -1,0 +1,26 @@
+.sobre__nosotros {
+    grid-area: sn;
+    font-family: $main-font, sans-serif;
+    font-size: 13px;
+    background-color: #9c716d7c;
+    height: auto;
+    width: auto;
+    background-image: url("../imagenes/sn__bg__1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    &__texto {
+        font-family: $main-font, sans-serif;
+        text-align: justify;
+        width: 80%;
+        padding: 20px;
+        font-size: 23px;
+    }
+    &__titulo {
+        font-family: $titles-font, cursive;
+        font-size: 50px;
+        padding: 20px;
+        position: relative;
+        right: -22%;
+    }
+}

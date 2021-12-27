@@ -1,0 +1,40 @@
+.nuestro__equipo {
+    grid-area: ne;
+    font-family: $main-font;
+    height: auto;
+    width: auto;
+    background-color: lavenderblush;
+    background-image: url("../imagenes/sn__bg__2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    &__titulo {
+        font-family: $titles-font, cursive;
+        font-size: 50px;
+        padding: 20px;
+        position: relative;
+        right: -22%;
+    }
+    img {
+        width: 250px;
+        height: 250px;
+        border-radius: 10%;
+        border: rgba(255, 255, 255, 0.288) solid;
+    }
+    &__miembro {
+        position: relative;
+        right: -30%;
+        &__nombre {
+            font-size: 20px;
+            position: relative;
+            right: -10%;
+        }
+        &__descripcion {
+            font-size: 17px;
+            position: relative;
+            right: 10%;
+            padding: 15px;
+            width: 80%;
+        }
+    }
+}

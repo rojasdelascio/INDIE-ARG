@@ -11,7 +11,7 @@ footer {
     ul {
         list-style-type: none;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
         position: relative;
@@ -20,6 +20,9 @@ footer {
         li {
             color: black;
             padding: 6px;
+            a:hover {
+                color: floralwhite;
+            }
         }
     }
 }

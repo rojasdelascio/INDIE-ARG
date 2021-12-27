@@ -1,0 +1,43 @@
+.filtro__lit {
+    grid-area: filtro__lit;
+    background-image: url("../imagenes/mountain.png");
+    background-size: cover;
+    position: Relative;
+    top: -2px;
+    &__titulo1 {
+        grid-area: contenido;
+        font-family: $titles-font, cursive;
+        font-size: 60px;
+        position: relative;
+        right: 50%;
+    }
+    button,
+    select,
+    input {
+        border-radius: 30%;
+        margin: 10px;
+    }
+    button:hover,
+    select:hover,
+    input:hover {
+        background-color: gold;
+    }
+    button {
+        background-color: rgba(240, 186, 154, 0.58);
+        width: 100px;
+        padding: 5px;
+    }
+    &__form {
+        background-color: rgba(212, 177, 163, 0.459);
+        height: 350px;
+        width: 270px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        font-family: $main-font;
+        position: relative;
+        right: -40px;
+        top: 25px;
+    }
+}

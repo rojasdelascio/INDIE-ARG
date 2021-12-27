@@ -1,0 +1,25 @@
+.fotos__index {
+    grid-area: foto;
+    background-image: url("../imagenes/index__bg__form2-1.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    -webkit-animation: 4s ease-in-out 0s infinite normal change__back;
+    animation: 4s ease-in-out 0s infinite normal change__back;
+}
+
+@keyframes change__back {
+    0% {
+        background-image: url(../imagenes/index__bg__form2-1.png)
+    }
+    50% {
+        background-image: url(../imagenes/index__bg__form3-1.png)
+    }
+    75% {
+        background-image: url(../imagenes/index__bg__form1-1.png)
+    }
+    100% {
+        background-image: url(../imagenes/index__bg__form2-1.png)
+    }
+}

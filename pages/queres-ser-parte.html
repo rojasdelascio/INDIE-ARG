@@ -17,116 +17,86 @@
 <body>
 
     <header>
-        <header>
-            <h2 class="indie__arg"> INDIE.ARG </h2>
-            <!-- barra de navegacion -->
-            <!-- <img class="icono__perfil" src="iconos/profile.png"> -->
-            <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-    
-                <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="./secciones/cine.html">Cine</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="./secciones/literatura.html">Literatura</a>
-                    </li>
-                    <li class="nav-item active"><a class="nav-link" href="./secciones/musica.html">Música</a></li>
+        <h2 class="indie__arg"> INDIE.ARG </h2>
+        <nav style="background-color: rgba(201, 0, 0, 0.24);">
+            <div class="elementos__header">
+                <a class="home__mp" href="../index.html">Home</a>
+                <ul>
+                    <li><a href="../secciones/cine.html">Cine</a></li>
+                    <li><a href="../secciones/literatura.html">Literatura</a></li>
+                    <li><a href="../secciones/musica.html">Música</a></li>
                 </ul>
-    
-            </nav> -->
-            <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgba(233, 202, 161, 0.582);">
-                <div class="container-fluid">
-                    <a href="../index.html" class="navbar-brand">HOME</a>
-                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button> -->
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mx-5 mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../secciones/cine.html">Cine</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="../secciones/literatura.html">Literatura</a>
-                            </li>
-
-
-                        </ul>
-
-                    </div>
-                </div>
-            </nav>
-        </header>
+                <a class="home__mp" href="">Mi Perfil</a>
+            </div>
+        </nav>
     </header>
 
-    <main id="container-fluid p-0">
-        <div class="row g-0">
 
-            <section class="col-lg-12 col-md-12 col-sm-12" id="texto__qsp">
-                <div>
-                    <h3 class="titulo__qsp">¿Querés ser parte de nuestra comunidad?</h3>
 
-                    <p> Si te gustaría que tus proyectos formasen parte de INDIE.ARG, podés enviarlos a nuestro equipo para que sean evaluados. Recuerda que el proyecto debe ser autogestionado, y estar registrado a tu nombre. Nuestro equipo evaluará tu proyecto
-                        y te dará una devolución en 5 días hábiles. Recuerda que si decidimos no incluir tu proyecto en nuestra plataforma, esto no significa que este no sea lo suficientemente bueno, sino que simplemente no cumple los lineamientos de
-                        nuestra comunidad.
-                    </p>
-                </div>
-            </section>
-        </div>
-        <div class="row g-0">
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <section class="form__qsp">
-                    <h3 class="titulo__qsp"> ¿Preparado? ¡Para comenzar completa el formulario de abajo!</h3>
-                    <div class="form__div__qsp">
+    <main>
 
-                        <form action="/solicitudes">
-                            <div class="input-group">
-                                <span for="name" class="input-group-text bg-light">Nombre y Apellido</span>
-                                <input name="nombre" type="text" aria-label="First name" class="form-control">
-                                <input name="apellido" type="text" aria-label="Last name" class="form-control">
-                            </div>
-                            <label for="correo" class="form-label">Correo electrónico</label>
-                            <input name="correo" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                            <select class="form-select" aria-label="Default select example">
+        <section id="texto__qsp">
+            <div>
+                <h3 class="texto__qsp__titulo">¿Querés ser parte de nuestra comunidad?</h3>
+
+                <p> Si te gustaría que tus proyectos formasen parte de INDIE.ARG, podés enviarlos a nuestro equipo para que sean evaluados. Recuerda que el proyecto debe ser autogestionado, y estar registrado a tu nombre. Nuestro equipo evaluará tu proyecto
+                    y te dará una devolución en 5 días hábiles. Recuerda que si decidimos no incluir tu proyecto en nuestra plataforma, esto no significa que este no sea lo suficientemente bueno, sino que simplemente no cumple los lineamientos de nuestra
+                    comunidad.
+                </p>
+            </div>
+        </section>
+
+        <section class="form__qsp">
+            <h3 class="form__qsp__titulo"> ¿Preparado? ¡Para comenzar completa el formulario de abajo!</h3>
+            <div class="form__qsp__div">
+                <form action="/solicitudes">
+                    <div class="input-group">
+                        <span for="name" class="input-group-text bg-light">Nombre y Apellido</span>
+                        <input name="nombre" type="text" aria-label="First name" class="form-control">
+                        <input name="apellido" type="text" aria-label="Last name" class="form-control">
+                    </div>
+                    <label for="correo" class="form-label">Correo electrónico</label>
+                    <input name="correo" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <select class="form-select" aria-label="Default select example">
                                 <option for="genero" selected>Indica tu género</option>
                                 <option name="genero" value="1">Hombre</option>
                                 <option name="genero" value="2">Mujer</option>
                                 <option name="genero" value="3">Otro</option>
                             </select>
-                            <div class="mb-3">
-                                <label for="sobre" class="form-label">Contanos sobre tu
+                    <div class="mb-3">
+                        <label for="sobre" class="form-label">Contanos sobre tu
                                     proyecto</label>
-                                <textarea class="form-control" id="sobre" rows="3"></textarea>
-                            </div>
-                            <label for="URL" class="form-label">Ingresa la URL de tu proyecto</label>
-                            <div class="input-group mb-3">
-                                <span for="URL" class="input-group-text bg-light" id="basic-addon3">https://example.com/users/</span>
-                                <input name="URL" type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                                <p class="tu__proyecto">(Tu proyecto debe estar subido de forma privada a alguna plataforma como Vimeo o Youtube. También puedes enviar el link público de alguna nube como Google Drive)</p>
-                            </div>
-                            <legend href="" class="col-form-label col-sm-2 pt-0">Términos y Condiciones</legend>
-                            <div class="col-sm-10">
-                                <div class="form-check">
-                                    <input for="tyc" class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                                    <label name="tyc" class="form-check-label" for="gridRadios1">
+                        <textarea class="form-control" id="sobre" rows="3"></textarea>
+                    </div>
+                    <label for="URL" class="form-label">Ingresa la URL de tu proyecto</label>
+                    <div class="input-group mb-3">
+                        <span for="URL" class="input-group-text bg-light" id="basic-addon3">https://example.com/users/</span>
+                        <input name="URL" type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        <p class="tu__proyecto">(Tu proyecto debe estar subido de forma privada a alguna plataforma como Vimeo o Youtube. También puedes enviar el link público de alguna nube como Google Drive)</p>
+                    </div>
+                    <legend href="" class="col-form-label col-sm-2 pt-0">Términos y Condiciones</legend>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input for="tyc" class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label name="tyc" class="form-check-label" for="gridRadios1">
                                         Acepto
                                     </label>
-                                </div>
-                                <div class="form-check">
-                                    <input name="tyc" class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                                    <label class="form-check-label" for="gridRadios2">
+                        </div>
+                        <div class="form-check">
+                            <input name="tyc" class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <label class="form-check-label" for="gridRadios2">
                                         No acepto
                                     </label>
-                                </div>
-
-                            </div>
-                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                                <button type="submit" class="btn bg-light">Enviar</button>
-
-                            </div>
-
+                        </div>
 
                     </div>
+                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <button type="submit" class="btn bg-light">Enviar</button>
 
-                    <!-- <form action="/solicitudes">
+                    </div>
+            </div>
+
+            <!-- <form action="/solicitudes">
                             <div class="nombre__qsp">
                                 <label for="name">Ingresa tu nombre</label>
                                 <input type="text" id="name" name="nme" placeholder="Ingresa tu nombre" required>
@@ -178,36 +148,25 @@
                             <button type="submit">Enviar tu solicitud</button>
                     </div>
                     </form> -->
-                    </form>
-                </section>
-            </div>
+            </form>
+        </section>
 
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <!--  -->
-                <div class="img__qsp">
-                    <img src="../imagenes/formaparte.jpg">
-                </div>
+        <section class="img__qsp">
+            <div class="img__qsp__div">
+                <img src="../imagenes/formaparte.jpg">
             </div>
-        </div>
+        </section>
+
     </main>
 
     <footer>
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgba(233, 202, 161, 0.582);">
-            <div class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-1 mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                        </li>
-                        <a class="nav-link active" aria-current="page" href="../pages/sobre-nosotros.html">Sobre
-                            Nosotros</a>
-                        </li>
 
-                    </ul>
+        <ul>
 
-                </div>
-            </div>
-        </nav>
+            <li><a href="../pages/sobre-nosotros.html">Sobre nosotros</a></li>
+            <li><a href="../pages/queres-ser-parte.html">¿Querés ser parte?</a></li>
+        </ul>
+
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

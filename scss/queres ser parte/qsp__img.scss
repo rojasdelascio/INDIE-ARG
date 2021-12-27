@@ -1,0 +1,14 @@
+.img__qsp {
+    grid-area: img;
+    background-color: white;
+    background-image: url("../imagenes/mountain.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    img {
+        border-radius: 10px;
+        height: 1100px;
+        width: 1100px;
+        position: relative;
+    }
+}

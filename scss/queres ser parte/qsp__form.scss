@@ -1,0 +1,49 @@
+.form__qsp {
+    font-family: $main-font;
+    grid-area: form;
+    background-color: rgba(212, 177, 163, 0.178);
+    background-image: url("../imagenes/qsp__bg__form.png");
+    background-size: cover;
+    padding: 40px;
+    input,
+    textarea,
+    button {
+        background-color: #ffffff;
+        border-radius: 90px;
+    }
+    p {
+        padding: 10px;
+        text-align: center;
+    }
+    button {
+        padding: 10px;
+        position: relative;
+        right: -10px;
+        top: 1px;
+        width: 200px;
+        background-color: rgba(212, 110, 51, 0.58);
+        &:hover {
+            background-color: khaki;
+        }
+    }
+    &__div {
+        background-color: rgba(212, 177, 163, 0.459);
+        padding: 15px;
+        position: relative;
+        right: -10%;
+        width: 80%;
+        form {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: space-between;
+            justify-content: space-evenly;
+            height: auto;
+        }
+        form p,
+        label,
+        input {
+            padding: 8px;
+        }
+    }
+}
