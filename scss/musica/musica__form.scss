@@ -1,54 +1,19 @@
 body .form__musica {
+    grid-area: form__musica;
     background-image: url("../imagenes/music__bg__form.png");
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
     height: auto;
-    h4 {
+    &__titulo {
         font-family: $titles-font, cursive;
-        font-size: 40px;
+        font-size: $titulos;
         position: Relative;
-        right: -35%;
+        right: -30%;
         padding: 20px;
     }
     input {
         width: 300px;
-    }
-    form {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        background-color: rgba(41, 206, 69, 0.288);
-        padding: 40px;
-        font-family: $main-font;
-        font-size: 20px;
-        /* align-content:center; */
-        border-radius: 10%;
-        width: auto;
-        input,
-        button,
-        select {
-            border-radius: 40%;
-            margin: 10px;
-        }
-        button {
-            background-color: rgba(48, 165, 19, 0.637);
-            width: 80px;
-            padding: 3px;
-            position: relative;
-            right: -30px;
-        }
-        button:hover,
-        select:hover,
-        input:hover {
-            background-color: gold;
-        }
-        input,
-        select,
-        button {
-            font-size: 15px;
-        }
     }
     &__div {
         padding: 50px;
@@ -58,6 +23,42 @@ body .form__musica {
         &__genero {
             position: relative;
             top: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-color: rgba(41, 206, 69, 0.288);
+            padding: 40px;
+            font-family: $main-font;
+            font-size: 6rem;
+            /* align-content:center; */
+            border-radius: 10%;
+            width: auto;
+            input,
+            button,
+            select {
+                border-radius: 40%;
+                margin: 10px;
+            }
+            button {
+                background-color: rgba(48, 165, 19, 0.637);
+                width: 80px;
+                padding: 3px;
+                position: relative;
+                right: -30px;
+            }
+            button:hover,
+            select:hover,
+            input:hover {
+                background-color: gold;
+            }
+            input,
+            select,
+            button {
+                font-size: 5rem;
+            }
         }
     }
 }

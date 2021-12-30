@@ -2,13 +2,16 @@
 
 @import "../musica/musica__form.scss";
 @import "../musica/musica__rec.scss";
+$titulos:15rem;
 #grilla__musica {
     display: grid;
-    grid-template-areas: "header header header" "main__musica main__musica main__musica" "footer footer footer";
-    grid-template-rows: 90px auto 100px;
-    grid-template-columns: 1fr 3fr auto;
+    grid-template-areas: "header" "main__musica" "footer";
+    grid-template-rows: 2fr auto 1fr;
 }
 
 #main__musica {
     grid-area: main__musica;
+    display: grid;
+    grid-template-areas: "form__musica" "musica__recomendada";
+    grid-template-rows: 2fr auto;
 }

@@ -13,7 +13,7 @@
         font-family: $titles-font, cursive;
         font-size: 60px;
         position: relative;
-        right: -500px;
+        right: 0%;
     }
     &__div__div2 {
         &__cortos {
@@ -26,8 +26,8 @@
             grid-area: cortos;
             padding: 10px;
             img {
-                width: 150px;
-                height: 80px;
+                width: 200px;
+                height: 100px;
                 border: rgba(248, 62, 5, 0.158) solid 3px;
             }
             img:hover {
@@ -46,8 +46,8 @@
             grid-area: series;
             padding: 10px;
             img {
-                width: 150px;
-                height: 80px;
+                width: 200px;
+                height: 100px;
                 border: rgba(248, 62, 5, 0.158) solid 3px;
             }
             img:hover {
@@ -66,8 +66,8 @@
             grid-area: skits;
             padding: 10px;
             img {
-                width: 150px;
-                height: 80px;
+                width: 200px;
+                height: 100px;
                 border: rgba(248, 62, 5, 0.158) solid 3px;
             }
             img:hover {

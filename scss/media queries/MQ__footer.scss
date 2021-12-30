@@ -1,0 +1,43 @@
+@media (min-width: 0px) and (max-width:360px) {
+    footer {
+        height: auto;
+        width: 100%;
+        font-family: $main-font;
+        font-size: 5rem;
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            position: relative;
+            top: 15%;
+            padding: 0px;
+            li {
+                padding: 6px;
+            }
+        }
+    }
+}
+
+@media (min-width: 361px) and (max-width: 600px) {
+    footer {
+        height: auto;
+        width: 100%;
+        font-family: $main-font;
+        font-size: 6.5rem;
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            position: relative;
+            top: 15%;
+            padding: 0px;
+            li {
+                padding: 6px;
+            }
+        }
+    }
+}

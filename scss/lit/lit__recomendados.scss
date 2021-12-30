@@ -1,69 +1,71 @@
 body .recomendados__lit {
     grid-area: contenido__lit;
-    background-image: url("../imagenes/mountain.png");
+    background-image: url("../imagenes/lit__bg__rec.png");
     background-size: cover;
-    display: Grid;
-    grid-template-areas: ". titulo ." "contenido contenido contenido";
-    grid-template-rows: 100px 400px;
-    grid-template-columns: 300px 300px 300px;
-    position: relative;
-    top: -2px;
-    width: 1002px;
-    img {
-        width: 200px;
-        height: 200px;
-        border-radius: 30%;
-    }
     &__titulo2 {
-        grid-area: contenido;
         font-family: $titles-font, cursive;
-        font-size: 60px;
+        font-size: $titulos;
         position: relative;
-        right: 50%;
+        right: -35%;
     }
     &__contenido {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        grid-area: contenido;
-        position: relative;
-        top: -30px;
-        font-family: $main-font;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        font-family: $titles-font;
         &__normal {
             h3 {
                 position: Relative;
-                top: 0px;
-                right: -50px;
+                right: -10%;
+                font-size: 7rem;
+                margin: 3rem;
             }
             h4 {
-                position: Relative;
-                top: 0px;
-                right: -30px;
+                font-size: 6rem;
+                color: rgb(79, 79, 79);
+                margin: 3rem;
+            }
+            img {
+                width: 40rem;
+                height: 40rem;
+                border-radius: 30%;
             }
         }
         &__comandante {
             h3 {
                 position: Relative;
-                top: 0px;
-                right: -50px;
+                right: -10%;
+                font-size: 7rem;
+                margin: 3rem;
             }
             h4 {
-                position: Relative;
-                top: 0px;
-                right: -30px;
+                font-size: 6rem;
+                color: rgb(79, 79, 79);
+                margin: 3rem;
+            }
+            img {
+                width: 40rem;
+                height: 40rem;
+                border-radius: 30%;
             }
         }
         &__carlos {
             h3 {
+                font-size: 7rem;
                 position: Relative;
-                top: 0px;
-                right: -50px;
+                right: -10%;
+                margin: 3rem;
             }
             h4 {
-                position: Relative;
-                top: 0px;
-                right: -30px;
+                font-size: 6rem;
+                color: rgb(79, 79, 79);
+                margin: 3rem;
+            }
+            img {
+                width: 40rem;
+                height: 40rem;
+                border-radius: 30%;
             }
         }
     }

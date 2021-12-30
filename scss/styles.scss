@@ -11,6 +11,18 @@
 @import "../scss/index/index__rec.scss";
 @import "../scss/musica/musica__grillas.scss";
 @import "../scss/queres\ ser\ parte/qsp__grillas.scss";
+@import "../scss/media\ queries/media__queries__todo.scss";
+@import "../media\ queries/MQ__index/MQ__index__filtro.scss";
+@import "../media\ queries/MQ__index/MQ__index__rec.scss";
+@import "../media\ queries/MQ__index/MQ__index__grillas.scss";
+@import "../media\ queries/MQ__musica/MQ__musica__grillas.scss";
+@import "../media\ queries/MQ__musica/MQ__musica__rec.scss";
+@import "../media\ queries/MQ__musica/MQ__musica__filtro.scss";
+@import "../media\ queries/MQ__header.scss";
+@import "../media\ queries/MQ__footer.scss";
+@import "../scss/lit/lit__filtro.scss";
+@import "../scss/lit/lit__grillas.scss";
+@import "../scss/lit/lit__recomendados.scss";
 $main-font: "Josefin Sans";
 $titles-font:'Indie Flower';
 $logo-font:'Permanent Marker';
@@ -26,6 +38,10 @@ body {
             color: slategrey;
         }
     }
+}
+
+.root__element {
+    font-size: 3px;
 }
 
 
@@ -92,3 +108,4 @@ body {
 // .aceptartyc__qsp {
 //     padding: 10px;
 // }
+// -----------MEDIA QUERIES------------------------

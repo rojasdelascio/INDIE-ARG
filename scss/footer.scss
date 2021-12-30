@@ -3,11 +3,10 @@ $titles-font:'Indie Flower';
 $logo-font:'Permanent Marker';
 footer {
     grid-area: footer;
-    background-color: #d4b1a3;
     height: auto;
-    width: 100%;
+    width: auto;
     font-family: $main-font;
-    font-size: 1rem;
+    font-size: 7rem;
     ul {
         list-style-type: none;
         display: flex;
@@ -17,6 +16,7 @@ footer {
         position: relative;
         top: 15%;
         padding: 0px;
+        border-radius: 70%;
         li {
             color: black;
             padding: 6px;

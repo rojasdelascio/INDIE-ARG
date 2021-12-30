@@ -1,7 +1,4 @@
 body .musica__recomendada {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     background-image: url("../imagenes/music__bg__rec.png");
     background-size: cover;
     background-position: center;
@@ -9,32 +6,38 @@ body .musica__recomendada {
     padding: 50px;
     font-family: $main-font;
     height: auto;
-    img {
-        width: 60px;
-        height: 60px;
-        position: relative;
-        right: -30%;
-    }
-    h4 {
+    width: 100%;
+    &__titulo {
         font-family: $titles-font, cursive;
-        font-size: 40px;
+        font-size: $titulos;
         position: Relative;
-        right: -35%;
+        right: -30%;
         padding: 20px;
-    }
-    audio {
-        height: 40px;
-        width: 200px;
-        position: relative;
-        right: -30%;
-    }
-    h5 {
-        position: relative;
-        right: -30%;
     }
     &__div {
         background-color: rgba(41, 206, 69, 0.288);
         padding: 40px;
         border-radius: 8%;
+    }
+    &__div__IWLG,
+    &__div__MN,
+    &__div__OL {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        audio {
+            height: 40px;
+            width: 200px;
+            margin: 3rem;
+        }
+        h5 {
+            font-size: 7rem;
+            margin: 3rem;
+        }
+        img {
+            width: 50rem;
+            height: 40rem;
+        }
     }
 }

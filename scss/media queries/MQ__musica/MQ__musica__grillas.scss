@@ -1,0 +1,17 @@
+@media (min-width: 0px) and (max-width:360px) {
+    #grilla__musica {
+        display: grid;
+        grid-template-areas: "header" "main__musica" "footer";
+        grid-template-rows: 250px auto 1fr;
+        grid-template-columns: 100%;
+    }
+    #main__musica {
+        grid-area: main__musica;
+        display: grid;
+        grid-template-areas: "form__musica" "musica__recomendada";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 100%;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 600px) {}

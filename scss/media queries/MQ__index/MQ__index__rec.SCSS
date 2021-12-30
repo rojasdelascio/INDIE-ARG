@@ -1,0 +1,98 @@
+@media (min-width: 0px) and (max-width:360px) {
+    .root__element {
+        font-size: 3px;
+    }
+    .recomendados {
+        grid-area: recomendados;
+        background-image: url("../imagenes/index__bg__rec.png");
+        background-size: contain;
+        background-position: center;
+        width: auto;
+        &__titulo {
+            font-size: 10rem;
+            position: relative;
+            right: -15%;
+            top: 0%;
+        }
+        &__elementos {
+            position: relative;
+            top: 3%;
+            overflow: scroll;
+            h4,
+            h6 {
+                font-size: 13px;
+                padding: 1px;
+                position: relative;
+                top: 4%;
+                right: -20%;
+            }
+            h6 {
+                margin-bottom: 6rem;
+                right: 0%;
+            }
+            img {
+                width: 50rem;
+                height: 30rem;
+                padding: 10px;
+            }
+            li {
+                display: inline-block;
+            }
+            & img:hover {
+                border: 2px inset #ffd700;
+                width: 350px;
+                height: 200px;
+            }
+        }
+    }
+}
+
+@media (min-width: 361px) and (max-width: 600px) {
+    .root__element {
+        font-size: 3px;
+    }
+    .recomendados {
+        grid-area: recomendados;
+        background-image: url("../imagenes/index__bg__rec.png");
+        background-size: contain;
+        background-position: center;
+        width: auto;
+        &__titulo {
+            font-size: 20rem;
+            position: relative;
+            right: 0%;
+            top: 0%;
+        }
+        &__elementos {
+            position: relative;
+            top: 3%;
+            overflow: scroll;
+            h4,
+            h6 {
+                font-size: 7rem;
+                padding: 1px;
+                position: relative;
+                top: 4%;
+                right: -20%;
+            }
+            h6 {
+                margin-bottom: 6rem;
+                right: -2%;
+                font-size: 5rem;
+            }
+            img {
+                width: 80rem;
+                height: 50rem;
+                padding: 10px;
+            }
+            li {
+                display: inline-block;
+            }
+            & img:hover {
+                border: 2px inset #ffd700;
+                width: 350px;
+                height: 200px;
+            }
+        }
+    }
+}

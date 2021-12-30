@@ -1,15 +1,16 @@
+.root__element {
+    font-size: 3px;
+}
+
 .filtro__lit {
     grid-area: filtro__lit;
-    background-image: url("../imagenes/mountain.png");
+    background-image: url("../imagenes/lit__bg__form.png");
     background-size: cover;
-    position: Relative;
-    top: -2px;
     &__titulo1 {
-        grid-area: contenido;
         font-family: $titles-font, cursive;
-        font-size: 60px;
+        font-size: $titulos;
         position: relative;
-        right: 50%;
+        right: -35%;
     }
     button,
     select,
@@ -28,16 +29,33 @@
         padding: 5px;
     }
     &__form {
-        background-color: rgba(212, 177, 163, 0.459);
-        height: 350px;
-        width: 270px;
+        list-style: none;
+        margin-left: 40rem;
+        margin-right: 40rem;
+        margin-top: 20rem;
+        margin-bottom: 20rem;
+        background-color: rgba(251, 255, 18, 0.268);
+        height: auto;
+        width: auto;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-items: center;
         font-family: $main-font;
-        position: relative;
-        right: -40px;
-        top: 25px;
+        font-size: 5rem;
+        &__div {
+            &__qb {
+                font-size: 8rem;
+                position: relative;
+                right: 0%;
+                margin: 4rem;
+            }
+            &__checkbox {
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                margin: 3rem;
+            }
+        }
     }
 }

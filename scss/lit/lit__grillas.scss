@@ -1,20 +1,26 @@
 /* *************Seccion LITERATURA*********************** */
 
-@import "../lit/lit__filtro.scss";
 @import "../lit/lit__recomendados.scss";
+@import "../lit/lit__filtro.scss";
 $main-font: "Josefin Sans";
 $titles-font:'Indie Flower';
 $logo-font:'Permanent Marker';
+$titulos:15rem;
 #grilla__lit {
     display: grid;
     grid-template-areas: "header" "main__lit" "footer";
     grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 100%;
 }
 
 #main__lit {
     grid-area: main__lit;
     display: grid;
     grid-template-areas: "filtro__lit" "contenido__lit";
-    grid-template-rows: 2fr 2fr;
-    ;
+    grid-template-rows: 3fr 3fr;
+    grid-template-columns: 100%;
+}
+
+.root__element {
+    font-size: 3px;
 }
