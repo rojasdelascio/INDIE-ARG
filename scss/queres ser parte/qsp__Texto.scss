@@ -1,3 +1,7 @@
+.root__element {
+    font-size: 3px;
+}
+
 #texto__qsp {
     font-family: $main-font;
     grid-area: texto;
@@ -7,13 +11,14 @@
     width: auto;
     padding: 40px;
     h3 {
-        font-family: $titles-font, cursive;
-        font-size: 40px;
-        text-align: center;
-        width: 80%;
-        position: relative;
-        right: -20%;
-        padding: 20px;
+        @include titulos(-20%);
+        // font-family: $titles-font, cursive;
+        // font-size: map-get($tam-letra-100, titulos);
+        // text-align: center;
+        // width: 80%;
+        // position: relative;
+        // right: -20%;
+        // padding: 20px;
     }
     p {
         width: 1000px;

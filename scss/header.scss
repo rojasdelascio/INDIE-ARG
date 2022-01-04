@@ -45,7 +45,7 @@
                                         
                                         .home__mp {
                                             font-family: $main-font;
-                                            font-size: 7rem;
+                                            font-size: map-get($tam-letra-100, headyfoot);
                                             &:hover,
                                             header nav ul li a:hover {
                                                 color: floralwhite;

@@ -2,11 +2,11 @@
 
 @import "../musica/musica__form.scss";
 @import "../musica/musica__rec.scss";
-$titulos:15rem;
 #grilla__musica {
     display: grid;
     grid-template-areas: "header" "main__musica" "footer";
     grid-template-rows: 2fr auto 1fr;
+    grid-template-columns: 100%;
 }
 
 #main__musica {
@@ -14,4 +14,5 @@ $titulos:15rem;
     display: grid;
     grid-template-areas: "form__musica" "musica__recomendada";
     grid-template-rows: 2fr auto;
+    grid-template-columns: 100%;
 }

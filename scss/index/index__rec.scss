@@ -1,3 +1,12 @@
+$tam-letra-100:(titulos:15rem, forms:5rem, headyfoot:7rem);
+@mixin titulos($position-right) {
+    font-family: $titles-font, cursive;
+    font-size: map-get($tam-letra-100, titulos);
+    position: relative;
+    right: $position-right;
+    padding: 20px;
+}
+
 .recomendados {
     grid-area: recomendados;
     background-image: url("../imagenes/index__bg__rec.png");
@@ -5,12 +14,7 @@
     background-position: center;
     width: auto;
     &__titulo {
-        font-family: $titles-font, cursive;
-        font-size: $titulos;
-        position: relative;
-        right: -35%;
-        top: 0%;
-        padding: 10rem;
+        @include titulos(-35%);
     }
     &__elementos {
         display: flex;

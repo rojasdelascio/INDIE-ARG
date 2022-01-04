@@ -1,3 +1,4 @@
+$contenidos-fsize: 10rem;
 .contenido__cine {
     grid-area: contenido__cine;
     background-image: url("../imagenes/cine__bg__cont2.png");
@@ -10,70 +11,25 @@
         background-color: rgba(211, 78, 223, 0.329);
     }
     &__div__titulo {
-        font-family: $titles-font, cursive;
-        font-size: 60px;
-        position: relative;
-        right: 0%;
+        @include titulos(-40%);
     }
     &__div__div2 {
         &__cortos {
-            font-family: $titles-font, cursive;
-            font-size: 40px;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            grid-area: cortos;
-            padding: 10px;
-            img {
-                width: 200px;
-                height: 100px;
-                border: rgba(248, 62, 5, 0.158) solid 3px;
-            }
-            img:hover {
-                border: 2px inset #ffd700;
-                width: 200px;
-                height: 100px;
+            @include contenidos;
+            &__titulo {
+                font-size: $contenidos-fsize;
             }
         }
         &__series {
-            font-family: $titles-font, cursive;
-            font-size: 40px;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            grid-area: series;
-            padding: 10px;
-            img {
-                width: 200px;
-                height: 100px;
-                border: rgba(248, 62, 5, 0.158) solid 3px;
-            }
-            img:hover {
-                border: 2px inset #ffd700;
-                width: 200px;
-                height: 100px;
+            @include contenidos;
+            &__titulo {
+                font-size: $contenidos-fsize;
             }
         }
         &__skits {
-            font-family: $titles-font, cursive;
-            font-size: 40px;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            grid-area: skits;
-            padding: 10px;
-            img {
-                width: 200px;
-                height: 100px;
-                border: rgba(248, 62, 5, 0.158) solid 3px;
-            }
-            img:hover {
-                border: 2px inset #ffd700;
-                width: 200px;
-                height: 100px;
+            @include contenidos;
+            &__titulo {
+                font-size: $contenidos-fsize;
             }
         }
     }

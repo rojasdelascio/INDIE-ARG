@@ -1,3 +1,4 @@
+// ===Esta pagina contiene el formulario en la parte superior de la seccion MUSICA====
 body .form__musica {
     grid-area: form__musica;
     background-image: url("../imagenes/music__bg__form.png");
@@ -6,11 +7,7 @@ body .form__musica {
     background-repeat: repeat;
     height: auto;
     &__titulo {
-        font-family: $titles-font, cursive;
-        font-size: $titulos;
-        position: Relative;
-        right: -30%;
-        padding: 20px;
+        @include titulos(-35%);
     }
     input {
         width: 300px;
@@ -18,36 +15,33 @@ body .form__musica {
     &__div {
         padding: 50px;
         &__qb {
-            font-size: 35px;
-        }
-        &__genero {
-            position: relative;
-            top: 10px;
+            font-size: map-get($tam-letra-100, qb);
+            margin: 4rem;
+            font-style: $main-font;
         }
         form {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            background-color: rgba(41, 206, 69, 0.288);
-            padding: 40px;
-            font-family: $main-font;
-            font-size: 6rem;
-            /* align-content:center; */
-            border-radius: 10%;
-            width: auto;
+            @include forms(rgba(41, 206, 69, 0.288));
+            // display: flex;
+            // flex-direction: row;
+            // flex-wrap: wrap;
+            // justify-content: space-evenly;
+            // background-color: rgba(41, 206, 69, 0.288);
+            // padding: 40px;
+            // font-family: $main-font;
+            // font-size: 6rem;
+            // /* align-content:center; */
+            // border-radius: 10%;
+            // width: auto;
             input,
             button,
             select {
                 border-radius: 40%;
-                margin: 10px;
+                margin: 7rem;
             }
             button {
-                background-color: rgba(48, 165, 19, 0.637);
-                width: 80px;
-                padding: 3px;
-                position: relative;
-                right: -30px;
+                @include botones(0%,
+                0%,
+                rgba(48, 165, 19, 0.637));
             }
             button:hover,
             select:hover,

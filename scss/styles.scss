@@ -1,31 +1,23 @@
-/*****body generales todo****/
-
-@import "../scss/header.scss";
-@import "../scss/footer.scss";
-@import "../scss/index/form__index.scss";
-@import "../scss/lit/lit__grillas.scss";
-@import "../scss/Sobre\ Nosotros/sobre__nosotros__grillas";
-@import "../scss/cine/cine__grillas.scss";
-@import "../scss/index/index__grillas.scss";
-@import "../scss/index/index__fotos.scss";
-@import "../scss/index/index__rec.scss";
-@import "../scss/musica/musica__grillas.scss";
-@import "../scss/queres\ ser\ parte/qsp__grillas.scss";
-@import "../scss/media\ queries/media__queries__todo.scss";
-@import "../media\ queries/MQ__index/MQ__index__filtro.scss";
-@import "../media\ queries/MQ__index/MQ__index__rec.scss";
-@import "../media\ queries/MQ__index/MQ__index__grillas.scss";
-@import "../media\ queries/MQ__musica/MQ__musica__grillas.scss";
-@import "../media\ queries/MQ__musica/MQ__musica__rec.scss";
-@import "../media\ queries/MQ__musica/MQ__musica__filtro.scss";
-@import "../media\ queries/MQ__header.scss";
-@import "../media\ queries/MQ__footer.scss";
-@import "../scss/lit/lit__filtro.scss";
-@import "../scss/lit/lit__grillas.scss";
-@import "../scss/lit/lit__recomendados.scss";
+// /*****body generales todo****/
+// =====FUENTES GENERALES=====
 $main-font: "Josefin Sans";
 $titles-font:'Indie Flower';
 $logo-font:'Permanent Marker';
+// =====MAPS DE TAMAÑOS DE LETRA PARA TODO=====
+$tam-letra-100:(titulos:15rem, forms:5rem, headyfoot:7rem, qb:12rem);
+// =====MAPS DE FONDOS PARA TODO=====
+$fondos:( index: rgba(212, 177, 163, 0.178), cine:rgba(211, 78, 223, 0.178), literatura: rgba(251, 255, 18, 0.179), musica: rgba(41, 206, 69, 0.171));
+// =====ESTE EACH CREARA LAS CLASES DE LOS FONDOS CON EL MAP $FONDOS=====
+@each $seccion,
+$color in $fondos {
+    .fondo-#{$seccion} {
+        background-color: $color;
+    }
+}
+
+// =====MAPS DE WIDTHS PARA FORMS, BOTONES Y DROPDOWN=====
+$input-sizes:(que-buscas:40%, boton:15%, drop-down:10%);
+// =======PROPIEDADES CSS/SASS GENERALES=======
 body {
     margin: 0;
     padding: 0;
@@ -44,68 +36,122 @@ body {
     font-size: 3px;
 }
 
+// ==========MIXINS GENERALES DE LOS FILTROS===========
+@mixin titulos($position-right) {
+    font-family: $titles-font, cursive;
+    font-size: map-get($tam-letra-100, titulos);
+    position: relative;
+    right: $position-right;
+    padding: 20px;
+}
 
-/* *******************seccion QUERES SER PARTE************************************ */
+@mixin botones($position-right, $position-top, $color-boton) {
+    width: map-get($input-sizes, boton);
+    padding: 3px;
+    position: relative;
+    right: $position-right;
+    top: $position-top;
+    background-color: $color-boton;
+    border-radius: 45%;
+    margin: 4rem;
+}
 
-// .preparado__qsp {
-//  position:relative;
-// right:0px; 
-// }
-// .nombre__qsp input,
-// .apellido__qsp input {
-//     width: 100px;
-//     height: 1px;
-// }
-// .tu__proyecto {
-//     text-align: start;
-//     font-size: 10px;
-//     position: relative;
-//     right: 10px;
-// }
-// .nombre__qsp input:hover,
-// .apellido__qsp input:hover,
-// .edad__qsp input:hover,
-// .comentarios__qsp textarea:hover,
-// .link__qsp input:hover {
-//     background-color: rgba(248, 247, 233, 0.575);
-// }
-// .nombre__qsp {
-//     padding: 10px;
-// }
-// .apellido__qsp {
-//     padding: 10px;
-// }
-// .edad__qsp input {
-//     width: 40px;
-//     height: 4px;
-//     align-items: inherit;
-// }
-// .edad__qsp {
-//     position: relative;
-//     right: -10px;
-// }
-// .link__qsp {
-//     position: relative;
-//     right: -10px;
-// }
-// .genero__qsp {
-//     padding: 10px;
-// }
-// .comentarios__qsp {
-//     padding: 10px;
-// }
-// .comentarios__qsp label {
-//     padding: 10px;
-// }
-// .comentarios__qsp textarea {
-//     height: 80px;
-//     width: 500px;
-//     padding: 10px;
-// }
-// .leertyc__qsp {
-//     padding: 10px;
-// }
-// .aceptartyc__qsp {
-//     padding: 10px;
-// }
-// -----------MEDIA QUERIES------------------------
+@mixin dropdown {
+    width: map-get($input-sizes, drop-down);
+    margin: 4rem;
+    padding: 2rem;
+    border-radius: 30px;
+}
+
+@mixin checkboxes {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    li {
+        margin: 3rem;
+    }
+}
+
+@mixin qb-input {
+    width: 30%;
+    border-radius: 30px;
+    width: map-get($input-sizes, que-buscas);
+}
+
+@mixin forms($fondo-forms) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: auto;
+    width: auto;
+    font-family: $main-font;
+    font-size: map-get($tam-letra-100, forms);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: $fondo-forms;
+    justify-items: space-between;
+}
+
+// =====MIXINS DE SECCION CINE===============
+@mixin contenidos {
+    font-family: $titles-font, cursive;
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    img {
+        width: 66rem;
+        height: 33rem;
+        border: rgba(248, 62, 5, 0.158) solid 3px;
+    }
+    img:hover {
+        border: 2px inset #ffd700;
+        width: 70rem;
+        height: 37rem;
+    }
+}
+
+// ==IMPORTS========
+@import "../scss/cine/cine__grillas.scss";
+// ======IMPORTS INDEX========
+@import "../scss/index/index__grillas.scss";
+@import "../scss/index/index__fotos.scss";
+@import "../scss/index/index__rec.scss";
+@import "../scss/index/form__index.scss";
+// ================IMPORTS INDEX------MQ========
+@import "../media\ queries/MQ__index/MQ__index__filtro.scss";
+@import "../media\ queries/MQ__index/MQ__index__rec.scss";
+@import "../media\ queries/MQ__index/MQ__index__grillas.scss";
+// ======IMPORTS SECCION MUSICA========
+@import "../scss/musica/musica__form.scss";
+@import "../scss/musica/musica__grillas.scss";
+@import "../scss/musica/musica__rec.scss";
+// ================IMPORTS HEADER Y FOOTER------MQ========
+@import "../media\ queries/MQ__musica/MQ__musica__grillas.scss";
+@import "../media\ queries/MQ__musica/MQ__musica__rec.scss";
+@import "../media\ queries/MQ__musica/MQ__musica__filtro.scss";
+// ======IMPORTS SECCION LITERATURA========
+@import "../scss/lit/lit__filtro.scss";
+@import "../scss/lit/lit__grillas.scss";
+@import "../scss/lit/lit__recomendados.scss";
+// ======IMPORTS HEADER Y FOOTER========
+@import "../scss/header.scss";
+@import "../scss/footer.scss";
+// ================IMPORTS HEADER Y FOOTER------MQ========
+@import "../media\ queries/MQ__header.scss";
+@import "../media\ queries/MQ__footer.scss";
+// ======RESTANTES POR ORDENAR========
+@import "../scss/queres\ ser\ parte/qsp__grillas.scss";
+@import "../scss/media\ queries/media__queries__todo.scss";
+@import "../scss/Sobre\ Nosotros/sobre__nosotros__grillas";
+@import "../scss/Sobre\ Nosotros/nuestro__equipo.scss";
+@import "../scss/Sobre\ Nosotros/sobre__nosotros__texto.scss";
+@import "../scss/queres\ ser\ parte/qsp__grillas.scss";
+@import "../scss/queres\ ser\ parte/qsp__form.scss";
+@import "../scss/queres\ ser\ parte/qsp__texto.scss";
+@import "../scss/queres\ ser\ parte/qsp__img.scss";

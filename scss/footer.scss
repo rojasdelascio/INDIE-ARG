@@ -6,7 +6,7 @@ footer {
     height: auto;
     width: auto;
     font-family: $main-font;
-    font-size: 7rem;
+    font-size: map-get($tam-letra-100, headyfoot);
     ul {
         list-style-type: none;
         display: flex;
@@ -16,7 +16,6 @@ footer {
         position: relative;
         top: 15%;
         padding: 0px;
-        border-radius: 70%;
         li {
             color: black;
             padding: 6px;

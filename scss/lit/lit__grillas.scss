@@ -5,11 +5,10 @@
 $main-font: "Josefin Sans";
 $titles-font:'Indie Flower';
 $logo-font:'Permanent Marker';
-$titulos:15rem;
 #grilla__lit {
     display: grid;
     grid-template-areas: "header" "main__lit" "footer";
-    grid-template-rows: 1fr auto 1fr;
+    grid-template-rows: 35% auto 20%;
     grid-template-columns: 100%;
 }
 
