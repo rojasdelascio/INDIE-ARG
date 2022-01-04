@@ -44,11 +44,13 @@
 
         <section class="form__musica">
             <h4 class="form__musica__titulo">Musica Independiente</h4>
-            <div class="form__musica__div">
-                <form action="/search">
-                    <label class="form__musica__div__qb" for="musbus">¿Qué buscás?</label>
-                    <input class="form__musica__div__pc" type="text" id="palabras__clave" name="musbus" required placeholder="Ingrese palabras clave. P/ej: Canción + Artista">
-                    <div class="form__musica__div__genero">
+
+            <form class="form__musica__form" action="/search">
+
+                <div class="form__musica__form__div">
+                    <label class="form__musica__form__div__qb" for="musbus">¿Qué buscás?</label>
+                    <input class="form__musica__form__div__pc" type="text" id="palabras__clave" name="musbus" required placeholder="Ingrese palabras clave. P/ej: Canción + Artista">
+                    <div class="form__musica__form__div__genero">
                         <label for="genero__musica">Escoge un género</label>
                         <select name="genero__musica" id="genmus">
                                         <option value="Pop">Pop</option>
@@ -59,10 +61,12 @@
                                         <option value="urbana">Urbana</option>
                                         <option value="Otro">Otro</option>
                                     </select>
+
                     </div>
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
+                    <button class="form__musica__form__div__button" type="submit">Enviar</button>
+                </div>
+            </form>
+
         </section>
 
 

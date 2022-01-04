@@ -13,6 +13,6 @@
     grid-area: main__musica;
     display: grid;
     grid-template-areas: "form__musica" "musica__recomendada";
-    grid-template-rows: 2fr auto;
+    grid-template-rows: 50% 50%;
     grid-template-columns: 100%;
 }

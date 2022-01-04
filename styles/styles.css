@@ -695,124 +695,106 @@ body {
     grid-template-rows: 130rem 310rem auto;
     grid-template-columns: auto; } }
 
-body .form__musica {
+.form__musica {
   grid-area: form__musica;
   background-image: url("../imagenes/music__bg__form.png");
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
   height: auto; }
-  body .form__musica__titulo {
+  .form__musica__titulo {
     font-family: "Indie Flower", cursive;
     font-size: 15rem;
     position: relative;
     right: -35%;
     padding: 20px; }
-  body .form__musica input {
-    width: 300px; }
-  body .form__musica__div {
-    padding: 50px; }
-    body .form__musica__div__qb {
+  .form__musica__form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: auto;
+    width: auto;
+    font-family: "Josefin Sans";
+    font-size: 5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: rgba(41, 206, 69, 0.288);
+    justify-items: space-between; }
+    .form__musica__form__div__qb {
       font-size: 12rem;
       margin: 4rem;
       font-style: "Josefin Sans"; }
-    body .form__musica__div form {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      align-items: center;
-      height: auto;
-      width: auto;
-      font-family: "Josefin Sans";
-      font-size: 5rem;
-      margin-left: 10%;
-      margin-right: 10%;
-      margin-top: 5%;
-      margin-bottom: 5%;
-      background-color: rgba(41, 206, 69, 0.288);
-      justify-items: space-between; }
-      body .form__musica__div form input,
-      body .form__musica__div form button,
-      body .form__musica__div form select {
-        border-radius: 40%;
-        margin: 7rem; }
-      body .form__musica__div form button {
-        width: 15%;
-        padding: 3px;
-        position: relative;
-        right: 0%;
-        top: 0%;
-        background-color: rgba(48, 165, 19, 0.637);
-        border-radius: 45%;
-        margin: 4rem; }
-      body .form__musica__div form button:hover,
-      body .form__musica__div form select:hover,
-      body .form__musica__div form input:hover {
-        background-color: gold; }
-      body .form__musica__div form input,
-      body .form__musica__div form select,
-      body .form__musica__div form button {
-        font-size: 5rem; }
+    .form__musica__form__div__button {
+      width: 15%;
+      padding: 3px;
+      position: relative;
+      right: 0%;
+      top: 0%;
+      background-color: rgba(48, 165, 19, 0.637);
+      border-radius: 45%;
+      margin: 4rem; }
+    .form__musica__form__div button:hover,
+    .form__musica__form__div select:hover,
+    .form__musica__form__div input:hover {
+      background-color: gold; }
+    .form__musica__form__div__pc {
+      width: 30%;
+      border-radius: 30px;
+      width: 40%; }
 
 /* grilla musica*/
-body .form__musica {
+.form__musica {
   grid-area: form__musica;
   background-image: url("../imagenes/music__bg__form.png");
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
   height: auto; }
-  body .form__musica__titulo {
+  .form__musica__titulo {
     font-family: "Indie Flower", cursive;
     font-size: 15rem;
     position: relative;
     right: -35%;
     padding: 20px; }
-  body .form__musica input {
-    width: 300px; }
-  body .form__musica__div {
-    padding: 50px; }
-    body .form__musica__div__qb {
+  .form__musica__form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: auto;
+    width: auto;
+    font-family: "Josefin Sans";
+    font-size: 5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: rgba(41, 206, 69, 0.288);
+    justify-items: space-between; }
+    .form__musica__form__div__qb {
       font-size: 12rem;
       margin: 4rem;
       font-style: "Josefin Sans"; }
-    body .form__musica__div form {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      align-items: center;
-      height: auto;
-      width: auto;
-      font-family: "Josefin Sans";
-      font-size: 5rem;
-      margin-left: 10%;
-      margin-right: 10%;
-      margin-top: 5%;
-      margin-bottom: 5%;
-      background-color: rgba(41, 206, 69, 0.288);
-      justify-items: space-between; }
-      body .form__musica__div form input,
-      body .form__musica__div form button,
-      body .form__musica__div form select {
-        border-radius: 40%;
-        margin: 7rem; }
-      body .form__musica__div form button {
-        width: 15%;
-        padding: 3px;
-        position: relative;
-        right: 0%;
-        top: 0%;
-        background-color: rgba(48, 165, 19, 0.637);
-        border-radius: 45%;
-        margin: 4rem; }
-      body .form__musica__div form button:hover,
-      body .form__musica__div form select:hover,
-      body .form__musica__div form input:hover {
-        background-color: gold; }
-      body .form__musica__div form input,
-      body .form__musica__div form select,
-      body .form__musica__div form button {
-        font-size: 5rem; }
+    .form__musica__form__div__button {
+      width: 15%;
+      padding: 3px;
+      position: relative;
+      right: 0%;
+      top: 0%;
+      background-color: rgba(48, 165, 19, 0.637);
+      border-radius: 45%;
+      margin: 4rem; }
+    .form__musica__form__div button:hover,
+    .form__musica__form__div select:hover,
+    .form__musica__form__div input:hover {
+      background-color: gold; }
+    .form__musica__form__div__pc {
+      width: 30%;
+      border-radius: 30px;
+      width: 40%; }
 
 body .musica__recomendada {
   grid-area: musica__recomendada;

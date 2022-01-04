@@ -1,5 +1,5 @@
 // ===Esta pagina contiene el formulario en la parte superior de la seccion MUSICA====
-body .form__musica {
+.form__musica {
     grid-area: form__musica;
     background-image: url("../imagenes/music__bg__form.png");
     background-size: cover;
@@ -9,36 +9,18 @@ body .form__musica {
     &__titulo {
         @include titulos(-35%);
     }
-    input {
-        width: 300px;
-    }
-    &__div {
-        padding: 50px;
-        &__qb {
-            font-size: map-get($tam-letra-100, qb);
-            margin: 4rem;
-            font-style: $main-font;
-        }
-        form {
+    &__form {
+        &__div {
             @include forms(rgba(41, 206, 69, 0.288));
-            // display: flex;
-            // flex-direction: row;
-            // flex-wrap: wrap;
-            // justify-content: space-evenly;
-            // background-color: rgba(41, 206, 69, 0.288);
-            // padding: 40px;
-            // font-family: $main-font;
-            // font-size: 6rem;
-            // /* align-content:center; */
-            // border-radius: 10%;
-            // width: auto;
-            input,
-            button,
-            select {
-                border-radius: 40%;
-                margin: 7rem;
+            &__genero {
+                @include dropdown;
             }
-            button {
+            &__qb {
+                font-size: map-get($tam-letra-100, qb);
+                margin: 4rem;
+                font-style: $main-font;
+            }
+            &__button {
                 @include botones(0%,
                 0%,
                 rgba(48, 165, 19, 0.637));
@@ -48,10 +30,8 @@ body .form__musica {
             input:hover {
                 background-color: gold;
             }
-            input,
-            select,
-            button {
-                font-size: 5rem;
+            &__pc {
+                @include qb-input;
             }
         }
     }
