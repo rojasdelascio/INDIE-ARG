@@ -6,9 +6,10 @@ $main-font: "Josefin Sans";
 $titles-font:'Indie Flower';
 $logo-font:'Permanent Marker';
 #grilla__lit {
+    height: 100%;
     display: grid;
     grid-template-areas: "header" "main__lit" "footer";
-    grid-template-rows: 35% auto 20%;
+    grid-template-rows: 15% auto 10%;
     grid-template-columns: 100%;
 }
 
@@ -16,7 +17,7 @@ $logo-font:'Permanent Marker';
     grid-area: main__lit;
     display: grid;
     grid-template-areas: "filtro__lit" "contenido__lit";
-    grid-template-rows: 3fr 3fr;
+    grid-template-rows: 45% auto;
     grid-template-columns: 100%;
 }
 

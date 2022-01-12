@@ -1,23 +1,28 @@
 /* *******************seccion SOBRE NOSOTROS***************** */
 
-@import "../Sobre\ Nosotros/sobre__nosotros__texto.scss";
-@import "../Sobre\ Nosotros/nuestro__equipo";
 $main-font: "Josefin Sans";
 $titles-font:'Indie Flower';
 $logo-font:'Permanent Marker';
+@import "../Sobre\ Nosotros/nuestro__equipo.scss";
+@import "../Sobre\ Nosotros/sobre__nosotros__texto.scss";
 
 /* grilla */
 
+.root__element {
+    font-size: 3px;
+}
+
 #sn__grilla1 {
     display: grid;
-    grid-template-areas: "header header header" "main__sn main__sn main__sn" "footer footer footer";
-    grid-template-rows: 1fr auto 1fr;
-    grid-template-columns: 3fr 5fr auto;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: 30% auto 10%;
+    grid-template-columns: 100%;
 }
 
 #sn__grilla2 {
-    grid-area: main__sn;
+    grid-area: main;
     display: grid;
-    grid-template-areas: "sn" "ne";
-    grid-template-rows: 2fr 2fr;
+    grid-template-areas: "texto equipo";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
 }

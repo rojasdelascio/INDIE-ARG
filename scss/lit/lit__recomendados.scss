@@ -1,75 +1,93 @@
-@mixin titulos($position-right) {
-    font-family: $titles-font, cursive;
-    font-size: map-get($tam-letra-100, titulos);
-    position: relative;
-    right: $position-right;
-    padding: 20px;
-}
-
-@mixin titulos__cuentos {
-    position: Relative;
-    right: -10%;
-    font-size: 7rem;
-    margin: 3rem;
-}
-
-@mixin subtitulos__cuentos {
-    font-size: 6rem;
-    color: rgb(79, 79, 79);
-    margin: 3rem;
-}
-
-@mixin imagenes__cuentos {
-    width: 40rem;
-    height: 40rem;
-    border-radius: 30%;
-}
-
 body .recomendados__lit {
     grid-area: contenido__lit;
     background-image: url("../imagenes/lit__bg__rec.png");
     background-size: cover;
     &__titulo2 {
-        @include titulos(-35%);
+        @include titulos(-40%);
     }
-    &__contenido {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        font-family: $titles-font;
-        &__normal {
-            h3 {
-                @include titulos__cuentos;
-            }
-            h4 {
-                @include subtitulos__cuentos;
-            }
-            img {
-                @include imagenes__cuentos;
-            }
-        }
-        &__comandante {
-            h3 {
-                @include titulos__cuentos;
-            }
-            h4 {
-                @include subtitulos__cuentos;
-            }
-            img {
-                @include imagenes__cuentos;
-            }
-        }
-        &__carlos {
-            h3 {
-                @include titulos__cuentos;
-            }
-            h4 {
-                @include subtitulos__cuentos;
-            }
-            img {
-                @include imagenes__cuentos;
-            }
-        }
+    // #carouselExampleCaptions {
+    //     width: 500rem;
+    //     height: 500rem;
+    // }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 15rem;
+    height: 15rem;
+}
+
+#carousel-indicators {
+    button {
+        width: 4rem;
+        height: 4rem;
     }
 }
+
+#carousel1 {
+    border: 2rem outset rgba(222, 226, 1, 0.501);
+    width: auto;
+    height: auto;
+    max-width: 300rem;
+    max-height: 110rem;
+    position: relative;
+    right: -15%;
+}
+
+.carousel-item {
+    h5 {
+        font-size: 8rem;
+        font-family: $main-font;
+    }
+    p {
+        font-size: 6rem;
+        font-family: $main-font;
+    }
+    img {
+        max-width: 300rem;
+        max-height: 100rem;
+        object-fit: cover;
+    }
+}
+
+// 
+// &__contenido {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: nowrap;
+//     justify-content: space-around;
+//     font-family: $titles-font;
+//     &__normal {
+//         h3 {
+//             @include titulos__cuentos;
+//         }
+//         h4 {
+//             @include subtitulos__cuentos;
+//         }
+//         img {
+//             @include imagenes__cuentos;
+//         }
+//     }
+//     &__comandante {
+//         h3 {
+//             @include titulos__cuentos;
+//         }
+//         h4 {
+//             @include subtitulos__cuentos;
+//         }
+//         img {
+//             @include imagenes__cuentos;
+//         }
+//     }
+//     &__carlos {
+//         h3 {
+//             @include titulos__cuentos;
+//         }
+//         h4 {
+//             @include subtitulos__cuentos;
+//         }
+//         img {
+//             @include imagenes__cuentos;
+//         }
+//     }
+// }

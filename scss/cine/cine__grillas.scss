@@ -8,13 +8,15 @@ $titles-font:'Indie Flower';
 $logo-font:'Permanent Marker';
 #grilla__cine {
     display: grid;
-    grid-template-areas: "header" "main" "footer";
-    grid-template-rows: 1fr auto 1fr;
+    grid-template-areas: "header" "main__cine" "footer";
+    grid-template-rows: 30% auto 20%;
+    grid-template-columns: 100%;
 }
 
 #main__cine {
-    grid-area: main;
+    grid-area: main__cine;
     display: grid;
     grid-template-areas: "form__cine" "contenido__cine";
-    grid-template-rows: 2fr 2fr;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
 }

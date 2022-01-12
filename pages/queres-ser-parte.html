@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="root__element" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -16,17 +16,18 @@
 
 </head>
 
-<body>
+<body id="grilla__qsp">
 
     <header>
-        <h2 class="indie__arg"> INDIE.ARG </h2>
-        <nav style="background-color: rgba(201, 0, 0, 0.24);">
+        <img class="indie__arg" src="../imagenes/INDIEARG.png">
+        <!-- <h2 class="indie__arg"> INDIE.ARG </h2> -->
+        <nav class="fondo-qsp">
             <div class="elementos__header">
-                <a class="home__mp" href="../index.html">Home</a>
+                <a class="home__mp" href="./index.html">Home</a>
                 <ul>
-                    <li><a href="../secciones/cine.html">Cine</a></li>
-                    <li><a href="../secciones/literatura.html">Literatura</a></li>
-                    <li><a href="../secciones/musica.html">Música</a></li>
+                    <li><a href="./secciones/cine.html">Cine</a></li>
+                    <li><a href="./secciones/literatura.html">Literatura</a></li>
+                    <li><a href="./secciones/musica.html">Música</a></li>
                 </ul>
                 <a class="home__mp" href="">Mi Perfil</a>
             </div>
@@ -35,17 +36,13 @@
 
 
 
-    <main>
+    <main id="grilla__qsp2">
 
         <section id="texto__qsp">
-            <div>
-                <h1 class="texto__qsp__titulo">¿Querés ser parte de un Equipo de Artistas Independientes?</h1>
-
-                <p> Si te gustaría que tus proyectos formasen parte de INDIE.ARG, podés enviarlos a nuestro equipo para que sean evaluados. Recuerda que el proyecto debe ser autogestionado, y estar registrado a tu nombre. Nuestro equipo evaluará tu proyecto
-                    y te dará una devolución en 5 días hábiles. Recuerda que si decidimos no incluir tu proyecto en nuestra plataforma, esto no significa que este no sea lo suficientemente bueno, sino que simplemente no cumple los lineamientos de nuestra
-                    comunidad.
-                </p>
-            </div>
+            <h1 class="texto__qsp__titulo">¿Querés ser parte de un Equipo de Artistas Independientes?</h1>
+            <p> Si te gustaría que tus proyectos formasen parte de INDIE.ARG, podés enviarlos a nuestro equipo para que sean evaluados. Recuerda que el proyecto debe ser autogestionado, y estar registrado a tu nombre. Nuestro equipo evaluará tu proyecto y
+                te dará una devolución en 5 días hábiles. Recuerda que si decidimos no incluir tu proyecto en nuestra plataforma, esto no significa que este no sea lo suficientemente bueno, sino que simplemente no cumple los lineamientos de nuestra comunidad.
+            </p>
         </section>
 
         <section class="form__qsp">
@@ -77,7 +74,7 @@
                         <p class="tu__proyecto">(Tu proyecto debe estar subido de forma privada a alguna plataforma como Vimeo o Youtube. También puedes enviar el link público de alguna nube como Google Drive)</p>
                     </div>
                     <legend href="" class="col-form-label col-sm-2 pt-0">Términos y Condiciones</legend>
-                    <div class="col-sm-10">
+                    <div>
                         <div class="form-check">
                             <input for="tyc" class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
                             <label name="tyc" class="form-check-label" for="gridRadios1">
@@ -94,11 +91,18 @@
                     </div>
                     <div class="btn-group" role="group" aria-label="Basic mixed styles example">
                         <button type="submit" class="btn bg-light">Enviar</button>
-
                     </div>
             </div>
+            </form>
+        </section>
 
-            <!-- <form action="/solicitudes">
+        <section class="img__qsp">
+            <div class="img__qsp__div">
+                <img src="../imagenes/formaparte.jpg">
+            </div>
+        </section>
+    </main>
+    <!-- <form action="/solicitudes">
                             <div class="nombre__qsp">
                                 <label for="name">Ingresa tu nombre</label>
                                 <input type="text" id="name" name="nme" placeholder="Ingresa tu nombre" required>
@@ -150,25 +154,12 @@
                             <button type="submit">Enviar tu solicitud</button>
                     </div>
                     </form> -->
-            </form>
-        </section>
 
-        <section class="img__qsp">
-            <div class="img__qsp__div">
-                <img src="../imagenes/formaparte.jpg">
-            </div>
-        </section>
 
-    </main>
-
-    <footer>
-
+    <footer class="fondo-qsp">
         <ul>
-
-            <li><a href="../pages/sobre-nosotros.html">Sobre nosotros</a></li>
-            <li><a href="../pages/queres-ser-parte.html">¿Querés ser parte?</a></li>
+            <li><a href="./pages/sobre-nosotros.html">Sobre nosotros</a></li>
         </ul>
-
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

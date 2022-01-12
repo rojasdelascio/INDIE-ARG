@@ -9,23 +9,11 @@ $tam-letra-100:(titulos:15rem, forms:5rem, headyfoot:7rem, qb:12rem);
     height: auto;
     margin: 0px;
     &__titulo1 {
-        @include titulos(-35%);
+        @include titulos(-30%);
     }
     &__form {
         @include forms(rgba(212, 177, 163, 0.178));
         width: 100%;
-        // display: flex;
-        // flex-direction: column;
-        // flex-wrap: wrap;
-        // width: auto;
-        // font-family: $main-font;
-        // 
-        // align-items: center;
-        // font-size: 6rem;
-        // background-color: rgba(212, 177, 163, 0.178);
-        // border-radius: 10px;
-        // height: auto;
-        // padding: 15rem;
         &__qb {
             font-style: $main-font;
             font-size: map-get($tam-letra-100, qb);
@@ -34,23 +22,9 @@ $tam-letra-100:(titulos:15rem, forms:5rem, headyfoot:7rem, qb:12rem);
         }
         &__pc {
             @include qb-input;
-            // padding: 11px;
-            // border-color: darkgray;
-            // border-radius: 30px;
-            // width: 90rem;
-            // height: 10rem;
-            // margin-bottom: 5rem;
-            // padding: 5rem;
         }
         &__checkbox {
             @include checkboxes;
-            // list-style-type: none;
-            // display: flex;
-            // flex-direction: row;
-            // justify-content: space-evenly;
-            // li {
-            //     margin: 3rem;
-            // }
         }
         &__button {
             @include botones(0%,
@@ -58,9 +32,8 @@ $tam-letra-100:(titulos:15rem, forms:5rem, headyfoot:7rem, qb:12rem);
             rgba(212, 110, 51, 0.39));
         }
         &__genero {
-            margin: 5rem;
+            @include dropdown;
             &__dropdown {
-                @include dropdown;
                 &:hover {
                     background-color: #fcdc27b7;
                 }

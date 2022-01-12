@@ -2,7 +2,7 @@
     #grilla__index {
         display: grid;
         grid-template-areas: "header" "main__index" "footer";
-        grid-template-rows: 250px auto 1fr;
+        grid-template-rows: 27% auto 20%;
         grid-template-columns: 100%;
     }
     #main__index {
@@ -10,7 +10,7 @@
         width: 100%;
         display: grid;
         grid-template-areas: "foto" "form" "recomendados";
-        grid-template-rows: 50rem 220rem auto;
+        grid-template-rows: 10% 45% 45%;
         grid-template-columns: 100%;
     }
 }

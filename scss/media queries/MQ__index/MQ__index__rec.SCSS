@@ -8,40 +8,43 @@
         background-size: contain;
         background-position: center;
         width: auto;
+        overflow: scroll;
         &__titulo {
-            font-size: 10rem;
-            position: relative;
-            right: -15%;
-            top: 0%;
+            @include titulos(0%);
+            // font-size: 10rem;
+            // position: relative;
+            // right: -15%;
+            // top: 0%;
         }
         &__elementos {
             position: relative;
-            top: 3%;
-            overflow: scroll;
-            h4,
-            h6 {
-                font-size: 13px;
-                padding: 1px;
-                position: relative;
-                top: 4%;
-                right: -20%;
-            }
-            h6 {
-                margin-bottom: 6rem;
-                right: 0%;
-            }
-            img {
-                width: 50rem;
-                height: 30rem;
-                padding: 10px;
-            }
+            top: 0%;
+            margin: 5rem;
             li {
                 display: inline-block;
-            }
-            & img:hover {
-                border: 2px inset #ffd700;
-                width: 350px;
-                height: 200px;
+                h4 {
+                    font-size: 10rem;
+                    padding: 1px;
+                    position: relative;
+                    top: 4%;
+                    right: 0%;
+                    margin: 6rem;
+                }
+                h6 {
+                    font-size: 8rem;
+                    margin-bottom: 6rem;
+                    right: 0%;
+                }
+                img {
+                    width: 90rem;
+                    height: 70rem;
+                    padding: 10px;
+                    &:hover {
+                        border: 2px inset #ffd700;
+                        width: 100rem;
+                        height: 90rem;
+                    }
+                }
             }
         }
     }
@@ -58,10 +61,11 @@
         background-position: center;
         width: auto;
         &__titulo {
-            font-size: 20rem;
-            position: relative;
-            right: 0%;
-            top: 0%;
+            // font-size: 20rem;
+            // position: relative;
+            // right: 0%;
+            // top: 0%;
+            @include titulos600(-5%);
         }
         &__elementos {
             position: relative;

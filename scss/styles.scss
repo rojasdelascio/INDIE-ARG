@@ -4,9 +4,11 @@ $main-font: "Josefin Sans";
 $titles-font:'Indie Flower';
 $logo-font:'Permanent Marker';
 // =====MAPS DE TAMAÑOS DE LETRA PARA TODO=====
-$tam-letra-100:(titulos:15rem, forms:5rem, headyfoot:7rem, qb:12rem);
+$tam-letra-100:(titulos:15rem, forms:5rem, headyfoot:7rem, qb:12rem, logo:20rem);
+$tam-letra-600:(titulos:20rem, forms:10rem, headyfoot:8rem, qb:17rem, logo:20rem, cont:14rem);
+$tam-letra-300:(titulos:15rem, forms:10rem, headyfoot:10rem, qb:16rem, logo:13rem);
 // =====MAPS DE FONDOS PARA TODO=====
-$fondos:( index: rgba(212, 177, 163, 0.178), cine:rgba(211, 78, 223, 0.178), literatura: rgba(251, 255, 18, 0.179), musica: rgba(41, 206, 69, 0.171));
+$fondos:( index: rgba(212, 177, 163, 0.178), cine:rgba(211, 78, 223, 0.178), literatura: rgba(251, 255, 18, 0.179), musica: rgba(41, 206, 69, 0.171), header:#afafaf85, sn:rgba(99, 1, 1, 0.323), qsp:rgba(255, 145, 0, 0.501));
 // =====ESTE EACH CREARA LAS CLASES DE LOS FONDOS CON EL MAP $FONDOS=====
 @each $seccion,
 $color in $fondos {
@@ -16,7 +18,9 @@ $color in $fondos {
 }
 
 // =====MAPS DE WIDTHS PARA FORMS, BOTONES Y DROPDOWN=====
-$input-sizes:(que-buscas:40%, boton:15%, drop-down:10%);
+$input-sizes:(que-buscas:40%, boton:20%, drop-down:10%);
+$input-sizes600:(que-buscas:80%, boton:35%, drop-down:30%);
+$input-sizes300:(que-buscas:90%, boton:55%, drop-down:60%);
 // =======PROPIEDADES CSS/SASS GENERALES=======
 body {
     margin: 0;
@@ -38,6 +42,7 @@ body {
 
 // ==========MIXINS GENERALES DE LOS FILTROS===========
 @mixin titulos($position-right) {
+    margin: 10rem;
     font-family: $titles-font, cursive;
     font-size: map-get($tam-letra-100, titulos);
     position: relative;
@@ -57,10 +62,15 @@ body {
 }
 
 @mixin dropdown {
-    width: map-get($input-sizes, drop-down);
-    margin: 4rem;
-    padding: 2rem;
-    border-radius: 30px;
+    position: relative;
+    right: -5%;
+    margin: 7rem;
+    &__dropdown {
+        width: map-get($input-sizes, drop-down);
+        margin: 4rem;
+        padding: 2rem;
+        border-radius: 30px;
+    }
 }
 
 @mixin checkboxes {
@@ -88,14 +98,14 @@ body {
     font-family: $main-font;
     font-size: map-get($tam-letra-100, forms);
     margin-left: 10%;
-    margin-right: 10%;
+    margin-right: 20%;
     margin-top: 5%;
     margin-bottom: 5%;
     background-color: $fondo-forms;
     justify-items: space-between;
 }
 
-// =====MIXINS DE SECCION CINE===============
+// =====MIXINS RECOMENDADOS===============
 @mixin contenidos {
     font-family: $titles-font, cursive;
     font-size: 40px;
@@ -116,8 +126,185 @@ body {
     }
 }
 
+// =========MIXINS MEDIA QUERIES===================
+// ===============FORMS==============
+// =========================MQ 361px A 600px===========
+@mixin titulos600($position-right) {
+    margin: 10rem;
+    font-family: $titles-font, cursive;
+    font-size: map-get($tam-letra-600, titulos);
+    position: relative;
+    right: $position-right;
+    padding: 20px;
+}
+
+@mixin forms600($fondo-forms) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: auto;
+    width: auto;
+    font-family: $main-font;
+    font-size: map-get($tam-letra-600, forms);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: $fondo-forms;
+    justify-items: space-between;
+}
+
+@mixin botones600($position-right, $position-top, $color-boton) {
+    width: map-get($input-sizes600, boton);
+    padding: 3px;
+    position: relative;
+    right: $position-right;
+    top: $position-top;
+    background-color: $color-boton;
+    border-radius: 45%;
+    margin: 7rem;
+}
+
+@mixin dropdown600 {
+    margin: 7rem;
+    &__dropdown {
+        width: map-get($input-sizes600, drop-down);
+        margin: 2rem;
+        padding: 2rem;
+        border-radius: 30px;
+    }
+}
+
+@mixin checkboxes600 {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    li {
+        margin: 3rem;
+    }
+    margin:7rem;
+}
+
+@mixin qb-input600 {
+    border-radius: 30px;
+    width: map-get($input-sizes600, que-buscas);
+    margin: 7rem;
+}
+
+// =====RECOMENDADOS=====
+@mixin contenidos600 {
+    font-family: $titles-font, cursive;
+    font-size: map-get($input-sizes600, cont);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    img {
+        width: 90rem;
+        height: 50rem;
+        border: rgba(248, 62, 5, 0.158) solid 3px;
+    }
+    img:hover {
+        border: 2px inset #ffd700;
+        width: 70rem;
+        height: 37rem;
+    }
+}
+
+// =========================MQ 0px A 361px===========
+@mixin titulos300($position-right) {
+    margin: 10rem;
+    font-family: $titles-font, cursive;
+    font-size: map-get($tam-letra-300, titulos);
+    position: relative;
+    right: $position-right;
+    padding: 20px;
+}
+
+@mixin forms300($fondo-forms) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: auto;
+    width: auto;
+    font-family: $main-font;
+    font-size: map-get($tam-letra-300, forms);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: $fondo-forms;
+    justify-items: space-between;
+}
+
+@mixin botones300($position-right, $position-top, $color-boton) {
+    width: map-get($input-sizes300, boton);
+    padding: 3px;
+    position: relative;
+    right: $position-right;
+    top: $position-top;
+    background-color: $color-boton;
+    border-radius: 45%;
+    margin: 4rem;
+}
+
+@mixin dropdown300 {
+    margin: 7rem;
+    &__dropdown {
+        width: map-get($input-sizes300, drop-down);
+        margin: 2rem;
+        padding: 2rem;
+        border-radius: 30px;
+    }
+}
+
+@mixin checkboxes300 {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap,
+    li {
+        margin: 3rem;
+    }
+    margin:7rem;
+}
+
+@mixin qb-input300 {
+    border-radius: 30px;
+    width: map-get($input-sizes300, que-buscas);
+    margin: 7rem;
+}
+
+@mixin qb300 {
+    font-size: map-get($tam-letra-300, qb);
+    margin: 0rem;
+}
+
+// =====RECOMENDADOS=====
+@mixin contenidos300 {
+    font-family: $titles-font, cursive;
+    font-size: map-get($input-sizes300, cont);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    img {
+        width: 90rem;
+        height: 50rem;
+        border: rgba(248, 62, 5, 0.158) solid 3px;
+    }
+    img:hover {
+        border: 2px inset #ffd700;
+        width: 70rem;
+        height: 37rem;
+    }
+}
+
 // ==IMPORTS========
-@import "../scss/cine/cine__grillas.scss";
 // ======IMPORTS INDEX========
 @import "../scss/index/index__grillas.scss";
 @import "../scss/index/index__fotos.scss";
@@ -131,14 +318,35 @@ body {
 @import "../scss/musica/musica__form.scss";
 @import "../scss/musica/musica__grillas.scss";
 @import "../scss/musica/musica__rec.scss";
+// ======IMPORTS SECCION CINE========
+@import "../scss/cine/cine__grillas.scss";
+@import "../scss/cine/cine__form.scss";
+@import "../scss/cine/cine__recomendados.scss";
+// ================IMPORTS SECCION CINE------MQ========
+@import "../scss/media\ queries/MQ__cine/MQ__cine__filtro.scss";
+@import "../scss/media\ queries/MQ__cine/MQ__cine__grillas.scss";
+@import "../scss/media\ queries/MQ__cine/MQ__cine__rec.scss";
 // ================IMPORTS HEADER Y FOOTER------MQ========
 @import "../media\ queries/MQ__musica/MQ__musica__grillas.scss";
 @import "../media\ queries/MQ__musica/MQ__musica__rec.scss";
 @import "../media\ queries/MQ__musica/MQ__musica__filtro.scss";
+// ======IMPORTS SECCION SOBRE NOSOTROS========
+@import "../scss/Sobre\ Nosotros/nuestro__equipo.scss";
+@import "../scss/Sobre\ Nosotros/sobre__nosotros__grillas.scss";
+@import "../scss/Sobre\ Nosotros/sobre__nosotros__texto.scss";
 // ======IMPORTS SECCION LITERATURA========
 @import "../scss/lit/lit__filtro.scss";
 @import "../scss/lit/lit__grillas.scss";
 @import "../scss/lit/lit__recomendados.scss";
+// ================IMPORTS SECCION LIT------MQ========
+@import "../scss/media\ queries/MQ__lit/MQ__lit__filtro.scss";
+@import "../scss/media\ queries/MQ__lit/MQ__lit__grillas.scss";
+@import "../scss/media\ queries/MQ__lit/MQ__lit__rec.SCSS";
+// ======IMPORTS SECCION QUERES SER PARTE========
+@import "../scss/queres\ ser\ parte/qsp__form.scss";
+@import "../scss/queres\ ser\ parte/qsp__grillas.scss";
+@import "../scss/queres\ ser\ parte/qsp__img.scss";
+@import "../scss/queres\ ser\ parte/qsp__Texto.scss";
 // ======IMPORTS HEADER Y FOOTER========
 @import "../scss/header.scss";
 @import "../scss/footer.scss";
@@ -148,9 +356,6 @@ body {
 // ======RESTANTES POR ORDENAR========
 @import "../scss/queres\ ser\ parte/qsp__grillas.scss";
 @import "../scss/media\ queries/media__queries__todo.scss";
-@import "../scss/Sobre\ Nosotros/sobre__nosotros__grillas";
-@import "../scss/Sobre\ Nosotros/nuestro__equipo.scss";
-@import "../scss/Sobre\ Nosotros/sobre__nosotros__texto.scss";
 @import "../scss/queres\ ser\ parte/qsp__grillas.scss";
 @import "../scss/queres\ ser\ parte/qsp__form.scss";
 @import "../scss/queres\ ser\ parte/qsp__texto.scss";

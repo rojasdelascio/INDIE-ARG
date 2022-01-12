@@ -2,11 +2,7 @@
 .form__cine {
     grid-area: form__cine;
     background-image: url("../imagenes/cine__bg__form2.png");
-    background-position: Center;
     background-size: cover;
-    padding: 20px;
-    width: 100%;
-    height: 100%;
     &__div {
         // background-color: rgba(211, 78, 223, 0.329);
         // height: auto;
@@ -17,7 +13,7 @@
         // font-family: $titles-font;
         // padding: 20px;
         &__titulo {
-            @include titulos(-30%);
+            @include titulos(-20%);
         }
         &__div2 {
             @include forms(rgba(211, 78, 223, 0.329));

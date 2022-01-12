@@ -9,11 +9,13 @@ $tam-letra-100:(titulos:15rem, forms:5rem, headyfoot:7rem, qb:12rem);
         //     font-size: $titulos;
         //     position: relative;
         //     right: -35%;
-        @include titulos(-35%);
+        @include titulos(-20%);
     }
     &__form {
         &__div {
             @include forms(rgba(251, 255, 18, 0.268));
+            position: relative;
+            right: -5%;
             &__qb {
                 font-size: map-get($tam-letra-100, qb);
                 font-style: $main-font;

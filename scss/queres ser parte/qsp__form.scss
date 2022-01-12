@@ -4,11 +4,12 @@
 
 .form__qsp {
     font-family: $main-font;
-    grid-area: form;
+    font-size: 5rem;
+    grid-area: form__qsp;
     background-color: rgba(212, 177, 163, 0.178);
     background-image: url("../imagenes/qsp__bg__form.png");
     background-size: cover;
-    padding: 40px;
+    margin: 10rem;
     input,
     textarea,
     button {
@@ -20,7 +21,7 @@
         text-align: center;
     }
     button {
-        padding: 10px;
+        padding: 3rem;
         position: relative;
         right: -10px;
         top: 1px;
@@ -32,7 +33,7 @@
     }
     &__div {
         background-color: rgba(212, 177, 163, 0.459);
-        padding: 15px;
+        margin: 3rem;
         position: relative;
         right: -10%;
         width: 80%;

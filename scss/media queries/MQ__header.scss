@@ -2,20 +2,19 @@
     .root__element {
         font-size: 3px;
     }
+    .indie__arg {
+        font-size: map-get($tam-letra-300, logo);
+    }
     header {
         width: 100%;
         height: 200px;
-        background-color: #ffffff85;
+        // background-color: map-get($fondos, header);
         grid-area: header;
         nav {
             background-color: rgba(201, 0, 0, 0.39);
             width: 100%;
             height: auto;
         }
-    }
-    .home__mp {
-        font-family: $main-font;
-        font-size: 5rem;
     }
     .elementos__header {
         display: flex;
@@ -29,7 +28,11 @@
             display: flex;
             flex-direction: column;
             font-family: $main-font;
-            font-size: 5rem;
+            font-size: map-get($tam-letra-300, headyfoot);
+            .home__mp {
+                font-family: $main-font;
+                font-size: map-get($tam-letra-300, headyfoot);
+            }
             li {
                 list-style-type: none;
                 padding: 10px
@@ -43,11 +46,11 @@
         display: flex;
         flex-direction: row;
         font-family: $main-font;
-        font-size: 6.5rem;
+        font-size: map-get($tam-letra-600, headyfoot);
     }
     .home__mp {
         font-family: $main-font;
-        font-size: 6.5rem;
+        font-size: map-get($tam-letra-600, headyfoot);
     }
     header {
         width: 100%;
@@ -63,7 +66,7 @@
         flex-wrap: nowrap;
         width: 80%;
         position: relative;
-        right: 0%;
+        right: -8%;
     }
     .elementos__header ul li {
         list-style-type: none;

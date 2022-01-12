@@ -4,25 +4,23 @@
 
 #texto__qsp {
     font-family: $main-font;
-    grid-area: texto;
+    grid-area: texto__qsp;
     background-image: url("../imagenes/qsp__bg__form2png.png");
-    position: relative;
     height: auto;
-    width: auto;
-    padding: 40px;
+    margin: 10rem;
+    ;
     h3 {
-        @include titulos(-20%);
-        // font-family: $titles-font, cursive;
-        // font-size: map-get($tam-letra-100, titulos);
-        // text-align: center;
-        // width: 80%;
-        // position: relative;
-        // right: -20%;
-        // padding: 20px;
+        font-family: $titles-font, cursive;
+        font-size: map-get($tam-letra-100, titulos);
+        text-align: center;
+        width: 80%;
+        position: relative;
+        right: -20%;
+        padding: 20px;
     }
     p {
         width: 1000px;
-        font-size: 15px;
+        font-size: 3rem;
         text-align: center;
         width: 80%;
         position: relative;
@@ -30,9 +28,6 @@
         padding: 20px;
     }
     &__titulo {
-        font-family: $titles-font, cursive;
-        font-size: 40px;
-        position: relative;
-        right: -0%;
+        @include titulos(-20%);
     }
 }

@@ -1,5 +1,5 @@
 .nuestro__equipo {
-    grid-area: ne;
+    grid-area: equipo;
     font-family: $main-font;
     height: auto;
     width: auto;
@@ -9,11 +9,7 @@
     background-position: center;
     background-repeat: repeat;
     &__titulo {
-        font-family: $titles-font, cursive;
-        font-size: 50px;
-        padding: 20px;
-        position: relative;
-        right: -22%;
+        @include titulos(-20%);
     }
     img {
         width: 250px;

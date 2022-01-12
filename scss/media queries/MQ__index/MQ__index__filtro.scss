@@ -11,64 +11,72 @@
         height: auto;
         margin: 0px;
         &__titulo1 {
-            font-family: $titles-font, cursive;
-            font-size: 10rem;
-            position: relative;
-            right: -15%;
-            top: 0%;
+            @include titulos300(0%);
+            // font-family: $titles-font, cursive;
+            // font-size: 10rem;
+            // position: relative;
+            // right: -15%;
+            // top: 0%;
         }
         &__form {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            font-family: $main-font;
-            justify-content: center;
-            align-items: center;
-            font-size: 5rem;
-            background-color: rgba(212, 177, 163, 0.178);
-            border-radius: 10px;
-            height: auto;
+            @include forms300(rgba(212, 177, 163, 0.178));
+            // display: flex;
+            // flex-direction: column;
+            // flex-wrap: nowrap;
+            // font-family: $main-font;
+            // justify-content: center;
+            // align-items: center;
+            // font-size: 5rem;
+            // background-color: rgba(212, 177, 163, 0.178);
+            // border-radius: 10px;
+            // height: auto;
             &__qb {
-                display: block;
-                font-size: 5rem;
-                margin: 0rem;
+                @include qb300;
+                // display: block;
+                // font-size: 5rem;
+                // margin: 0rem;
             }
             &__pc {
-                padding: 3rem;
-                border-color: darkgray;
-                border-radius: 30px;
-                width: 50rem;
-                margin: 8rem;
-            }
-            &__checkbox {
-                list-style-type: none;
-                display: flex;
-                margin: 8rem;
-            }
-            &__checkbox input {
-                margin: 3rem;
-            }
-            &__button {
-                width: 25rem;
-                height: 10rem;
-                background-color: rgba(255, 172, 172, 0.58);
-                border-radius: 70px;
-            }
-            &__genero {
-                &__dropdown {
-                    padding: 2rem;
-                    width: 30rem;
-                    select:hover {
-                        background-color: #fcdc27b7;
-                    }
+                @include qb-input300;
+                // padding: 3rem;
+                // border-color: darkgray;
+                // border-radius: 30px;
+                // width: 50rem;
+                // margin: 8rem;
+                &:hover {
+                    background-color: #ffd90085;
                 }
             }
-            &__button:hover {
-                background-color: gold;
-                color: floralwhite;
+            &__checkbox {
+                @include checkboxes300;
+                // list-style-type: none;
+                // display: flex;
+                // margin: 8rem;
             }
-            &__pc:hover {
-                background-color: #ffd90085;
+            // &__checkbox input {
+            //     margin: 3rem;
+            // }
+            &__button {
+                @include botones300(0%,
+                0%,
+                rgba(255, 172, 172, 0.58));
+                // width: 25rem;
+                // height: 10rem;
+                // background-color: rgba(255, 172, 172, 0.58);
+                // border-radius: 70px;
+                &:hover {
+                    background-color: gold;
+                    color: floralwhite;
+                }
+            }
+            &__genero {
+                @include dropdown300;
+                // &__dropdown {
+                //     padding: 2rem;
+                //     width: 30rem;
+                //     select:hover {
+                //         background-color: #fcdc27b7;
+                //     }
             }
         }
     }
@@ -87,65 +95,44 @@
         height: auto;
         margin: 0px;
         &__titulo1 {
-            font-family: $titles-font, cursive;
-            font-size: 20rem;
-            position: relative;
-            right: -15%;
-            top: 0%;
+            @include titulos600(-5%);
         }
         &__form {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            font-family: $main-font;
-            justify-content: center;
-            align-items: center;
-            font-size: 10rem;
-            background-color: rgba(212, 177, 163, 0.178);
-            border-radius: 10px;
-            height: auto;
+            @include forms600(rgba(212,
+            177,
+            163,
+            0.178));
             &__qb {
-                display: block;
-                font-size: 12rem;
+                font-size: map-get($tam-letra-600, qb);
                 margin: 0rem;
             }
             &__pc {
-                padding: 3rem;
-                border-color: darkgray;
-                border-radius: 30px;
-                width: 70%;
-                margin: 10rem;
+                @include qb-input600;
             }
             &__checkbox {
-                list-style-type: none;
-                display: flex;
-                margin: 10rem;
-            }
-            &__checkbox input {
-                margin: 5rem;
+                @include checkboxes600;
             }
             &__button {
-                width: 40rem;
-                height: 20rem;
-                background-color: rgba(255, 172, 172, 0.58);
-                border-radius: 70px;
+                @include botones600(0%,
+                0%,
+                rgba(255,
+                172,
+                172,
+                0.58));
             }
             &__genero {
-                &__dropdown {
-                    padding: 2rem;
-                    width: 30rem;
-                    select:hover {
-                        background-color: #fcdc27b7;
-                    }
+                @include dropdown600;
+                &__dropdown select:hover {
+                    background-color: #fcdc27b7;
                 }
             }
-            &__button:hover {
-                background-color: gold;
-                color: floralwhite;
-            }
-            &__pc:hover {
-                background-color: #ffd90085;
-            }
+        }
+        &__button:hover {
+            background-color: gold;
+            color: floralwhite;
+        }
+        &__pc:hover {
+            background-color: #ffd90085;
         }
     }
     .fotos__index {

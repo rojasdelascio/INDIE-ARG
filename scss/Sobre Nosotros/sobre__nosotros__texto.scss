@@ -1,5 +1,5 @@
 .sobre__nosotros {
-    grid-area: sn;
+    grid-area: texto;
     font-family: $main-font, sans-serif;
     font-size: 13px;
     background-color: #9c716d7c;
@@ -12,15 +12,11 @@
     &__texto {
         font-family: $main-font, sans-serif;
         text-align: justify;
-        width: 80%;
+        width: auto;
         padding: 20px;
         font-size: 23px;
     }
     &__titulo {
-        font-family: $titles-font, cursive;
-        font-size: 50px;
-        padding: 20px;
-        position: relative;
-        right: -22%;
+        @include titulos(0%);
     }
 }

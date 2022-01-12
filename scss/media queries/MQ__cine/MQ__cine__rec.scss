@@ -1,0 +1,55 @@
+        @media (min-width: 0px) and (max-width:360px) {
+            .contenido__cine {
+                overflow: scroll;
+                &__div__titulo {
+                    @include titulos300(10%);
+                }
+                &__div__div2 {
+                    position: relative;
+                    right: -5%;
+                    &__cortos {
+                        @include contenidos300;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    &__series {
+                        @include contenidos300;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    &__skits {
+                        @include contenidos300;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+        
+        @media (min-width: 361px) and (max-width: 600px) {
+            .contenido__cine {
+                overflow: scroll;
+                &__div__titulo {
+                    @include titulos600(-20%);
+                }
+                &__div__div2 {
+                    position: relative;
+                    right: -20%;
+                    &__cortos {
+                        @include contenidos600;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    &__series {
+                        @include contenidos600;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    &__skits {
+                        @include contenidos600;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }

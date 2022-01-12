@@ -11,7 +11,7 @@ $contenidos-fsize: 10rem;
         background-color: rgba(211, 78, 223, 0.329);
     }
     &__div__titulo {
-        @include titulos(-40%);
+        @include titulos(-20%);
     }
     &__div__div2 {
         &__cortos {
