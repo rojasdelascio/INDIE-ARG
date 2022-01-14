@@ -1,95 +1,67 @@
-                @media (min-width: 0px) and (max-width:360px) {
-                    .root__element {
-                        font-size: 3px;
+@media (min-width: 0px) and (max-width:420px) {
+    .root__element {
+        font-size: 3px;
+    }
+    body .form__musica {
+        height: auto;
+        &__titulo {
+            @include titulos300(-10%);
+            width: 40%;
+        }
+        &__form {
+            &__div {
+                @include forms300(rgba(41, 206, 69, 0.171));
+                &__qb {
+                    @include qb300;
+                }
+                &__pc {
+                    @include qb-input300;
+                }
+                &__genero {
+                    @include dropdown300;
+                }
+                &__button {
+                    @include botones300(0%, 0%, rgba(41, 206, 69, 0.171));
+                    width: 20reM;
+                }
+            }
+        }
+    }
+    @media (min-width: 421px) and (max-width: 600px) {
+        .root__element {
+            font-size: 3px;
+        }
+        body .form__musica {
+            &__titulo {
+                position: Relative;
+                right: -20%;
+                top: 3%;
+            }
+            &__div {
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    font-size: 5rem;
+                    border-radius: 10%;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: auto;
+                    height: auto;
+                    margin: auto;
+                    input,
+                    select,
+                    button,
+                    label {
+                        margin: 6rem;
                     }
-                    body .form__musica {
-                        height: auto;
-                        &__div__pc {
-                            width: 30%;
-                            height: 6rem;
-                        }
-                        &__titulo {
-                            font-family: $titles-font, cursive;
-                            font-size: 10rem;
-                            padding: 20px;
-                            position: relative;
-                            right: 0%;
-                        }
-                        &__div {
-                            padding: 50px;
-                            &__qb {
-                                font-size: 6rem;
-                            }
-                            form {
-                                font-size: 5rem;
-                                border-radius: 10%;
-                                width: auto;
-                                input,
-                                button,
-                                select {
-                                    border-radius: 40%;
-                                    margin: 5rem;
-                                    font-size: 5rem;
-                                }
-                                button {
-                                    width: auto;
-                                    margin: 4rem;
-                                    position: relative;
-                                    right: 10%;
-                                }
-                                button:hover,
-                                select:hover,
-                                input:hover {
-                                    background-color: gold;
-                                }
-                            }
-                            &__div {
-                                padding: 50px;
-                                &__qb {
-                                    font-size: 1rem;
-                                }
-                                &__genero {
-                                    position: relative;
-                                    top: 10px;
-                                }
-                            }
-                        }
-                    }
-                    @media (min-width: 361px) and (max-width: 600px) {
-                        .root__element {
-                            font-size: 3px;
-                        }
-                        body .form__musica {
-                            &__titulo {
-                                position: Relative;
-                                right: -20%;
-                                top: 3%;
-                            }
-                            &__div {
-                                form {
-                                    display: flex;
-                                    flex-direction: column;
-                                    flex-wrap: nowrap;
-                                    font-size: 5rem;
-                                    border-radius: 10%;
-                                    align-items: center;
-                                    justify-content: space-between;
-                                    width: auto;
-                                    height: auto;
-                                    margin: auto;
-                                    input,
-                                    select,
-                                    button,
-                                    label {
-                                        margin: 6rem;
-                                    }
-                                    button {
-                                        position: relative;
-                                        right: 0%;
-                                        margin: 8rem;
-                                    }
-                                }
-                            }
-                        }
+                    button {
+                        position: relative;
+                        right: 0%;
+                        margin: 8rem;
                     }
                 }
+            }
+        }
+    }
+}

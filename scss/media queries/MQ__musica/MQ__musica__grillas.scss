@@ -1,8 +1,8 @@
-@media (min-width: 0px) and (max-width:360px) {
+@media (min-width: 0px) and (max-width:420px) {
     #grilla__musica {
         display: grid;
         grid-template-areas: "header" "main__musica" "footer";
-        grid-template-rows: 250px auto 1fr;
+        grid-template-rows: 24% auto 10%;
         grid-template-columns: 100%;
     }
     #main__musica {
@@ -14,4 +14,4 @@
     }
 }
 
-@media (min-width: 361px) and (max-width: 600px) {}
+@media (min-width: 421px) and (max-width: 600px) {}
