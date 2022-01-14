@@ -1,8 +1,8 @@
-@media (min-width: 0px) and (max-width:360px) {
+@media (min-width: 0px) and (max-width:420px) {
     .form__cine {
         &__div {
             &__titulo {
-                @include titulos300(10%);
+                @include titulos300(-5%);
             }
             &__div2 {
                 @include forms300(rgba(211, 78, 223, 0.329));
@@ -33,7 +33,7 @@
     }
 }
 
-@media (min-width: 361px) and (max-width: 600px) {
+@media (min-width: 421px) and (max-width: 600px) {
     .form__cine {
         &__div {
             &__titulo {

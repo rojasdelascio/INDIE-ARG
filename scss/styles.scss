@@ -6,7 +6,7 @@ $logo-font:'Permanent Marker';
 // =====MAPS DE TAMAÑOS DE LETRA PARA TODO=====
 $tam-letra-100:(titulos:15rem, forms:5rem, headyfoot:7rem, qb:12rem, logo:20rem);
 $tam-letra-600:(titulos:20rem, forms:10rem, headyfoot:8rem, qb:17rem, logo:20rem, cont:14rem);
-$tam-letra-300:(titulos:15rem, forms:10rem, headyfoot:10rem, qb:16rem, logo:13rem);
+$tam-letra-300:(titulos:13rem, forms:5rem, headyfoot:8rem, qb:10rem, logo:13rem);
 // =====MAPS DE FONDOS PARA TODO=====
 $fondos:( index: rgba(212, 177, 163, 0.178), cine:rgba(211, 78, 223, 0.178), literatura: rgba(251, 255, 18, 0.179), musica: rgba(41, 206, 69, 0.171), header:#afafaf85, sn:rgba(99, 1, 1, 0.323), qsp:rgba(255, 145, 0, 0.501));
 // =====ESTE EACH CREARA LAS CLASES DE LOS FONDOS CON EL MAP $FONDOS=====
@@ -114,9 +114,13 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px;
+    &__titulo {
+        position: relative;
+        right: -20%;
+    }
     img {
-        width: 66rem;
-        height: 33rem;
+        width: 60rem;
+        height: 27rem;
         border: rgba(248, 62, 5, 0.158) solid 3px;
     }
     img:hover {
@@ -220,7 +224,7 @@ body {
     font-size: map-get($tam-letra-300, titulos);
     position: relative;
     right: $position-right;
-    padding: 20px;
+    max-width: 50%;
 }
 
 @mixin forms300($fondo-forms) {

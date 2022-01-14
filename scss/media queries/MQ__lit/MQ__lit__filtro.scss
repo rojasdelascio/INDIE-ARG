@@ -1,12 +1,13 @@
-@media (min-width: 0px) and (max-width:360px) {
+@media (min-width: 0px) and (max-width:420px) {
     .filtro__lit {
         grid-area: filtro__lit;
         &__titulo1 {
-            @include titulos300(0%);
+            @include titulos300(-5%);
         }
         &__form {
             &__div {
                 @include forms300(rgba(251, 255, 18, 0.268));
+                margin-right: 15%;
                 &__qb {
                     font-size: map-get($tam-letra-300, qb);
                     font-style: $main-font;
@@ -35,7 +36,7 @@
     }
 }
 
-@media (min-width: 361px) and (max-width: 600px) {
+@media (min-width: 421px) and (max-width: 600px) {
     .filtro__lit {
         grid-area: filtro__lit;
         &__titulo1 {

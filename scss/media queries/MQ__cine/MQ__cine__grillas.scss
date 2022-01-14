@@ -1,20 +1,22 @@
-@media (min-width: 0px) and (max-width:360px) {
+@media (min-width: 0px) and (max-width:420px) {
     #grilla__cine {
+        min-width: 100%;
         display: grid;
         grid-template-areas: "header" "main" "footer";
-        grid-template-rows: 60% auto 20%;
+        grid-template-rows: 50% auto 20%;
         grid-template-columns: 100%;
     }
     #main__cine {
+        width: 100%;
         grid-area: main;
         display: grid;
         grid-template-areas: "form__cine" "contenido__cine";
-        grid-template-rows: 40% 60%;
+        grid-template-rows: 30% 70%;
         grid-template-columns: 100%;
     }
 }
 
-@media (min-width: 361px) and (max-width: 600px) {
+@media (min-width: 421px) and (max-width: 600px) {
     #grilla__cine {
         display: grid;
         grid-template-areas: "header" "main" "footer";

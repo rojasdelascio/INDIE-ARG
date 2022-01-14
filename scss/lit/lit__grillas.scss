@@ -1,11 +1,10 @@
 /* *************Seccion LITERATURA*********************** */
 
-@import "../lit/lit__recomendados.scss";
-@import "../lit/lit__filtro.scss";
 $main-font: "Josefin Sans";
 $titles-font:'Indie Flower';
 $logo-font:'Permanent Marker';
 #grilla__lit {
+    width: 100%;
     height: 100%;
     display: grid;
     grid-template-areas: "header" "main__lit" "footer";

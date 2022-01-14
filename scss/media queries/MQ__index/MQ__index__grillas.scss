@@ -1,5 +1,6 @@
-@media (min-width: 0px) and (max-width:360px) {
+@media (min-width: 0px) and (max-width:420px) {
     #grilla__index {
+        width: 100%;
         display: grid;
         grid-template-areas: "header" "main__index" "footer";
         grid-template-rows: 27% auto 20%;
@@ -15,7 +16,7 @@
     }
 }
 
-@media (min-width: 361px) and (max-width: 600px) {
+@media (min-width: 421px) and (max-width: 600px) {
     .root__element {
         font-size: 3px;
     }

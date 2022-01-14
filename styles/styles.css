@@ -346,10 +346,10 @@ body {
     .index__form__titulo1 {
       margin: 10rem;
       font-family: "Indie Flower", cursive;
-      font-size: 15rem;
+      font-size: 13rem;
       position: relative;
       right: 0%;
-      padding: 20px; }
+      max-width: 50%; }
     .index__form__form {
       display: flex;
       flex-direction: column;
@@ -358,7 +358,7 @@ body {
       height: auto;
       width: auto;
       font-family: "Josefin Sans";
-      font-size: 10rem;
+      font-size: 5rem;
       margin-left: 10%;
       margin-right: 10%;
       margin-top: 5%;
@@ -366,7 +366,7 @@ body {
       background-color: rgba(212, 177, 163, 0.178);
       justify-items: space-between; }
       .index__form__form__qb {
-        font-size: 16rem;
+        font-size: 10rem;
         margin: 0rem; }
       .index__form__form__pc {
         border-radius: 30px;
@@ -559,8 +559,9 @@ body {
         width: 350px;
         height: 200px; } }
 
-@media (min-width: 0px) and (max-width: 360px) {
+@media (min-width: 0px) and (max-width: 420px) {
   #grilla__index {
+    width: 100%;
     display: grid;
     grid-template-areas: "header" "main__index" "footer";
     grid-template-rows: 27% auto 20%;
@@ -573,7 +574,7 @@ body {
     grid-template-rows: 10% 45% 45%;
     grid-template-columns: 100%; } }
 
-@media (min-width: 361px) and (max-width: 600px) {
+@media (min-width: 421px) and (max-width: 600px) {
   .root__element {
     font-size: 3px; }
   #grilla__index {
@@ -794,146 +795,15 @@ body .musica__recomendada {
       height: 40rem; }
 
 /* ***************seccion CINE*************************** */
-.contenido__cine {
-  grid-area: contenido__cine;
-  background-image: url("../imagenes/cine__bg__cont2.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
-  width: auto;
-  height: auto; }
-  .contenido__cine__div {
-    background-color: rgba(211, 78, 223, 0.329); }
-  .contenido__cine__div__titulo {
-    font-family: "Indie Flower", cursive;
-    font-size: 15rem;
-    position: relative;
-    right: -20%;
-    padding: 20px; }
-  .contenido__cine__div__div2__cortos {
-    font-family: "Indie Flower", cursive;
-    font-size: 40px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px; }
-    .contenido__cine__div__div2__cortos img {
-      width: 66rem;
-      height: 33rem;
-      border: rgba(248, 62, 5, 0.158) solid 3px; }
-    .contenido__cine__div__div2__cortos img:hover {
-      border: 2px inset #ffd700;
-      width: 70rem;
-      height: 37rem; }
-    .contenido__cine__div__div2__cortos__titulo {
-      font-size: 10rem; }
-  .contenido__cine__div__div2__series {
-    font-family: "Indie Flower", cursive;
-    font-size: 40px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px; }
-    .contenido__cine__div__div2__series img {
-      width: 66rem;
-      height: 33rem;
-      border: rgba(248, 62, 5, 0.158) solid 3px; }
-    .contenido__cine__div__div2__series img:hover {
-      border: 2px inset #ffd700;
-      width: 70rem;
-      height: 37rem; }
-    .contenido__cine__div__div2__series__titulo {
-      font-size: 10rem; }
-  .contenido__cine__div__div2__skits {
-    font-family: "Indie Flower", cursive;
-    font-size: 40px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px; }
-    .contenido__cine__div__div2__skits img {
-      width: 66rem;
-      height: 33rem;
-      border: rgba(248, 62, 5, 0.158) solid 3px; }
-    .contenido__cine__div__div2__skits img:hover {
-      border: 2px inset #ffd700;
-      width: 70rem;
-      height: 37rem; }
-    .contenido__cine__div__div2__skits__titulo {
-      font-size: 10rem; }
-
-.form__cine {
-  grid-area: form__cine;
-  background-image: url("../imagenes/cine__bg__form2.png");
-  background-size: cover; }
-  .form__cine__div__titulo {
-    font-family: "Indie Flower", cursive;
-    font-size: 15rem;
-    position: relative;
-    right: -20%;
-    padding: 20px; }
-  .form__cine__div__div2 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    height: auto;
-    width: auto;
-    font-family: "Josefin Sans";
-    font-size: 5rem;
-    margin-left: 10%;
-    margin-right: 20%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    background-color: rgba(211, 78, 223, 0.329);
-    justify-items: space-between; }
-    .form__cine__div__div2__dropdown {
-      position: relative;
-      right: -5%;
-      margin: 7rem; }
-      .form__cine__div__div2__dropdown__dropdown {
-        width: 10%;
-        margin: 4rem;
-        padding: 2rem;
-        border-radius: 30px; }
-    .form__cine__div__div2__qbinput {
-      width: 30%;
-      border-radius: 30px;
-      width: 40%; }
-    .form__cine__div__div2__qb {
-      font-size: 12rem;
-      margin: 4rem;
-      font-style: "Josefin Sans"; }
-    .form__cine__div__div2__checkbox {
-      list-style: none;
-      display: flex;
-      flex-direction: row; }
-      .form__cine__div__div2__checkbox li {
-        margin: 3rem; }
-  .form__cine button:hover,
-  .form__cine select:hover,
-  .form__cine input:hover {
-    background-color: gold; }
-  .form__cine button {
-    width: 20%;
-    padding: 3px;
-    position: relative;
-    right: 0%;
-    top: 0%;
-    background-color: rgba(245, 23, 197, 0.58);
-    border-radius: 45%;
-    margin: 4rem; }
-
 #grilla__cine {
+  width: 100%;
   display: grid;
   grid-template-areas: "header" "main__cine" "footer";
   grid-template-rows: 30% auto 20%;
   grid-template-columns: 100%; }
 
 #main__cine {
+  width: 100%;
   grid-area: main__cine;
   display: grid;
   grid-template-areas: "form__cine" "contenido__cine";
@@ -1026,9 +896,12 @@ body .musica__recomendada {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px; }
+    .contenido__cine__div__div2__cortos__titulo {
+      position: relative;
+      right: -20%; }
     .contenido__cine__div__div2__cortos img {
-      width: 66rem;
-      height: 33rem;
+      width: 60rem;
+      height: 27rem;
       border: rgba(248, 62, 5, 0.158) solid 3px; }
     .contenido__cine__div__div2__cortos img:hover {
       border: 2px inset #ffd700;
@@ -1044,9 +917,12 @@ body .musica__recomendada {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px; }
+    .contenido__cine__div__div2__series__titulo {
+      position: relative;
+      right: -20%; }
     .contenido__cine__div__div2__series img {
-      width: 66rem;
-      height: 33rem;
+      width: 60rem;
+      height: 27rem;
       border: rgba(248, 62, 5, 0.158) solid 3px; }
     .contenido__cine__div__div2__series img:hover {
       border: 2px inset #ffd700;
@@ -1062,9 +938,12 @@ body .musica__recomendada {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px; }
+    .contenido__cine__div__div2__skits__titulo {
+      position: relative;
+      right: -20%; }
     .contenido__cine__div__div2__skits img {
-      width: 66rem;
-      height: 33rem;
+      width: 60rem;
+      height: 27rem;
       border: rgba(248, 62, 5, 0.158) solid 3px; }
     .contenido__cine__div__div2__skits img:hover {
       border: 2px inset #ffd700;
@@ -1073,14 +952,14 @@ body .musica__recomendada {
     .contenido__cine__div__div2__skits__titulo {
       font-size: 10rem; }
 
-@media (min-width: 0px) and (max-width: 360px) {
+@media (min-width: 0px) and (max-width: 420px) {
   .form__cine__div__titulo {
     margin: 10rem;
     font-family: "Indie Flower", cursive;
-    font-size: 15rem;
+    font-size: 13rem;
     position: relative;
-    right: 10%;
-    padding: 20px; }
+    right: -5%;
+    max-width: 50%; }
   .form__cine__div__div2 {
     display: flex;
     flex-direction: column;
@@ -1089,7 +968,7 @@ body .musica__recomendada {
     height: auto;
     width: auto;
     font-family: "Josefin Sans";
-    font-size: 10rem;
+    font-size: 5rem;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 5%;
@@ -1108,7 +987,7 @@ body .musica__recomendada {
       width: 90%;
       margin: 7rem; }
     .form__cine__div__div2__qb {
-      font-size: 16rem;
+      font-size: 10rem;
       margin: 4rem;
       font-style: "Josefin Sans"; }
     .form__cine__div__div2__checkbox {
@@ -1133,7 +1012,7 @@ body .musica__recomendada {
     border-radius: 45%;
     margin: 4rem; } }
 
-@media (min-width: 361px) and (max-width: 600px) {
+@media (min-width: 421px) and (max-width: 600px) {
   .form__cine__div__titulo {
     margin: 10rem;
     font-family: "Indie Flower", cursive;
@@ -1192,20 +1071,22 @@ body .musica__recomendada {
     border-radius: 45%;
     margin: 7rem; } }
 
-@media (min-width: 0px) and (max-width: 360px) {
+@media (min-width: 0px) and (max-width: 420px) {
   #grilla__cine {
+    min-width: 100%;
     display: grid;
     grid-template-areas: "header" "main" "footer";
-    grid-template-rows: 60% auto 20%;
+    grid-template-rows: 50% auto 20%;
     grid-template-columns: 100%; }
   #main__cine {
+    width: 100%;
     grid-area: main;
     display: grid;
     grid-template-areas: "form__cine" "contenido__cine";
-    grid-template-rows: 40% 60%;
+    grid-template-rows: 30% 70%;
     grid-template-columns: 100%; } }
 
-@media (min-width: 361px) and (max-width: 600px) {
+@media (min-width: 421px) and (max-width: 600px) {
   #grilla__cine {
     display: grid;
     grid-template-areas: "header" "main" "footer";
@@ -1218,19 +1099,19 @@ body .musica__recomendada {
     grid-template-rows: 40% 60%;
     grid-template-columns: 100%; } }
 
-@media (min-width: 0px) and (max-width: 360px) {
+@media (min-width: 0px) and (max-width: 420px) {
   .contenido__cine {
     overflow: scroll; }
     .contenido__cine__div__titulo {
       margin: 10rem;
       font-family: "Indie Flower", cursive;
-      font-size: 15rem;
+      font-size: 13rem;
       position: relative;
-      right: 10%;
-      padding: 20px; }
+      right: -5%;
+      max-width: 50%; }
     .contenido__cine__div__div2 {
       position: relative;
-      right: -5%; }
+      right: -10%; }
       .contenido__cine__div__div2__cortos {
         font-family: "Indie Flower", cursive;
         display: flex;
@@ -1283,7 +1164,7 @@ body .musica__recomendada {
           width: 70rem;
           height: 37rem; } }
 
-@media (min-width: 361px) and (max-width: 600px) {
+@media (min-width: 421px) and (max-width: 600px) {
   .contenido__cine {
     overflow: scroll; }
     .contenido__cine__div__titulo {
@@ -1712,114 +1593,8 @@ body .musica__recomendada {
       margin: 4rem; }
 
 /* *************Seccion LITERATURA*********************** */
-body .recomendados__lit {
-  grid-area: contenido__lit;
-  background-image: url("../imagenes/lit__bg__rec.png");
-  background-size: cover; }
-  body .recomendados__lit__titulo2 {
-    font-family: "Indie Flower", cursive;
-    font-size: 15rem;
-    position: relative;
-    right: -40%;
-    padding: 20px; }
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  width: 15rem;
-  height: 15rem; }
-
-#carousel-indicators button {
-  width: 4rem;
-  height: 4rem; }
-
-#carousel1 {
-  border: 2rem outset rgba(222, 226, 1, 0.501);
-  width: auto;
-  height: auto;
-  max-width: 300rem;
-  max-height: 110rem;
-  position: relative;
-  right: -15%; }
-
-.carousel-item h5 {
-  font-size: 8rem;
-  font-family: "Josefin Sans"; }
-
-.carousel-item p {
-  font-size: 6rem;
-  font-family: "Josefin Sans"; }
-
-.carousel-item img {
-  max-width: 300rem;
-  max-height: 100rem;
-  object-fit: cover; }
-
-.filtro__lit {
-  grid-area: filtro__lit;
-  background-image: url("../imagenes/lit__bg__form.png");
-  background-size: cover; }
-  .filtro__lit__titulo1 {
-    font-family: "Indie Flower", cursive;
-    font-size: 15rem;
-    position: relative;
-    right: -20%;
-    padding: 20px; }
-  .filtro__lit__form__div {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    height: auto;
-    width: auto;
-    font-family: "Josefin Sans";
-    font-size: 5rem;
-    margin-left: 10%;
-    margin-right: 20%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    background-color: rgba(251, 255, 18, 0.268);
-    justify-items: space-between;
-    position: relative;
-    right: -5%; }
-    .filtro__lit__form__div__qb {
-      font-size: 12rem;
-      font-style: "Josefin Sans";
-      margin: 3rem; }
-    .filtro__lit__form__div__qbinput {
-      width: 30%;
-      border-radius: 30px;
-      width: 40%; }
-    .filtro__lit__form__div__checkbox {
-      list-style: none;
-      display: flex;
-      flex-direction: row; }
-      .filtro__lit__form__div__checkbox li {
-        margin: 3rem; }
-    .filtro__lit__form__div__div2__dropdown {
-      position: relative;
-      right: -5%;
-      margin: 7rem;
-      margin: 3rem; }
-      .filtro__lit__form__div__div2__dropdown__dropdown {
-        width: 10%;
-        margin: 4rem;
-        padding: 2rem;
-        border-radius: 30px; }
-    .filtro__lit__form__div button:hover,
-    .filtro__lit__form__div select:hover,
-    .filtro__lit__form__div input:hover {
-      background-color: gold; }
-    .filtro__lit__form__div button {
-      width: 20%;
-      padding: 3px;
-      position: relative;
-      right: 0%;
-      top: 0%;
-      background-color: rgba(240, 186, 154, 0.58);
-      border-radius: 45%;
-      margin: 4rem; }
-
 #grilla__lit {
+  width: 100%;
   height: 100%;
   display: grid;
   grid-template-areas: "header" "main__lit" "footer";
@@ -1878,16 +1653,16 @@ body .recomendados__lit {
   max-height: 100rem;
   object-fit: cover; }
 
-@media (min-width: 0px) and (max-width: 360px) {
+@media (min-width: 0px) and (max-width: 420px) {
   .filtro__lit {
     grid-area: filtro__lit; }
     .filtro__lit__titulo1 {
       margin: 10rem;
       font-family: "Indie Flower", cursive;
-      font-size: 15rem;
+      font-size: 13rem;
       position: relative;
-      right: 0%;
-      padding: 20px; }
+      right: -5%;
+      max-width: 50%; }
     .filtro__lit__form__div {
       display: flex;
       flex-direction: column;
@@ -1896,15 +1671,16 @@ body .recomendados__lit {
       height: auto;
       width: auto;
       font-family: "Josefin Sans";
-      font-size: 10rem;
+      font-size: 5rem;
       margin-left: 10%;
       margin-right: 10%;
       margin-top: 5%;
       margin-bottom: 5%;
       background-color: rgba(251, 255, 18, 0.268);
-      justify-items: space-between; }
+      justify-items: space-between;
+      margin-right: 15%; }
       .filtro__lit__form__div__qb {
-        font-size: 16rem;
+        font-size: 10rem;
         font-style: "Josefin Sans"; }
       .filtro__lit__form__div__qbinput {
         border-radius: 30px;
@@ -1939,7 +1715,7 @@ body .recomendados__lit {
         border-radius: 45%;
         margin: 4rem; } }
 
-@media (min-width: 361px) and (max-width: 600px) {
+@media (min-width: 421px) and (max-width: 600px) {
   .filtro__lit {
     grid-area: filtro__lit; }
     .filtro__lit__titulo1 {
@@ -1999,20 +1775,23 @@ body .recomendados__lit {
         border-radius: 45%;
         margin: 7rem; } }
 
-@media (min-width: 0px) and (max-width: 360px) {
+@media (min-width: 0px) and (max-width: 420px) {
   #grilla__lit {
+    min-width: 100%;
+    min-height: 100%;
     display: grid;
     grid-template-areas: "header" "main__lit" "footer";
-    grid-template-rows: 70% auto 20%;
+    grid-template-rows: 28% auto 10%;
     grid-template-columns: 100%; }
   #main__lit {
     grid-area: main__lit;
     display: grid;
+    min-width: 100%;
     grid-template-areas: "filtro__lit" "contenido__lit";
-    grid-template-rows: 75% 50%;
+    grid-template-rows: 63% 60%;
     grid-template-columns: 100%; } }
 
-@media (min-width: 361px) and (max-width: 600px) {
+@media (min-width: 421px) and (max-width: 600px) {
   .root__element {
     font-size: 3px; }
   #grilla__lit {
@@ -2027,49 +1806,24 @@ body .recomendados__lit {
     grid-template-rows: 3fr 3fr;
     grid-template-columns: 100%; } }
 
-@media (min-width: 0px) and (max-width: 360px) {
+@media (min-width: 0px) and (max-width: 420px) {
   .root__element {
     font-size: 3px; }
-  .recomendados {
-    grid-area: contenido__lit;
-    background-image: url("../imagenes/index__bg__rec.png");
-    background-size: contain;
-    background-position: center;
-    width: auto;
-    overflow: scroll; }
-    .recomendados__titulo {
+  #carousel1 {
+    width: 70%;
+    position: relative;
+    right: -18%; }
+  .recomendados__lit {
+    max-width: 100%; }
+    .recomendados__lit h3 {
+      margin: 10rem;
       font-family: "Indie Flower", cursive;
-      font-size: 15rem;
+      font-size: 13rem;
       position: relative;
-      right: 0%;
-      padding: 20px; }
-    .recomendados__elementos {
-      position: relative;
-      top: 0%;
-      margin: 5rem; }
-      .recomendados__elementos li {
-        display: inline-block; }
-        .recomendados__elementos li h4 {
-          font-size: 10rem;
-          padding: 1px;
-          position: relative;
-          top: 4%;
-          right: 0%;
-          margin: 6rem; }
-        .recomendados__elementos li h6 {
-          font-size: 8rem;
-          margin-bottom: 6rem;
-          right: 0%; }
-        .recomendados__elementos li img {
-          width: 90rem;
-          height: 70rem;
-          padding: 10px; }
-          .recomendados__elementos li img:hover {
-            border: 2px inset #ffd700;
-            width: 100rem;
-            height: 90rem; } }
+      right: -20%;
+      max-width: 50%; } }
 
-@media (min-width: 361px) and (max-width: 600px) {
+@media (min-width: 421px) and (max-width: 600px) {
   .root__element {
     font-size: 3px; }
   .recomendados {
@@ -2306,7 +2060,7 @@ footer {
       footer ul li a:hover {
         color: floralwhite; }
 
-@media (min-width: 0px) and (max-width: 360px) {
+@media (min-width: 0px) and (max-width: 420px) {
   .root__element {
     font-size: 3px; }
   .indie__arg {
@@ -2331,15 +2085,15 @@ footer {
       display: flex;
       flex-direction: column;
       font-family: "Josefin Sans";
-      font-size: 10rem; }
+      font-size: 8rem; }
       .elementos__header ul .home__mp {
         font-family: "Josefin Sans";
-        font-size: 10rem; }
+        font-size: 8rem; }
       .elementos__header ul li {
         list-style-type: none;
         padding: 10px; } }
 
-@media (min-width: 361px) and (max-width: 600px) {
+@media (min-width: 421px) and (max-width: 600px) {
   .elementos__header ul {
     display: flex;
     flex-direction: row;
@@ -2366,12 +2120,12 @@ footer {
     padding: 10px;
     padding: 10px; } }
 
-@media (min-width: 0px) and (max-width: 360px) {
+@media (min-width: 0px) and (max-width: 420px) {
   footer {
     height: auto;
     width: 100%;
     font-family: "Josefin Sans";
-    font-size: 10rem; }
+    font-size: 8rem; }
     footer ul {
       list-style-type: none;
       display: flex;
@@ -2384,7 +2138,7 @@ footer {
       footer ul li {
         padding: 6px; } }
 
-@media (min-width: 361px) and (max-width: 600px) {
+@media (min-width: 421px) and (max-width: 600px) {
   footer {
     height: auto;
     width: 100%;
@@ -2418,7 +2172,7 @@ footer {
   grid-template-rows: 20% 50%;
   grid-template-columns: 50% 50%; }
 
-@media (min-width: 0px) and (max-width: 360px) {
+@media (min-width: 0px) and (max-width: 420px) {
   .root__element {
     font-size: 3px; }
   .indie__arg {
@@ -2443,15 +2197,15 @@ footer {
       display: flex;
       flex-direction: column;
       font-family: "Josefin Sans";
-      font-size: 10rem; }
+      font-size: 8rem; }
       .elementos__header ul .home__mp {
         font-family: "Josefin Sans";
-        font-size: 10rem; }
+        font-size: 8rem; }
       .elementos__header ul li {
         list-style-type: none;
         padding: 10px; } }
 
-@media (min-width: 361px) and (max-width: 600px) {
+@media (min-width: 421px) and (max-width: 600px) {
   .elementos__header ul {
     display: flex;
     flex-direction: row;
@@ -2478,12 +2232,12 @@ footer {
     padding: 10px;
     padding: 10px; } }
 
-@media (min-width: 0px) and (max-width: 360px) {
+@media (min-width: 0px) and (max-width: 420px) {
   footer {
     height: auto;
     width: 100%;
     font-family: "Josefin Sans";
-    font-size: 10rem; }
+    font-size: 8rem; }
     footer ul {
       list-style-type: none;
       display: flex;
@@ -2496,7 +2250,7 @@ footer {
       footer ul li {
         padding: 6px; } }
 
-@media (min-width: 361px) and (max-width: 600px) {
+@media (min-width: 421px) and (max-width: 600px) {
   footer {
     height: auto;
     width: 100%;
@@ -2528,10 +2282,10 @@ footer {
     .index__form__titulo1 {
       margin: 10rem;
       font-family: "Indie Flower", cursive;
-      font-size: 15rem;
+      font-size: 13rem;
       position: relative;
       right: 0%;
-      padding: 20px; }
+      max-width: 50%; }
     .index__form__form {
       display: flex;
       flex-direction: column;
@@ -2540,7 +2294,7 @@ footer {
       height: auto;
       width: auto;
       font-family: "Josefin Sans";
-      font-size: 10rem;
+      font-size: 5rem;
       margin-left: 10%;
       margin-right: 10%;
       margin-top: 5%;
@@ -2548,7 +2302,7 @@ footer {
       background-color: rgba(212, 177, 163, 0.178);
       justify-items: space-between; }
       .index__form__form__qb {
-        font-size: 16rem;
+        font-size: 10rem;
         margin: 0rem; }
       .index__form__form__pc {
         border-radius: 30px;
@@ -2741,8 +2495,9 @@ footer {
         width: 350px;
         height: 200px; } }
 
-@media (min-width: 0px) and (max-width: 360px) {
+@media (min-width: 0px) and (max-width: 420px) {
   #grilla__index {
+    width: 100%;
     display: grid;
     grid-template-areas: "header" "main__index" "footer";
     grid-template-rows: 27% auto 20%;
@@ -2755,7 +2510,7 @@ footer {
     grid-template-rows: 10% 45% 45%;
     grid-template-columns: 100%; } }
 
-@media (min-width: 361px) and (max-width: 600px) {
+@media (min-width: 421px) and (max-width: 600px) {
   .root__element {
     font-size: 3px; }
   #grilla__index {
