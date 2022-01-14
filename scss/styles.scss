@@ -25,7 +25,6 @@ $input-sizes300:(que-buscas:90%, boton:55%, drop-down:60%);
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
     overflow-x: hidden;
     width: auto;
     a {
@@ -114,13 +113,13 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px;
-    &__titulo {
-        position: relative;
-        right: -20%;
-    }
+    // &__titulo {
+    //     position: relative;
+    //     right: -20%;
+    // }
     img {
         width: 60rem;
-        height: 27rem;
+        height: 30rem;
         border: rgba(248, 62, 5, 0.158) solid 3px;
     }
     img:hover {

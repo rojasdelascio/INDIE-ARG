@@ -9,6 +9,7 @@ $contenidos-fsize: 10rem;
     height: auto;
     &__div {
         background-color: rgba(211, 78, 223, 0.329);
+        margin: 20rem;
     }
     &__div__titulo {
         @include titulos(-20%);

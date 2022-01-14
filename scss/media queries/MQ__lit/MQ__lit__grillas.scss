@@ -1,7 +1,7 @@
 @media (min-width: 0px) and (max-width:420px) {
     #grilla__lit {
         min-width: 100%;
-        min-height: 100%;
+        min-height: 100vh;
         display: grid;
         grid-template-areas: "header" "main__lit" "footer";
         grid-template-rows: 28% auto 10%;

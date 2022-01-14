@@ -7,7 +7,7 @@ $logo-font:'Permanent Marker';
     width: 100%;
     display: grid;
     grid-template-areas: "header" "main__cine" "footer";
-    grid-template-rows: 30% auto 20%;
+    grid-template-rows: 14% auto 10%;
     grid-template-columns: 100%;
 }
 
@@ -16,6 +16,6 @@ $logo-font:'Permanent Marker';
     grid-area: main__cine;
     display: grid;
     grid-template-areas: "form__cine" "contenido__cine";
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 50% 60%;
     grid-template-columns: 100%;
 }

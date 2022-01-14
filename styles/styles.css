@@ -22,7 +22,6 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
   overflow-x: hidden;
   width: auto; }
   body a {
@@ -181,7 +180,7 @@ body {
 #grilla__index {
   display: grid;
   grid-template-areas: "header" "main__index" "footer";
-  grid-template-rows: 30% auto 20%;
+  grid-template-rows: 14% auto 10%;
   grid-template-columns: 100%; }
 
 #main__index {
@@ -332,7 +331,7 @@ body {
 .index__form__form .index__form__form .index__form__form__button input[type=checkbox]:hover {
   background-color: gold; }
 
-@media (min-width: 0px) and (max-width: 360px) {
+@media (min-width: 0px) and (max-width: 420px) {
   .root__element {
     font-size: 3px; }
   .index__form {
@@ -402,7 +401,7 @@ body {
           padding: 2rem;
           border-radius: 30px; } }
 
-@media (min-width: 361px) and (max-width: 600px) {
+@media (min-width: 421px) and (max-width: 600px) {
   .root__element {
     font-size: 3px; }
   .index__form {
@@ -475,7 +474,7 @@ body {
   .fotos__index {
     width: auto; } }
 
-@media (min-width: 0px) and (max-width: 360px) {
+@media (min-width: 0px) and (max-width: 420px) {
   .root__element {
     font-size: 3px; }
   .recomendados {
@@ -498,26 +497,29 @@ body {
       .recomendados__elementos li {
         display: inline-block; }
         .recomendados__elementos li h4 {
-          font-size: 10rem;
+          font-size: 7rem;
           padding: 1px;
           position: relative;
           top: 4%;
-          right: 0%;
+          right: -15%;
           margin: 6rem; }
         .recomendados__elementos li h6 {
-          font-size: 8rem;
+          font-size: 6rem;
           margin-bottom: 6rem;
-          right: 0%; }
+          right: -10%;
+          max-width: 70%; }
         .recomendados__elementos li img {
           width: 90rem;
-          height: 70rem;
-          padding: 10px; }
+          height: 60rem;
+          padding: 10px;
+          position: relative;
+          right: -5%; }
           .recomendados__elementos li img:hover {
             border: 2px inset #ffd700;
             width: 100rem;
             height: 90rem; } }
 
-@media (min-width: 361px) and (max-width: 600px) {
+@media (min-width: 421px) and (max-width: 600px) {
   .root__element {
     font-size: 3px; }
   .recomendados {
@@ -562,16 +564,17 @@ body {
 @media (min-width: 0px) and (max-width: 420px) {
   #grilla__index {
     width: 100%;
+    min-height: 100%;
     display: grid;
     grid-template-areas: "header" "main__index" "footer";
-    grid-template-rows: 27% auto 20%;
+    grid-template-rows: 14% auto 10%;
     grid-template-columns: 100%; }
   #main__index {
     grid-area: main__index;
     width: 100%;
     display: grid;
     grid-template-areas: "foto" "form" "recomendados";
-    grid-template-rows: 10% 45% 45%;
+    grid-template-rows: 10% 45% auto;
     grid-template-columns: 100%; } }
 
 @media (min-width: 421px) and (max-width: 600px) {
@@ -748,7 +751,7 @@ body .musica__recomendada {
 #grilla__musica {
   display: grid;
   grid-template-areas: "header" "main__musica" "footer";
-  grid-template-rows: 30% auto 10%;
+  grid-template-rows: 14% auto 10%;
   grid-template-columns: 100%; }
 
 #main__musica {
@@ -799,7 +802,7 @@ body .musica__recomendada {
   width: 100%;
   display: grid;
   grid-template-areas: "header" "main__cine" "footer";
-  grid-template-rows: 30% auto 20%;
+  grid-template-rows: 14% auto 10%;
   grid-template-columns: 100%; }
 
 #main__cine {
@@ -807,7 +810,7 @@ body .musica__recomendada {
   grid-area: main__cine;
   display: grid;
   grid-template-areas: "form__cine" "contenido__cine";
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 50% 60%;
   grid-template-columns: 100%; }
 
 .form__cine {
@@ -881,7 +884,8 @@ body .musica__recomendada {
   width: auto;
   height: auto; }
   .contenido__cine__div {
-    background-color: rgba(211, 78, 223, 0.329); }
+    background-color: rgba(211, 78, 223, 0.329);
+    margin: 20rem; }
   .contenido__cine__div__titulo {
     font-family: "Indie Flower", cursive;
     font-size: 15rem;
@@ -896,12 +900,9 @@ body .musica__recomendada {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px; }
-    .contenido__cine__div__div2__cortos__titulo {
-      position: relative;
-      right: -20%; }
     .contenido__cine__div__div2__cortos img {
       width: 60rem;
-      height: 27rem;
+      height: 30rem;
       border: rgba(248, 62, 5, 0.158) solid 3px; }
     .contenido__cine__div__div2__cortos img:hover {
       border: 2px inset #ffd700;
@@ -917,12 +918,9 @@ body .musica__recomendada {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px; }
-    .contenido__cine__div__div2__series__titulo {
-      position: relative;
-      right: -20%; }
     .contenido__cine__div__div2__series img {
       width: 60rem;
-      height: 27rem;
+      height: 30rem;
       border: rgba(248, 62, 5, 0.158) solid 3px; }
     .contenido__cine__div__div2__series img:hover {
       border: 2px inset #ffd700;
@@ -938,12 +936,9 @@ body .musica__recomendada {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px; }
-    .contenido__cine__div__div2__skits__titulo {
-      position: relative;
-      right: -20%; }
     .contenido__cine__div__div2__skits img {
       width: 60rem;
-      height: 27rem;
+      height: 30rem;
       border: rgba(248, 62, 5, 0.158) solid 3px; }
     .contenido__cine__div__div2__skits img:hover {
       border: 2px inset #ffd700;
@@ -1076,7 +1071,7 @@ body .musica__recomendada {
     min-width: 100%;
     display: grid;
     grid-template-areas: "header" "main" "footer";
-    grid-template-rows: 50% auto 20%;
+    grid-template-rows: 50% auto 10%;
     grid-template-columns: 100%; }
   #main__cine {
     width: 100%;
@@ -1406,7 +1401,8 @@ body .musica__recomendada {
     font-size: 15rem;
     position: relative;
     right: -20%;
-    padding: 20px; }
+    padding: 20px;
+    font-size: 10rem; }
   .nuestro__equipo img {
     width: 250px;
     height: 250px;
@@ -1442,7 +1438,8 @@ body .musica__recomendada {
     font-size: 15rem;
     position: relative;
     right: -20%;
-    padding: 20px; }
+    padding: 20px;
+    font-size: 10rem; }
   .nuestro__equipo img {
     width: 250px;
     height: 250px;
@@ -1478,13 +1475,14 @@ body .musica__recomendada {
     text-align: justify;
     width: auto;
     padding: 20px;
-    font-size: 23px; }
+    font-size: 6rem; }
   .sobre__nosotros__titulo {
     font-family: "Indie Flower", cursive;
     font-size: 15rem;
     position: relative;
-    right: 0%;
-    padding: 20px; }
+    right: -5%;
+    padding: 20px;
+    font-size: 10rem; }
 
 /* grilla */
 .root__element {
@@ -1493,7 +1491,7 @@ body .musica__recomendada {
 #sn__grilla1 {
   display: grid;
   grid-template-areas: "header" "main" "footer";
-  grid-template-rows: 30% auto 10%;
+  grid-template-rows: 24% auto 10%;
   grid-template-columns: 100%; }
 
 #sn__grilla2 {
@@ -1519,13 +1517,14 @@ body .musica__recomendada {
     text-align: justify;
     width: auto;
     padding: 20px;
-    font-size: 23px; }
+    font-size: 6rem; }
   .sobre__nosotros__titulo {
     font-family: "Indie Flower", cursive;
     font-size: 15rem;
     position: relative;
-    right: 0%;
-    padding: 20px; }
+    right: -5%;
+    padding: 20px;
+    font-size: 10rem; }
 
 .filtro__lit {
   grid-area: filtro__lit;
@@ -1598,7 +1597,7 @@ body .musica__recomendada {
   height: 100%;
   display: grid;
   grid-template-areas: "header" "main__lit" "footer";
-  grid-template-rows: 15% auto 10%;
+  grid-template-rows: 14% auto 10%;
   grid-template-columns: 100%; }
 
 #main__lit {
@@ -1778,7 +1777,7 @@ body .recomendados__lit {
 @media (min-width: 0px) and (max-width: 420px) {
   #grilla__lit {
     min-width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     display: grid;
     grid-template-areas: "header" "main__lit" "footer";
     grid-template-rows: 28% auto 10%;
@@ -2268,7 +2267,7 @@ footer {
       footer ul li {
         padding: 6px; } }
 
-@media (min-width: 0px) and (max-width: 360px) {
+@media (min-width: 0px) and (max-width: 420px) {
   .root__element {
     font-size: 3px; }
   .index__form {
@@ -2338,7 +2337,7 @@ footer {
           padding: 2rem;
           border-radius: 30px; } }
 
-@media (min-width: 361px) and (max-width: 600px) {
+@media (min-width: 421px) and (max-width: 600px) {
   .root__element {
     font-size: 3px; }
   .index__form {
@@ -2411,7 +2410,7 @@ footer {
   .fotos__index {
     width: auto; } }
 
-@media (min-width: 0px) and (max-width: 360px) {
+@media (min-width: 0px) and (max-width: 420px) {
   .root__element {
     font-size: 3px; }
   .recomendados {
@@ -2434,26 +2433,29 @@ footer {
       .recomendados__elementos li {
         display: inline-block; }
         .recomendados__elementos li h4 {
-          font-size: 10rem;
+          font-size: 7rem;
           padding: 1px;
           position: relative;
           top: 4%;
-          right: 0%;
+          right: -15%;
           margin: 6rem; }
         .recomendados__elementos li h6 {
-          font-size: 8rem;
+          font-size: 6rem;
           margin-bottom: 6rem;
-          right: 0%; }
+          right: -10%;
+          max-width: 70%; }
         .recomendados__elementos li img {
           width: 90rem;
-          height: 70rem;
-          padding: 10px; }
+          height: 60rem;
+          padding: 10px;
+          position: relative;
+          right: -5%; }
           .recomendados__elementos li img:hover {
             border: 2px inset #ffd700;
             width: 100rem;
             height: 90rem; } }
 
-@media (min-width: 361px) and (max-width: 600px) {
+@media (min-width: 421px) and (max-width: 600px) {
   .root__element {
     font-size: 3px; }
   .recomendados {
@@ -2498,16 +2500,17 @@ footer {
 @media (min-width: 0px) and (max-width: 420px) {
   #grilla__index {
     width: 100%;
+    min-height: 100%;
     display: grid;
     grid-template-areas: "header" "main__index" "footer";
-    grid-template-rows: 27% auto 20%;
+    grid-template-rows: 14% auto 10%;
     grid-template-columns: 100%; }
   #main__index {
     grid-area: main__index;
     width: 100%;
     display: grid;
     grid-template-areas: "foto" "form" "recomendados";
-    grid-template-rows: 10% 45% 45%;
+    grid-template-rows: 10% 45% auto;
     grid-template-columns: 100%; } }
 
 @media (min-width: 421px) and (max-width: 600px) {
