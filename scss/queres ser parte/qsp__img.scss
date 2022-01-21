@@ -1,14 +1,15 @@
 .img__qsp {
     grid-area: foto__qsp;
     background-color: white;
-    background-image: url("../imagenes/mountain.png");
+    background-image: url("../imagenes/qsp__bg__img.png");
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
     overflow: hidden;
     img {
-        border-radius: 10px;
-        max-width: 100rem;
+        margin: 20rem;
+        margin-top: 30rem;
+        max-width: 180rem;
     }
 }
 

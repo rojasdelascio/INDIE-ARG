@@ -4,7 +4,7 @@
         min-height: 100vh;
         display: grid;
         grid-template-areas: "header" "main__lit" "footer";
-        grid-template-rows: 28% auto 10%;
+        grid-template-rows: 24% auto 10%;
         grid-template-columns: 100%;
     }
     #main__lit {

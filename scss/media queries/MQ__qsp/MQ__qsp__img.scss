@@ -1,0 +1,14 @@
+@media (min-width: 0px) and (max-width:420px) {
+    .img__qsp {
+        &__div {
+            img {
+                position: relative;
+                right: 10%;
+                max-width: 110rem;
+                max-height: 110rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 421px) and (max-width: 600px) {}

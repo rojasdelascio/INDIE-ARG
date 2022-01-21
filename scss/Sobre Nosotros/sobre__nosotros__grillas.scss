@@ -3,8 +3,6 @@
 $main-font: "Josefin Sans";
 $titles-font:'Indie Flower';
 $logo-font:'Permanent Marker';
-@import "../Sobre\ Nosotros/nuestro__equipo.scss";
-@import "../Sobre\ Nosotros/sobre__nosotros__texto.scss";
 
 /* grilla */
 
@@ -15,7 +13,7 @@ $logo-font:'Permanent Marker';
 #sn__grilla1 {
     display: grid;
     grid-template-areas: "header" "main" "footer";
-    grid-template-rows: 24% auto 10%;
+    grid-template-rows: 25% auto 10%;
     grid-template-columns: 100%;
 }
 

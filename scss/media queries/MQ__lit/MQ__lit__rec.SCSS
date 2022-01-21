@@ -13,6 +13,15 @@
                             @include titulos300(-20%);
                         }
                     }
+                    #carousel1 {
+                        border: 2rem outset rgba(222, 226, 1, 0.501);
+                        width: auto;
+                        height: auto;
+                        max-width: 130rem;
+                        max-height: 400rem;
+                        position: relative;
+                        right: 0%;
+                    }
                 }
                 
                 @media (min-width: 421px) and (max-width: 600px) {
@@ -50,8 +59,8 @@
                                 font-size: 5rem;
                             }
                             img {
-                                width: 80rem;
-                                height: 50rem;
+                                width: 110rem;
+                                height: 110rem;
                                 padding: 10px;
                             }
                             li {

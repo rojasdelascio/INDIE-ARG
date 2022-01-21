@@ -1,0 +1,37 @@
+@media (min-width: 0px) and (max-width:420px) {
+    #carouselExampleControls {
+        position: relative;
+        right: 10%;
+    }
+    .nuestro__equipo {
+        &__titulo {
+            @include titulos300(-15%);
+            font-size: 9rem;
+            max-width: 90%;
+        }
+        img {
+            width: 250px;
+            height: 250px;
+            border-radius: 10%;
+            border: 1px solid rgba(255, 255, 255, 0.288);
+        }
+        &__miembro {
+            position: relative;
+            right: -30%;
+            &__nombre {
+                font-size: 6rem;
+                position: relative;
+                right: -15%;
+            }
+            &__descripcion {
+                position: relative;
+                right: 0%;
+                text-align: center;
+                width: 65%;
+                color: dimgrey;
+            }
+        }
+    }
+}
+
+@media (min-width: 421px) and (max-width: 600px) {}

@@ -1,0 +1,9 @@
+@media (min-width: 0px) and (max-width:420px) {
+    .form__qsp {
+        .form__qsp__titulo {
+            @include titulos300(-5%);
+        }
+    }
+}
+
+@media (min-width: 421px) and (max-width: 600px) {}

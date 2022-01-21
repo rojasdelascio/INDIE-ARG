@@ -38,9 +38,9 @@
 
     <main id="grilla__qsp2">
 
-        <section id="texto__qsp">
+        <section class="texto__qsp">
             <h1 class="texto__qsp__titulo">¿Querés ser parte de un Equipo de Artistas Independientes?</h1>
-            <p> Si te gustaría que tus proyectos formasen parte de INDIE.ARG, podés enviarlos a nuestro equipo para que sean evaluados. Recuerda que el proyecto debe ser autogestionado, y estar registrado a tu nombre. Nuestro equipo evaluará tu proyecto y
+            <p class="texto__qsp__texto"> Si te gustaría que tus proyectos formasen parte de INDIE.ARG, podés enviarlos a nuestro equipo para que sean evaluados. Recuerda que el proyecto debe ser autogestionado, y estar registrado a tu nombre. Nuestro equipo evaluará tu proyecto y
                 te dará una devolución en 5 días hábiles. Recuerda que si decidimos no incluir tu proyecto en nuestra plataforma, esto no significa que este no sea lo suficientemente bueno, sino que simplemente no cumple los lineamientos de nuestra comunidad.
             </p>
         </section>
@@ -49,23 +49,26 @@
             <h3 class="form__qsp__titulo"> ¿Preparado? ¡Para comenzar completa el formulario de abajo!</h3>
             <div class="form__qsp__div">
                 <form action="/solicitudes">
-                    <div class="input-group">
-                        <span for="name" class="input-group-text bg-light">Nombre y Apellido</span>
+                    <div id="nya" class="input-group">
+                        <span id="nya--text" for="name" class="input-group-text bg-light">Nombre y Apellido</span>
                         <input name="nombre" type="text" aria-label="First name" class="form-control">
                         <input name="apellido" type="text" aria-label="Last name" class="form-control">
                     </div>
-                    <label for="correo" class="form-label">Correo electrónico</label>
-                    <input name="correo" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                    <select class="form-select" aria-label="Default select example">
-                                <option for="genero" selected>Indica tu género</option>
-                                <option name="genero" value="1">Hombre</option>
-                                <option name="genero" value="2">Mujer</option>
-                                <option name="genero" value="3">Otro</option>
+                    <div id="ce">
+                        <label id="ce--text" for="correo" class="form-label">Correo electrónico</label>
+                        <input name="correo" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <label for="gen" class="gen">Selecciona tu Género</label>
+                    <select id="gen" name="gen" for="genero" class="form-select" aria-label="Default select example">
+                                <option name="genero" selected>Indica tu género</option>
+                                <option for="gen" name="genero" value="hombre">Hombre</option>
+                                <option for="gen" name="genero" value="mujer">Mujer</option>
+                                <option for="gen" name="genero" value="otro">Otro</option>
                             </select>
                     <div class="mb-3">
                         <label for="sobre" class="form-label">Contanos sobre tu
                                     proyecto</label>
-                        <textarea class="form-control" id="sobre" rows="3"></textarea>
+                        <textarea name="sobre-proyecto" class="form-control" id="sobre" rows="3"></textarea>
                     </div>
                     <label for="URL" class="form-label">Ingresa la URL de tu proyecto</label>
                     <div class="input-group mb-3">
@@ -73,24 +76,25 @@
                         <input name="URL" type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                         <p class="tu__proyecto">(Tu proyecto debe estar subido de forma privada a alguna plataforma como Vimeo o Youtube. También puedes enviar el link público de alguna nube como Google Drive)</p>
                     </div>
-                    <legend href="" class="col-form-label col-sm-2 pt-0">Términos y Condiciones</legend>
-                    <div>
+                    <!-- col-sm-2 -->
+                    <legend id="tyc" href="" class="col-form-label  pt-0">Términos y Condiciones</legend>
+                    <div id="ana">
                         <div class="form-check">
                             <input for="tyc" class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                            <label name="tyc" class="form-check-label" for="gridRadios1">
+                            <label class="form-check-label" for="gridRadios1">
                                         Acepto
                                     </label>
                         </div>
                         <div class="form-check">
-                            <input name="tyc" class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
                             <label class="form-check-label" for="gridRadios2">
                                         No acepto
                                     </label>
                         </div>
 
                     </div>
-                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                        <button type="submit" class="btn bg-light">Enviar</button>
+                    <div id="bot" class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <button id="bot--text" type="submit" class="btn bg-light">Enviar</button>
                     </div>
             </div>
             </form>
@@ -98,9 +102,10 @@
 
         <section class="img__qsp">
             <div class="img__qsp__div">
-                <img src="../imagenes/formaparte.jpg">
+                <img src="../imagenes/qsp__img2.png">
             </div>
         </section>
+
     </main>
     <!-- <form action="/solicitudes">
                             <div class="nombre__qsp">
@@ -158,7 +163,7 @@
 
     <footer class="fondo-qsp">
         <ul>
-            <li><a href="./pages/sobre-nosotros.html">Sobre nosotros</a></li>
+            <li><a href="./sobre-nosotros.html">Sobre nosotros</a></li>
         </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

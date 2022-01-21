@@ -1,0 +1,20 @@
+@media (min-width: 0px) and (max-width:420px) {
+    .root__element {
+        font-size: 3px;
+    }
+    #sn__grilla1 {
+        display: grid;
+        grid-template-areas: "header" "main" "footer";
+        grid-template-rows: 24% auto 10%;
+        grid-template-columns: 100%;
+    }
+    #sn__grilla2 {
+        grid-area: main;
+        display: grid;
+        grid-template-areas: "texto" "equipo";
+        grid-template-rows: 57% auto;
+        grid-template-columns: 100%;
+    }
+}
+
+@media (min-width: 421px) and (max-width: 600px) {}

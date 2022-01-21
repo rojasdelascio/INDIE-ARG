@@ -2,32 +2,30 @@
     font-size: 3px;
 }
 
-#texto__qsp {
+.texto__qsp {
     font-family: $main-font;
     grid-area: texto__qsp;
-    background-image: url("../imagenes/qsp__bg__form2png.png");
+    background-image: url("../imagenes/qsp__bg__text.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
     height: auto;
-    margin: 10rem;
     ;
-    h3 {
-        font-family: $titles-font, cursive;
-        font-size: map-get($tam-letra-100, titulos);
+    // h3 {
+    //     font-family: $titles-font, cursive;
+    //     font-size: map-get($tam-letra-100, titulos);
+    //     text-align: center;
+    //     width: 80%;
+    //     padding: 20px;
+    // }
+    &__texto {
+        font-size: 6rem;
         text-align: center;
-        width: 80%;
-        position: relative;
-        right: -20%;
-        padding: 20px;
-    }
-    p {
-        width: 1000px;
-        font-size: 3rem;
-        text-align: center;
-        width: 80%;
-        position: relative;
-        right: -20%;
+        width: 100%;
         padding: 20px;
     }
     &__titulo {
         @include titulos(-20%);
+        font-size: 11rem;
     }
 }

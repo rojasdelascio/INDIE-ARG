@@ -1,0 +1,21 @@
+@media (min-width: 0px) and (max-width:420px) {
+    #grilla__qsp {
+        min-width: 100%;
+        min-height: 100%;
+        display: grid;
+        grid-template-areas: "header" "main__qsp" "footer";
+        grid-template-rows: 12.5% auto 10%;
+        grid-template-columns: 100%;
+    }
+    #grilla__qsp2 {
+        min-width: 100%;
+        min-height: 100%;
+        grid-area: main__qsp;
+        display: grid;
+        grid-template-areas: "texto__qsp" "foto__qsp" "form__qsp";
+        grid-template-rows: 30% 15% 60%;
+        grid-template-columns: 100%;
+    }
+}
+
+@media (min-width: 421px) and (max-width: 600px) {}

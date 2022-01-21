@@ -3,36 +3,60 @@
 }
 
 .form__qsp {
+    overflow: scroll;
     font-family: $main-font;
-    font-size: 5rem;
     grid-area: form__qsp;
     background-color: rgba(212, 177, 163, 0.178);
     background-image: url("../imagenes/qsp__bg__form.png");
     background-size: cover;
-    margin: 10rem;
-    input,
-    textarea,
-    button {
-        background-color: #ffffff;
-        border-radius: 90px;
+    form {
+        input {
+            font-size: 4.5rem;
+        }
     }
-    p {
-        padding: 10px;
-        text-align: center;
+    #nya--text,
+    #basic-addon3,
+    #gen,
+    #ce--text,
+    #bot--text,
+    #exampleFormControlInput1,
+    #tyc {
+        font-size: 4.3rem;
     }
-    button {
-        padding: 3rem;
-        position: relative;
-        right: -10px;
-        top: 1px;
-        width: 200px;
-        background-color: rgba(212, 110, 51, 0.58);
-        &:hover {
-            background-color: khaki;
+    #bot {
+        width: 20rem;
+        height: 10rem;
+        position: Relative;
+        right: -50%;
+    }
+    #gen {
+        margin-top: 5rem;
+    }
+    #sobre {
+        font-size: 4.3rem;
+    }
+    .tu__proyecto {
+        font-size: 3.5rem;
+    }
+    .form__qsp__titulo {
+        @include titulos(0%);
+        font-size: 10rem;
+    }
+    #ana {
+        display: flex;
+        flex-direction: row;
+        input {
+            margin: 2rem;
         }
     }
     &__div {
-        background-color: rgba(212, 177, 163, 0.459);
+        label {
+            font-size: 4.3rem;
+        }
+        background-color: rgba(212,
+        177,
+        163,
+        0.459);
         margin: 3rem;
         position: relative;
         right: -10%;
@@ -44,6 +68,8 @@
             align-items: space-between;
             justify-content: space-evenly;
             height: auto;
+            margin: 10rem;
+            padding: 10rem;
         }
         form p,
         label,

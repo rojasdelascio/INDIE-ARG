@@ -8,7 +8,7 @@ $tam-letra-100:(titulos:15rem, forms:5rem, headyfoot:7rem, qb:12rem, logo:20rem)
 $tam-letra-600:(titulos:20rem, forms:10rem, headyfoot:8rem, qb:17rem, logo:20rem, cont:14rem);
 $tam-letra-300:(titulos:13rem, forms:5rem, headyfoot:8rem, qb:10rem, logo:13rem);
 // =====MAPS DE FONDOS PARA TODO=====
-$fondos:( index: rgba(212, 177, 163, 0.178), cine:rgba(211, 78, 223, 0.178), literatura: rgba(251, 255, 18, 0.179), musica: rgba(41, 206, 69, 0.171), header:#afafaf85, sn:rgba(99, 1, 1, 0.323), qsp:rgba(255, 145, 0, 0.501));
+$fondos:( index: rgba(212, 177, 163, 0.178), cine:rgba(211, 78, 223, 0.178), literatura: rgba(251, 255, 18, 0.179), musica: rgba(41, 206, 69, 0.171), header:#afafaf85, sn:rgba(99, 1, 1, 0.323), qsp:rgba(177, 108, 19, 0.207));
 // =====ESTE EACH CREARA LAS CLASES DE LOS FONDOS CON EL MAP $FONDOS=====
 @each $seccion,
 $color in $fondos {
@@ -223,7 +223,7 @@ body {
     font-size: map-get($tam-letra-300, titulos);
     position: relative;
     right: $position-right;
-    max-width: 50%;
+    max-width: 70%;
 }
 
 @mixin forms300($fondo-forms) {
@@ -337,6 +337,10 @@ body {
 @import "../scss/Sobre\ Nosotros/nuestro__equipo.scss";
 @import "../scss/Sobre\ Nosotros/sobre__nosotros__grillas.scss";
 @import "../scss/Sobre\ Nosotros/sobre__nosotros__texto.scss";
+// ================IMPORTS SOBRE NOSOTROS------MQ========
+@import "../scss/media\ queries/MQ__sn/MQ__sn__equipo.scss";
+@import "../scss/media\ queries/MQ__sn/MQ__sn__grillas.scss";
+@import "../scss/media\ queries/MQ__sn/MQ__sn__texto.scss";
 // ======IMPORTS SECCION LITERATURA========
 @import "../scss/lit/lit__filtro.scss";
 @import "../scss/lit/lit__grillas.scss";
@@ -356,10 +360,15 @@ body {
 // ================IMPORTS HEADER Y FOOTER------MQ========
 @import "../media\ queries/MQ__header.scss";
 @import "../media\ queries/MQ__footer.scss";
-// ======RESTANTES POR ORDENAR========
-@import "../scss/queres\ ser\ parte/qsp__grillas.scss";
-@import "../scss/media\ queries/media__queries__todo.scss";
+// ======IMPORTS QUERES SER PARTE========
 @import "../scss/queres\ ser\ parte/qsp__grillas.scss";
 @import "../scss/queres\ ser\ parte/qsp__form.scss";
 @import "../scss/queres\ ser\ parte/qsp__texto.scss";
 @import "../scss/queres\ ser\ parte/qsp__img.scss";
+// ======IMPORTS QUERES SER PARTE========------MQ========
+@import "../scss/media\ queries/MQ__qsp/MQ__qsp__form.scss";
+@import "../scss/media\ queries/MQ__qsp/MQ__qsp__grillas.scss";
+@import "../scss/media\ queries/MQ__qsp/MQ__qsp__img.scss";
+@import "../scss/media\ queries/MQ__qsp/MQ__qsp__text.scss";
+// ======RESTANTES POR ORDENAR========
+@import "../scss/media\ queries/media__queries__todo.scss";
