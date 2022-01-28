@@ -1,7 +1,7 @@
 @media (min-width: 0px) and (max-width:420px) {
     #carouselExampleControls {
         position: relative;
-        right: 10%;
+        right: 15%;
     }
     .nuestro__equipo {
         &__titulo {
@@ -25,7 +25,7 @@
             }
             &__descripcion {
                 position: relative;
-                right: 0%;
+                right: 10%;
                 text-align: center;
                 width: 65%;
                 color: dimgrey;
@@ -34,4 +34,78 @@
     }
 }
 
-@media (min-width: 421px) and (max-width: 600px) {}
+@media (min-width: 421px) and (max-width: 600px) {
+    #carouselExampleControls {
+        position: relative;
+        right: 15%;
+    }
+    .nuestro__equipo {
+        &__titulo {
+            @include titulos600(0%);
+            font-size: 15rem;
+            max-width: 90%;
+        }
+        img {
+            min-width: 50%;
+            max-width: 80%;
+            max-height: 80%;
+            border-radius: 10%;
+            border: 1px solid rgba(255, 255, 255, 0.288);
+        }
+        &__miembro {
+            position: relative;
+            right: -45%;
+            &__nombre {
+                font-size: 8rem;
+                position: relative;
+                right: -15%;
+            }
+            &__descripcion {
+                font-size: 7rem;
+                position: relative;
+                right: 10%;
+                text-align: center;
+                width: 65%;
+                color: dimgrey;
+            }
+        }
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1300px) {
+    #carouselExampleControls {
+        position: relative;
+        right: -15%;
+        max-width: 20%;
+    }
+    .nuestro__equipo {
+        &__titulo {
+            @include titulos1000(-28%);
+            max-width: 90%;
+        }
+        img {
+            min-width: 30%;
+            max-width: 20%;
+            max-height: 30%;
+            border-radius: 10%;
+            border: 1px solid rgba(255, 255, 255, 0.288);
+        }
+        &__miembro {
+            position: relative;
+            right: 0%;
+            &__nombre {
+                font-size: 8rem;
+                position: relative;
+                right: -35%;
+            }
+            &__descripcion {
+                font-size: 7rem;
+                position: relative;
+                right: -10%;
+                text-align: center;
+                width: 80%;
+                color: dimgrey;
+            }
+        }
+    }
+}

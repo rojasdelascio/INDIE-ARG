@@ -4,7 +4,7 @@
         min-height: 100%;
         display: grid;
         grid-template-areas: "header" "main__index" "footer";
-        grid-template-rows: 15% auto 10%;
+        grid-template-rows: 14% auto 10%;
         grid-template-columns: 100%;
     }
     #main__index {
@@ -12,7 +12,7 @@
         width: 100%;
         display: grid;
         grid-template-areas: "foto" "form" "recomendados";
-        grid-template-rows: 10% 45% auto;
+        grid-template-rows: 10% 35% auto;
         grid-template-columns: 100%;
     }
 }
@@ -21,7 +21,18 @@
     .root__element {
         font-size: 3px;
     }
+    html,
+    body {
+        min-height: 100%;
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        border: 1px solid transparent;
+    }
     #grilla__index {
+        min-width: 100%;
+        min-height: 100%;
         display: grid;
         grid-template-areas: "header" "main__index" "footer";
         grid-template-rows: 1fr auto 1fr;
@@ -29,10 +40,39 @@
     }
     #main__index {
         grid-area: main__index;
-        width: 100%;
+        min-width: 100%;
         display: grid;
         grid-template-areas: "foto" "form" "recomendados";
         grid-template-rows: 130rem 310rem auto;
         grid-template-columns: auto;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1300px) {
+    .root__element {
+        font-size: 3px;
+    }
+    html,
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    #grilla__index {
+        min-width: 100%;
+        overflow: hidden;
+        display: grid;
+        grid-template-areas: "header" "main__index" "footer";
+        grid-template-rows: 1fr auto 1fr;
+        grid-template-columns: 100%;
+    }
+    #main__index {
+        min-width: 100%;
+        grid-area: main__index;
+        display: grid;
+        grid-template-areas: "form foto" "recomendados recomendados";
+        grid-template-rows: 0.8fr 1fr;
+        grid-template-columns: 3fr 3fr;
     }
 }

@@ -4,9 +4,10 @@ $main-font: "Josefin Sans";
 $titles-font:'Indie Flower';
 $logo-font:'Permanent Marker';
 // =====MAPS DE TAMAÑOS DE LETRA PARA TODO=====
-$tam-letra-100:(titulos:15rem, forms:5rem, headyfoot:7rem, qb:12rem, logo:20rem);
-$tam-letra-600:(titulos:20rem, forms:10rem, headyfoot:8rem, qb:17rem, logo:20rem, cont:14rem);
-$tam-letra-300:(titulos:13rem, forms:5rem, headyfoot:8rem, qb:10rem, logo:13rem);
+$tam-letra-100:(titulos:15rem, forms:5rem, headyfoot:7rem, qb:12rem, logo:20rem, cont:14rem);
+$tam-letra-600:(titulos:16rem, forms:10rem, headyfoot:8rem, qb:15rem, logo:20rem, cont:14rem);
+$tam-letra-300:(titulos:13rem, forms:5rem, headyfoot:8rem, qb:10rem, logo:13rem, cont:14rem);
+$tam-letra-1000:(titulos:11rem, forms:5rem, headyfoot:7rem, qb:7rem, logo:13rem, cont:8rem);
 // =====MAPS DE FONDOS PARA TODO=====
 $fondos:( index: rgba(212, 177, 163, 0.178), cine:rgba(211, 78, 223, 0.178), literatura: rgba(251, 255, 18, 0.179), musica: rgba(41, 206, 69, 0.171), header:#afafaf85, sn:rgba(99, 1, 1, 0.323), qsp:rgba(177, 108, 19, 0.207));
 // =====ESTE EACH CREARA LAS CLASES DE LOS FONDOS CON EL MAP $FONDOS=====
@@ -21,6 +22,7 @@ $color in $fondos {
 $input-sizes:(que-buscas:40%, boton:20%, drop-down:10%);
 $input-sizes600:(que-buscas:80%, boton:35%, drop-down:30%);
 $input-sizes300:(que-buscas:90%, boton:55%, drop-down:60%);
+$input-sizes1000:(que-buscas:50%, boton:10%, drop-down:30%);
 // =======PROPIEDADES CSS/SASS GENERALES=======
 body {
     margin: 0;
@@ -307,6 +309,106 @@ body {
     }
 }
 
+// =========================MQ >600>1300===========
+@mixin titulos1000($position-right) {
+    margin: 10rem;
+    font-family: $titles-font, cursive;
+    font-size: map-get($tam-letra-1000, titulos);
+    position: relative;
+    right: $position-right;
+    max-width: 70%;
+}
+
+@mixin forms1000($fondo-forms) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: auto;
+    width: auto;
+    font-family: $main-font;
+    font-size: map-get($tam-letra-1000, forms);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: $fondo-forms;
+    justify-items: space-between;
+}
+
+@mixin botones1000($position-right, $position-top, $color-boton) {
+    width: map-get($input-sizes1000, boton);
+    padding: 3px;
+    position: relative;
+    right: $position-right;
+    top: $position-top;
+    background-color: $color-boton;
+    border-radius: 45%;
+    margin: 4rem;
+}
+
+@mixin dropdown1000 {
+    margin: 7rem;
+    &__dropdown {
+        width: map-get($input-sizes1000, drop-down);
+        margin: 2rem;
+        padding: 2rem;
+        border-radius: 30px;
+    }
+}
+
+@mixin checkboxes1000 {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap,
+    li {
+        margin: 3rem;
+    }
+    margin:7rem;
+}
+
+@mixin qb-input1000 {
+    border-radius: 30px;
+    width: map-get($input-sizes1000, que-buscas);
+    margin: 7rem;
+}
+
+@mixin qb1000 {
+    font-size: map-get($tam-letra-1000, qb);
+    margin: 0rem;
+}
+
+// =====RECOMENDADOS=====
+@mixin contenidos1000 {
+    font-family: $titles-font, cursive;
+    font-size: map-get($tam-letra-1000, cont);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    img {
+        min-width: 60rem;
+        min-height: 35rem;
+        max-width: 150rem;
+        max-height: 100rem;
+        border: rgba(248, 62, 5, 0.158) solid 3px;
+    }
+    img:hover {
+        border: 2px inset #ffd700;
+        width: 70rem;
+        height: 37rem;
+    }
+}
+
+@mixin cont__titulos1000($position-right) {
+    font-family: $titles-font, cursive;
+    font-size: map-get($tam-letra-1000, cont);
+    position: relative;
+    right: $position-right;
+}
+
+//==============
 // ==IMPORTS========
 // ======IMPORTS INDEX========
 @import "../scss/index/index__grillas.scss";

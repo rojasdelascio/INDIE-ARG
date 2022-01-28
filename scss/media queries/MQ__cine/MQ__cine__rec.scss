@@ -57,3 +57,44 @@
         }
     }
 }
+
+@media (min-width: 601px) and (max-width: 1300px) {
+    .contenido__cine {
+        &__div {
+            min-width: 90%;
+            min-height: 50%;
+            position: relative;
+            right: 5%;
+            margin: 8%;
+            &__titulo {
+                @include titulos1000(-40%);
+            }
+            &__div2 {
+                &__cortos {
+                    &__titulo {
+                        @include cont__titulos1000(-40%);
+                    }
+                    @include contenidos1000;
+                    display: flex;
+                    flex-direction: row;
+                }
+                &__series {
+                    &__titulo {
+                        @include cont__titulos1000(-40%);
+                    }
+                    @include contenidos1000;
+                    display: flex;
+                    flex-direction: row;
+                }
+                &__skits {
+                    &__titulo {
+                        @include cont__titulos1000(-40%);
+                    }
+                    @include contenidos1000;
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}

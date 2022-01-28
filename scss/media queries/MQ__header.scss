@@ -74,3 +74,37 @@
         padding: 10px;
     }
 }
+
+@media (min-width: 601px) and (max-width: 1300px) {
+    .elementos__header ul {
+        display: flex;
+        flex-direction: row;
+        font-family: $main-font;
+        font-size: map-get($tam-letra-1000, headyfoot);
+        .home__mp {
+            font-family: $main-font;
+            font-size: map-get($tam-letra-1000, headyfoot);
+        }
+    }
+    header {
+        width: 100%;
+        nav {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .elementos__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        max-width: 90%;
+        position: relative;
+        right: -8%;
+    }
+    .elementos__header ul li {
+        list-style-type: none;
+        padding: 10px;
+        padding: 10px;
+    }
+}

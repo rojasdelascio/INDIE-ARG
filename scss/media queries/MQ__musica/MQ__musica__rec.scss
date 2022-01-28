@@ -1,4 +1,7 @@
 @media (min-width: 0px) and (max-width:420px) {
+    #carouselExampleControls {
+        min-width: 120%;
+    }
     body .musica__recomendada {
         grid-area: musica__recomendada;
         display: flex;
@@ -18,9 +21,8 @@
         }
         &__div {
             background-color: rgba(41, 206, 69, 0.288);
-            padding: 40px;
             border-radius: 8%;
-            width: auto;
+            min-width: 100%;
             &__IWLG,
             &__MN,
             &__OL {
@@ -28,16 +30,15 @@
                 align-items: center;
                 flex-wrap: nowrap;
                 h5 {
-                    font-size: 5rem;
+                    font-size: 7rem;
                 }
                 img {
-                    width: 25rem;
-                    height: 25rem;
+                    width: 70rem;
+                    height: 120rem;
                 }
                 audio {
-                    width: 100%;
-                    font-size: 0.4rem;
-                    max-width: 600px;
+                    min-width: 100%;
+                    font-size: 1rem;
                 }
             }
         }
@@ -55,33 +56,64 @@
             position: Relative;
             right: -10%;
         }
-        &__div__OL,
-        &__div__MN,
-        &__div__IWLG {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            align-items: Center;
-            img,
-            h4,
-            audio,
-            h5 {
-                margin: 3rem;
-            }
-            img {
-                width: 30rem;
-                height: 25rem;
-            }
-            audio {
-                width: 80rem;
-                min-width: 80rem;
-            }
-        }
         &__div {
             background-color: rgba(41, 206, 69, 0.288);
             padding: 40px;
             border-radius: 8%;
             width: auto;
+            &__OL,
+            &__MN,
+            &__IWLG {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: Center;
+                img,
+                h4,
+                audio,
+                h5 {
+                    margin: 3rem;
+                }
+                img {
+                    width: 30rem;
+                    height: 25rem;
+                }
+                audio {
+                    width: 80rem;
+                    min-width: 80rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1300px) {
+    #carouselExampleControls {
+        min-width: 80%;
+    }
+    body .musica__recomendada {
+        &__titulo {
+            @include titulos1000(-35%);
+            width: 40%;
+        }
+        &__div {
+            &__IWLG,
+            &__MN,
+            &__OL {
+                position: relative;
+                right: 0%;
+                h5 {
+                    font-size: 9rem;
+                }
+                img {
+                    min-width: 30%;
+                    max-height: 20%;
+                }
+                audio {
+                    min-width: 50%;
+                    font-size: 1rem;
+                }
+            }
         }
     }
 }

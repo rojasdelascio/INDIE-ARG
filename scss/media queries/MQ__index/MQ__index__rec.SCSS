@@ -103,3 +103,42 @@
         }
     }
 }
+
+@media (min-width: 601px) and (max-width: 1300px) {
+    .root__element {
+        font-size: 3px;
+    }
+    .recomendados {
+        grid-area: recomendados;
+        &__titulo {
+            @include titulos1000(-35%);
+        }
+        &__elementos {
+            position: relative;
+            top: 3%;
+            overflow: hidden;
+            h4 {
+                font-size: 7.5rem;
+                padding: 1px;
+                position: relative;
+                top: 4%;
+                right: -15%;
+            }
+            h6 {
+                margin-bottom: 6rem;
+                right: -10%;
+                font-size: 5.5rem;
+            }
+            img {
+                min-width: 50rem;
+                min-height: 30rem;
+                max-width: 83rem;
+                max-height: 48rem;
+                padding: 5px;
+            }
+            li {
+                display: inline-block;
+            }
+        }
+    }
+}

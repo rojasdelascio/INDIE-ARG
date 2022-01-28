@@ -4,7 +4,7 @@
         min-height: 100%;
         display: grid;
         grid-template-areas: "header" "main__qsp" "footer";
-        grid-template-rows: 12.5% auto 10%;
+        grid-template-rows: 13% auto 5%;
         grid-template-columns: 100%;
     }
     #grilla__qsp2 {
@@ -13,9 +13,67 @@
         grid-area: main__qsp;
         display: grid;
         grid-template-areas: "texto__qsp" "foto__qsp" "form__qsp";
-        grid-template-rows: 30% 15% 60%;
+        grid-template-rows: 35% 13.5% 60%;
         grid-template-columns: 100%;
     }
 }
 
-@media (min-width: 421px) and (max-width: 600px) {}
+@media (min-width: 421px) and (max-width: 600px) {
+    html,
+    body {
+        min-height: 100%;
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        padding-bottom: 1px;
+        border: 1px solid transparent;
+    }
+    #grilla__qsp {
+        min-width: 100%;
+        min-height: 100%;
+        display: grid;
+        grid-template-areas: "header" "main__qsp" "footer";
+        grid-template-rows: 1fr auto 1fr;
+        grid-template-columns: 100%;
+    }
+    #grilla__qsp2 {
+        min-width: 100%;
+        min-height: 100%;
+        grid-area: main__qsp;
+        display: grid;
+        grid-template-areas: "texto__qsp" "foto__qsp" "form__qsp";
+        grid-template-rows: 2fr 1fr 2fr;
+        grid-template-columns: 100%;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1300px) {
+    html,
+    body {
+        min-height: 100%;
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        padding-bottom: 1px;
+        border: 1px solid transparent;
+    }
+    #grilla__qsp {
+        min-width: 100%;
+        min-height: 100%;
+        display: grid;
+        grid-template-areas: "header" "main__qsp" "footer";
+        grid-template-rows: 1fr auto 1fr;
+        grid-template-columns: 100%;
+    }
+    #grilla__qsp2 {
+        min-width: 100%;
+        min-height: 100%;
+        grid-area: main__qsp;
+        display: grid;
+        grid-template-areas: "texto__qsp" "foto__qsp" "form__qsp";
+        grid-template-rows: 0.5fr 0.5fr 1fr;
+        grid-template-columns: 100%;
+    }
+}

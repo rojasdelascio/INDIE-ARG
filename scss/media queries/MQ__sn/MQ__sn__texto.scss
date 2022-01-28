@@ -21,4 +21,15 @@
     }
 }
 
-@media (min-width: 421px) and (max-width: 600px) {}
+@media (min-width: 421px) and (max-width: 600px) {
+    .sobre__nosotros {
+        &__texto {
+            font-size: 10rem;
+        }
+        &__titulo {
+            @include titulos600(0%);
+            font-size: 15rem;
+            max-width: 90%;
+        }
+    }
+}

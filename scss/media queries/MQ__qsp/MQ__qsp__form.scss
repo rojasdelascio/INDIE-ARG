@@ -6,4 +6,153 @@
     }
 }
 
-@media (min-width: 421px) and (max-width: 600px) {}
+@media (min-width: 421px) and (max-width: 600px) {
+    .form__qsp {
+        overflow: scroll;
+        font-family: $main-font;
+        grid-area: form__qsp;
+        background-color: rgba(212, 177, 163, 0.178);
+        background-image: url("../imagenes/qsp__bg__form.png");
+        background-size: cover;
+        form {
+            input {
+                font-size: 4.5rem;
+            }
+        }
+        #nya--text,
+        #basic-addon3,
+        #gen,
+        #ce--text,
+        #bot--text,
+        #exampleFormControlInput1,
+        #tyc {
+            font-size: 7rem;
+        }
+        #bot {
+            width: 25rem;
+            height: 15rem;
+            position: Relative;
+            right: -50%;
+        }
+        #gen {
+            margin-top: 8rem;
+        }
+        #sobre {
+            font-size: 7rem;
+        }
+        .tu__proyecto {
+            font-size: 6rem;
+        }
+        .form__qsp__titulo {
+            @include titulos600(0%);
+        }
+        #ana {
+            display: flex;
+            flex-direction: row;
+            input {
+                margin: 2rem;
+            }
+        }
+        &__div {
+            label {
+                font-size: 6rem;
+            }
+            background-color: rgba(212,
+            177,
+            163,
+            0.459);
+            margin: 3rem;
+            position: relative;
+            right: -10%;
+            width: 80%;
+            form {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: space-between;
+                justify-content: space-evenly;
+                height: auto;
+                margin: 10rem;
+                padding: 10rem;
+            }
+            form p,
+            label,
+            input {
+                padding: 8px;
+            }
+        }
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1300px) {
+    .form__qsp {
+        form {
+            input {
+                font-size: 4.5rem;
+            }
+        }
+        #nya--text,
+        #basic-addon3,
+        #gen,
+        #ce--text,
+        #bot--text,
+        #exampleFormControlInput1,
+        #tyc {
+            font-size: 5rem;
+        }
+        #bot {
+            width: 25rem;
+            height: 15rem;
+            position: Relative;
+            right: -50%;
+        }
+        #gen {
+            margin-top: 8rem;
+        }
+        #sobre {
+            font-size: 5rem;
+        }
+        .tu__proyecto {
+            font-size: 4rem;
+        }
+        .form__qsp__titulo {
+            @include titulos1000(-31%);
+            width: 45%;
+        }
+        #ana {
+            display: flex;
+            flex-direction: row;
+            input {
+                margin: 2rem;
+            }
+        }
+        &__div {
+            label {
+                font-size: 4rem;
+            }
+            background-color: rgba(212,
+            177,
+            163,
+            0.459);
+            margin: 3rem;
+            position: relative;
+            right: -20%;
+            max-width: 60%;
+            form {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: space-between;
+                justify-content: space-evenly;
+                height: auto;
+                margin: 10rem;
+                padding: 10rem;
+            }
+            form p,
+            label,
+            input {
+                padding: 8px;
+            }
+        }
+    }
+}

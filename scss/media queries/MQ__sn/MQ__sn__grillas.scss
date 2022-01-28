@@ -1,11 +1,21 @@
 @media (min-width: 0px) and (max-width:420px) {
+    html,
+    body {
+        min-height: 100%;
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        padding-bottom: 1px;
+        border: 1px solid transparent;
+    }
     .root__element {
         font-size: 3px;
     }
     #sn__grilla1 {
         display: grid;
         grid-template-areas: "header" "main" "footer";
-        grid-template-rows: 24% auto 10%;
+        grid-template-rows: 21.5% auto 10%;
         grid-template-columns: 100%;
     }
     #sn__grilla2 {
@@ -17,4 +27,41 @@
     }
 }
 
-@media (min-width: 421px) and (max-width: 600px) {}
+@media (min-width: 421px) and (max-width: 600px) {
+    html,
+    body {
+        min-height: 100%;
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        padding-bottom: 1px;
+        border: 1px solid transparent;
+    }
+    #sn__grilla1 {
+        display: grid;
+        grid-template-areas: "header" "main" "footer";
+        grid-template-rows: 1fr auto 1fr;
+        grid-template-columns: 100%;
+    }
+    #sn__grilla2 {
+        grid-area: main;
+        display: grid;
+        grid-template-areas: "texto" "equipo";
+        grid-template-columns: 100%;
+        grid-template-rows: 2fr 1fr;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1300px) {
+    html,
+    body {
+        min-height: 100%;
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        padding-bottom: 1px;
+        border: 1px solid transparent;
+    }
+}

@@ -415,7 +415,7 @@ body {
     .index__form__titulo1 {
       margin: 10rem;
       font-family: "Indie Flower", cursive;
-      font-size: 20rem;
+      font-size: 16rem;
       position: relative;
       right: -5%;
       padding: 20px; }
@@ -435,7 +435,7 @@ body {
       background-color: rgba(212, 177, 163, 0.178);
       justify-items: space-between; }
       .index__form__form__qb {
-        font-size: 17rem;
+        font-size: 15rem;
         margin: 0rem; }
       .index__form__form__pc {
         border-radius: 30px;
@@ -471,6 +471,68 @@ body {
       color: floralwhite; }
     .index__form__pc:hover {
       background-color: #ffd90085; }
+  .fotos__index {
+    width: auto; } }
+
+@media (min-width: 601px) and (max-width: 1300px) {
+  .root__element {
+    font-size: 3px; }
+  .index__form {
+    grid-area: form; }
+    .index__form__titulo1 {
+      margin: 10rem;
+      font-family: "Indie Flower", cursive;
+      font-size: 11rem;
+      position: relative;
+      right: -30%;
+      max-width: 70%;
+      width: 40%; }
+    .index__form__form {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      height: auto;
+      width: auto;
+      font-family: "Josefin Sans";
+      font-size: 5rem;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      background-color: rgba(212, 177, 163, 0.178);
+      justify-items: space-between; }
+      .index__form__form__qb {
+        font-size: 7rem;
+        margin: 0rem; }
+      .index__form__form__pc {
+        border-radius: 30px;
+        width: 50%;
+        margin: 7rem; }
+      .index__form__form__checkbox {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin: 7rem; }
+        .index__form__form__checkbox flex-wrap:wrap,
+        .index__form__form__checkbox li {
+          margin: 3rem; }
+      .index__form__form__button {
+        width: 10%;
+        padding: 3px;
+        position: relative;
+        right: 0%;
+        top: 0%;
+        background-color: rgba(255, 172, 172, 0.58);
+        border-radius: 45%;
+        margin: 4rem; }
+      .index__form__form__genero {
+        margin: 7rem; }
+        .index__form__form__genero__dropdown {
+          width: 30%;
+          margin: 2rem;
+          padding: 2rem;
+          border-radius: 30px; }
   .fotos__index {
     width: auto; } }
 
@@ -531,7 +593,7 @@ body {
     .recomendados__titulo {
       margin: 10rem;
       font-family: "Indie Flower", cursive;
-      font-size: 20rem;
+      font-size: 16rem;
       position: relative;
       right: -5%;
       padding: 20px; }
@@ -561,37 +623,106 @@ body {
         width: 350px;
         height: 200px; } }
 
+@media (min-width: 601px) and (max-width: 1300px) {
+  .root__element {
+    font-size: 3px; }
+  .recomendados {
+    grid-area: recomendados; }
+    .recomendados__titulo {
+      margin: 10rem;
+      font-family: "Indie Flower", cursive;
+      font-size: 11rem;
+      position: relative;
+      right: -35%;
+      max-width: 70%; }
+    .recomendados__elementos {
+      position: relative;
+      top: 3%;
+      overflow: hidden; }
+      .recomendados__elementos h4 {
+        font-size: 7.5rem;
+        padding: 1px;
+        position: relative;
+        top: 4%;
+        right: -15%; }
+      .recomendados__elementos h6 {
+        margin-bottom: 6rem;
+        right: -10%;
+        font-size: 5.5rem; }
+      .recomendados__elementos img {
+        min-width: 50rem;
+        min-height: 30rem;
+        max-width: 83rem;
+        max-height: 48rem;
+        padding: 5px; }
+      .recomendados__elementos li {
+        display: inline-block; } }
+
 @media (min-width: 0px) and (max-width: 420px) {
   #grilla__index {
     width: 100%;
     min-height: 100%;
     display: grid;
     grid-template-areas: "header" "main__index" "footer";
-    grid-template-rows: 15% auto 10%;
+    grid-template-rows: 14% auto 10%;
     grid-template-columns: 100%; }
   #main__index {
     grid-area: main__index;
     width: 100%;
     display: grid;
     grid-template-areas: "foto" "form" "recomendados";
-    grid-template-rows: 10% 45% auto;
+    grid-template-rows: 10% 35% auto;
     grid-template-columns: 100%; } }
 
 @media (min-width: 421px) and (max-width: 600px) {
   .root__element {
     font-size: 3px; }
+  html,
+  body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    border: 1px solid transparent; }
   #grilla__index {
+    min-width: 100%;
+    min-height: 100%;
     display: grid;
     grid-template-areas: "header" "main__index" "footer";
     grid-template-rows: 1fr auto 1fr;
     grid-template-columns: auto; }
   #main__index {
     grid-area: main__index;
-    width: 100%;
+    min-width: 100%;
     display: grid;
     grid-template-areas: "foto" "form" "recomendados";
     grid-template-rows: 130rem 310rem auto;
     grid-template-columns: auto; } }
+
+@media (min-width: 601px) and (max-width: 1300px) {
+  .root__element {
+    font-size: 3px; }
+  html,
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; }
+  #grilla__index {
+    min-width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: "header" "main__index" "footer";
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 100%; }
+  #main__index {
+    min-width: 100%;
+    grid-area: main__index;
+    display: grid;
+    grid-template-areas: "form foto" "recomendados recomendados";
+    grid-template-rows: 0.8fr 1fr;
+    grid-template-columns: 3fr 3fr; } }
 
 .form__musica {
   grid-area: form__musica;
@@ -1011,7 +1142,7 @@ body .musica__recomendada {
   .form__cine__div__titulo {
     margin: 10rem;
     font-family: "Indie Flower", cursive;
-    font-size: 20rem;
+    font-size: 16rem;
     position: relative;
     right: -20%;
     padding: 20px; }
@@ -1042,7 +1173,7 @@ body .musica__recomendada {
       width: 80%;
       margin: 7rem; }
     .form__cine__div__div2__qb {
-      font-size: 17rem;
+      font-size: 15rem;
       margin: 4rem;
       font-style: "Josefin Sans"; }
     .form__cine__div__div2__checkbox {
@@ -1066,12 +1197,72 @@ body .musica__recomendada {
     border-radius: 45%;
     margin: 7rem; } }
 
+@media (min-width: 601px) and (max-width: 1300px) {
+  .form__cine__div__titulo {
+    margin: 10rem;
+    font-family: "Indie Flower", cursive;
+    font-size: 11rem;
+    position: relative;
+    right: -30%;
+    max-width: 70%; }
+  .form__cine__div__div2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: auto;
+    width: auto;
+    font-family: "Josefin Sans";
+    font-size: 5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: rgba(211, 78, 223, 0.329);
+    justify-items: space-between; }
+    .form__cine__div__div2__dropdown {
+      margin: 7rem; }
+      .form__cine__div__div2__dropdown__dropdown {
+        width: 30%;
+        margin: 2rem;
+        padding: 2rem;
+        border-radius: 30px; }
+    .form__cine__div__div2__qbinput {
+      border-radius: 30px;
+      width: 50%;
+      margin: 7rem; }
+    .form__cine__div__div2__qb {
+      font-size: 7rem;
+      margin: 4rem;
+      font-style: "Josefin Sans"; }
+    .form__cine__div__div2__checkbox {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      margin: 7rem; }
+      .form__cine__div__div2__checkbox flex-wrap:wrap,
+      .form__cine__div__div2__checkbox li {
+        margin: 3rem; }
+  .form__cine button:hover,
+  .form__cine select:hover,
+  .form__cine input:hover {
+    background-color: gold; }
+  .form__cine button {
+    width: 35%;
+    padding: 3px;
+    position: relative;
+    right: 0%;
+    top: 0%;
+    background-color: rgba(245, 23, 197, 0.58);
+    border-radius: 45%;
+    margin: 7rem; } }
+
 @media (min-width: 0px) and (max-width: 420px) {
   #grilla__cine {
     min-width: 100%;
     display: grid;
     grid-template-areas: "header" "main" "footer";
-    grid-template-rows: 10% auto 10%;
+    grid-template-rows: 12% auto 10%;
     grid-template-columns: 100%; }
   #main__cine {
     width: 100%;
@@ -1082,16 +1273,47 @@ body .musica__recomendada {
     grid-template-columns: 100%; } }
 
 @media (min-width: 421px) and (max-width: 600px) {
+  html,
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; }
   #grilla__cine {
     display: grid;
     grid-template-areas: "header" "main" "footer";
-    grid-template-rows: 20% auto 20%;
+    grid-template-rows: 6% auto 5%;
     grid-template-columns: 100%; }
   #main__cine {
     grid-area: main;
     display: grid;
     grid-template-areas: "form__cine" "contenido__cine";
-    grid-template-rows: 40% 60%;
+    grid-template-rows: 30% 80%;
+    grid-template-columns: 100%; } }
+
+@media (min-width: 601px) and (max-width: 1300px) {
+  html,
+  body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-bottom: 1px;
+    border: 1px solid transparent; }
+  #grilla__cine {
+    min-width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-areas: "header" "main__cine" "footer";
+    grid-template-rows: 0.95fr auto 1fr;
+    grid-template-columns: 100%; }
+  #main__cine {
+    width: 100%;
+    grid-area: main__cine;
+    display: grid;
+    grid-template-areas: "form__cine" "contenido__cine";
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 100%; } }
 
 @media (min-width: 0px) and (max-width: 420px) {
@@ -1167,7 +1389,7 @@ body .musica__recomendada {
     .contenido__cine__div__titulo {
       margin: 10rem;
       font-family: "Indie Flower", cursive;
-      font-size: 20rem;
+      font-size: 16rem;
       position: relative;
       right: -20%;
       padding: 20px; }
@@ -1226,20 +1448,131 @@ body .musica__recomendada {
           width: 70rem;
           height: 37rem; } }
 
+@media (min-width: 601px) and (max-width: 1300px) {
+  .contenido__cine__div {
+    min-width: 90%;
+    min-height: 50%;
+    position: relative;
+    right: 5%;
+    margin: 8%; }
+    .contenido__cine__div__titulo {
+      margin: 10rem;
+      font-family: "Indie Flower", cursive;
+      font-size: 11rem;
+      position: relative;
+      right: -40%;
+      max-width: 70%; }
+    .contenido__cine__div__div2__cortos {
+      font-family: "Indie Flower", cursive;
+      font-size: 8rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      display: flex;
+      flex-direction: row; }
+      .contenido__cine__div__div2__cortos__titulo {
+        font-family: "Indie Flower", cursive;
+        font-size: 8rem;
+        position: relative;
+        right: -40%; }
+      .contenido__cine__div__div2__cortos img {
+        min-width: 60rem;
+        min-height: 35rem;
+        max-width: 150rem;
+        max-height: 100rem;
+        border: rgba(248, 62, 5, 0.158) solid 3px; }
+      .contenido__cine__div__div2__cortos img:hover {
+        border: 2px inset #ffd700;
+        width: 70rem;
+        height: 37rem; }
+    .contenido__cine__div__div2__series {
+      font-family: "Indie Flower", cursive;
+      font-size: 8rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      display: flex;
+      flex-direction: row; }
+      .contenido__cine__div__div2__series__titulo {
+        font-family: "Indie Flower", cursive;
+        font-size: 8rem;
+        position: relative;
+        right: -40%; }
+      .contenido__cine__div__div2__series img {
+        min-width: 60rem;
+        min-height: 35rem;
+        max-width: 150rem;
+        max-height: 100rem;
+        border: rgba(248, 62, 5, 0.158) solid 3px; }
+      .contenido__cine__div__div2__series img:hover {
+        border: 2px inset #ffd700;
+        width: 70rem;
+        height: 37rem; }
+    .contenido__cine__div__div2__skits {
+      font-family: "Indie Flower", cursive;
+      font-size: 8rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      display: flex;
+      flex-direction: row; }
+      .contenido__cine__div__div2__skits__titulo {
+        font-family: "Indie Flower", cursive;
+        font-size: 8rem;
+        position: relative;
+        right: -40%; }
+      .contenido__cine__div__div2__skits img {
+        min-width: 60rem;
+        min-height: 35rem;
+        max-width: 150rem;
+        max-height: 100rem;
+        border: rgba(248, 62, 5, 0.158) solid 3px; }
+      .contenido__cine__div__div2__skits img:hover {
+        border: 2px inset #ffd700;
+        width: 70rem;
+        height: 37rem; } }
+
 @media (min-width: 0px) and (max-width: 420px) {
   #grilla__musica {
     display: grid;
     grid-template-areas: "header" "main__musica" "footer";
-    grid-template-rows: 24% auto 10%;
+    grid-template-rows: 1fr auto 1fr;
     grid-template-columns: 100%; }
   #main__musica {
     grid-area: main__musica;
     display: grid;
     grid-template-areas: "form__musica" "musica__recomendada";
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 100%; } }
+
+@media (min-width: 601px) and (max-width: 1300px) {
+  html,
+  body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-bottom: 1px;
+    border: 1px solid transparent; }
+  #grilla__musica {
+    display: grid;
+    grid-template-areas: "header" "main__musica" "footer";
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 100%; }
+  #main__musica {
+    grid-area: main__musica;
+    display: grid;
+    grid-template-areas: "form__musica" "musica__recomendada";
+    grid-template-rows: 0.7fr 1fr;
     grid-template-columns: 100%; } }
 
 @media (min-width: 0px) and (max-width: 420px) {
+  #carouselExampleControls {
+    min-width: 120%; }
   body .musica__recomendada {
     grid-area: musica__recomendada;
     display: flex;
@@ -1263,22 +1596,20 @@ body .musica__recomendada {
       width: 40%; }
     body .musica__recomendada__div {
       background-color: rgba(41, 206, 69, 0.288);
-      padding: 40px;
       border-radius: 8%;
-      width: auto; }
+      min-width: 100%; }
       body .musica__recomendada__div__IWLG, body .musica__recomendada__div__MN, body .musica__recomendada__div__OL {
         display: flex;
         align-items: center;
         flex-wrap: nowrap; }
         body .musica__recomendada__div__IWLG h5, body .musica__recomendada__div__MN h5, body .musica__recomendada__div__OL h5 {
-          font-size: 5rem; }
+          font-size: 7rem; }
         body .musica__recomendada__div__IWLG img, body .musica__recomendada__div__MN img, body .musica__recomendada__div__OL img {
-          width: 25rem;
-          height: 25rem; }
+          width: 70rem;
+          height: 120rem; }
         body .musica__recomendada__div__IWLG audio, body .musica__recomendada__div__MN audio, body .musica__recomendada__div__OL audio {
-          width: 100%;
-          font-size: 0.4rem;
-          max-width: 600px; } }
+          min-width: 100%;
+          font-size: 1rem; } }
 
 @media (min-width: 421px) and (max-width: 600px) {
   .root__element {
@@ -1289,33 +1620,56 @@ body .musica__recomendada {
     body .musica__recomendada__titulo {
       position: Relative;
       right: -10%; }
-    body .musica__recomendada__div__OL, body .musica__recomendada__div__MN, body .musica__recomendada__div__IWLG {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      align-items: Center; }
-      body .musica__recomendada__div__OL img,
-      body .musica__recomendada__div__OL h4,
-      body .musica__recomendada__div__OL audio,
-      body .musica__recomendada__div__OL h5, body .musica__recomendada__div__MN img,
-      body .musica__recomendada__div__MN h4,
-      body .musica__recomendada__div__MN audio,
-      body .musica__recomendada__div__MN h5, body .musica__recomendada__div__IWLG img,
-      body .musica__recomendada__div__IWLG h4,
-      body .musica__recomendada__div__IWLG audio,
-      body .musica__recomendada__div__IWLG h5 {
-        margin: 3rem; }
-      body .musica__recomendada__div__OL img, body .musica__recomendada__div__MN img, body .musica__recomendada__div__IWLG img {
-        width: 30rem;
-        height: 25rem; }
-      body .musica__recomendada__div__OL audio, body .musica__recomendada__div__MN audio, body .musica__recomendada__div__IWLG audio {
-        width: 80rem;
-        min-width: 80rem; }
     body .musica__recomendada__div {
       background-color: rgba(41, 206, 69, 0.288);
       padding: 40px;
       border-radius: 8%;
-      width: auto; } }
+      width: auto; }
+      body .musica__recomendada__div__OL, body .musica__recomendada__div__MN, body .musica__recomendada__div__IWLG {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: Center; }
+        body .musica__recomendada__div__OL img,
+        body .musica__recomendada__div__OL h4,
+        body .musica__recomendada__div__OL audio,
+        body .musica__recomendada__div__OL h5, body .musica__recomendada__div__MN img,
+        body .musica__recomendada__div__MN h4,
+        body .musica__recomendada__div__MN audio,
+        body .musica__recomendada__div__MN h5, body .musica__recomendada__div__IWLG img,
+        body .musica__recomendada__div__IWLG h4,
+        body .musica__recomendada__div__IWLG audio,
+        body .musica__recomendada__div__IWLG h5 {
+          margin: 3rem; }
+        body .musica__recomendada__div__OL img, body .musica__recomendada__div__MN img, body .musica__recomendada__div__IWLG img {
+          width: 30rem;
+          height: 25rem; }
+        body .musica__recomendada__div__OL audio, body .musica__recomendada__div__MN audio, body .musica__recomendada__div__IWLG audio {
+          width: 80rem;
+          min-width: 80rem; } }
+
+@media (min-width: 601px) and (max-width: 1300px) {
+  #carouselExampleControls {
+    min-width: 80%; }
+  body .musica__recomendada__titulo {
+    margin: 10rem;
+    font-family: "Indie Flower", cursive;
+    font-size: 11rem;
+    position: relative;
+    right: -35%;
+    max-width: 70%;
+    width: 40%; }
+  body .musica__recomendada__div__IWLG, body .musica__recomendada__div__MN, body .musica__recomendada__div__OL {
+    position: relative;
+    right: 0%; }
+    body .musica__recomendada__div__IWLG h5, body .musica__recomendada__div__MN h5, body .musica__recomendada__div__OL h5 {
+      font-size: 9rem; }
+    body .musica__recomendada__div__IWLG img, body .musica__recomendada__div__MN img, body .musica__recomendada__div__OL img {
+      min-width: 30%;
+      max-height: 20%; }
+    body .musica__recomendada__div__IWLG audio, body .musica__recomendada__div__MN audio, body .musica__recomendada__div__OL audio {
+      min-width: 50%;
+      font-size: 1rem; } }
 
 @media (min-width: 0px) and (max-width: 420px) {
   .root__element {
@@ -1397,6 +1751,59 @@ body .musica__recomendada {
       position: relative;
       right: 0%;
       margin: 8rem; } }
+
+@media (min-width: 601px) and (max-width: 1300px) {
+  .root__element {
+    font-size: 3px; }
+  body .form__musica {
+    height: auto; }
+    body .form__musica__titulo {
+      margin: 10rem;
+      font-family: "Indie Flower", cursive;
+      font-size: 11rem;
+      position: relative;
+      right: -35%;
+      max-width: 70%;
+      width: 40%; }
+    body .form__musica__form__div {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      height: auto;
+      width: auto;
+      font-family: "Josefin Sans";
+      font-size: 5rem;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      background-color: rgba(41, 206, 69, 0.171);
+      justify-items: space-between; }
+      body .form__musica__form__div__qb {
+        font-size: 7rem;
+        margin: 0rem; }
+      body .form__musica__form__div__pc {
+        border-radius: 30px;
+        width: 50%;
+        margin: 7rem; }
+      body .form__musica__form__div__genero {
+        margin: 7rem; }
+        body .form__musica__form__div__genero__dropdown {
+          width: 30%;
+          margin: 2rem;
+          padding: 2rem;
+          border-radius: 30px; }
+      body .form__musica__form__div__button {
+        width: 10%;
+        padding: 3px;
+        position: relative;
+        right: 0%;
+        top: 0%;
+        background-color: rgba(41, 206, 69, 0.171);
+        border-radius: 45%;
+        margin: 4rem;
+        width: 40rem; } }
 
 .nuestro__equipo {
   grid-area: equipo;
@@ -1480,7 +1887,7 @@ body .musica__recomendada {
 @media (min-width: 0px) and (max-width: 420px) {
   #carouselExampleControls {
     position: relative;
-    right: 10%; }
+    right: 15%; }
   .nuestro__equipo__titulo {
     margin: 10rem;
     font-family: "Indie Flower", cursive;
@@ -1504,18 +1911,95 @@ body .musica__recomendada {
       right: -15%; }
     .nuestro__equipo__miembro__descripcion {
       position: relative;
-      right: 0%;
+      right: 10%;
       text-align: center;
       width: 65%;
       color: dimgrey; } }
 
+@media (min-width: 421px) and (max-width: 600px) {
+  #carouselExampleControls {
+    position: relative;
+    right: 15%; }
+  .nuestro__equipo__titulo {
+    margin: 10rem;
+    font-family: "Indie Flower", cursive;
+    font-size: 16rem;
+    position: relative;
+    right: 0%;
+    padding: 20px;
+    font-size: 15rem;
+    max-width: 90%; }
+  .nuestro__equipo img {
+    min-width: 50%;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10%;
+    border: 1px solid rgba(255, 255, 255, 0.288); }
+  .nuestro__equipo__miembro {
+    position: relative;
+    right: -45%; }
+    .nuestro__equipo__miembro__nombre {
+      font-size: 8rem;
+      position: relative;
+      right: -15%; }
+    .nuestro__equipo__miembro__descripcion {
+      font-size: 7rem;
+      position: relative;
+      right: 10%;
+      text-align: center;
+      width: 65%;
+      color: dimgrey; } }
+
+@media (min-width: 601px) and (max-width: 1300px) {
+  #carouselExampleControls {
+    position: relative;
+    right: -15%;
+    max-width: 20%; }
+  .nuestro__equipo__titulo {
+    margin: 10rem;
+    font-family: "Indie Flower", cursive;
+    font-size: 11rem;
+    position: relative;
+    right: -28%;
+    max-width: 70%;
+    max-width: 90%; }
+  .nuestro__equipo img {
+    min-width: 30%;
+    max-width: 20%;
+    max-height: 30%;
+    border-radius: 10%;
+    border: 1px solid rgba(255, 255, 255, 0.288); }
+  .nuestro__equipo__miembro {
+    position: relative;
+    right: 0%; }
+    .nuestro__equipo__miembro__nombre {
+      font-size: 8rem;
+      position: relative;
+      right: -35%; }
+    .nuestro__equipo__miembro__descripcion {
+      font-size: 7rem;
+      position: relative;
+      right: -10%;
+      text-align: center;
+      width: 80%;
+      color: dimgrey; } }
+
 @media (min-width: 0px) and (max-width: 420px) {
+  html,
+  body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-bottom: 1px;
+    border: 1px solid transparent; }
   .root__element {
     font-size: 3px; }
   #sn__grilla1 {
     display: grid;
     grid-template-areas: "header" "main" "footer";
-    grid-template-rows: 24% auto 10%;
+    grid-template-rows: 21.5% auto 10%;
     grid-template-columns: 100%; }
   #sn__grilla2 {
     grid-area: main;
@@ -1523,6 +2007,39 @@ body .musica__recomendada {
     grid-template-areas: "texto" "equipo";
     grid-template-rows: 57% auto;
     grid-template-columns: 100%; } }
+
+@media (min-width: 421px) and (max-width: 600px) {
+  html,
+  body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-bottom: 1px;
+    border: 1px solid transparent; }
+  #sn__grilla1 {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 100%; }
+  #sn__grilla2 {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "texto" "equipo";
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr 1fr; } }
+
+@media (min-width: 601px) and (max-width: 1300px) {
+  html,
+  body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-bottom: 1px;
+    border: 1px solid transparent; } }
 
 @media (min-width: 0px) and (max-width: 420px) {
   .sobre__nosotros {
@@ -1547,6 +2064,19 @@ body .musica__recomendada {
       max-width: 70%;
       font-size: 9rem;
       max-width: 90%; } }
+
+@media (min-width: 421px) and (max-width: 600px) {
+  .sobre__nosotros__texto {
+    font-size: 10rem; }
+  .sobre__nosotros__titulo {
+    margin: 10rem;
+    font-family: "Indie Flower", cursive;
+    font-size: 16rem;
+    position: relative;
+    right: 0%;
+    padding: 20px;
+    font-size: 15rem;
+    max-width: 90%; } }
 
 .filtro__lit {
   grid-area: filtro__lit;
@@ -1742,7 +2272,7 @@ body .recomendados__lit {
     .filtro__lit__titulo1 {
       margin: 10rem;
       font-family: "Indie Flower", cursive;
-      font-size: 20rem;
+      font-size: 16rem;
       position: relative;
       right: -35%;
       padding: 20px; }
@@ -1762,7 +2292,7 @@ body .recomendados__lit {
       background-color: rgba(251, 255, 18, 0.268);
       justify-items: space-between; }
       .filtro__lit__form__div__qb {
-        font-size: 17rem;
+        font-size: 15rem;
         font-style: "Josefin Sans"; }
       .filtro__lit__form__div__qbinput {
         border-radius: 30px;
@@ -1796,10 +2326,70 @@ body .recomendados__lit {
         border-radius: 45%;
         margin: 7rem; } }
 
+@media (min-width: 601px) and (max-width: 1300px) {
+  .filtro__lit {
+    grid-area: filtro__lit; }
+    .filtro__lit__titulo1 {
+      margin: 10rem;
+      font-family: "Indie Flower", cursive;
+      font-size: 11rem;
+      position: relative;
+      right: -27%;
+      max-width: 70%; }
+    .filtro__lit__form__div {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      height: auto;
+      width: auto;
+      font-family: "Josefin Sans";
+      font-size: 5rem;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      background-color: rgba(251, 255, 18, 0.268);
+      justify-items: space-between;
+      margin: 10rem;
+      position: relative;
+      right: 0%; }
+      .filtro__lit__form__div__qb {
+        font-size: 7rem;
+        font-style: "Josefin Sans"; }
+      .filtro__lit__form__div__qbinput {
+        border-radius: 30px;
+        width: 50%;
+        margin: 7rem; }
+      .filtro__lit__form__div__checkbox {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin: 7rem; }
+        .filtro__lit__form__div__checkbox flex-wrap:wrap,
+        .filtro__lit__form__div__checkbox li {
+          margin: 3rem; }
+      .filtro__lit__form__div__div2__dropdown {
+        margin: 7rem; }
+        .filtro__lit__form__div__div2__dropdown__dropdown {
+          width: 30%;
+          margin: 2rem;
+          padding: 2rem;
+          border-radius: 30px; }
+      .filtro__lit__form__div button {
+        width: 10%;
+        padding: 3px;
+        position: relative;
+        right: 0%;
+        top: 0%;
+        background-color: rgba(240, 186, 154, 0.58);
+        border-radius: 45%;
+        margin: 4rem; } }
+
 @media (min-width: 0px) and (max-width: 420px) {
   #grilla__lit {
     min-width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
     display: grid;
     grid-template-areas: "header" "main__lit" "footer";
     grid-template-rows: 24% auto 10%;
@@ -1815,6 +2405,12 @@ body .recomendados__lit {
 @media (min-width: 421px) and (max-width: 600px) {
   .root__element {
     font-size: 3px; }
+  html,
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; }
   #grilla__lit {
     display: grid;
     grid-template-areas: "header" "main__lit" "footer";
@@ -1825,6 +2421,30 @@ body .recomendados__lit {
     display: grid;
     grid-template-areas: "filtro__lit" "contenido__lit";
     grid-template-rows: 3fr 3fr;
+    grid-template-columns: 100%; } }
+
+@media (min-width: 601px) and (max-width: 1300px) {
+  html,
+  body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-bottom: 1px;
+    border: 1px solid transparent; }
+  #grilla__lit {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "header" "main__lit" "footer";
+    grid-template-rows: 0.95fr auto 0.8fr;
+    grid-template-columns: 100%; }
+  #main__lit {
+    grid-area: main__lit;
+    display: grid;
+    grid-template-areas: "filtro__lit" "contenido__lit";
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 100%; } }
 
 @media (min-width: 0px) and (max-width: 420px) {
@@ -1864,7 +2484,7 @@ body .recomendados__lit {
     .recomendados__titulo {
       margin: 10rem;
       font-family: "Indie Flower", cursive;
-      font-size: 20rem;
+      font-size: 16rem;
       position: relative;
       right: -5%;
       padding: 20px; }
@@ -1893,6 +2513,33 @@ body .recomendados__lit {
         border: 2px inset #ffd700;
         width: 350px;
         height: 200px; } }
+
+@media (min-width: 601px) and (max-width: 1300px) {
+  .root__element {
+    font-size: 3px; }
+  .recomendados__lit {
+    max-width: 100%; }
+    .recomendados__lit h3 {
+      margin: 10rem;
+      font-family: "Indie Flower", cursive;
+      font-size: 11rem;
+      position: relative;
+      right: -40%;
+      max-width: 70%; }
+  #carousel1 {
+    background-color: rgba(255, 235, 205, 0.392);
+    border: 2rem outset rgba(222, 226, 1, 0.501);
+    min-width: 90%;
+    max-width: 130rem;
+    max-height: 400rem;
+    position: relative;
+    right: -5%;
+    margin-bottom: 2rem; }
+  .carousel-item {
+    position: relative;
+    right: 0%; }
+    .carousel-item img {
+      min-width: 100%; } }
 
 .root__element {
   font-size: 3px; }
@@ -2086,6 +2733,7 @@ header {
     margin-left: 100%; } }
 
 footer {
+  padding: 0px;
   grid-area: footer;
   height: auto;
   width: auto;
@@ -2166,6 +2814,33 @@ footer {
     padding: 10px;
     padding: 10px; } }
 
+@media (min-width: 601px) and (max-width: 1300px) {
+  .elementos__header ul {
+    display: flex;
+    flex-direction: row;
+    font-family: "Josefin Sans";
+    font-size: 7rem; }
+    .elementos__header ul .home__mp {
+      font-family: "Josefin Sans";
+      font-size: 7rem; }
+  header {
+    width: 100%; }
+    header nav {
+      width: 100%;
+      height: auto; }
+  .elementos__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    max-width: 90%;
+    position: relative;
+    right: -8%; }
+  .elementos__header ul li {
+    list-style-type: none;
+    padding: 10px;
+    padding: 10px; } }
+
 @media (min-width: 0px) and (max-width: 420px) {
   footer {
     height: auto;
@@ -2190,6 +2865,24 @@ footer {
     width: 100%;
     font-family: "Josefin Sans";
     font-size: 8rem; }
+    footer ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      position: relative;
+      top: 15%;
+      padding: 0px; }
+      footer ul li {
+        padding: 6px; } }
+
+@media (min-width: 601px) and (max-width: 1300px) {
+  footer {
+    max-height: 100%;
+    max-width: 100%;
+    font-family: "Josefin Sans";
+    font-size: 7rem; }
     footer ul {
       list-style-type: none;
       display: flex;
@@ -2336,13 +3029,133 @@ footer {
     right: -5%;
     max-width: 70%; } }
 
+@media (min-width: 421px) and (max-width: 600px) {
+  .form__qsp {
+    overflow: scroll;
+    font-family: "Josefin Sans";
+    grid-area: form__qsp;
+    background-color: rgba(212, 177, 163, 0.178);
+    background-image: url("../imagenes/qsp__bg__form.png");
+    background-size: cover; }
+    .form__qsp form input {
+      font-size: 4.5rem; }
+    .form__qsp #nya--text,
+    .form__qsp #basic-addon3,
+    .form__qsp #gen,
+    .form__qsp #ce--text,
+    .form__qsp #bot--text,
+    .form__qsp #exampleFormControlInput1,
+    .form__qsp #tyc {
+      font-size: 7rem; }
+    .form__qsp #bot {
+      width: 25rem;
+      height: 15rem;
+      position: Relative;
+      right: -50%; }
+    .form__qsp #gen {
+      margin-top: 8rem; }
+    .form__qsp #sobre {
+      font-size: 7rem; }
+    .form__qsp .tu__proyecto {
+      font-size: 6rem; }
+    .form__qsp .form__qsp__titulo {
+      margin: 10rem;
+      font-family: "Indie Flower", cursive;
+      font-size: 16rem;
+      position: relative;
+      right: 0%;
+      padding: 20px; }
+    .form__qsp #ana {
+      display: flex;
+      flex-direction: row; }
+      .form__qsp #ana input {
+        margin: 2rem; }
+    .form__qsp__div {
+      background-color: rgba(212, 177, 163, 0.459);
+      margin: 3rem;
+      position: relative;
+      right: -10%;
+      width: 80%; }
+      .form__qsp__div label {
+        font-size: 6rem; }
+      .form__qsp__div form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: space-between;
+        justify-content: space-evenly;
+        height: auto;
+        margin: 10rem;
+        padding: 10rem; }
+      .form__qsp__div form p,
+      .form__qsp__div label,
+      .form__qsp__div input {
+        padding: 8px; } }
+
+@media (min-width: 601px) and (max-width: 1300px) {
+  .form__qsp form input {
+    font-size: 4.5rem; }
+  .form__qsp #nya--text,
+  .form__qsp #basic-addon3,
+  .form__qsp #gen,
+  .form__qsp #ce--text,
+  .form__qsp #bot--text,
+  .form__qsp #exampleFormControlInput1,
+  .form__qsp #tyc {
+    font-size: 5rem; }
+  .form__qsp #bot {
+    width: 25rem;
+    height: 15rem;
+    position: Relative;
+    right: -50%; }
+  .form__qsp #gen {
+    margin-top: 8rem; }
+  .form__qsp #sobre {
+    font-size: 5rem; }
+  .form__qsp .tu__proyecto {
+    font-size: 4rem; }
+  .form__qsp .form__qsp__titulo {
+    margin: 10rem;
+    font-family: "Indie Flower", cursive;
+    font-size: 11rem;
+    position: relative;
+    right: -31%;
+    max-width: 70%;
+    width: 45%; }
+  .form__qsp #ana {
+    display: flex;
+    flex-direction: row; }
+    .form__qsp #ana input {
+      margin: 2rem; }
+  .form__qsp__div {
+    background-color: rgba(212, 177, 163, 0.459);
+    margin: 3rem;
+    position: relative;
+    right: -20%;
+    max-width: 60%; }
+    .form__qsp__div label {
+      font-size: 4rem; }
+    .form__qsp__div form {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: space-between;
+      justify-content: space-evenly;
+      height: auto;
+      margin: 10rem;
+      padding: 10rem; }
+    .form__qsp__div form p,
+    .form__qsp__div label,
+    .form__qsp__div input {
+      padding: 8px; } }
+
 @media (min-width: 0px) and (max-width: 420px) {
   #grilla__qsp {
     min-width: 100%;
     min-height: 100%;
     display: grid;
     grid-template-areas: "header" "main__qsp" "footer";
-    grid-template-rows: 12.5% auto 10%;
+    grid-template-rows: 13% auto 5%;
     grid-template-columns: 100%; }
   #grilla__qsp2 {
     min-width: 100%;
@@ -2350,15 +3163,87 @@ footer {
     grid-area: main__qsp;
     display: grid;
     grid-template-areas: "texto__qsp" "foto__qsp" "form__qsp";
-    grid-template-rows: 30% 15% 60%;
+    grid-template-rows: 35% 13.5% 60%;
+    grid-template-columns: 100%; } }
+
+@media (min-width: 421px) and (max-width: 600px) {
+  html,
+  body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-bottom: 1px;
+    border: 1px solid transparent; }
+  #grilla__qsp {
+    min-width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-areas: "header" "main__qsp" "footer";
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 100%; }
+  #grilla__qsp2 {
+    min-width: 100%;
+    min-height: 100%;
+    grid-area: main__qsp;
+    display: grid;
+    grid-template-areas: "texto__qsp" "foto__qsp" "form__qsp";
+    grid-template-rows: 2fr 1fr 2fr;
+    grid-template-columns: 100%; } }
+
+@media (min-width: 601px) and (max-width: 1300px) {
+  html,
+  body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-bottom: 1px;
+    border: 1px solid transparent; }
+  #grilla__qsp {
+    min-width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-areas: "header" "main__qsp" "footer";
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 100%; }
+  #grilla__qsp2 {
+    min-width: 100%;
+    min-height: 100%;
+    grid-area: main__qsp;
+    display: grid;
+    grid-template-areas: "texto__qsp" "foto__qsp" "form__qsp";
+    grid-template-rows: 0.5fr 0.5fr 1fr;
     grid-template-columns: 100%; } }
 
 @media (min-width: 0px) and (max-width: 420px) {
   .img__qsp__div img {
     position: relative;
+    top: 0%;
     right: 10%;
-    max-width: 110rem;
-    max-height: 110rem; } }
+    max-width: 90%;
+    max-height: 90%;
+    margin-top: 0rem; } }
+
+@media (min-width: 421px) and (max-width: 600px) {
+  .img__qsp__div img {
+    position: relative;
+    top: 0%;
+    right: 5%;
+    max-width: 90%;
+    max-height: 90%;
+    margin-top: 0rem; } }
+
+@media (min-width: 601px) and (max-width: 1300px) {
+  .img__qsp__div img {
+    position: relative;
+    top: 0%;
+    right: -27%;
+    max-width: 40%;
+    max-height: 30%;
+    margin-top: 0rem; } }
 
 @media (min-width: 0px) and (max-width: 420px) {
   .texto__qsp__titulo {
@@ -2368,6 +3253,43 @@ footer {
     position: relative;
     right: -5%;
     max-width: 70%; } }
+
+@media (min-width: 421px) and (max-width: 600px) {
+  .texto__qsp {
+    font-family: "Josefin Sans";
+    grid-area: texto__qsp;
+    background-image: url("../imagenes/qsp__bg__text.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    height: auto; }
+    .texto__qsp__texto {
+      font-size: 10rem;
+      text-align: center;
+      width: 100%;
+      padding: 20px; }
+    .texto__qsp__titulo {
+      margin: 10rem;
+      font-family: "Indie Flower", cursive;
+      font-size: 16rem;
+      position: relative;
+      right: 0%;
+      padding: 20px; } }
+
+@media (min-width: 601px) and (max-width: 1300px) {
+  .texto__qsp__texto {
+    font-size: 7rem;
+    text-align: center;
+    width: 100%;
+    padding: 20px; }
+  .texto__qsp__titulo {
+    margin: 10rem;
+    font-family: "Indie Flower", cursive;
+    font-size: 11rem;
+    position: relative;
+    right: -31%;
+    max-width: 70%;
+    max-width: 40%; } }
 
 @media (min-width: 0px) and (max-width: 420px) {
   .root__element {
@@ -2429,6 +3351,33 @@ footer {
     padding: 10px;
     padding: 10px; } }
 
+@media (min-width: 601px) and (max-width: 1300px) {
+  .elementos__header ul {
+    display: flex;
+    flex-direction: row;
+    font-family: "Josefin Sans";
+    font-size: 7rem; }
+    .elementos__header ul .home__mp {
+      font-family: "Josefin Sans";
+      font-size: 7rem; }
+  header {
+    width: 100%; }
+    header nav {
+      width: 100%;
+      height: auto; }
+  .elementos__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    max-width: 90%;
+    position: relative;
+    right: -8%; }
+  .elementos__header ul li {
+    list-style-type: none;
+    padding: 10px;
+    padding: 10px; } }
+
 @media (min-width: 0px) and (max-width: 420px) {
   footer {
     height: auto;
@@ -2453,6 +3402,24 @@ footer {
     width: 100%;
     font-family: "Josefin Sans";
     font-size: 8rem; }
+    footer ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      position: relative;
+      top: 15%;
+      padding: 0px; }
+      footer ul li {
+        padding: 6px; } }
+
+@media (min-width: 601px) and (max-width: 1300px) {
+  footer {
+    max-height: 100%;
+    max-width: 100%;
+    font-family: "Josefin Sans";
+    font-size: 7rem; }
     footer ul {
       list-style-type: none;
       display: flex;
@@ -2549,7 +3516,7 @@ footer {
     .index__form__titulo1 {
       margin: 10rem;
       font-family: "Indie Flower", cursive;
-      font-size: 20rem;
+      font-size: 16rem;
       position: relative;
       right: -5%;
       padding: 20px; }
@@ -2569,7 +3536,7 @@ footer {
       background-color: rgba(212, 177, 163, 0.178);
       justify-items: space-between; }
       .index__form__form__qb {
-        font-size: 17rem;
+        font-size: 15rem;
         margin: 0rem; }
       .index__form__form__pc {
         border-radius: 30px;
@@ -2605,6 +3572,68 @@ footer {
       color: floralwhite; }
     .index__form__pc:hover {
       background-color: #ffd90085; }
+  .fotos__index {
+    width: auto; } }
+
+@media (min-width: 601px) and (max-width: 1300px) {
+  .root__element {
+    font-size: 3px; }
+  .index__form {
+    grid-area: form; }
+    .index__form__titulo1 {
+      margin: 10rem;
+      font-family: "Indie Flower", cursive;
+      font-size: 11rem;
+      position: relative;
+      right: -30%;
+      max-width: 70%;
+      width: 40%; }
+    .index__form__form {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      height: auto;
+      width: auto;
+      font-family: "Josefin Sans";
+      font-size: 5rem;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      background-color: rgba(212, 177, 163, 0.178);
+      justify-items: space-between; }
+      .index__form__form__qb {
+        font-size: 7rem;
+        margin: 0rem; }
+      .index__form__form__pc {
+        border-radius: 30px;
+        width: 50%;
+        margin: 7rem; }
+      .index__form__form__checkbox {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin: 7rem; }
+        .index__form__form__checkbox flex-wrap:wrap,
+        .index__form__form__checkbox li {
+          margin: 3rem; }
+      .index__form__form__button {
+        width: 10%;
+        padding: 3px;
+        position: relative;
+        right: 0%;
+        top: 0%;
+        background-color: rgba(255, 172, 172, 0.58);
+        border-radius: 45%;
+        margin: 4rem; }
+      .index__form__form__genero {
+        margin: 7rem; }
+        .index__form__form__genero__dropdown {
+          width: 30%;
+          margin: 2rem;
+          padding: 2rem;
+          border-radius: 30px; }
   .fotos__index {
     width: auto; } }
 
@@ -2665,7 +3694,7 @@ footer {
     .recomendados__titulo {
       margin: 10rem;
       font-family: "Indie Flower", cursive;
-      font-size: 20rem;
+      font-size: 16rem;
       position: relative;
       right: -5%;
       padding: 20px; }
@@ -2695,52 +3724,145 @@ footer {
         width: 350px;
         height: 200px; } }
 
+@media (min-width: 601px) and (max-width: 1300px) {
+  .root__element {
+    font-size: 3px; }
+  .recomendados {
+    grid-area: recomendados; }
+    .recomendados__titulo {
+      margin: 10rem;
+      font-family: "Indie Flower", cursive;
+      font-size: 11rem;
+      position: relative;
+      right: -35%;
+      max-width: 70%; }
+    .recomendados__elementos {
+      position: relative;
+      top: 3%;
+      overflow: hidden; }
+      .recomendados__elementos h4 {
+        font-size: 7.5rem;
+        padding: 1px;
+        position: relative;
+        top: 4%;
+        right: -15%; }
+      .recomendados__elementos h6 {
+        margin-bottom: 6rem;
+        right: -10%;
+        font-size: 5.5rem; }
+      .recomendados__elementos img {
+        min-width: 50rem;
+        min-height: 30rem;
+        max-width: 83rem;
+        max-height: 48rem;
+        padding: 5px; }
+      .recomendados__elementos li {
+        display: inline-block; } }
+
 @media (min-width: 0px) and (max-width: 420px) {
   #grilla__index {
     width: 100%;
     min-height: 100%;
     display: grid;
     grid-template-areas: "header" "main__index" "footer";
-    grid-template-rows: 15% auto 10%;
+    grid-template-rows: 14% auto 10%;
     grid-template-columns: 100%; }
   #main__index {
     grid-area: main__index;
     width: 100%;
     display: grid;
     grid-template-areas: "foto" "form" "recomendados";
-    grid-template-rows: 10% 45% auto;
+    grid-template-rows: 10% 35% auto;
     grid-template-columns: 100%; } }
 
 @media (min-width: 421px) and (max-width: 600px) {
   .root__element {
     font-size: 3px; }
+  html,
+  body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    border: 1px solid transparent; }
   #grilla__index {
+    min-width: 100%;
+    min-height: 100%;
     display: grid;
     grid-template-areas: "header" "main__index" "footer";
     grid-template-rows: 1fr auto 1fr;
     grid-template-columns: auto; }
   #main__index {
     grid-area: main__index;
-    width: 100%;
+    min-width: 100%;
     display: grid;
     grid-template-areas: "foto" "form" "recomendados";
     grid-template-rows: 130rem 310rem auto;
     grid-template-columns: auto; } }
 
+@media (min-width: 601px) and (max-width: 1300px) {
+  .root__element {
+    font-size: 3px; }
+  html,
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; }
+  #grilla__index {
+    min-width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas: "header" "main__index" "footer";
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 100%; }
+  #main__index {
+    min-width: 100%;
+    grid-area: main__index;
+    display: grid;
+    grid-template-areas: "form foto" "recomendados recomendados";
+    grid-template-rows: 0.8fr 1fr;
+    grid-template-columns: 3fr 3fr; } }
+
 @media (min-width: 0px) and (max-width: 420px) {
   #grilla__musica {
     display: grid;
     grid-template-areas: "header" "main__musica" "footer";
-    grid-template-rows: 24% auto 10%;
+    grid-template-rows: 1fr auto 1fr;
     grid-template-columns: 100%; }
   #main__musica {
     grid-area: main__musica;
     display: grid;
     grid-template-areas: "form__musica" "musica__recomendada";
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 100%; } }
+
+@media (min-width: 601px) and (max-width: 1300px) {
+  html,
+  body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-bottom: 1px;
+    border: 1px solid transparent; }
+  #grilla__musica {
+    display: grid;
+    grid-template-areas: "header" "main__musica" "footer";
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 100%; }
+  #main__musica {
+    grid-area: main__musica;
+    display: grid;
+    grid-template-areas: "form__musica" "musica__recomendada";
+    grid-template-rows: 0.7fr 1fr;
     grid-template-columns: 100%; } }
 
 @media (min-width: 0px) and (max-width: 420px) {
+  #carouselExampleControls {
+    min-width: 120%; }
   body .musica__recomendada {
     grid-area: musica__recomendada;
     display: flex;
@@ -2764,22 +3886,20 @@ footer {
       width: 40%; }
     body .musica__recomendada__div {
       background-color: rgba(41, 206, 69, 0.288);
-      padding: 40px;
       border-radius: 8%;
-      width: auto; }
+      min-width: 100%; }
       body .musica__recomendada__div__IWLG, body .musica__recomendada__div__MN, body .musica__recomendada__div__OL {
         display: flex;
         align-items: center;
         flex-wrap: nowrap; }
         body .musica__recomendada__div__IWLG h5, body .musica__recomendada__div__MN h5, body .musica__recomendada__div__OL h5 {
-          font-size: 5rem; }
+          font-size: 7rem; }
         body .musica__recomendada__div__IWLG img, body .musica__recomendada__div__MN img, body .musica__recomendada__div__OL img {
-          width: 25rem;
-          height: 25rem; }
+          width: 70rem;
+          height: 120rem; }
         body .musica__recomendada__div__IWLG audio, body .musica__recomendada__div__MN audio, body .musica__recomendada__div__OL audio {
-          width: 100%;
-          font-size: 0.4rem;
-          max-width: 600px; } }
+          min-width: 100%;
+          font-size: 1rem; } }
 
 @media (min-width: 421px) and (max-width: 600px) {
   .root__element {
@@ -2790,33 +3910,56 @@ footer {
     body .musica__recomendada__titulo {
       position: Relative;
       right: -10%; }
-    body .musica__recomendada__div__OL, body .musica__recomendada__div__MN, body .musica__recomendada__div__IWLG {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      align-items: Center; }
-      body .musica__recomendada__div__OL img,
-      body .musica__recomendada__div__OL h4,
-      body .musica__recomendada__div__OL audio,
-      body .musica__recomendada__div__OL h5, body .musica__recomendada__div__MN img,
-      body .musica__recomendada__div__MN h4,
-      body .musica__recomendada__div__MN audio,
-      body .musica__recomendada__div__MN h5, body .musica__recomendada__div__IWLG img,
-      body .musica__recomendada__div__IWLG h4,
-      body .musica__recomendada__div__IWLG audio,
-      body .musica__recomendada__div__IWLG h5 {
-        margin: 3rem; }
-      body .musica__recomendada__div__OL img, body .musica__recomendada__div__MN img, body .musica__recomendada__div__IWLG img {
-        width: 30rem;
-        height: 25rem; }
-      body .musica__recomendada__div__OL audio, body .musica__recomendada__div__MN audio, body .musica__recomendada__div__IWLG audio {
-        width: 80rem;
-        min-width: 80rem; }
     body .musica__recomendada__div {
       background-color: rgba(41, 206, 69, 0.288);
       padding: 40px;
       border-radius: 8%;
-      width: auto; } }
+      width: auto; }
+      body .musica__recomendada__div__OL, body .musica__recomendada__div__MN, body .musica__recomendada__div__IWLG {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: Center; }
+        body .musica__recomendada__div__OL img,
+        body .musica__recomendada__div__OL h4,
+        body .musica__recomendada__div__OL audio,
+        body .musica__recomendada__div__OL h5, body .musica__recomendada__div__MN img,
+        body .musica__recomendada__div__MN h4,
+        body .musica__recomendada__div__MN audio,
+        body .musica__recomendada__div__MN h5, body .musica__recomendada__div__IWLG img,
+        body .musica__recomendada__div__IWLG h4,
+        body .musica__recomendada__div__IWLG audio,
+        body .musica__recomendada__div__IWLG h5 {
+          margin: 3rem; }
+        body .musica__recomendada__div__OL img, body .musica__recomendada__div__MN img, body .musica__recomendada__div__IWLG img {
+          width: 30rem;
+          height: 25rem; }
+        body .musica__recomendada__div__OL audio, body .musica__recomendada__div__MN audio, body .musica__recomendada__div__IWLG audio {
+          width: 80rem;
+          min-width: 80rem; } }
+
+@media (min-width: 601px) and (max-width: 1300px) {
+  #carouselExampleControls {
+    min-width: 80%; }
+  body .musica__recomendada__titulo {
+    margin: 10rem;
+    font-family: "Indie Flower", cursive;
+    font-size: 11rem;
+    position: relative;
+    right: -35%;
+    max-width: 70%;
+    width: 40%; }
+  body .musica__recomendada__div__IWLG, body .musica__recomendada__div__MN, body .musica__recomendada__div__OL {
+    position: relative;
+    right: 0%; }
+    body .musica__recomendada__div__IWLG h5, body .musica__recomendada__div__MN h5, body .musica__recomendada__div__OL h5 {
+      font-size: 9rem; }
+    body .musica__recomendada__div__IWLG img, body .musica__recomendada__div__MN img, body .musica__recomendada__div__OL img {
+      min-width: 30%;
+      max-height: 20%; }
+    body .musica__recomendada__div__IWLG audio, body .musica__recomendada__div__MN audio, body .musica__recomendada__div__OL audio {
+      min-width: 50%;
+      font-size: 1rem; } }
 
 @media (min-width: 0px) and (max-width: 420px) {
   .root__element {
@@ -2898,6 +4041,59 @@ footer {
       position: relative;
       right: 0%;
       margin: 8rem; } }
+
+@media (min-width: 601px) and (max-width: 1300px) {
+  .root__element {
+    font-size: 3px; }
+  body .form__musica {
+    height: auto; }
+    body .form__musica__titulo {
+      margin: 10rem;
+      font-family: "Indie Flower", cursive;
+      font-size: 11rem;
+      position: relative;
+      right: -35%;
+      max-width: 70%;
+      width: 40%; }
+    body .form__musica__form__div {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      height: auto;
+      width: auto;
+      font-family: "Josefin Sans";
+      font-size: 5rem;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      background-color: rgba(41, 206, 69, 0.171);
+      justify-items: space-between; }
+      body .form__musica__form__div__qb {
+        font-size: 7rem;
+        margin: 0rem; }
+      body .form__musica__form__div__pc {
+        border-radius: 30px;
+        width: 50%;
+        margin: 7rem; }
+      body .form__musica__form__div__genero {
+        margin: 7rem; }
+        body .form__musica__form__div__genero__dropdown {
+          width: 30%;
+          margin: 2rem;
+          padding: 2rem;
+          border-radius: 30px; }
+      body .form__musica__form__div__button {
+        width: 10%;
+        padding: 3px;
+        position: relative;
+        right: 0%;
+        top: 0%;
+        background-color: rgba(41, 206, 69, 0.171);
+        border-radius: 45%;
+        margin: 4rem;
+        width: 40rem; } }
 
 /*------------------------ MEDIA QUERIES ------------------*/
 /* --------Media Queries INDEX--------- */

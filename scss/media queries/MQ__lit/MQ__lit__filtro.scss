@@ -70,3 +70,36 @@
         }
     }
 }
+
+@media (min-width: 601px) and (max-width: 1300px) {
+    .filtro__lit {
+        grid-area: filtro__lit;
+        &__titulo1 {
+            @include titulos1000(-27%);
+        }
+        &__form {
+            &__div {
+                @include forms1000(rgba(251, 255, 18, 0.268));
+                margin: 10rem;
+                position: relative;
+                right: 0%;
+                &__qb {
+                    font-size: map-get($tam-letra-1000, qb);
+                    font-style: $main-font;
+                }
+                &__qbinput {
+                    @include qb-input1000;
+                }
+                &__checkbox {
+                    @include checkboxes1000;
+                }
+                &__div2__dropdown {
+                    @include dropdown1000;
+                }
+                button {
+                    @include botones1000(0%, 0%, rgba(240, 186, 154, 0.58));
+                }
+            }
+        }
+    }
+}

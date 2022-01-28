@@ -6,4 +6,38 @@
     }
 }
 
-@media (min-width: 421px) and (max-width: 600px) {}
+@media (min-width: 421px) and (max-width: 600px) {
+    .texto__qsp {
+        font-family: $main-font;
+        grid-area: texto__qsp;
+        background-image: url("../imagenes/qsp__bg__text.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat;
+        height: auto;
+        &__texto {
+            font-size: 10rem;
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+        }
+        &__titulo {
+            @include titulos600(0%);
+        }
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1300px) {
+    .texto__qsp {
+        &__texto {
+            font-size: 7rem;
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+        }
+        &__titulo {
+            @include titulos1000(-31%);
+            max-width: 40%;
+        }
+    }
+}

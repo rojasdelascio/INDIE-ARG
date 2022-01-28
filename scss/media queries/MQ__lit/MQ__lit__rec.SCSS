@@ -1,76 +1,102 @@
-                @media (min-width: 0px) and (max-width:420px) {
-                    .root__element {
-                        font-size: 3px;
-                    }
-                    #carousel1 {
-                        width: 70%;
-                        position: relative;
-                        right: -18%;
-                    }
-                    .recomendados__lit {
-                        max-width: 100%;
-                        h3 {
-                            @include titulos300(-20%);
-                        }
-                    }
-                    #carousel1 {
-                        border: 2rem outset rgba(222, 226, 1, 0.501);
-                        width: auto;
-                        height: auto;
-                        max-width: 130rem;
-                        max-height: 400rem;
-                        position: relative;
-                        right: 0%;
-                    }
-                }
-                
-                @media (min-width: 421px) and (max-width: 600px) {
-                    .root__element {
-                        font-size: 3px;
-                    }
-                    .recomendados {
-                        grid-area: recomendados;
-                        background-image: url("../imagenes/index__bg__rec.png");
-                        background-size: contain;
-                        background-position: center;
-                        width: auto;
-                        &__titulo {
-                            // font-size: 20rem;
-                            // position: relative;
-                            // right: 0%;
-                            // top: 0%;
-                            @include titulos600(-5%);
-                        }
-                        &__elementos {
-                            position: relative;
-                            top: 3%;
-                            overflow: scroll;
-                            h4,
-                            h6 {
-                                font-size: 7rem;
-                                padding: 1px;
+                        @media (min-width: 0px) and (max-width:420px) {
+                            .root__element {
+                                font-size: 3px;
+                            }
+                            #carousel1 {
+                                width: 70%;
                                 position: relative;
-                                top: 4%;
-                                right: -20%;
+                                right: -18%;
                             }
-                            h6 {
-                                margin-bottom: 6rem;
-                                right: -2%;
-                                font-size: 5rem;
+                            .recomendados__lit {
+                                max-width: 100%;
+                                h3 {
+                                    @include titulos300(-20%);
+                                }
                             }
-                            img {
-                                width: 110rem;
-                                height: 110rem;
-                                padding: 10px;
+                            #carousel1 {
+                                border: 2rem outset rgba(222, 226, 1, 0.501);
+                                width: auto;
+                                height: auto;
+                                max-width: 130rem;
+                                max-height: 400rem;
+                                position: relative;
+                                right: 0%;
                             }
-                            li {
-                                display: inline-block;
+                            .carousel-item {}
+                        }
+                        
+                        @media (min-width: 421px) and (max-width: 600px) {
+                            .root__element {
+                                font-size: 3px;
                             }
-                            & img:hover {
-                                border: 2px inset #ffd700;
-                                width: 350px;
-                                height: 200px;
+                            .recomendados {
+                                grid-area: recomendados;
+                                background-image: url("../imagenes/index__bg__rec.png");
+                                background-size: contain;
+                                background-position: center;
+                                width: auto;
+                                &__titulo {
+                                    @include titulos600(-5%);
+                                }
+                                &__elementos {
+                                    position: relative;
+                                    top: 3%;
+                                    overflow: scroll;
+                                    h4,
+                                    h6 {
+                                        font-size: 7rem;
+                                        padding: 1px;
+                                        position: relative;
+                                        top: 4%;
+                                        right: -20%;
+                                    }
+                                    h6 {
+                                        margin-bottom: 6rem;
+                                        right: -2%;
+                                        font-size: 5rem;
+                                    }
+                                    img {
+                                        width: 110rem;
+                                        height: 110rem;
+                                        padding: 10px;
+                                    }
+                                    li {
+                                        display: inline-block;
+                                    }
+                                    & img:hover {
+                                        border: 2px inset #ffd700;
+                                        width: 350px;
+                                        height: 200px;
+                                    }
+                                }
                             }
                         }
-                    }
-                }
+                        
+                        @media (min-width: 601px) and (max-width: 1300px) {
+                            .root__element {
+                                font-size: 3px;
+                            }
+                            .recomendados__lit {
+                                max-width: 100%;
+                                h3 {
+                                    @include titulos1000(-40%);
+                                }
+                            }
+                            #carousel1 {
+                                background-color: rgba(255, 235, 205, 0.392);
+                                border: 2rem outset rgba(222, 226, 1, 0.501);
+                                min-width: 90%;
+                                max-width: 130rem;
+                                max-height: 400rem;
+                                position: relative;
+                                right: -5%;
+                                margin-bottom: 2rem;
+                            }
+                            .carousel-item {
+                                img {
+                                    min-width: 100%;
+                                }
+                                position: relative;
+                                right: 0%;
+                            }
+                        }

@@ -67,3 +67,38 @@
         }
     }
 }
+
+@media (min-width: 601px) and (max-width: 1300px) {
+    .form__cine {
+        &__div {
+            &__titulo {
+                @include titulos1000(-30%);
+            }
+            &__div2 {
+                @include forms1000(rgba(211, 78, 223, 0.329));
+                &__dropdown {
+                    @include dropdown1000;
+                }
+                &__qbinput {
+                    @include qb-input1000;
+                }
+                &__qb {
+                    font-size: map-get($tam-letra-1000, qb);
+                    margin: 4rem;
+                    font-style: $main-font;
+                }
+                &__checkbox {
+                    @include checkboxes1000;
+                }
+            }
+        }
+        button:hover,
+        select:hover,
+        input:hover {
+            background-color: gold;
+        }
+        button {
+            @include botones600(0%, 0%, rgba(245, 23, 197, 0.58));
+        }
+    }
+}

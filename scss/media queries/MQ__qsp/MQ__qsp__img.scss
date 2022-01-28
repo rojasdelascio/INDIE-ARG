@@ -3,12 +3,42 @@
         &__div {
             img {
                 position: relative;
+                top: 0%;
                 right: 10%;
-                max-width: 110rem;
-                max-height: 110rem;
+                max-width: 90%;
+                max-height: 90%;
+                margin-top: 0rem;
             }
         }
     }
 }
 
-@media (min-width: 421px) and (max-width: 600px) {}
+@media (min-width: 421px) and (max-width: 600px) {
+    .img__qsp {
+        &__div {
+            img {
+                position: relative;
+                top: 0%;
+                right: 5%;
+                max-width: 90%;
+                max-height: 90%;
+                margin-top: 0rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1300px) {
+    .img__qsp {
+        &__div {
+            img {
+                position: relative;
+                top: 0%;
+                right: -27%;
+                max-width: 40%;
+                max-height: 30%;
+                margin-top: 0rem;
+            }
+        }
+    }
+}
