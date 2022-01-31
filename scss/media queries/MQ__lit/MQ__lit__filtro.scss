@@ -40,9 +40,11 @@
     .filtro__lit {
         grid-area: filtro__lit;
         &__titulo1 {
-            @include titulos600(-35%);
+            @include titulos600(-10%);
+            margin: 10rem;
         }
         &__form {
+            margin-right: 10rem;
             &__div {
                 @include forms600(rgba(251, 255, 18, 0.268));
                 &__qb {

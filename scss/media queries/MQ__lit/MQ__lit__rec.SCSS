@@ -17,58 +17,66 @@
                                 border: 2rem outset rgba(222, 226, 1, 0.501);
                                 width: auto;
                                 height: auto;
+                                min-height: 100rem;
                                 max-width: 130rem;
                                 max-height: 400rem;
                                 position: relative;
                                 right: 0%;
+                                margin-bottom: 2rem;
                             }
-                            .carousel-item {}
+                            .carousel-item {
+                                h5 {
+                                    font-size: 8rem;
+                                    font-family: $main-font;
+                                }
+                                p {
+                                    font-size: 6rem;
+                                    font-family: $main-font;
+                                }
+                                img {
+                                    height: 100%;
+                                    min-height: 100rem;
+                                    max-width: 300rem;
+                                    max-height: 100rem;
+                                    object-fit: cover;
+                                }
+                            }
                         }
                         
                         @media (min-width: 421px) and (max-width: 600px) {
                             .root__element {
                                 font-size: 3px;
                             }
-                            .recomendados {
+                            .recomendados__lit {
                                 grid-area: recomendados;
                                 background-image: url("../imagenes/index__bg__rec.png");
                                 background-size: contain;
                                 background-position: center;
                                 width: auto;
-                                &__titulo {
-                                    @include titulos600(-5%);
+                                h3 {
+                                    @include titulos600(-17%);
+                                    margin: 5rem;
                                 }
-                                &__elementos {
-                                    position: relative;
-                                    top: 3%;
-                                    overflow: scroll;
-                                    h4,
-                                    h6 {
-                                        font-size: 7rem;
-                                        padding: 1px;
-                                        position: relative;
-                                        top: 4%;
-                                        right: -20%;
-                                    }
-                                    h6 {
-                                        margin-bottom: 6rem;
-                                        right: -2%;
-                                        font-size: 5rem;
-                                    }
-                                    img {
-                                        width: 110rem;
-                                        height: 110rem;
-                                        padding: 10px;
-                                    }
-                                    li {
-                                        display: inline-block;
-                                    }
-                                    & img:hover {
-                                        border: 2px inset #ffd700;
-                                        width: 350px;
-                                        height: 200px;
-                                    }
+                            }
+                            #carousel1 {
+                                background-color: rgba(255, 235, 205, 0.392);
+                                border: 2rem outset rgba(222, 226, 1, 0.501);
+                                min-width: 90%;
+                                min-height: 200rem;
+                                max-width: 200rem;
+                                max-height: 400rem;
+                                position: relative;
+                                right: 0%;
+                                margin-bottom: 2rem;
+                            }
+                            .carousel-item {
+                                .carousel-caption {}
+                                img {
+                                    min-width: 100%;
+                                    min-height: 200rem;
                                 }
+                                position: relative;
+                                right: 0%;
                             }
                         }
                         
@@ -93,6 +101,7 @@
                                 margin-bottom: 2rem;
                             }
                             .carousel-item {
+                                .carousel-caption {}
                                 img {
                                     min-width: 100%;
                                 }

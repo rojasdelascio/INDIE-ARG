@@ -1,0 +1,29 @@
+.root__element {
+    font-size: 3px;
+}
+
+#grilla1__normal {
+    display: grid;
+    grid-template-areas: "header" "grilla2__normal" "footer";
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 100%;
+}
+
+#grilla2__normal {
+    grid-area: grilla2__normal;
+    display: grid;
+    grid-template-areas: "cuento__normal" "form__normal";
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 100%;
+}
+
+.normal__section {
+    grid-area: cuento__normal;
+    background-color: rgba(87, 0, 0, 0.652);
+    @include texto__cuentos600(rgba(109, 2, 2, 0.522), url("../imagenes/normal__cut.jpg"));
+}
+
+.cuento__normal__form__section {
+    grid-area: form__normal;
+    @include forms__cuentos(rgba(109, 2, 2, 0.522));
+}

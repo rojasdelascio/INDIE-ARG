@@ -54,7 +54,7 @@
         height: auto;
         &__titulo {
             position: Relative;
-            right: -10%;
+            right: 0%;
         }
         &__div {
             background-color: rgba(41, 206, 69, 0.288);
@@ -64,6 +64,8 @@
             &__OL,
             &__MN,
             &__IWLG {
+                position: Relative;
+                right: -20%;
                 display: flex;
                 flex-direction: column;
                 flex-wrap: nowrap;
@@ -75,8 +77,8 @@
                     margin: 3rem;
                 }
                 img {
-                    width: 30rem;
-                    height: 25rem;
+                    width: 20rem;
+                    height: 20rem;
                 }
                 audio {
                     width: 80rem;

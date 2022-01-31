@@ -1,0 +1,28 @@
+.root__element {
+    font-size: 3px;
+}
+
+#grilla1__carlos {
+    display: grid;
+    grid-template-areas: "header" "grilla2__carlos" "footer";
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 100%;
+}
+
+#grilla2__carlos {
+    grid-area: grilla2__carlos;
+    display: grid;
+    grid-template-areas: "cuento__carlos" "form__carlos";
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 100%;
+}
+
+.cuento__form__section {
+    grid-area: cuento__carlos;
+    @include texto__cuentos(rgba(0, 0, 0, 0.446), url("../imagenes/carlos__cut.jpg"));
+}
+
+.cuento__carlos__form__section {
+    grid-area: form__carlos;
+    @include forms__cuentos(rgba(0, 0, 0, 0.446));
+}

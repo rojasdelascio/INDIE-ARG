@@ -28,6 +28,10 @@
                                             .home__mp {
                                                 font-family: $main-font;
                                                 font-size: map-get($tam-letra-100, headyfoot);
+                                                &__mp {
+                                                    text-decoration: line-through;
+                                                    color: rgba(253, 7, 7, 0.755);
+                                                }
                                                 &:hover,
                                                 header nav ul li a:hover {
                                                     color: floralwhite;

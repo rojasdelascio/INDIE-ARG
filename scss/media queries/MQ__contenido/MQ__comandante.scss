@@ -1,0 +1,121 @@
+        @media (min-width: 0px) and (max-width:420px) {
+            html,
+            body {
+                min-height: 100%;
+                min-width: 100%;
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+                padding-bottom: 1px;
+                border: 1px solid transparent;
+            }
+            .root__element {
+                font-size: 3px;
+            }
+            #grilla1__comandante {
+                display: grid;
+                grid-template-areas: "header" "grilla2__comandante" "footer";
+                grid-template-rows: 1fr auto 1fr;
+                grid-template-columns: 100%;
+            }
+            #grilla2__comandante {
+                grid-area: grilla2__comandante;
+                display: grid;
+                grid-template-areas: "cuento__comandante" "form__comandante";
+                grid-template-rows: 1fr auto;
+                grid-template-columns: 100%;
+            }
+            .comandante__section {
+                grid-area: cuento__comandante;
+                @include texto__cuentos400 (rgba(102, 102, 102, 0.337), url("../imagenes/comandante__cut.png"));
+            }
+            .cuento__comandante__form__section {
+                grid-area: form__comandante;
+                @include forms__cuentos400(rgba(102, 102, 102, 0.337));
+            }
+        }
+        
+        @media (min-width: 421px) and (max-width: 600px) {
+            html,
+            body {
+                min-height: 100%;
+                min-width: 100%;
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+                padding-bottom: 1px;
+                border: 1px solid transparent;
+            }
+            .root__element {
+                font-size: 3px;
+            }
+            #grilla1__comandante {
+                display: grid;
+                grid-template-areas: "header" "grilla2__comandante" "footer";
+                grid-template-rows: 1fr auto 1fr;
+                grid-template-columns: 100%;
+            }
+            #grilla2__comandante {
+                grid-area: grilla2__comandante;
+                display: grid;
+                grid-template-areas: "cuento__comandante" "form__comandante";
+                grid-template-rows: 1fr auto;
+                grid-template-columns: 100%;
+            }
+            .comandante__section {
+                grid-area: cuento__comandante;
+                @include texto__cuentos600 (rgba(102, 102, 102, 0.337),
+                url("../imagenes/comandante__cut.png"));
+            }
+            .cuento__comandante__form__section {
+                grid-area: form__comandante;
+                @include forms__cuentos600(rgba(102,
+                102,
+                102,
+                0.337));
+            }
+        }
+        
+        @media (min-width: 601px) and (max-width: 1600px) {
+            html,
+            body {
+                min-height: 100%;
+                min-width: 100%;
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+                padding-bottom: 1px;
+                border: 1px solid transparent;
+            }
+            .root__element {
+                font-size: 3px;
+            }
+            #grilla1__comandante {
+                display: grid;
+                grid-template-areas: "header" "grilla2__comandante" "footer";
+                grid-template-rows: 1fr auto 1fr;
+                grid-template-columns: 100%;
+            }
+            #grilla2__comandante {
+                grid-area: grilla2__comandante;
+                display: grid;
+                grid-template-areas: "cuento__comandante" "form__comandante";
+                grid-template-rows: 1fr auto;
+                grid-template-columns: 100%;
+            }
+            .comandante__section {
+                grid-area: cuento__comandante;
+                @include texto__cuentos (rgba(102,
+                102,
+                102,
+                0.337),
+                url("../imagenes/comandante__cut.png"));
+            }
+            .cuento__comandante__form__section {
+                grid-area: form__comandante;
+                @include forms__cuentos(rgba(102,
+                102,
+                102,
+                0.337));
+            }
+        }

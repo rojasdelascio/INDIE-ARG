@@ -1,98 +1,92 @@
-                        @media (min-width: 0px) and (max-width:420px) {
-                            .root__element {
-                                font-size: 3px;
-                            }
-                            body .form__musica {
-                                height: auto;
-                                &__titulo {
-                                    @include titulos300(-10%);
-                                    width: 40%;
+                @media (min-width: 0px) and (max-width:420px) {
+                    .root__element {
+                        font-size: 3px;
+                    }
+                    body .form__musica {
+                        height: auto;
+                        &__titulo {
+                            @include titulos300(-10%);
+                            width: 40%;
+                        }
+                        &__form {
+                            &__div {
+                                @include forms300(rgba(41, 206, 69, 0.171));
+                                &__qb {
+                                    @include qb300;
                                 }
-                                &__form {
-                                    &__div {
-                                        @include forms300(rgba(41, 206, 69, 0.171));
-                                        &__qb {
-                                            @include qb300;
-                                        }
-                                        &__pc {
-                                            @include qb-input300;
-                                        }
-                                        &__genero {
-                                            @include dropdown300;
-                                        }
-                                        &__button {
-                                            @include botones300(0%, 0%, rgba(41, 206, 69, 0.171));
-                                            width: 20reM;
-                                        }
-                                    }
+                                &__pc {
+                                    @include qb-input300;
                                 }
-                            }
-                            @media (min-width: 421px) and (max-width: 600px) {
-                                .root__element {
-                                    font-size: 3px;
+                                &__genero {
+                                    @include dropdown300;
                                 }
-                                body .form__musica {
-                                    &__titulo {
-                                        position: Relative;
-                                        right: -20%;
-                                        top: 3%;
-                                    }
-                                    &__div {
-                                        form {
-                                            display: flex;
-                                            flex-direction: column;
-                                            flex-wrap: nowrap;
-                                            font-size: 5rem;
-                                            border-radius: 10%;
-                                            align-items: center;
-                                            justify-content: space-between;
-                                            width: auto;
-                                            height: auto;
-                                            margin: auto;
-                                            input,
-                                            select,
-                                            button,
-                                            label {
-                                                margin: 6rem;
-                                            }
-                                            button {
-                                                position: relative;
-                                                right: 0%;
-                                                margin: 8rem;
-                                            }
-                                        }
-                                    }
+                                &__button {
+                                    @include botones300(0%, 0%, rgba(41, 206, 69, 0.171));
+                                    width: 20reM;
                                 }
                             }
                         }
-                        
-                        @media (min-width: 601px) and (max-width: 1300px) {
-                            .root__element {
-                                font-size: 3px;
-                            }
-                            body .form__musica {
-                                height: auto;
-                                &__titulo {
-                                    @include titulos1000(-35%);
-                                    width: 40%;
+                    }
+                }
+                
+                @media (min-width: 421px) and (max-width: 600px) {
+                    .root__element {
+                        font-size: 3px;
+                    }
+                    body .form__musica {
+                        height: auto;
+                        &__titulo {
+                            @include titulos600(0%);
+                            width: 40%;
+                        }
+                        &__form {
+                            &__div {
+                                @include forms600(rgba(41, 206, 69, 0.171));
+                                &__qb {
+                                    @include qb600;
                                 }
-                                &__form {
-                                    &__div {
-                                        @include forms1000(rgba(41, 206, 69, 0.171));
-                                        &__qb {
-                                            @include qb1000;
-                                        }
-                                        &__pc {
-                                            @include qb-input1000;
-                                        }
-                                        &__genero {
-                                            @include dropdown1000;
-                                        }
-                                        &__button {
-                                            @include botones1000(0%, 0%, rgba(41, 206, 69, 0.171));
-                                            width: 40rem;
-                                        }
-                                    }
+                                &__pc {
+                                    @include qb-input600;
+                                }
+                                &__genero {
+                                    @include dropdown600;
+                                }
+                                &__button {
+                                    @include botones600(0%, 0%, rgba(41, 206, 69, 0.171));
+                                    width: 40rem;
                                 }
                             }
                         }
+                    }
+                }
+                
+                @media (min-width: 601px) and (max-width: 1300px) {
+                    .root__element {
+                        font-size: 3px;
+                    }
+                    body .form__musica {
+                        height: auto;
+                        &__titulo {
+                            @include titulos1000(-35%);
+                            width: 40%;
+                        }
+                        &__form {
+                            &__div {
+                                @include forms1000(rgba(41, 206, 69, 0.171));
+                                &__qb {
+                                    @include qb1000;
+                                }
+                                &__pc {
+                                    @include qb-input1000;
+                                }
+                                &__genero {
+                                    @include dropdown1000;
+                                }
+                                &__button {
+                                    @include botones1000(0%, 0%, rgba(41, 206, 69, 0.171));
+                                    width: 40rem;
+                                }
+                            }
+                        }
+                    }
+                }

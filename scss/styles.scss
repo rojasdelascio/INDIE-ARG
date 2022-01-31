@@ -3,13 +3,14 @@
 $main-font: "Josefin Sans";
 $titles-font:'Indie Flower';
 $logo-font:'Permanent Marker';
+$cuento-titu-font:'Bebas Neue';
 // =====MAPS DE TAMAÑOS DE LETRA PARA TODO=====
 $tam-letra-100:(titulos:15rem, forms:5rem, headyfoot:7rem, qb:12rem, logo:20rem, cont:14rem);
 $tam-letra-600:(titulos:16rem, forms:10rem, headyfoot:8rem, qb:15rem, logo:20rem, cont:14rem);
 $tam-letra-300:(titulos:13rem, forms:5rem, headyfoot:8rem, qb:10rem, logo:13rem, cont:14rem);
 $tam-letra-1000:(titulos:11rem, forms:5rem, headyfoot:7rem, qb:7rem, logo:13rem, cont:8rem);
 // =====MAPS DE FONDOS PARA TODO=====
-$fondos:( index: rgba(212, 177, 163, 0.178), cine:rgba(211, 78, 223, 0.178), literatura: rgba(251, 255, 18, 0.179), musica: rgba(41, 206, 69, 0.171), header:#afafaf85, sn:rgba(99, 1, 1, 0.323), qsp:rgba(177, 108, 19, 0.207));
+$fondos:( index: rgba(212, 177, 163, 0.178), cine:rgba(211, 78, 223, 0.178), literatura: rgba(251, 255, 18, 0.179), musica: rgba(41, 206, 69, 0.171), header:#afafaf85, sn:rgba(99, 1, 1, 0.323), qsp:rgba(177, 108, 19, 0.207), carlos:rgba(58, 58, 58, 0.438), comandante:rgba(169, 169, 169, 0.842), normal:rgba(89, 0, 0, 0.761));
 // =====ESTE EACH CREARA LAS CLASES DE LOS FONDOS CON EL MAP $FONDOS=====
 @each $seccion,
 $color in $fondos {
@@ -220,12 +221,13 @@ body {
 
 // =========================MQ 0px A 361px===========
 @mixin titulos300($position-right) {
-    margin: 10rem;
+    margin: 8rem;
+    margin-right: 5rem;
     font-family: $titles-font, cursive;
     font-size: map-get($tam-letra-300, titulos);
     position: relative;
     right: $position-right;
-    max-width: 70%;
+    max-width: 65%;
 }
 
 @mixin forms300($fondo-forms) {
@@ -285,6 +287,11 @@ body {
 
 @mixin qb300 {
     font-size: map-get($tam-letra-300, qb);
+    margin: 0rem;
+}
+
+@mixin qb600 {
+    font-size: map-get($tam-letra-600, qb);
     margin: 0rem;
 }
 
@@ -408,6 +415,197 @@ body {
     right: $position-right;
 }
 
+//==========MIXINS CUENTOS=================
+@mixin forms__cuentos($background-form) {
+    background-color: $background-form;
+    &__form {
+        &__div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            font-size: 5rem;
+            font-family: $main-font;
+            margin: 15rem;
+            justify-content: space-evenly;
+            align-items: space-evenly;
+            &__syn {
+                display: flex;
+                flex-direction: row;
+            }
+            &__titulo {
+                font-size: 7rem;
+                font-family: $main-font;
+            }
+            label,
+            input,
+            textarea,
+            button {
+                margin: 5rem;
+            }
+        }
+    }
+}
+
+@mixin texto__cuentos($background-cuentos, $background-image) {
+    background-color: $background-cuentos;
+    &__cuento {
+        &__titulo {
+            background-image: $background-image;
+            background-size: cover;
+            color: cornsilk;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-size: cover;
+            font-family: $cuento-titu-font;
+            h2 {
+                margin: 3rem;
+                font-size: 8rem;
+            }
+            h5 {
+                margin: 3rem;
+                font-size: 8rem;
+            }
+        }
+        &__div {
+            &__texto {
+                margin: 10rem;
+                max-width: 70%;
+                max-height: 30%;
+                min-width: 40%;
+                position: relative;
+                right: -15%;
+                font-family: $main-font;
+                font-size: 7rem;
+                overflow: scroll;
+            }
+        }
+    }
+}
+
+@mixin texto__cuentos600($background-cuentos, $background-image) {
+    background-color: $background-cuentos;
+    &__cuento {
+        &__titulo {
+            background-image: $background-image;
+            background-size: cover;
+            color: cornsilk;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-size: cover;
+            font-family: $cuento-titu-font;
+            h2 {
+                margin: 3rem;
+                font-size: 8rem;
+            }
+            h5 {
+                margin: 3rem;
+                font-size: 8rem;
+            }
+        }
+        &__div {
+            &__texto {
+                margin: 10rem;
+                max-width: 70%;
+                max-height: 30%;
+                min-width: 40%;
+                position: relative;
+                right: -10%;
+                font-family: $main-font;
+                font-size: 7rem;
+                overflow: scroll;
+            }
+        }
+    }
+}
+
+@mixin forms__cuentos600($background-form) {
+    background-color: $background-form;
+    &__form {
+        &__div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            font-size: 5rem;
+            font-family: $main-font;
+            margin: 15rem;
+            justify-content: space-evenly;
+            align-items: space-evenly;
+            &__syn {
+                display: flex;
+                flex-direction: row;
+            }
+            &__titulo {
+                font-size: 7rem;
+                font-family: $main-font;
+            }
+            label,
+            input,
+            textarea,
+            button {
+                margin: 5rem;
+            }
+        }
+    }
+}
+
+@mixin texto__cuentos400($background-cuentos, $background-image) {
+    background-color: $background-cuentos;
+    &__cuento {
+        &__titulo {
+            background-image: $background-image;
+            background-size: cover;
+            color: cornsilk;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-size: cover;
+            font-family: $cuento-titu-font;
+            h2 {
+                margin: 3rem;
+                font-size: 8rem;
+            }
+            h5 {
+                margin: 3rem;
+                font-size: 8rem;
+            }
+        }
+        &__div {
+            &__texto {
+                margin: 13rem;
+                max-width: 85%;
+                max-height: 30%;
+                position: relative;
+                right: 0%;
+                font-family: $main-font;
+                font-size: 5.5rem;
+                overflow: scroll;
+            }
+        }
+    }
+}
+
+@mixin forms__cuentos400($background-form) {
+    .cuento__form__section {
+        grid-area: form__comandante;
+        background-color: rgba(189, 189, 189, 0.378);
+        &__form {
+            &__div {
+                display: flex;
+                flex-direction: column;
+                font-size: 5rem;
+                font-family: $main-font;
+                margin: 15rem;
+                &__titulo {
+                    font-size: 7rem;
+                    font-family: $main-font;
+                }
+            }
+        }
+    }
+}
+
 //==============
 // ==IMPORTS========
 // ======IMPORTS INDEX========
@@ -474,3 +672,11 @@ body {
 @import "../scss/media\ queries/MQ__qsp/MQ__qsp__text.scss";
 // ======RESTANTES POR ORDENAR========
 @import "../scss/media\ queries/media__queries__todo.scss";
+// ======IMPORTS CONTENIDO========
+@import "../scss/contenido/carlos.scss";
+@import "../scss/contenido/comandante.scss";
+@import "../scss/contenido/normal.scss";
+// ======IMPORTS CONTENIDO========------MQ========
+@import "../scss/media\ queries/MQ__contenido/MQ__comandante.scss";
+@import "../scss/media\ queries/MQ__contenido/MQ__carlos.scss";
+@import "../scss/media\ queries/MQ__contenido/MQ__normal.scss";

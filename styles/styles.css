@@ -19,6 +19,15 @@
 .fondo-qsp {
   background-color: rgba(177, 108, 19, 0.207); }
 
+.fondo-carlos {
+  background-color: rgba(58, 58, 58, 0.438); }
+
+.fondo-comandante {
+  background-color: rgba(169, 169, 169, 0.842); }
+
+.fondo-normal {
+  background-color: rgba(89, 0, 0, 0.761); }
+
 body {
   margin: 0;
   padding: 0;
@@ -343,12 +352,13 @@ body {
     height: auto;
     margin: 0px; }
     .index__form__titulo1 {
-      margin: 10rem;
+      margin: 8rem;
+      margin-right: 5rem;
       font-family: "Indie Flower", cursive;
       font-size: 13rem;
       position: relative;
       right: 0%;
-      max-width: 70%; }
+      max-width: 65%; }
     .index__form__form {
       display: flex;
       flex-direction: column;
@@ -1080,12 +1090,13 @@ body .musica__recomendada {
 
 @media (min-width: 0px) and (max-width: 420px) {
   .form__cine__div__titulo {
-    margin: 10rem;
+    margin: 8rem;
+    margin-right: 5rem;
     font-family: "Indie Flower", cursive;
     font-size: 13rem;
     position: relative;
     right: -5%;
-    max-width: 70%; }
+    max-width: 65%; }
   .form__cine__div__div2 {
     display: flex;
     flex-direction: column;
@@ -1320,12 +1331,13 @@ body .musica__recomendada {
   .contenido__cine {
     overflow: scroll; }
     .contenido__cine__div__titulo {
-      margin: 10rem;
+      margin: 8rem;
+      margin-right: 5rem;
       font-family: "Indie Flower", cursive;
       font-size: 13rem;
       position: relative;
       right: -5%;
-      max-width: 70%; }
+      max-width: 65%; }
     .contenido__cine .contenido__cine__div {
       margin-right: 2%;
       width: 80%;
@@ -1548,6 +1560,19 @@ body .musica__recomendada {
     grid-template-rows: 1fr 2fr;
     grid-template-columns: 100%; } }
 
+@media (min-width: 421px) and (max-width: 600px) {
+  #grilla__musica {
+    display: grid;
+    grid-template-areas: "header" "main__musica" "footer";
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 100%; }
+  #main__musica {
+    grid-area: main__musica;
+    display: grid;
+    grid-template-areas: "form__musica" "musica__recomendada";
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 100%; } }
+
 @media (min-width: 601px) and (max-width: 1300px) {
   html,
   body {
@@ -1587,12 +1612,13 @@ body .musica__recomendada {
     font-size: 0.4rem;
     height: auto; }
     body .musica__recomendada__titulo {
-      margin: 10rem;
+      margin: 8rem;
+      margin-right: 5rem;
       font-family: "Indie Flower", cursive;
       font-size: 13rem;
       position: relative;
       right: 10%;
-      max-width: 70%;
+      max-width: 65%;
       width: 40%; }
     body .musica__recomendada__div {
       background-color: rgba(41, 206, 69, 0.288);
@@ -1619,13 +1645,15 @@ body .musica__recomendada {
     height: auto; }
     body .musica__recomendada__titulo {
       position: Relative;
-      right: -10%; }
+      right: 0%; }
     body .musica__recomendada__div {
       background-color: rgba(41, 206, 69, 0.288);
       padding: 40px;
       border-radius: 8%;
       width: auto; }
       body .musica__recomendada__div__OL, body .musica__recomendada__div__MN, body .musica__recomendada__div__IWLG {
+        position: Relative;
+        right: -20%;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -1642,8 +1670,8 @@ body .musica__recomendada {
         body .musica__recomendada__div__IWLG h5 {
           margin: 3rem; }
         body .musica__recomendada__div__OL img, body .musica__recomendada__div__MN img, body .musica__recomendada__div__IWLG img {
-          width: 30rem;
-          height: 25rem; }
+          width: 20rem;
+          height: 20rem; }
         body .musica__recomendada__div__OL audio, body .musica__recomendada__div__MN audio, body .musica__recomendada__div__IWLG audio {
           width: 80rem;
           min-width: 80rem; } }
@@ -1677,12 +1705,13 @@ body .musica__recomendada {
   body .form__musica {
     height: auto; }
     body .form__musica__titulo {
-      margin: 10rem;
+      margin: 8rem;
+      margin-right: 5rem;
       font-family: "Indie Flower", cursive;
       font-size: 13rem;
       position: relative;
       right: -10%;
-      max-width: 70%;
+      max-width: 65%;
       width: 40%; }
     body .form__musica__form__div {
       display: flex;
@@ -1724,33 +1753,58 @@ body .musica__recomendada {
         margin: 4rem;
         width: 20reM; } }
 
-@media (min-width: 0px) and (max-width: 420px) and (min-width: 421px) and (max-width: 600px) {
+@media (min-width: 421px) and (max-width: 600px) {
   .root__element {
     font-size: 3px; }
-  body .form__musica__titulo {
-    position: Relative;
-    right: -20%;
-    top: 3%; }
-  body .form__musica__div form {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    font-size: 5rem;
-    border-radius: 10%;
-    align-items: center;
-    justify-content: space-between;
-    width: auto;
-    height: auto;
-    margin: auto; }
-    body .form__musica__div form input,
-    body .form__musica__div form select,
-    body .form__musica__div form button,
-    body .form__musica__div form label {
-      margin: 6rem; }
-    body .form__musica__div form button {
+  body .form__musica {
+    height: auto; }
+    body .form__musica__titulo {
+      margin: 10rem;
+      font-family: "Indie Flower", cursive;
+      font-size: 16rem;
       position: relative;
       right: 0%;
-      margin: 8rem; } }
+      padding: 20px;
+      width: 40%; }
+    body .form__musica__form__div {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      height: auto;
+      width: auto;
+      font-family: "Josefin Sans";
+      font-size: 10rem;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      background-color: rgba(41, 206, 69, 0.171);
+      justify-items: space-between; }
+      body .form__musica__form__div__qb {
+        font-size: 15rem;
+        margin: 0rem; }
+      body .form__musica__form__div__pc {
+        border-radius: 30px;
+        width: 80%;
+        margin: 7rem; }
+      body .form__musica__form__div__genero {
+        margin: 7rem; }
+        body .form__musica__form__div__genero__dropdown {
+          width: 30%;
+          margin: 2rem;
+          padding: 2rem;
+          border-radius: 30px; }
+      body .form__musica__form__div__button {
+        width: 35%;
+        padding: 3px;
+        position: relative;
+        right: 0%;
+        top: 0%;
+        background-color: rgba(41, 206, 69, 0.171);
+        border-radius: 45%;
+        margin: 7rem;
+        width: 40rem; } }
 
 @media (min-width: 601px) and (max-width: 1300px) {
   .root__element {
@@ -1889,12 +1943,13 @@ body .musica__recomendada {
     position: relative;
     right: 15%; }
   .nuestro__equipo__titulo {
-    margin: 10rem;
+    margin: 8rem;
+    margin-right: 5rem;
     font-family: "Indie Flower", cursive;
     font-size: 13rem;
     position: relative;
     right: -15%;
-    max-width: 70%;
+    max-width: 65%;
     font-size: 9rem;
     max-width: 90%; }
   .nuestro__equipo img {
@@ -1999,13 +2054,13 @@ body .musica__recomendada {
   #sn__grilla1 {
     display: grid;
     grid-template-areas: "header" "main" "footer";
-    grid-template-rows: 21.5% auto 10%;
+    grid-template-rows: 1fr auto 1fr;
     grid-template-columns: 100%; }
   #sn__grilla2 {
     grid-area: main;
     display: grid;
     grid-template-areas: "texto" "equipo";
-    grid-template-rows: 57% auto;
+    grid-template-rows: 1fr auto;
     grid-template-columns: 100%; } }
 
 @media (min-width: 421px) and (max-width: 600px) {
@@ -2028,7 +2083,7 @@ body .musica__recomendada {
     display: grid;
     grid-template-areas: "texto" "equipo";
     grid-template-columns: 100%;
-    grid-template-rows: 2fr 1fr; } }
+    grid-template-rows: 1fr 1fr; } }
 
 @media (min-width: 601px) and (max-width: 1300px) {
   html,
@@ -2039,7 +2094,27 @@ body .musica__recomendada {
     padding: 0;
     overflow-x: hidden;
     padding-bottom: 1px;
-    border: 1px solid transparent; } }
+    border: 1px solid transparent; }
+  html,
+  body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-bottom: 1px;
+    border: 1px solid transparent; }
+  #sn__grilla1 {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 100%; }
+  #sn__grilla2 {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "texto" "equipo";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr auto; } }
 
 @media (min-width: 0px) and (max-width: 420px) {
   .sobre__nosotros {
@@ -2056,12 +2131,13 @@ body .musica__recomendada {
     .sobre__nosotros__texto {
       font-size: 6rem; }
     .sobre__nosotros__titulo {
-      margin: 10rem;
+      margin: 8rem;
+      margin-right: 5rem;
       font-family: "Indie Flower", cursive;
       font-size: 13rem;
       position: relative;
       right: -5%;
-      max-width: 70%;
+      max-width: 65%;
       font-size: 9rem;
       max-width: 90%; } }
 
@@ -2208,12 +2284,13 @@ body .recomendados__lit {
   .filtro__lit {
     grid-area: filtro__lit; }
     .filtro__lit__titulo1 {
-      margin: 10rem;
+      margin: 8rem;
+      margin-right: 5rem;
       font-family: "Indie Flower", cursive;
       font-size: 13rem;
       position: relative;
       right: -5%;
-      max-width: 70%; }
+      max-width: 65%; }
     .filtro__lit__form__div {
       display: flex;
       flex-direction: column;
@@ -2274,57 +2351,60 @@ body .recomendados__lit {
       font-family: "Indie Flower", cursive;
       font-size: 16rem;
       position: relative;
-      right: -35%;
-      padding: 20px; }
-    .filtro__lit__form__div {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      align-items: center;
-      height: auto;
-      width: auto;
-      font-family: "Josefin Sans";
-      font-size: 10rem;
-      margin-left: 10%;
-      margin-right: 10%;
-      margin-top: 5%;
-      margin-bottom: 5%;
-      background-color: rgba(251, 255, 18, 0.268);
-      justify-items: space-between; }
-      .filtro__lit__form__div__qb {
-        font-size: 15rem;
-        font-style: "Josefin Sans"; }
-      .filtro__lit__form__div__qbinput {
-        border-radius: 30px;
-        width: 80%;
-        margin: 7rem; }
-      .filtro__lit__form__div__checkbox {
-        list-style: none;
+      right: -10%;
+      padding: 20px;
+      margin: 10rem; }
+    .filtro__lit__form {
+      margin-right: 10rem; }
+      .filtro__lit__form__div {
         display: flex;
-        flex-direction: row;
-        margin: 7rem; }
-        .filtro__lit__form__div__checkbox li {
-          margin: 3rem; }
-      .filtro__lit__form__div__div2__dropdown {
-        margin: 7rem; }
-        .filtro__lit__form__div__div2__dropdown__dropdown {
-          width: 30%;
-          margin: 2rem;
-          padding: 2rem;
-          border-radius: 30px; }
-      .filtro__lit__form__div button:hover,
-      .filtro__lit__form__div select:hover,
-      .filtro__lit__form__div input:hover {
-        background-color: gold; }
-      .filtro__lit__form__div button {
-        width: 35%;
-        padding: 3px;
-        position: relative;
-        right: 0%;
-        top: 0%;
-        background-color: rgba(240, 186, 154, 0.58);
-        border-radius: 45%;
-        margin: 7rem; } }
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        height: auto;
+        width: auto;
+        font-family: "Josefin Sans";
+        font-size: 10rem;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        background-color: rgba(251, 255, 18, 0.268);
+        justify-items: space-between; }
+        .filtro__lit__form__div__qb {
+          font-size: 15rem;
+          font-style: "Josefin Sans"; }
+        .filtro__lit__form__div__qbinput {
+          border-radius: 30px;
+          width: 80%;
+          margin: 7rem; }
+        .filtro__lit__form__div__checkbox {
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          margin: 7rem; }
+          .filtro__lit__form__div__checkbox li {
+            margin: 3rem; }
+        .filtro__lit__form__div__div2__dropdown {
+          margin: 7rem; }
+          .filtro__lit__form__div__div2__dropdown__dropdown {
+            width: 30%;
+            margin: 2rem;
+            padding: 2rem;
+            border-radius: 30px; }
+        .filtro__lit__form__div button:hover,
+        .filtro__lit__form__div select:hover,
+        .filtro__lit__form__div input:hover {
+          background-color: gold; }
+        .filtro__lit__form__div button {
+          width: 35%;
+          padding: 3px;
+          position: relative;
+          right: 0%;
+          top: 0%;
+          background-color: rgba(240, 186, 154, 0.58);
+          border-radius: 45%;
+          margin: 7rem; } }
 
 @media (min-width: 601px) and (max-width: 1300px) {
   .filtro__lit {
@@ -2387,19 +2467,28 @@ body .recomendados__lit {
         margin: 4rem; } }
 
 @media (min-width: 0px) and (max-width: 420px) {
+  html,
+  body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-bottom: 1px;
+    border: 1px solid transparent; }
   #grilla__lit {
     min-width: 100%;
     min-height: 100%;
     display: grid;
     grid-template-areas: "header" "main__lit" "footer";
-    grid-template-rows: 24% auto 10%;
+    grid-template-rows: 1fr auto 1fr;
     grid-template-columns: 100%; }
   #main__lit {
     grid-area: main__lit;
     display: grid;
     min-width: 100%;
     grid-template-areas: "filtro__lit" "contenido__lit";
-    grid-template-rows: 63% 60%;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 100%; } }
 
 @media (min-width: 421px) and (max-width: 600px) {
@@ -2414,13 +2503,13 @@ body .recomendados__lit {
   #grilla__lit {
     display: grid;
     grid-template-areas: "header" "main__lit" "footer";
-    grid-template-rows: 20% auto 20%;
+    grid-template-rows: 1fr auto 1fr;
     grid-template-columns: 100%; }
   #main__lit {
     grid-area: main__lit;
     display: grid;
     grid-template-areas: "filtro__lit" "contenido__lit";
-    grid-template-rows: 3fr 3fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 100%; } }
 
 @media (min-width: 601px) and (max-width: 1300px) {
@@ -2438,7 +2527,7 @@ body .recomendados__lit {
     height: 100%;
     display: grid;
     grid-template-areas: "header" "main__lit" "footer";
-    grid-template-rows: 0.95fr auto 0.8fr;
+    grid-template-rows: 1fr auto 1fr;
     grid-template-columns: 100%; }
   #main__lit {
     grid-area: main__lit;
@@ -2457,62 +2546,69 @@ body .recomendados__lit {
   .recomendados__lit {
     max-width: 100%; }
     .recomendados__lit h3 {
-      margin: 10rem;
+      margin: 8rem;
+      margin-right: 5rem;
       font-family: "Indie Flower", cursive;
       font-size: 13rem;
       position: relative;
       right: -20%;
-      max-width: 70%; }
+      max-width: 65%; }
   #carousel1 {
     border: 2rem outset rgba(222, 226, 1, 0.501);
     width: auto;
     height: auto;
+    min-height: 100rem;
     max-width: 130rem;
     max-height: 400rem;
     position: relative;
-    right: 0%; } }
+    right: 0%;
+    margin-bottom: 2rem; }
+  .carousel-item h5 {
+    font-size: 8rem;
+    font-family: "Josefin Sans"; }
+  .carousel-item p {
+    font-size: 6rem;
+    font-family: "Josefin Sans"; }
+  .carousel-item img {
+    height: 100%;
+    min-height: 100rem;
+    max-width: 300rem;
+    max-height: 100rem;
+    object-fit: cover; } }
 
 @media (min-width: 421px) and (max-width: 600px) {
   .root__element {
     font-size: 3px; }
-  .recomendados {
+  .recomendados__lit {
     grid-area: recomendados;
     background-image: url("../imagenes/index__bg__rec.png");
     background-size: contain;
     background-position: center;
     width: auto; }
-    .recomendados__titulo {
+    .recomendados__lit h3 {
       margin: 10rem;
       font-family: "Indie Flower", cursive;
       font-size: 16rem;
       position: relative;
-      right: -5%;
-      padding: 20px; }
-    .recomendados__elementos {
-      position: relative;
-      top: 3%;
-      overflow: scroll; }
-      .recomendados__elementos h4,
-      .recomendados__elementos h6 {
-        font-size: 7rem;
-        padding: 1px;
-        position: relative;
-        top: 4%;
-        right: -20%; }
-      .recomendados__elementos h6 {
-        margin-bottom: 6rem;
-        right: -2%;
-        font-size: 5rem; }
-      .recomendados__elementos img {
-        width: 110rem;
-        height: 110rem;
-        padding: 10px; }
-      .recomendados__elementos li {
-        display: inline-block; }
-      .recomendados__elementos img:hover {
-        border: 2px inset #ffd700;
-        width: 350px;
-        height: 200px; } }
+      right: -17%;
+      padding: 20px;
+      margin: 5rem; }
+  #carousel1 {
+    background-color: rgba(255, 235, 205, 0.392);
+    border: 2rem outset rgba(222, 226, 1, 0.501);
+    min-width: 90%;
+    min-height: 200rem;
+    max-width: 200rem;
+    max-height: 400rem;
+    position: relative;
+    right: 0%;
+    margin-bottom: 2rem; }
+  .carousel-item {
+    position: relative;
+    right: 0%; }
+    .carousel-item img {
+      min-width: 100%;
+      min-height: 200rem; } }
 
 @media (min-width: 601px) and (max-width: 1300px) {
   .root__element {
@@ -2688,6 +2784,9 @@ header {
   header .home__mp {
     font-family: "Josefin Sans";
     font-size: 7rem; }
+    header .home__mp__mp {
+      text-decoration: line-through;
+      color: rgba(253, 7, 7, 0.755); }
     header .home__mp:hover,
     header .home__mp header nav ul li a:hover {
       color: floralwhite; }
@@ -3022,12 +3121,13 @@ footer {
 
 @media (min-width: 0px) and (max-width: 420px) {
   .form__qsp .form__qsp__titulo {
-    margin: 10rem;
+    margin: 8rem;
+    margin-right: 5rem;
     font-family: "Indie Flower", cursive;
     font-size: 13rem;
     position: relative;
     right: -5%;
-    max-width: 70%; } }
+    max-width: 65%; } }
 
 @media (min-width: 421px) and (max-width: 600px) {
   .form__qsp {
@@ -3155,7 +3255,7 @@ footer {
     min-height: 100%;
     display: grid;
     grid-template-areas: "header" "main__qsp" "footer";
-    grid-template-rows: 13% auto 5%;
+    grid-template-rows: 1fr auto 1fr;
     grid-template-columns: 100%; }
   #grilla__qsp2 {
     min-width: 100%;
@@ -3163,7 +3263,7 @@ footer {
     grid-area: main__qsp;
     display: grid;
     grid-template-areas: "texto__qsp" "foto__qsp" "form__qsp";
-    grid-template-rows: 35% 13.5% 60%;
+    grid-template-rows: 2fr 1fr 3fr;
     grid-template-columns: 100%; } }
 
 @media (min-width: 421px) and (max-width: 600px) {
@@ -3247,12 +3347,13 @@ footer {
 
 @media (min-width: 0px) and (max-width: 420px) {
   .texto__qsp__titulo {
-    margin: 10rem;
+    margin: 8rem;
+    margin-right: 5rem;
     font-family: "Indie Flower", cursive;
     font-size: 13rem;
     position: relative;
     right: -5%;
-    max-width: 70%; } }
+    max-width: 65%; } }
 
 @media (min-width: 421px) and (max-width: 600px) {
   .texto__qsp {
@@ -3444,12 +3545,13 @@ footer {
     height: auto;
     margin: 0px; }
     .index__form__titulo1 {
-      margin: 10rem;
+      margin: 8rem;
+      margin-right: 5rem;
       font-family: "Indie Flower", cursive;
       font-size: 13rem;
       position: relative;
       right: 0%;
-      max-width: 70%; }
+      max-width: 65%; }
     .index__form__form {
       display: flex;
       flex-direction: column;
@@ -3838,6 +3940,19 @@ footer {
     grid-template-rows: 1fr 2fr;
     grid-template-columns: 100%; } }
 
+@media (min-width: 421px) and (max-width: 600px) {
+  #grilla__musica {
+    display: grid;
+    grid-template-areas: "header" "main__musica" "footer";
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 100%; }
+  #main__musica {
+    grid-area: main__musica;
+    display: grid;
+    grid-template-areas: "form__musica" "musica__recomendada";
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 100%; } }
+
 @media (min-width: 601px) and (max-width: 1300px) {
   html,
   body {
@@ -3877,12 +3992,13 @@ footer {
     font-size: 0.4rem;
     height: auto; }
     body .musica__recomendada__titulo {
-      margin: 10rem;
+      margin: 8rem;
+      margin-right: 5rem;
       font-family: "Indie Flower", cursive;
       font-size: 13rem;
       position: relative;
       right: 10%;
-      max-width: 70%;
+      max-width: 65%;
       width: 40%; }
     body .musica__recomendada__div {
       background-color: rgba(41, 206, 69, 0.288);
@@ -3909,13 +4025,15 @@ footer {
     height: auto; }
     body .musica__recomendada__titulo {
       position: Relative;
-      right: -10%; }
+      right: 0%; }
     body .musica__recomendada__div {
       background-color: rgba(41, 206, 69, 0.288);
       padding: 40px;
       border-radius: 8%;
       width: auto; }
       body .musica__recomendada__div__OL, body .musica__recomendada__div__MN, body .musica__recomendada__div__IWLG {
+        position: Relative;
+        right: -20%;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -3932,8 +4050,8 @@ footer {
         body .musica__recomendada__div__IWLG h5 {
           margin: 3rem; }
         body .musica__recomendada__div__OL img, body .musica__recomendada__div__MN img, body .musica__recomendada__div__IWLG img {
-          width: 30rem;
-          height: 25rem; }
+          width: 20rem;
+          height: 20rem; }
         body .musica__recomendada__div__OL audio, body .musica__recomendada__div__MN audio, body .musica__recomendada__div__IWLG audio {
           width: 80rem;
           min-width: 80rem; } }
@@ -3967,12 +4085,13 @@ footer {
   body .form__musica {
     height: auto; }
     body .form__musica__titulo {
-      margin: 10rem;
+      margin: 8rem;
+      margin-right: 5rem;
       font-family: "Indie Flower", cursive;
       font-size: 13rem;
       position: relative;
       right: -10%;
-      max-width: 70%;
+      max-width: 65%;
       width: 40%; }
     body .form__musica__form__div {
       display: flex;
@@ -4014,33 +4133,58 @@ footer {
         margin: 4rem;
         width: 20reM; } }
 
-@media (min-width: 0px) and (max-width: 420px) and (min-width: 421px) and (max-width: 600px) {
+@media (min-width: 421px) and (max-width: 600px) {
   .root__element {
     font-size: 3px; }
-  body .form__musica__titulo {
-    position: Relative;
-    right: -20%;
-    top: 3%; }
-  body .form__musica__div form {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    font-size: 5rem;
-    border-radius: 10%;
-    align-items: center;
-    justify-content: space-between;
-    width: auto;
-    height: auto;
-    margin: auto; }
-    body .form__musica__div form input,
-    body .form__musica__div form select,
-    body .form__musica__div form button,
-    body .form__musica__div form label {
-      margin: 6rem; }
-    body .form__musica__div form button {
+  body .form__musica {
+    height: auto; }
+    body .form__musica__titulo {
+      margin: 10rem;
+      font-family: "Indie Flower", cursive;
+      font-size: 16rem;
       position: relative;
       right: 0%;
-      margin: 8rem; } }
+      padding: 20px;
+      width: 40%; }
+    body .form__musica__form__div {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      height: auto;
+      width: auto;
+      font-family: "Josefin Sans";
+      font-size: 10rem;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      background-color: rgba(41, 206, 69, 0.171);
+      justify-items: space-between; }
+      body .form__musica__form__div__qb {
+        font-size: 15rem;
+        margin: 0rem; }
+      body .form__musica__form__div__pc {
+        border-radius: 30px;
+        width: 80%;
+        margin: 7rem; }
+      body .form__musica__form__div__genero {
+        margin: 7rem; }
+        body .form__musica__form__div__genero__dropdown {
+          width: 30%;
+          margin: 2rem;
+          padding: 2rem;
+          border-radius: 30px; }
+      body .form__musica__form__div__button {
+        width: 35%;
+        padding: 3px;
+        position: relative;
+        right: 0%;
+        top: 0%;
+        background-color: rgba(41, 206, 69, 0.171);
+        border-radius: 45%;
+        margin: 7rem;
+        width: 40rem; } }
 
 @media (min-width: 601px) and (max-width: 1300px) {
   .root__element {
@@ -4097,3 +4241,810 @@ footer {
 
 /*------------------------ MEDIA QUERIES ------------------*/
 /* --------Media Queries INDEX--------- */
+.root__element {
+  font-size: 3px; }
+
+#grilla1__carlos {
+  display: grid;
+  grid-template-areas: "header" "grilla2__carlos" "footer";
+  grid-template-rows: 1fr auto 1fr;
+  grid-template-columns: 100%; }
+
+#grilla2__carlos {
+  grid-area: grilla2__carlos;
+  display: grid;
+  grid-template-areas: "cuento__carlos" "form__carlos";
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 100%; }
+
+.cuento__form__section {
+  grid-area: cuento__carlos;
+  background-color: rgba(0, 0, 0, 0.446); }
+  .cuento__form__section__cuento__titulo {
+    background-image: url("../imagenes/carlos__cut.jpg");
+    background-size: cover;
+    color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    font-family: "Bebas Neue"; }
+    .cuento__form__section__cuento__titulo h2 {
+      margin: 3rem;
+      font-size: 8rem; }
+    .cuento__form__section__cuento__titulo h5 {
+      margin: 3rem;
+      font-size: 8rem; }
+  .cuento__form__section__cuento__div__texto {
+    margin: 10rem;
+    max-width: 70%;
+    max-height: 30%;
+    min-width: 40%;
+    position: relative;
+    right: -15%;
+    font-family: "Josefin Sans";
+    font-size: 7rem;
+    overflow: scroll; }
+
+.cuento__carlos__form__section {
+  grid-area: form__carlos;
+  background-color: rgba(0, 0, 0, 0.446); }
+  .cuento__carlos__form__section__form__div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 5rem;
+    font-family: "Josefin Sans";
+    margin: 15rem;
+    justify-content: space-evenly;
+    align-items: space-evenly; }
+    .cuento__carlos__form__section__form__div__syn {
+      display: flex;
+      flex-direction: row; }
+    .cuento__carlos__form__section__form__div__titulo {
+      font-size: 7rem;
+      font-family: "Josefin Sans"; }
+    .cuento__carlos__form__section__form__div label,
+    .cuento__carlos__form__section__form__div input,
+    .cuento__carlos__form__section__form__div textarea,
+    .cuento__carlos__form__section__form__div button {
+      margin: 5rem; }
+
+.root__element {
+  font-size: 3px; }
+
+#grilla1__comandante {
+  display: grid;
+  grid-template-areas: "header" "grilla2__coman" "footer";
+  grid-template-rows: 1fr auto 1fr;
+  grid-template-columns: 100%; }
+
+#grilla2__comandante {
+  grid-area: grilla2__coman;
+  display: grid;
+  grid-template-areas: "cuento__comandante" "form__comandante";
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 100%; }
+
+.comandante__section {
+  grid-area: cuento__comandante;
+  background-color: rgba(177, 177, 177, 0.404); }
+  .comandante__section__cuento__titulo {
+    background-image: url("../imagenes/comandante__cut.png");
+    background-size: cover;
+    color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Bebas Neue"; }
+    .comandante__section__cuento__titulo h2 {
+      margin: 3rem;
+      font-size: 8rem; }
+    .comandante__section__cuento__titulo h5 {
+      margin: 3rem;
+      font-size: 8rem; }
+  .comandante__section__cuento__div__texto {
+    margin: 20rem;
+    max-width: 65%;
+    max-height: 30%;
+    position: relative;
+    right: -15%;
+    font-family: "Josefin Sans";
+    font-size: 7rem;
+    overflow: scroll; }
+
+.cuento__comandante__form__section {
+  grid-area: form__comandante;
+  background-color: rgba(102, 102, 102, 0.337); }
+  .cuento__comandante__form__section__form__div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 5rem;
+    font-family: "Josefin Sans";
+    margin: 15rem;
+    justify-content: space-evenly;
+    align-items: space-evenly; }
+    .cuento__comandante__form__section__form__div__syn {
+      display: flex;
+      flex-direction: row; }
+    .cuento__comandante__form__section__form__div__titulo {
+      font-size: 7rem;
+      font-family: "Josefin Sans"; }
+    .cuento__comandante__form__section__form__div label,
+    .cuento__comandante__form__section__form__div input,
+    .cuento__comandante__form__section__form__div textarea,
+    .cuento__comandante__form__section__form__div button {
+      margin: 5rem; }
+
+.root__element {
+  font-size: 3px; }
+
+#grilla1__normal {
+  display: grid;
+  grid-template-areas: "header" "grilla2__normal" "footer";
+  grid-template-rows: 1fr auto 1fr;
+  grid-template-columns: 100%; }
+
+#grilla2__normal {
+  grid-area: grilla2__normal;
+  display: grid;
+  grid-template-areas: "cuento__normal" "form__normal";
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 100%; }
+
+.normal__section {
+  grid-area: cuento__normal;
+  background-color: rgba(87, 0, 0, 0.652);
+  background-color: rgba(109, 2, 2, 0.522); }
+  .normal__section__cuento__titulo {
+    background-image: url("../imagenes/normal__cut.jpg");
+    background-size: cover;
+    color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    font-family: "Bebas Neue"; }
+    .normal__section__cuento__titulo h2 {
+      margin: 3rem;
+      font-size: 8rem; }
+    .normal__section__cuento__titulo h5 {
+      margin: 3rem;
+      font-size: 8rem; }
+  .normal__section__cuento__div__texto {
+    margin: 10rem;
+    max-width: 70%;
+    max-height: 30%;
+    min-width: 40%;
+    position: relative;
+    right: -10%;
+    font-family: "Josefin Sans";
+    font-size: 7rem;
+    overflow: scroll; }
+
+.cuento__normal__form__section {
+  grid-area: form__normal;
+  background-color: rgba(109, 2, 2, 0.522); }
+  .cuento__normal__form__section__form__div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 5rem;
+    font-family: "Josefin Sans";
+    margin: 15rem;
+    justify-content: space-evenly;
+    align-items: space-evenly; }
+    .cuento__normal__form__section__form__div__syn {
+      display: flex;
+      flex-direction: row; }
+    .cuento__normal__form__section__form__div__titulo {
+      font-size: 7rem;
+      font-family: "Josefin Sans"; }
+    .cuento__normal__form__section__form__div label,
+    .cuento__normal__form__section__form__div input,
+    .cuento__normal__form__section__form__div textarea,
+    .cuento__normal__form__section__form__div button {
+      margin: 5rem; }
+
+@media (min-width: 0px) and (max-width: 420px) {
+  html,
+  body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-bottom: 1px;
+    border: 1px solid transparent; }
+  .root__element {
+    font-size: 3px; }
+  #grilla1__comandante {
+    display: grid;
+    grid-template-areas: "header" "grilla2__comandante" "footer";
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 100%; }
+  #grilla2__comandante {
+    grid-area: grilla2__comandante;
+    display: grid;
+    grid-template-areas: "cuento__comandante" "form__comandante";
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 100%; }
+  .comandante__section {
+    grid-area: cuento__comandante;
+    background-color: rgba(102, 102, 102, 0.337); }
+    .comandante__section__cuento__titulo {
+      background-image: url("../imagenes/comandante__cut.png");
+      background-size: cover;
+      color: cornsilk;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-size: cover;
+      font-family: "Bebas Neue"; }
+      .comandante__section__cuento__titulo h2 {
+        margin: 3rem;
+        font-size: 8rem; }
+      .comandante__section__cuento__titulo h5 {
+        margin: 3rem;
+        font-size: 8rem; }
+    .comandante__section__cuento__div__texto {
+      margin: 13rem;
+      max-width: 85%;
+      max-height: 30%;
+      position: relative;
+      right: 0%;
+      font-family: "Josefin Sans";
+      font-size: 5.5rem;
+      overflow: scroll; }
+  .cuento__comandante__form__section {
+    grid-area: form__comandante; }
+    .cuento__comandante__form__section .cuento__form__section {
+      grid-area: form__comandante;
+      background-color: rgba(189, 189, 189, 0.378); }
+      .cuento__comandante__form__section .cuento__form__section__form__div {
+        display: flex;
+        flex-direction: column;
+        font-size: 5rem;
+        font-family: "Josefin Sans";
+        margin: 15rem; }
+        .cuento__comandante__form__section .cuento__form__section__form__div__titulo {
+          font-size: 7rem;
+          font-family: "Josefin Sans"; } }
+
+@media (min-width: 421px) and (max-width: 600px) {
+  html,
+  body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-bottom: 1px;
+    border: 1px solid transparent; }
+  .root__element {
+    font-size: 3px; }
+  #grilla1__comandante {
+    display: grid;
+    grid-template-areas: "header" "grilla2__comandante" "footer";
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 100%; }
+  #grilla2__comandante {
+    grid-area: grilla2__comandante;
+    display: grid;
+    grid-template-areas: "cuento__comandante" "form__comandante";
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 100%; }
+  .comandante__section {
+    grid-area: cuento__comandante;
+    background-color: rgba(102, 102, 102, 0.337); }
+    .comandante__section__cuento__titulo {
+      background-image: url("../imagenes/comandante__cut.png");
+      background-size: cover;
+      color: cornsilk;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-size: cover;
+      font-family: "Bebas Neue"; }
+      .comandante__section__cuento__titulo h2 {
+        margin: 3rem;
+        font-size: 8rem; }
+      .comandante__section__cuento__titulo h5 {
+        margin: 3rem;
+        font-size: 8rem; }
+    .comandante__section__cuento__div__texto {
+      margin: 10rem;
+      max-width: 70%;
+      max-height: 30%;
+      min-width: 40%;
+      position: relative;
+      right: -10%;
+      font-family: "Josefin Sans";
+      font-size: 7rem;
+      overflow: scroll; }
+  .cuento__comandante__form__section {
+    grid-area: form__comandante;
+    background-color: rgba(102, 102, 102, 0.337); }
+    .cuento__comandante__form__section__form__div {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      font-size: 5rem;
+      font-family: "Josefin Sans";
+      margin: 15rem;
+      justify-content: space-evenly;
+      align-items: space-evenly; }
+      .cuento__comandante__form__section__form__div__syn {
+        display: flex;
+        flex-direction: row; }
+      .cuento__comandante__form__section__form__div__titulo {
+        font-size: 7rem;
+        font-family: "Josefin Sans"; }
+      .cuento__comandante__form__section__form__div label,
+      .cuento__comandante__form__section__form__div input,
+      .cuento__comandante__form__section__form__div textarea,
+      .cuento__comandante__form__section__form__div button {
+        margin: 5rem; } }
+
+@media (min-width: 601px) and (max-width: 1600px) {
+  html,
+  body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-bottom: 1px;
+    border: 1px solid transparent; }
+  .root__element {
+    font-size: 3px; }
+  #grilla1__comandante {
+    display: grid;
+    grid-template-areas: "header" "grilla2__comandante" "footer";
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 100%; }
+  #grilla2__comandante {
+    grid-area: grilla2__comandante;
+    display: grid;
+    grid-template-areas: "cuento__comandante" "form__comandante";
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 100%; }
+  .comandante__section {
+    grid-area: cuento__comandante;
+    background-color: rgba(102, 102, 102, 0.337); }
+    .comandante__section__cuento__titulo {
+      background-image: url("../imagenes/comandante__cut.png");
+      background-size: cover;
+      color: cornsilk;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-size: cover;
+      font-family: "Bebas Neue"; }
+      .comandante__section__cuento__titulo h2 {
+        margin: 3rem;
+        font-size: 8rem; }
+      .comandante__section__cuento__titulo h5 {
+        margin: 3rem;
+        font-size: 8rem; }
+    .comandante__section__cuento__div__texto {
+      margin: 10rem;
+      max-width: 70%;
+      max-height: 30%;
+      min-width: 40%;
+      position: relative;
+      right: -15%;
+      font-family: "Josefin Sans";
+      font-size: 7rem;
+      overflow: scroll; }
+  .cuento__comandante__form__section {
+    grid-area: form__comandante;
+    background-color: rgba(102, 102, 102, 0.337); }
+    .cuento__comandante__form__section__form__div {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      font-size: 5rem;
+      font-family: "Josefin Sans";
+      margin: 15rem;
+      justify-content: space-evenly;
+      align-items: space-evenly; }
+      .cuento__comandante__form__section__form__div__syn {
+        display: flex;
+        flex-direction: row; }
+      .cuento__comandante__form__section__form__div__titulo {
+        font-size: 7rem;
+        font-family: "Josefin Sans"; }
+      .cuento__comandante__form__section__form__div label,
+      .cuento__comandante__form__section__form__div input,
+      .cuento__comandante__form__section__form__div textarea,
+      .cuento__comandante__form__section__form__div button {
+        margin: 5rem; } }
+
+@media (min-width: 0px) and (max-width: 420px) {
+  html,
+  body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-bottom: 1px;
+    border: 1px solid transparent; }
+  .root__element {
+    font-size: 3px; }
+  #grilla1__carlos {
+    display: grid;
+    grid-template-areas: "header" "grilla2__carlos" "footer";
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 100%; }
+  #grilla2__carlos {
+    grid-area: grilla2__carlos;
+    display: grid;
+    grid-template-areas: "cuento__carlos" "form__carlos";
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 100%; }
+  .carlos__section {
+    grid-area: cuento__carlos;
+    background-color: rgba(0, 0, 0, 0.446); }
+    .carlos__section__cuento__titulo {
+      background-image: url("../imagenes/carlos__cut.jpg");
+      background-size: cover;
+      color: cornsilk;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-size: cover;
+      font-family: "Bebas Neue"; }
+      .carlos__section__cuento__titulo h2 {
+        margin: 3rem;
+        font-size: 8rem; }
+      .carlos__section__cuento__titulo h5 {
+        margin: 3rem;
+        font-size: 8rem; }
+    .carlos__section__cuento__div__texto {
+      margin: 13rem;
+      max-width: 85%;
+      max-height: 30%;
+      position: relative;
+      right: 0%;
+      font-family: "Josefin Sans";
+      font-size: 5.5rem;
+      overflow: scroll; }
+  .cuento__carlos__form__section {
+    grid-area: form__carlos; }
+    .cuento__carlos__form__section .cuento__form__section {
+      grid-area: form__comandante;
+      background-color: rgba(189, 189, 189, 0.378); }
+      .cuento__carlos__form__section .cuento__form__section__form__div {
+        display: flex;
+        flex-direction: column;
+        font-size: 5rem;
+        font-family: "Josefin Sans";
+        margin: 15rem; }
+        .cuento__carlos__form__section .cuento__form__section__form__div__titulo {
+          font-size: 7rem;
+          font-family: "Josefin Sans"; } }
+
+@media (min-width: 421px) and (max-width: 600px) {
+  html,
+  body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-bottom: 1px;
+    border: 1px solid transparent; }
+  .carlos__section {
+    grid-area: cuento__carlos;
+    background-color: rgba(0, 0, 0, 0.446); }
+    .carlos__section__cuento__titulo {
+      background-image: url("../imagenes/carlos__cut.jpg");
+      background-size: cover;
+      color: cornsilk;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-size: cover;
+      font-family: "Bebas Neue"; }
+      .carlos__section__cuento__titulo h2 {
+        margin: 3rem;
+        font-size: 8rem; }
+      .carlos__section__cuento__titulo h5 {
+        margin: 3rem;
+        font-size: 8rem; }
+    .carlos__section__cuento__div__texto {
+      margin: 10rem;
+      max-width: 70%;
+      max-height: 30%;
+      min-width: 40%;
+      position: relative;
+      right: -10%;
+      font-family: "Josefin Sans";
+      font-size: 7rem;
+      overflow: scroll; }
+  .cuento__carlos__form__section {
+    grid-area: form__carlos;
+    background-color: rgba(0, 0, 0, 0.446); }
+    .cuento__carlos__form__section__form__div {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      font-size: 5rem;
+      font-family: "Josefin Sans";
+      margin: 15rem;
+      justify-content: space-evenly;
+      align-items: space-evenly; }
+      .cuento__carlos__form__section__form__div__syn {
+        display: flex;
+        flex-direction: row; }
+      .cuento__carlos__form__section__form__div__titulo {
+        font-size: 7rem;
+        font-family: "Josefin Sans"; }
+      .cuento__carlos__form__section__form__div label,
+      .cuento__carlos__form__section__form__div input,
+      .cuento__carlos__form__section__form__div textarea,
+      .cuento__carlos__form__section__form__div button {
+        margin: 5rem; } }
+
+@media (min-width: 601px) and (max-width: 1600px) {
+  html,
+  body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-bottom: 1px;
+    border: 1px solid transparent; }
+  .carlos__section {
+    grid-area: cuento__carlos;
+    background-color: rgba(0, 0, 0, 0.446); }
+    .carlos__section__cuento__titulo {
+      background-image: url("../imagenes/carlos__cut.jpg");
+      background-size: cover;
+      color: cornsilk;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-size: cover;
+      font-family: "Bebas Neue"; }
+      .carlos__section__cuento__titulo h2 {
+        margin: 3rem;
+        font-size: 8rem; }
+      .carlos__section__cuento__titulo h5 {
+        margin: 3rem;
+        font-size: 8rem; }
+    .carlos__section__cuento__div__texto {
+      margin: 10rem;
+      max-width: 70%;
+      max-height: 30%;
+      min-width: 40%;
+      position: relative;
+      right: -15%;
+      font-family: "Josefin Sans";
+      font-size: 7rem;
+      overflow: scroll; }
+  .cuento__carlos__form__section {
+    grid-area: form__carlos;
+    background-color: rgba(0, 0, 0, 0.446); }
+    .cuento__carlos__form__section__form__div {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      font-size: 5rem;
+      font-family: "Josefin Sans";
+      margin: 15rem;
+      justify-content: space-evenly;
+      align-items: space-evenly; }
+      .cuento__carlos__form__section__form__div__syn {
+        display: flex;
+        flex-direction: row; }
+      .cuento__carlos__form__section__form__div__titulo {
+        font-size: 7rem;
+        font-family: "Josefin Sans"; }
+      .cuento__carlos__form__section__form__div label,
+      .cuento__carlos__form__section__form__div input,
+      .cuento__carlos__form__section__form__div textarea,
+      .cuento__carlos__form__section__form__div button {
+        margin: 5rem; } }
+
+@media (min-width: 0px) and (max-width: 420px) {
+  html,
+  body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-bottom: 1px;
+    border: 1px solid transparent; }
+  .root__element {
+    font-size: 3px; }
+  #grilla1__normal {
+    display: grid;
+    grid-template-areas: "header" "grilla2__normal" "footer";
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 100%; }
+  #grilla2__normal {
+    grid-area: grilla2__normal;
+    display: grid;
+    grid-template-areas: "cuento__normal" "form__normal";
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 100%; }
+  .normal__section {
+    grid-area: cuento__normal;
+    background-color: rgba(109, 2, 2, 0.522); }
+    .normal__section__cuento__titulo {
+      background-image: url("../imagenes/normal__cut.jpg");
+      background-size: cover;
+      color: cornsilk;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-size: cover;
+      font-family: "Bebas Neue"; }
+      .normal__section__cuento__titulo h2 {
+        margin: 3rem;
+        font-size: 8rem; }
+      .normal__section__cuento__titulo h5 {
+        margin: 3rem;
+        font-size: 8rem; }
+    .normal__section__cuento__div__texto {
+      margin: 13rem;
+      max-width: 85%;
+      max-height: 30%;
+      position: relative;
+      right: 0%;
+      font-family: "Josefin Sans";
+      font-size: 5.5rem;
+      overflow: scroll; }
+  .cuento__normal__form__section {
+    grid-area: form__normal;
+    background-color: rgba(109, 2, 2, 0.522); }
+    .cuento__normal__form__section__form__div {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      font-size: 5rem;
+      font-family: "Josefin Sans";
+      margin: 15rem;
+      justify-content: space-evenly;
+      align-items: space-evenly; }
+      .cuento__normal__form__section__form__div__syn {
+        display: flex;
+        flex-direction: row; }
+      .cuento__normal__form__section__form__div__titulo {
+        font-size: 7rem;
+        font-family: "Josefin Sans"; }
+      .cuento__normal__form__section__form__div label,
+      .cuento__normal__form__section__form__div input,
+      .cuento__normal__form__section__form__div textarea,
+      .cuento__normal__form__section__form__div button {
+        margin: 5rem; } }
+
+@media (min-width: 421px) and (max-width: 600px) {
+  html,
+  body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-bottom: 1px;
+    border: 1px solid transparent; }
+  .normal__section {
+    grid-area: cuento__normal;
+    background-color: rgba(109, 2, 2, 0.522); }
+    .normal__section__cuento__titulo {
+      background-image: url("../imagenes/normal__cut.jpg");
+      background-size: cover;
+      color: cornsilk;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-size: cover;
+      font-family: "Bebas Neue"; }
+      .normal__section__cuento__titulo h2 {
+        margin: 3rem;
+        font-size: 8rem; }
+      .normal__section__cuento__titulo h5 {
+        margin: 3rem;
+        font-size: 8rem; }
+    .normal__section__cuento__div__texto {
+      margin: 10rem;
+      max-width: 70%;
+      max-height: 30%;
+      min-width: 40%;
+      position: relative;
+      right: -10%;
+      font-family: "Josefin Sans";
+      font-size: 7rem;
+      overflow: scroll; }
+  .cuento__form__section {
+    grid-area: form__normal;
+    background-color: rgba(109, 2, 2, 0.522); }
+    .cuento__form__section__form__div {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      font-size: 5rem;
+      font-family: "Josefin Sans";
+      margin: 15rem;
+      justify-content: space-evenly;
+      align-items: space-evenly; }
+      .cuento__form__section__form__div__syn {
+        display: flex;
+        flex-direction: row; }
+      .cuento__form__section__form__div__titulo {
+        font-size: 7rem;
+        font-family: "Josefin Sans"; }
+      .cuento__form__section__form__div label,
+      .cuento__form__section__form__div input,
+      .cuento__form__section__form__div textarea,
+      .cuento__form__section__form__div button {
+        margin: 5rem; } }
+
+@media (min-width: 601px) and (max-width: 1600px) {
+  html,
+  body {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    padding-bottom: 1px;
+    border: 1px solid transparent; }
+  .normal__section {
+    grid-area: cuento__normal;
+    background-color: rgba(109, 2, 2, 0.522); }
+    .normal__section__cuento__titulo {
+      background-image: url("../imagenes/normal__cut.jpg");
+      background-size: cover;
+      color: cornsilk;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-size: cover;
+      font-family: "Bebas Neue"; }
+      .normal__section__cuento__titulo h2 {
+        margin: 3rem;
+        font-size: 8rem; }
+      .normal__section__cuento__titulo h5 {
+        margin: 3rem;
+        font-size: 8rem; }
+    .normal__section__cuento__div__texto {
+      margin: 10rem;
+      max-width: 70%;
+      max-height: 30%;
+      min-width: 40%;
+      position: relative;
+      right: -15%;
+      font-family: "Josefin Sans";
+      font-size: 7rem;
+      overflow: scroll; }
+  .cuento__normal__form__section {
+    grid-area: form__normal;
+    background-color: rgba(109, 2, 2, 0.522); }
+    .cuento__normal__form__section__form__div {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      font-size: 5rem;
+      font-family: "Josefin Sans";
+      margin: 15rem;
+      justify-content: space-evenly;
+      align-items: space-evenly; }
+      .cuento__normal__form__section__form__div__syn {
+        display: flex;
+        flex-direction: row; }
+      .cuento__normal__form__section__form__div__titulo {
+        font-size: 7rem;
+        font-family: "Josefin Sans"; }
+      .cuento__normal__form__section__form__div label,
+      .cuento__normal__form__section__form__div input,
+      .cuento__normal__form__section__form__div textarea,
+      .cuento__normal__form__section__form__div button {
+        margin: 5rem; } }

@@ -1,0 +1,89 @@
+@media (min-width: 0px) and (max-width:420px) {
+    html,
+    body {
+        min-height: 100%;
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        padding-bottom: 1px;
+        border: 1px solid transparent;
+    }
+    .root__element {
+        font-size: 3px;
+    }
+    #grilla1__carlos {
+        display: grid;
+        grid-template-areas: "header" "grilla2__carlos" "footer";
+        grid-template-rows: 1fr auto 1fr;
+        grid-template-columns: 100%;
+    }
+    #grilla2__carlos {
+        grid-area: grilla2__carlos;
+        display: grid;
+        grid-template-areas: "cuento__carlos" "form__carlos";
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 100%;
+    }
+    .carlos__section {
+        grid-area: cuento__carlos;
+        @include texto__cuentos400 (rgba(0, 0, 0, 0.446), url("../imagenes/carlos__cut.jpg"));
+    }
+    .cuento__carlos__form__section {
+        grid-area: form__carlos;
+        @include forms__cuentos400(rgba(0, 0, 0, 0.446));
+    }
+}
+
+@media (min-width: 421px) and (max-width: 600px) {
+    html,
+    body {
+        min-height: 100%;
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        padding-bottom: 1px;
+        border: 1px solid transparent;
+    }
+    .carlos__section {
+        grid-area: cuento__carlos;
+        @include texto__cuentos600 (rgba(0, 0, 0, 0.446),
+        url("../imagenes/carlos__cut.jpg"));
+    }
+    .cuento__carlos__form__section {
+        grid-area: form__carlos;
+        @include forms__cuentos600(rgba(0,
+        0,
+        0,
+        0.446));
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1600px) {
+    html,
+    body {
+        min-height: 100%;
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        padding-bottom: 1px;
+        border: 1px solid transparent;
+    }
+    .carlos__section {
+        grid-area: cuento__carlos;
+        @include texto__cuentos(rgba(0,
+        0,
+        0,
+        0.446),
+        url("../imagenes/carlos__cut.jpg"));
+    }
+    .cuento__carlos__form__section {
+        grid-area: form__carlos;
+        @include forms__cuentos(rgba(0,
+        0,
+        0,
+        0.446));
+    }
+}
